@@ -1,0 +1,19 @@
+Convierta una cadena a letras mayúsculas y minúsculas:
+
+String txt = "Hello World";
+System.out.println(txt.toUpperCase());
+System.out.println(txt.toLowerCase());
+
+Definición y uso
+El toUpperCase() método convierte una cadena en letras mayúsculas.
+
+Nota: El método toLowerCase() convierte una cadena en letras minúsculas.
+
+Sintaxis
+public String toUpperCase()
+
+Parámetros
+Ninguna.
+
+Detalles técnicos
+Devoluciones:	Un String valor, que representa la nueva cadena convertida a mayúsculas

@@ -1,0 +1,36 @@
+Averigüe si una cadena contiene una secuencia de caracteres:
+
+String myStr = "Hello";
+System.out.println(myStr.contentEquals("Hello"));  // true
+System.out.println(myStr.contentEquals("e"));      // false
+System.out.println(myStr.contentEquals("Hi"));     // false
+
+Definición y uso
+El contentEquals()método busca una cadena para averiguar si contiene exactamente la misma
+secuencia de caracteres en la cadena especificada o StringBuffer.
+
+Devuelve true si los personajes existen y false si no.
+
+Sintaxis
+Hay 2 contentEquals() métodos:
+
+public boolean contentEquals(StringBuffer chars)
+public boolean contentEquals(CharSequence chars)
+
+Valores paramétricos
+
+Parameter	        Description
+StringBuffer chars	The StringBuffer to be searched for
+CharSequence chars	The sequence of characters to be searched for
+
+La clase StringBuffer es como una cadena, solo que se puede modificar y se encuentra en el paquete java.lang.
+
+La interfaz CharSequence es una secuencia legible de valores char, que se encuentra en el paquete java.lang.
+
+Detalles técnicos
+Devoluciones:	A boolean, que indica si existe exactamente la misma secuencia de caracteres en la cadena especificada (o StringBuffer):
+                true - existe una secuencia de caracteres
+                false - la secuencia de caracteres no existe
+Versión Java:	1.4 (contentEquals ( caracteres de StringBuffer ))
+                1.5 (contentEquals ( caracteres de CharSequence ))
+

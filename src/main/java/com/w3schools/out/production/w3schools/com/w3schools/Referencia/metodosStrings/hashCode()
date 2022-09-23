@@ -1,0 +1,22 @@
+Devuelve el código hash de una cadena:
+
+String myStr = "Hello";
+System.out.println(myStr.hashCode());
+
+Definición y uso
+El hashCode() método devuelve el código hash de una cadena.
+
+El código hash para un objeto String se calcula así:
+
+s[0]*31^(n-1) + s[1]*31^(n-2) + ... + s[n-1]
+
+donde s[i] es el i-ésimo carácter de la cadena, n es la longitud de la cadena y ^ indica exponenciación.
+
+Sintaxis
+public int hashCode()
+
+Valores paramétricos
+Ninguna.
+
+Detalles técnicos
+Devoluciones:	Un int valor, que representa el código hash de la cadena.

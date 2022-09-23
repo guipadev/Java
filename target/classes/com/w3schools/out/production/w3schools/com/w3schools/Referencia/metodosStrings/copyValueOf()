@@ -1,0 +1,25 @@
+Devuelve una cadena que representa ciertos caracteres de una matriz de caracteres:
+
+char[] myStr1 = {'H', 'e', 'l', 'l', 'o'};
+String myStr2 = "";
+myStr2 = myStr2.copyValueOf(myStr1, 0, 5);
+System.out.println("Returned String: " + myStr2);
+
+Definición y uso
+El copyValueOf() método devuelve un String que representa los caracteres de una matriz de caracteres.
+Este método devuelve una nueva String matriz y copia los caracteres en ella.
+
+Sintaxis
+public static String copyValueOf(char[] data, int offset, int  count)
+
+Valores paramétricos
+Parameter	Description
+data	    A char array
+offset	    An int value, representing the start index of the char array
+count	    An int value, representing the length of the char array
+
+Detalles técnicos
+Devoluciones:	A String, que representa los caracteres de la matriz de caracteres
+Lanza:	        StringIndexOutOfBoundsException- si el desplazamiento es negativo o
+                está fuera de alcance, o si el conteo es mayor que la longitud de
+                la matriz de caracteres, o negativo

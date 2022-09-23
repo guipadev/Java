@@ -1,0 +1,30 @@
+Palabra clave de clase Java
+
+Ejemplo
+Cree una clase llamada "Principal":
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello World");
+  }
+}
+
+Definición y uso
+La classpalabra clave se utiliza para crear una clase.
+
+Cada línea de código que se ejecuta en Java debe estar dentro de una clase. Una clase siempre debe comenzar con una primera letra mayúscula y el nombre del archivo java debe coincidir con el nombre de la clase.
+
+Una clase es como un constructor de objetos. Vea el ejemplo a continuación para ver cómo podemos usarlo para crear un objeto.
+
+Más ejemplos
+Ejemplo
+Cree un objeto de Mainllamado " myObj" e imprima el valor de x:
+
+public class Main {
+  int x = 5;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    System.out.println(myObj.x);
+  }
+}

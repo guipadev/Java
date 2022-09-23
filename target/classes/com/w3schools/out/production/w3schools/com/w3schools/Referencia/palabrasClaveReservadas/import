@@ -1,0 +1,16 @@
+Importe la Scanner clase desde la API de Java:
+
+import java.util.Scanner;
+
+class MyClass {
+  public static void main(String[] args) {
+    Scanner myObj = new Scanner(System.in);
+    System.out.println("Enter username");
+
+    String userName = myObj.nextLine();
+    System.out.println("Username is: " + userName);
+  }
+}
+
+Definición y uso
+La import palabra clave se utiliza para importar un paquete, clase o interfaz.

@@ -1,0 +1,26 @@
+Ejemplo
+Crea un enum con constantes (variables inmutables):
+
+enum Level {
+  LOW,
+  MEDIUM,
+  HIGH
+}
+
+Puede acceder enum a las constantes con la sintaxis de puntos :
+
+Level myVar = Level.MEDIUM;
+
+Definición y uso
+La enumpalabra clave declara un tipo enumerado (no modificable).
+
+Una enumeración es una "clase" especial que representa un grupo de constantes (variables inmutables, como variables finales).
+
+Para crear una enumeración, use la enumpalabra clave (en lugar de clase o interfaz) y separe las constantes con una coma. Tenga en cuenta que deben estar en letras mayúsculas.
+
+Diferencia entre enumeraciones y clases
+Un enum puede, al igual que un class, tener atributos y métodos. La única diferencia es que las constantes de enumeración son public, staticy final (inmodificables, no se pueden anular).
+
+No enum se puede usar para crear objetos y no puede extender otras clases (pero puede implementar interfaces).
+
+Use enumeraciones cuando tenga valores que sepa que no van a cambiar, como meses, días, colores, baraja de cartas, etc.
