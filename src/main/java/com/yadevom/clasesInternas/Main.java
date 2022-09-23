@@ -1,4 +1,4 @@
-package com.yadevom.ClasesInternas;
+package com.yadevom.clasesInternas;
 
 public class Main {
 
