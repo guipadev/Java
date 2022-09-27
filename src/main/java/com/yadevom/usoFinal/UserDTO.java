@@ -1,4 +1,4 @@
-package com.yadevom.usoFinal;
+package usoFinal;
 
 // Creacion de clase INMUTABLE
 class UserDto {

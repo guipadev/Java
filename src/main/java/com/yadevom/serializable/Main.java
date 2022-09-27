@@ -1,4 +1,4 @@
-package com.yadevom.serializable;
+package serializable;
 
 /*
 SERALIZACION: La conversion de un objeto un flujo de bytes

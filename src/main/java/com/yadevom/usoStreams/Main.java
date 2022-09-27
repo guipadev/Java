@@ -1,4 +1,4 @@
-package com.yadevom.usoStreams;
+package usoStreams;
 
 /*
 Un stream es una secuencia de objetos que admite varios métodos que se pueden canalizar para producir el resultado deseado.

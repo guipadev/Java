@@ -1,4 +1,4 @@
-package com.yadevom.clasesAnonimas;
+package clasesAnonimas;
 
 /*
 Son clases internas sin nombre, como no tienen nombre no podemos usarlas para crear instancias de esa clase

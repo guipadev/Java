@@ -1,4 +1,4 @@
-package com.yadevom.hilos;
+package hilos;
 
 import java.time.LocalDateTime;
 

@@ -1,6 +1,0 @@
-int myNum = 100000;
-System.out.println(myNum);
-
-Definición y uso
-La int palabra clave es un tipo de datos que puede almacenar números
-enteros desde -2147483648 hasta 2147483647.

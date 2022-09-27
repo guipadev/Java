@@ -1,4 +1,4 @@
-package com.yadevom.usoFinal;
+package usoFinal;
 
 // Si pusieramos la clase como FINAL no se podria heredar
 public class EjemploClase {

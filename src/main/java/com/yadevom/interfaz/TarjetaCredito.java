@@ -1,4 +1,4 @@
-package com.yadevom.interfaz;
+package interfaz;
 
 import java.math.BigDecimal;
 

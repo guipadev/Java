@@ -1,4 +1,4 @@
-package com.w3schools.ForLoop;
+package ForLoop;
 
 public class ForLoop {
 

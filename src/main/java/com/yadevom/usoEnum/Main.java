@@ -1,4 +1,4 @@
-package com.yadevom.usoEnum;
+package usoEnum;
 
 public class Main {
 

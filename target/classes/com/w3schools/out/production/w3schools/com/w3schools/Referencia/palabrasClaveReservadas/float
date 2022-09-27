@@ -1,7 +1,0 @@
-float myNum = 5.75f;
-System.out.println(myNum);
-
-Definición y uso
-La float palabra clave es un tipo de datos que puede almacenar números fraccionarios desde 3.4e−038 hasta 3.4e+038.
-
-Tenga en cuenta que debe terminar el valor con una "f":

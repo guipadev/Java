@@ -1,4 +1,4 @@
-package com.w3schools.IfElse;
+package IfElse;
 
 public class TernaryOperator {
 

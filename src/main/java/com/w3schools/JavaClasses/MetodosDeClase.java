@@ -1,4 +1,4 @@
-package com.w3schools.JavaClasses;
+package JavaClasses;
 
 /**
  * Métodos de clase Java

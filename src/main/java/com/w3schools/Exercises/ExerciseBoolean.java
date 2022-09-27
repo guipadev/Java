@@ -1,4 +1,4 @@
-package com.w3schools.Exercises;
+package Exercises;
 
 public class ExerciseBoolean {
 

@@ -1,4 +1,4 @@
-package com.yadevom.clasesInternas;
+package clasesInternas;
 
 public class ClaseExterna {
 

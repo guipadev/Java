@@ -1,4 +1,4 @@
-package com.yadevom.usoMain;
+package usoMain;
 
 /**
  * El metodo main en java es el punto de partida de nuestro programa, sin el ningun programa funcionaria

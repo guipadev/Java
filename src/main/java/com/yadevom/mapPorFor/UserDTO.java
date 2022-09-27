@@ -1,4 +1,4 @@
-package com.yadevom.mapPorFor;
+package mapPorFor;
 
 public class UserDTO {
 

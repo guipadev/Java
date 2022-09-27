@@ -1,4 +1,4 @@
-package com.yadevom.usoThis;
+package usoThis;
 
 /*
 - formas de utilizarlo:

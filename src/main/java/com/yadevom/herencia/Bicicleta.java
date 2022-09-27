@@ -1,4 +1,4 @@
-package com.yadevom.herencia;
+package herencia;
 
 public class Bicicleta extends  Vehiculo {
 

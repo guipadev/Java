@@ -1,4 +1,4 @@
-package com.yadevom.usoEnum;
+package usoEnum;
 
 enum DiaDeLaSemana {
     LUNES, MARTES, MIERCOLES, JUEVES, VIERNES, SABADO, DOMINGO

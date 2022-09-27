@@ -1,4 +1,4 @@
-package com.w3schools.ArraysJava;
+package ArraysJava;
 
 public class ArraysLoop {
 

@@ -1,4 +1,4 @@
-package com.yadevom.usoStatic;
+package usoStatic;
 
 public class Main {
 

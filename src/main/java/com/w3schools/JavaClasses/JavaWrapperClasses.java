@@ -1,4 +1,4 @@
-package com.w3schools.JavaClasses;
+package JavaClasses;
 
 /*
 Clases contenedoras de Java

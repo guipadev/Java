@@ -1,4 +1,4 @@
-package com.w3schools.DataTypes;
+package DataTypes;
 
 public class Characters {
 

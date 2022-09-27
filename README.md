@@ -13,7 +13,7 @@ Mi aplicación java es una hoja de trucos, donde se pueden encontrar del lenguaj
     - [Operadores](https://github.com/yaormu/my_cheat_sheet_java/blob/main/src/com/yadev/Operators.java)
     - [Cadenas - String - concatenacion - formas de uso](https://github.com/yaormu/my_cheat_sheet_java/tree/main/src/com/yadev/Strings)
     - [Math](https://github.com/yaormu/my_cheat_sheet_java/blob/main/src/com/yadev/Math_Java.java)
-    - [Booleanos](https://github.com/yaormu/my_cheat_sheet_java/blob/main/src/com/yadev/Booleans.java)
+    - [BooleanosIfElse](https://github.com/yaormu/my_cheat_sheet_java/blob/main/src/com/yadev/Booleans.java)
     - [if...else - operador ternario](https://github.com/yaormu/my_cheat_sheet_java/tree/main/src/com/yadev/IfElse)
     - [Switch](https://github.com/yaormu/my_cheat_sheet_java/blob/main/src/com/yadev/SwitchJava.java)
     - [Ciclo while](https://github.com/yaormu/my_cheat_sheet_java/blob/main/src/com/yadev/WhileLoop.java)

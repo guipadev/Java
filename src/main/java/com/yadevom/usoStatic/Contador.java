@@ -1,4 +1,4 @@
-package com.yadevom.usoStatic;
+package usoStatic;
 
 /*
 En los metodos estaticos no se puede utilizar this

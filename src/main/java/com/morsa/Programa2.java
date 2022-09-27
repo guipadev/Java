@@ -1,7 +1,6 @@
-package com.morsa;
 
-import static com.morsa.Utils.inputInt;
-import static com.morsa.Utils.println;
+
+import static Utilidades.Utils.*;
 
 public class Programa2 {
 
@@ -16,7 +15,7 @@ public class Programa2 {
         } else if (edad >= limiteEdad && edad < senior) {
             println("Puedes pasar al party");
         }else {
-            println("Estas en el lugar equivocado ;)");
+            println("Eres de la tercera edad, sigue con esa energia ;)");
         }
 
     }

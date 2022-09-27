@@ -2,7 +2,7 @@ package com.morsa;
 
 import static Utilidades.Utils.*;
 
-public class Numeros {
+public class VariablesyNumeros {
 
     public static void main(String[] args) {
 

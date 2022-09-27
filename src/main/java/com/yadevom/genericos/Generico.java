@@ -1,4 +1,4 @@
-package com.yadevom.genericos;
+package genericos;
 
 import java.util.List;
 

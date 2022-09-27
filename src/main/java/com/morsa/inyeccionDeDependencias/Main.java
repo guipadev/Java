@@ -4,8 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
 
+        // Solo main dependera de la clase veterinario
         // Ahora el main pasaria a depender del objeto veterinario
-        Gato miGato = new Gato(4, 8, new Veterinario());
+        Gato miGato = new Gato(new Veterinario(),4, 8);
 
         boolean estaSano = miGato.esUnGatoSaludable();
 

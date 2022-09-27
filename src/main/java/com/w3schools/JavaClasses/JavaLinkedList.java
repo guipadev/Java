@@ -1,4 +1,4 @@
-package com.w3schools.JavaClasses;
+package JavaClasses;
 
 // Import the LinkedList class
 import java.util.LinkedList;

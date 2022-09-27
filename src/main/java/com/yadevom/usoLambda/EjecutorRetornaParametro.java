@@ -1,4 +1,4 @@
-package com.yadevom.usoLambda;
+package usoLambda;
 
 @FunctionalInterface
 public interface EjecutorRetornaParametro {

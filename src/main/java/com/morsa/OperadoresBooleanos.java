@@ -1,6 +1,6 @@
 package com.morsa;
 
-import static com.morsa.Utils.println;
+import static Utilidades.Utils.*;
 
 public class OperadoresBooleanos {
 

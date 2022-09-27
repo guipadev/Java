@@ -1,4 +1,4 @@
-package com.yadevom.usoLambda;
+package usoLambda;
 
 /**
  * Funcionalidad añadida a partir de Java 8

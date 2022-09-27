@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/main/java/com/morsa/observer_rx_java" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/main/java/com/morsa/patronObserver_rx_java" vcs="Git" />
   </component>
 </project>

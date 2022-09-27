@@ -1,6 +1,4 @@
-package com.morsa;
-
-import static com.morsa.Utils.*;
+import static Utilidades.Utils.*;
 
 public class Comparaciones {
 

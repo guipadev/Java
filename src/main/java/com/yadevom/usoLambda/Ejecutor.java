@@ -1,4 +1,4 @@
-package com.yadevom.usoLambda;
+package usoLambda;
 
 /**
  * Una interfaz funcional es toda aquella que solamente tiene un metodo abstracto

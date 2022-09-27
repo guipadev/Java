@@ -1,4 +1,4 @@
-package com.yadevom.clasesAnonimas;
+package clasesAnonimas;
 
 public interface UsuarioServicio {
     default void crearUsuario() {}

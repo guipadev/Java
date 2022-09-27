@@ -1,4 +1,4 @@
-package com.yadevom.abstracta;
+package abstracta;
 
 public abstract class Abstracta {
 

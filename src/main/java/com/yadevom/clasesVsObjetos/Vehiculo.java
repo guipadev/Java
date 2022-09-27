@@ -1,4 +1,4 @@
-package com.yadevom.clasesVsObjetos;
+package clasesVsObjetos;
 
 public class Vehiculo {
 

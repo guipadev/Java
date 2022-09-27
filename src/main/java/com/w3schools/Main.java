@@ -1,4 +1,4 @@
-package com.w3schools;
+package w3schools;
 
 public class Main {
 

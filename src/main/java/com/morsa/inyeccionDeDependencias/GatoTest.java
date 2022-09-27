@@ -1,20 +1,24 @@
 package com.morsa.inyeccionDeDependencias;
 
-public class GatoTest {
+import org.mockito.Mockito;
+import static org.mockito.Mockito.when;
 
+public class GatoTest {
     public static void main(String[] args) {
-        /*
+
         Veterinario vet = Mockito.mock(Veterinario.class);
-        Gato miGato = new Gato(1, 5);
+
+        Gato unGato = new Gato(vet, 1, 5);
+        // when para falsear el metodo diagnosticar
         when(vet.diagnosticar(unGato)).thenReturn(true);
 
         assert unGato.esUnGatoSaludable();  // falla si es false
 
-        // Prueba 2
-        Gato unGatoViejo = new Gato(16, 5);
-        when(vet.diagnosticar(unGatoViejo)).thenReturn(true);
+        Gato unGatoMuyViejo = new Gato(vet,16, 5);
+        when(vet.diagnosticar(unGatoMuyViejo)).thenReturn(true);
 
-        assert unGatoViejo.esUnGatoSaludable();
-         */
+        assert unGatoMuyViejo.esUnGatoSaludable();
+
+
     }
 }

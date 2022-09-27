@@ -2,7 +2,7 @@
 
 import static Utilidades.Utils.*;
 
-public class Booleanos {
+public class BooleanosIfElse {
 
     public static void main(String[] args) {
 

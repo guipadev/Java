@@ -1,4 +1,4 @@
-package com.yadevom.arrayVsArrayList;
+package arrayVsArrayList;
 
 import java.util.ArrayList;
 

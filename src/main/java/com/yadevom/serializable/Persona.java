@@ -1,4 +1,4 @@
-package com.yadevom.serializable;
+package serializable;
 
 import java.io.Serializable;
 

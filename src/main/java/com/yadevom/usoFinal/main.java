@@ -1,4 +1,4 @@
-package com.yadevom.usoFinal;
+package usoFinal;
 
 public class main {
 

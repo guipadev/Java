@@ -1,4 +1,4 @@
-package com.yadevom.mapPorFor;
+package mapPorFor;
 
 import java.util.ArrayList;
 import java.util.Arrays;

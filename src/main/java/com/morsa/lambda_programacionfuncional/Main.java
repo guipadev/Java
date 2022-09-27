@@ -1,4 +1,4 @@
-package com.morsa.lambda_programacionfuncional;
+package lambda_programacionfuncional;
 
 import java.util.Arrays;
 

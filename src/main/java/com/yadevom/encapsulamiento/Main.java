@@ -1,4 +1,4 @@
-package com.yadevom.encapsulamiento;
+package encapsulamiento;
 
 
 // Todos los datos sencibles esten oculto a los usuarios
