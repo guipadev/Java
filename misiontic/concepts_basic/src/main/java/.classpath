@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="08_Clases_POO"/>
+	<classpathentry kind="src" path="08_POO_salachat"/>
+	<classpathentry kind="src" path="13_PruebasUnitarias_JUnit/src/main/java"/>
+	<classpathentry kind="src" path="13_PruebasUnitarias_JUnit/src/test/java"/>
+	<classpathentry kind="src" path="Repaso_01"/>
+	<classpathentry kind="src" path="RETO_1_ Entendiendo los sentimientos de Groot"/>
+	<classpathentry kind="src" path="RETO_2_ Inventario de Vehiculos"/>
+	<classpathentry kind="src" path="RETO_3_ Facturación Concesionario"/>
+	<classpathentry kind="src" path="TipsReto2"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
