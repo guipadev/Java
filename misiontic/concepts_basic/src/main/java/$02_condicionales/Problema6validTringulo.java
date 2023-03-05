@@ -6,16 +6,16 @@ package $02_condicionales;
 
 import java.util.Scanner;
 
-public class Problema6 {
+public class Problema6validTringulo {
     
     Scanner lector = new Scanner(System.in);
 
     public static void main(String[] args){
 
-        Problema6 solucion = new Problema6();
+        Problema6validTringulo solucion = new Problema6validTringulo();
     }
 
-    public Problema6(){
+    public Problema6validTringulo(){
         int a = 0, b = 0, c = 0;
         
         System.out.println("Ingrese lado A");

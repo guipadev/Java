@@ -8,7 +8,7 @@ reales.
 
 import java.util.Scanner;
 
-public class Problema2 {
+public class Problema2minReal {
 
     public static void main(String[] args) {
         int n;

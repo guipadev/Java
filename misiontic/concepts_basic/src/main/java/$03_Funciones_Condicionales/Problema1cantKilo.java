@@ -2,7 +2,7 @@ package $03_Funciones_Condicionales;
 
 import java.util.Scanner;
 
-public class Problema1 {
+public class Problema1cantKilo {
     
     public static int carneAves(int gallinas, int gallos, int pollitos) {
     int nGallinas = 6; 

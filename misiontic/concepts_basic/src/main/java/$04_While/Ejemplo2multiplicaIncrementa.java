@@ -1,6 +1,6 @@
 package $04_While;
 
-public class Ejemplo2 {
+public class Ejemplo2multiplicaIncrementa {
     
     public static void main(String[] args){
         int i = 2;

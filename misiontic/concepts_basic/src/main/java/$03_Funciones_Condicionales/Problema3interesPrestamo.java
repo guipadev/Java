@@ -7,7 +7,7 @@ package $03_Funciones_Condicionales;
 
 import java.util.Scanner;
 
-public class Problema3 {
+public class Problema3interesPrestamo {
     
     public static int interes(int meses, double monto){
         int intereses = (int) (monto * (meses * 0.02));

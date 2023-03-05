@@ -6,15 +6,15 @@ package $02_condicionales;
 
 import java.util.Scanner;
 
-public class Problema5 {
+public class Problema5valiCirculo {
     
     Scanner lector = new Scanner(System.in);
 
     public static void main(String[] args){
 
-        Problema5 solucion = new Problema5();
+        Problema5valiCirculo solucion = new Problema5valiCirculo();
     }
-    public Problema5(){
+    public Problema5valiCirculo(){
         
         double radio, area, longitud;
         

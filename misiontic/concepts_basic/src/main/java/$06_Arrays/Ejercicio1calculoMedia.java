@@ -7,7 +7,7 @@ package $06_Arrays;
 
 import java.util.Scanner;
 
-class Ejercicio1 {
+class Ejercicio1calculoMedia {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

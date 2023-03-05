@@ -6,7 +6,7 @@ package $02_condicionales;
 
 import java.util.Scanner;
 
-public class Problema2 {
+public class Problema2asciiParImpar {
 
     public static void main(String[] args) {
 

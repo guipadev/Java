@@ -7,7 +7,7 @@ package $04_While;
 
 import java.util.Scanner;
 
-public class Problema3 {
+public class Problema3bucleAscii {
     
     public static void main(String[] args) {
         

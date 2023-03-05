@@ -1,13 +1,13 @@
 package $06_Arrays;
 
 /*
-Un programa completo en Java que permite calcular el cubo de las componentes de un arreglo obtenido a partir
-del archivo presentado anteriormente es:
+Un programa completo en Java que permite calcular el cubo de las componentes de un
+arreglo obtenido a partir del archivo presentado anteriormente es:
 */
 
 import java.util.Scanner;
 
-class Ejemplo2 {
+class Ejemplo2calcularCubo {
 
     public static void main(String[] args) {
         //Crear/Leer arreglo

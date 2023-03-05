@@ -6,7 +6,7 @@ package $04_While;
 
 import java.util.Scanner;
 
-public class Ejercicio1 {
+public class Ejercicio1hallaNumCuadrado {
     
     public static void main(String[] args) {
 
@@ -20,10 +20,10 @@ public class Ejercicio1 {
 
         System.out.println("----------- Ejemplo con FOR ------------");
 
-        Ejercicio1 solucion = new Ejercicio1();
+        Ejercicio1hallaNumCuadrado solucion = new Ejercicio1hallaNumCuadrado();
     }
 
-    Ejercicio1() {
+    Ejercicio1hallaNumCuadrado() {
         Scanner leer = new Scanner(System.in);
         int n, i, j;
         System.out.println("Ingrese cantidad # a evaluar");

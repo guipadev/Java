@@ -8,7 +8,7 @@ Considera la primera posición del array (posición 0) como par.
 */
 import java.util.Scanner;
 
-class Ejercicio2 {
+class Ejercicio2mediaPares {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

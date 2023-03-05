@@ -4,9 +4,7 @@ ciclo.
  */
 package $04_While;
 
-import java.util.Scanner;
-
-public class Problema1 {
+public class Problema1buclefinito {
     
     public static void main(String [] args){
         int i = 7;  

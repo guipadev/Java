@@ -6,7 +6,7 @@ package $02_condicionales;
 
 import java.util.Scanner;
 
-public class Problema3 {
+public class Problema3charDigito {
     
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);

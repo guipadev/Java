@@ -1,11 +1,12 @@
 /*
-Modele mediante una función matemática y desarrolle un algoritmo en Java con ciclos que permita hallar la posición del mínimo de un vector de números reales.
+Modele mediante una función matemática y desarrolle un algoritmo en Java con ciclos
+que permita hallar la posición del mínimo de un vector de números reales.
 */
 package $06_Arrays;
 
 import java.util.Scanner;
 
-public class Problema1 {
+public class Problema1posicionMin {
 
     public static void main(String[] args) {
 

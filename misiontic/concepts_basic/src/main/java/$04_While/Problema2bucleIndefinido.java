@@ -3,7 +3,7 @@ Diseñe un algoritmo que involucre un ciclo y que se ejecute indefinidamente.
  */
 package $04_While;
 
-public class Problema2 {
+public class Problema2bucleIndefinido {
     
     public static void main(String [] args){
         int i = 7;  

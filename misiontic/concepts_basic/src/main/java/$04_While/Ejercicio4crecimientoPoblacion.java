@@ -4,7 +4,7 @@ Las tasas de crecimiento anual de la población serán de 2% y 3% respectivament
 Desarrollar un algoritmo para informar en que año la población del país B superará a la de A.
  */
 package $04_While;
-public class Ejercicio4 {
+public class Ejercicio4crecimientoPoblacion {
     
     public static void main(String[] args){
         

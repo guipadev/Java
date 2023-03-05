@@ -4,7 +4,7 @@ seguidamente otro listado con los números pares desde 2 hasta 1000.
  */
 package $04_While;
 
-public class Ejercicio2 {
+public class Ejercicio2paresImpares {
 
     public static void main(String[] args) {
         int i, j;

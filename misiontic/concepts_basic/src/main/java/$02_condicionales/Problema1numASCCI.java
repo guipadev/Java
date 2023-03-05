@@ -6,7 +6,7 @@ package $02_condicionales;
 
 import java.util.Scanner;
 
-public class Problema1 {
+public class Problema1numASCCI {
     
     public static int numeroAscii(int numero){
         int numeroEvaluar = numero;

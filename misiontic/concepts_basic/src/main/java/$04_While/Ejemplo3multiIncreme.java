@@ -1,6 +1,6 @@
 package $04_While;
 
-public class Ejemplo3 {
+public class Ejemplo3multiIncreme {
     
     public static void main(String [] args){
         int i = 2;  // inicializa a i en 2

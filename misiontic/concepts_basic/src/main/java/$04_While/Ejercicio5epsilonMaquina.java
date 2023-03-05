@@ -11,7 +11,7 @@ package $04_While;
 
 import java.util.Scanner;
 
-public class Ejercicio5 {
+public class Ejercicio5epsilonMaquina {
 
     public static void main(String[] args) {
 

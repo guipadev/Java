@@ -8,7 +8,7 @@ package $03_Funciones_Condicionales;
 
 import java.util.Scanner;
 
-public class Problema4 {
+public class Problema4hallarAumentoContagio {
     
     public static int calculoContagio(int numeroDias, int numeroContagioActual){
         

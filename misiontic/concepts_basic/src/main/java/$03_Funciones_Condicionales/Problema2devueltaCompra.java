@@ -8,7 +8,7 @@ package $03_Funciones_Condicionales;
 
 import java.util.Scanner;
 
-public class Problema2 {
+public class Problema2devueltaCompra {
     
     public static int vueltas(int cPanes, int cLeche, int cHuevos, int dinero) {
     int pan = 300; 

@@ -1,7 +1,7 @@
 package $06_Arrays;
 
 import java.util.Scanner;
-public class Ejemplo3 {
+public class Ejemplo3promedioNum {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
