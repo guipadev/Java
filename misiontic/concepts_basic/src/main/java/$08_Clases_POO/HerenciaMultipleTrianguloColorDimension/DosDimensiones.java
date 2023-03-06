@@ -1,4 +1,4 @@
-package Herencia_Multiple;
+package $08_Clases_POO.HerenciaMultipleTrianguloColorDimension;;
 
 public class DosDimensiones {
 
@@ -7,18 +7,19 @@ public class DosDimensiones {
 
     //Constructor por defecto
     DosDimensiones(){
-        base=altura=0.0;
+        base = altura = 0.0;
     }
 
     //Parametrizando constructor
     DosDimensiones(double b, double h){
-        base= b;
-        altura= h;
+        base = b;
+        altura = h;
     }
 
     //Construir objeto con misma base y altura
     DosDimensiones(double x){
-        base=altura=x;
+
+        base = altura = x;
     }
 
     //Métodos de acceso para base y altura
@@ -39,6 +40,7 @@ public class DosDimensiones {
     }
 
     void mostrarDimension(){
-        System.out.println("La base y la altura son: "+base+" y "+altura);
+
+        System.out.println("La base y la altura son: " + base + " y " + altura);
     }
 }

@@ -1,4 +1,4 @@
-package IMC;
+package $08_Clases_POO.IMC;
 
 public class Propiedad {
 

@@ -1,4 +1,4 @@
-package POO;
+package $08_Clases_POO;
 /**
  *Crear la clase Contraseña que tenga como atributos Longitud (por defecto será 8) y Contraseña (String)
  * El constructor debe recibir la longitud y generar una contraseña aleatoria con dicha longitud.

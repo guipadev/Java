@@ -1,22 +1,21 @@
-package IMC;
-
+package $08_Clases_POO.IMC;;
 public class Persona {
 
     //Atributos
     //Los atributos se podrian inicializar pero NO, es mala practica
     private String nombre;
-     int edad;
-     char genero;
-     double peso;
-     double altura;
-     Propiedad[] propiedades;
+    int edad;
+    char genero;
+    double peso;
+    double altura;
+    Propiedad[] propiedades;
 
-    //Mostrar u obtener valor del atributo privado
+    // Mostrar u obtener valor del atributo privado
     public String getNombre() {
         return nombre;
     }
 
-    //Permite asignar un valor a dicho atributo privado
+    // Permite asignar un valor a dicho atributo privado
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -31,7 +30,8 @@ public class Persona {
         propiedades = new Propiedad[10];
     }
 
-    //No hay necesidad de colocar atributos a las funciones ya que se cuentan la informacion ya establecida
+    // No hay necesidad de colocar atributos a las funciones ya que se cuentan
+    // la informacion ya establecida
     public double calcularIMC(){
         return this.peso / this.altura * this.altura;
     }
