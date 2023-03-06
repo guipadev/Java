@@ -1,4 +1,5 @@
-package $08_Clases_POO;;
+package $08_Clases_POO.gamePacMan;
+
 /**
  Considere el videojuego PacMan (1980). Se creará una simulación del personaje y el tablero.
  Para ello es necesario crear dos clases:
@@ -26,6 +27,32 @@ package $08_Clases_POO;;
  Este método obtendrá la puntuación del PacMan y fijará el nivel actual dependiendo de la cantidad de puntos que haya encontrado.
  (Por ejemplo, 57 puntos equivalen al nivel 2, 75 puntos al nivel 3, etc).
  **/
+public class Main {
+    /**
+     * En este Main creamos un objeto PacMan con valores predeterminados y un objeto Tablero
+     * que lo contiene. Luego, hacemos que el personaje coma algunas bolitas y sume puntos,
+     * y comprobamos el nivel actual del tablero llamando al método comprobarNivelActual().
+     * Finalmente, imprimimos la información del personaje y del tablero en la consola.
+     */
+    public static void main(String[] args) {
+        PacMan pacman = new PacMan("Amarillo", 0, 3);
+        Tablero tablero = new Tablero(pacman);
 
-public class PacMan {
+        // Hacemos que el personaje coma algunas bolitas y sume puntos
+        pacman.sumarPuntuacion();
+        pacman.sumarPuntuacion();
+        pacman.sumarPuntuacion();
+
+        // Comprobamos el nivel actual del tablero
+        tablero.comprobarNivelActual();
+
+        // Imprimimos la información del personaje y del tablero
+        System.out.println("Personaje:");
+        System.out.println("- Color: " + pacman.getColor());
+        System.out.println("- Puntuación: " + pacman.obtenerPuntuacion());
+        System.out.println("- Vidas: " + pacman.getVidas());
+
+        System.out.println("Tablero:");
+        System.out.println("- Nivel actual: " + tablero.getNivel());
+    }
 }
