@@ -1,4 +1,4 @@
-package Colecciones_EstructuraDatos;
+package $12_Colecciones_EstructuraDatos;
 
 import java.util.ArrayList;
 

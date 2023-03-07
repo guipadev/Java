@@ -1,9 +1,7 @@
-//package POO_salachat;
+package $08_POO_salachat;
 
 import java.util.Date;
-
 public class Mensaje {
-
     private String texto;
     private Date fecha;
     private boolean visto;
@@ -57,7 +55,4 @@ public class Mensaje {
     public void setBorrado(boolean borrado) {
         this.borrado = borrado;
     }
-
-
-
 }

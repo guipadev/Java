@@ -1,4 +1,4 @@
-package Colecciones_EstructuraDatos;
+package $12_Colecciones_EstructuraDatos;
 
 /**
  * Rotar los elementos de un ArrayList en Java

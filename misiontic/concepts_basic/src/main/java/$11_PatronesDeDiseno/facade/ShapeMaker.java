@@ -1,15 +1,14 @@
-package PatronesDeDiseno.facade;
+package $11_PatronesDeDiseno.facade;
 
-import PatronesDeDiseno.factory.Circle;
-import PatronesDeDiseno.factory.Rectangle;
-import PatronesDeDiseno.factory.Shape;
-import PatronesDeDiseno.factory.Square;
+import $11_PatronesDeDiseno.factory.Circle;
+import $11_PatronesDeDiseno.factory.Rectangle;
+import $11_PatronesDeDiseno.factory.Shape;
+import $11_PatronesDeDiseno.factory.Square;
 
 /**Patron facade - fachada
- * Solo ve lo que hay en la fachada
- * Esconder la logica que esta por detras
- * Es bueno tener fachadas para facilitar el uso de ciertas clases, metodos o inclusive una aplicacion completa
- * procedimiento o calculo complejo
+ * Solo ve lo que hay en la fachada. Esconder la logica que esta por detras.
+ * Es bueno tener fachadas para facilitar el uso de ciertas clases, metodos
+ * o inclusive una aplicacion completa procedimiento o calculo complejo
  * **/
 
 public class ShapeMaker {
@@ -27,13 +26,10 @@ public class ShapeMaker {
     public void drawCircle(){
         circle.draw();
     }
-
     public void drawRectangle(){
         rectangle.draw();
     }
-
     public void drawSquare(){
         square.draw();
     }
-
 }

@@ -1,4 +1,4 @@
-package Colecciones_EstructuraDatos.ArrayList_de_Objetos;
+package $12_Colecciones_EstructuraDatos.ArrayList_de_Objetos;
 
 /**
  * Crea un ArrayList de Objetos de tipo Coche.

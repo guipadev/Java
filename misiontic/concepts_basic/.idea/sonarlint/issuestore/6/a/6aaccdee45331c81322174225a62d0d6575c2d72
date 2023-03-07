@@ -1,0 +1,17 @@
+
+€
+java:S1488"eImmediately return this expression instead of assigning it to the temporary variable "textoCompleto".(•ÕÍŒıÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ã¸ñ
+u
+java:S11490"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ÔèÉì
+S	java:S106"9Replace this use of System.out or System.err by a logger.(âßòùÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ò…­‘
+S	java:S106 "9Replace this use of System.out or System.err by a logger.(şıí‰ûÿÿÿÿ
+S	java:S106""9Replace this use of System.out or System.err by a logger.(âÚ•“øÿÿÿÿ
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(¦ÍŠìüÿÿÿÿ
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(ó··óûÿÿÿÿ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(Ë¥ş³ÿÿÿÿÿ
+S	java:S106("9Replace this use of System.out or System.err by a logger.(ä´ã®øÿÿÿÿ
+S	java:S106-"9Replace this use of System.out or System.err by a logger.(œôÊûùÿÿÿÿ
+N	java:S106/"9Replace this use of System.out or System.err by a logger.(Ã…²
+N	java:S1062"9Replace this use of System.out or System.err by a logger.(æ½ˆ©

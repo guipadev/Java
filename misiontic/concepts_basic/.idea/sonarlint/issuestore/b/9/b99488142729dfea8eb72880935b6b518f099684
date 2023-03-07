@@ -1,0 +1,12 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(†Ë×æþÿÿÿÿ
+<
+java:S1659"!Declare "neg" on a separate line.(×‚ÑÌûÿÿÿÿ
+;
+java:S1659"%Declare "sumaNeg" on a separate line.(†·ç§
+S	java:S106"9Replace this use of System.out or System.err by a logger.(óÃÃªûÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(²»ÿÄ
+N	java:S106/"9Replace this use of System.out or System.err by a logger.(ÉÀ—Ñ
+M	java:S1061"9Replace this use of System.out or System.err by a logger.(Ö·˜
+S	java:S1065"9Replace this use of System.out or System.err by a logger.(•Í°±úÿÿÿÿ
+S	java:S1067"9Replace this use of System.out or System.err by a logger.(Ö–õÆøÿÿÿÿ

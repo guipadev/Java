@@ -1,0 +1,12 @@
+
+i
+java:S1192"LDefine a constant instead of duplicating this literal "Es fuerte: " 3 times.(¿Óş¿8ÂŒÖ¥ë0
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µÌæ48ÃŒÖ¥ë0
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾÷º8ÃŒÖ¥ë0
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÃßÙ`
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(üİ«©ıÿÿÿÿ8ÉŒÖ¥ë0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(¿Óş¿8ÉŒÖ¥ë0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(üİ«©ıÿÿÿÿ8ÊŒÖ¥ë0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(¿Óş¿8ÊŒÖ¥ë0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(‘¤ù”8ËŒÖ¥ë0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(§ïùÎ8ËŒÖ¥ë0

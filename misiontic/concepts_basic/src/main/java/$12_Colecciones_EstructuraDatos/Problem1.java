@@ -1,4 +1,4 @@
-package Colecciones_EstructuraDatos;
+package $12_Colecciones_EstructuraDatos;
 
 /**
  * Dada una lista de números, eliminar los duplicados e imprimir la lista

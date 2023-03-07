@@ -1,4 +1,4 @@
-package Colecciones_EstructuraDatos.listaObjetos;
+package $12_Colecciones_EstructuraDatos.listaObjetos;
 
 public class Persona {
 

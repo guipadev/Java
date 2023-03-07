@@ -1,4 +1,4 @@
-package PatronesDeDiseno.decorator;
+package $11_PatronesDeDiseno.decorator;
 
 public class RedShapeDecorator extends ShapeDecorator{
 

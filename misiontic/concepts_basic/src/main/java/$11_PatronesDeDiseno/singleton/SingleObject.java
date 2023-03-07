@@ -1,4 +1,4 @@
-package PatronesDeDiseno.singleton;
+package $11_PatronesDeDiseno.singleton;
 
 /***
  * Patron Singleton

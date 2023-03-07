@@ -1,13 +1,13 @@
-package PatronesDeDiseno.observer;
+package $11_PatronesDeDiseno.observer;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Patron Observador
- * Nos permite notificar esta la mayor utilidad
+ * Nos permite notificar, esta la mayor utilidad
  * Tenemos una tarea que puede ser observada o que tiene asociado otros objetos de otras clases
- * muchos objetos de otras clases Y cuando en esa tarea pase algo, yo voy a tener la necesidad de
+ * muchos objetos de otras clases. Y cuando en esa tarea pase algo, yo voy a tener la necesidad de
  * notificarle a todos los observadores, de hacer algo para informarle a todos los asociados
  *
  * Un observador solo puede estar pendiente de un estado/clase, no de muchos
@@ -48,10 +48,9 @@ public class Subject {
         return state;
     }
 
-    public void setState(int state) { //cuando hay un nuevo valor en el estado notifica a los observadores
+    //cuando hay un nuevo valor en el estado notifica a los observadores
+    public void setState(int state) {
         this.state = state;
         notifyObservers();
     }
-
-
 }

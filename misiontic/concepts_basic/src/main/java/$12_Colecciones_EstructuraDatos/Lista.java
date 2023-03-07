@@ -1,6 +1,6 @@
-package Colecciones_EstructuraDatos;
+package $12_Colecciones_EstructuraDatos;
 
-import PatronesDeDiseno.factory.Circle;
+import $11_PatronesDeDiseno.factory.Circle;
 
 import java.sql.Array;
 import java.util.*;

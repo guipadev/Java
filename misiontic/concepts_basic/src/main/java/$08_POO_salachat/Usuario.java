@@ -1,3 +1,4 @@
+package $08_POO_salachat;
 public class Usuario {
 
     private String nombre;
@@ -64,6 +65,4 @@ public class Usuario {
     public void setContrasena(String contrasena) {
         this.contrasena = contrasena;
     }
-
-
 }

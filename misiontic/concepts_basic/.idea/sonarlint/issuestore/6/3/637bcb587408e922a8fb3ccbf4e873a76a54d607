@@ -1,0 +1,7 @@
+
+|
+java:S1488"fImmediately return this expression instead of assigning it to the temporary variable "totalContagios".(Í¥Â™
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÓÓÞ¨
+S	java:S106"9Replace this use of System.out or System.err by a logger.(éµžÔýÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(À¼Øý
+S	java:S106 "9Replace this use of System.out or System.err by a logger.(ú¤¹•ýÿÿÿÿ

@@ -1,4 +1,5 @@
-package PatronesDeDiseno.observer;
+package $11_PatronesDeDiseno.observer;
+
 //Clase que va a simular los observadores
 
 public class Observer {

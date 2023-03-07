@@ -1,13 +1,10 @@
+package $08_POO_salachat;
+
 import java.util.Date;
-
 public class UsuarioNormal extends Usuario{
-
     public UsuarioNormal(String nombre, String email, String identificacion, String contrasena) {
         super(nombre, email, identificacion, contrasena);
     }
-
-
-
     @Override
     public void chatear(Usuario u, String mensaje) {
 
@@ -20,5 +17,4 @@ public class UsuarioNormal extends Usuario{
         Mensaje m = new Mensaje(mensaje, new Date(), this);
         c.mostrarMensaje(m);
     }
-
 }

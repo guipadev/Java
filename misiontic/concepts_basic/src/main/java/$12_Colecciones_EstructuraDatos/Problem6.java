@@ -1,4 +1,4 @@
-package Colecciones_EstructuraDatos;
+package $12_Colecciones_EstructuraDatos;
 
 /*
 * Calcular la cadena más larga en un ArrayList de Strings

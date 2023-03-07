@@ -17,14 +17,18 @@ package $08_Clases_POO.gamePacMan;
  - restarVida(): Cada vez que se llame este método, se restará -1 a las vidas.
  - sigueVivo(): Devolverá un booleano indicando si aún le quedan vidas para seguir jugando.
 
- Para la clase Tablero se requerirán dos atributos: el personaje (será un objeto de tipo PacMan) y el nivel.
+ Para la clase Tablero se requerirán dos atributos: el personaje (será un objeto de tipo PacMan)
+ y el nivel.
 
  El constructor debe recibir el personaje
- (el cual debe haber sido creado anteriormente y pasarse como un parámetro en el constructor de la clase) e inicializar el nivel en 0.
+ (el cual debe haber sido creado anteriormente y pasarse como un parámetro en el constructor de la clase)
+ e inicializar el nivel en 0.
 
  Dicha clase tendrá el siguiente método:
- - comprobarNivelActual(): El funcionamiento es simple: cada 25 puntos del personaje equivalen a 1 nivel en el tablero.
- Este método obtendrá la puntuación del PacMan y fijará el nivel actual dependiendo de la cantidad de puntos que haya encontrado.
+ - comprobarNivelActual(): El funcionamiento es simple: cada 25 puntos del personaje
+ equivalen a 1 nivel en el tablero.
+ Este método obtendrá la puntuación del PacMan y fijará el nivel actual dependiendo de
+ la cantidad de puntos que haya encontrado.
  (Por ejemplo, 57 puntos equivalen al nivel 2, 75 puntos al nivel 3, etc).
  **/
 public class Main {

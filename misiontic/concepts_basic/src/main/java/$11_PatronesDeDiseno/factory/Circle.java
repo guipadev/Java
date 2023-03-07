@@ -1,4 +1,4 @@
-package PatronesDeDiseno.factory;
+package $11_PatronesDeDiseno.factory;
 
 public class Circle implements Shape{
 

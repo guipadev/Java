@@ -1,4 +1,4 @@
-package Colecciones_EstructuraDatos.listaObjetos;
+package $12_Colecciones_EstructuraDatos.listaObjetos;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

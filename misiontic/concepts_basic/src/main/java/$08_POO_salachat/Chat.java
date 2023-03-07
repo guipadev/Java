@@ -1,6 +1,4 @@
-//package POO_salachat;
-
-
+package $08_POO_salachat;
 public class Chat {
 
     private Mensaje[] mensajes;
