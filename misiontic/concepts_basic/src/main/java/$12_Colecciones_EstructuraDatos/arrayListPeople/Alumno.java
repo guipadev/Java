@@ -1,4 +1,4 @@
-package $12_Colecciones_EstructuraDatos.listaObjetos;
+package $12_Colecciones_EstructuraDatos.arrayListPeople;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -77,8 +77,8 @@ public class Alumno {
     }
 
     public String formatearFechaDeNacimiento(){
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-        String fechaFormateada = sdf.format(fechaNacimiento);
+        SimpleDateFormat fecha = new SimpleDateFormat("dd/MM/yyyy");
+        String fechaFormateada = fecha.format(fechaNacimiento);
         return fechaFormateada;
     }
 
@@ -90,4 +90,3 @@ public class Alumno {
                 '}';
     }
 }
-

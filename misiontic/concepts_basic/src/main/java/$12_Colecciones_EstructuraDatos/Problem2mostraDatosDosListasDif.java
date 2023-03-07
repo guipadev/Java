@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * tamaño, e imprimir los números se encuentran en ambas listas.
  * */
 
-public class Problema2 {
+public class Problem2mostraDatosDosListasDif {
 
     public static void main(String[] args) {
 

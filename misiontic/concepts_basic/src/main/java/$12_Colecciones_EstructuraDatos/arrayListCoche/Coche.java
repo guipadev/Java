@@ -1,4 +1,4 @@
-package $12_Colecciones_EstructuraDatos.ArrayList_de_Objetos;
+package $12_Colecciones_EstructuraDatos.arrayListCoche;
 
 /**
  * Crea un ArrayList de Objetos de tipo Coche.
@@ -51,16 +51,18 @@ public class Coche {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("\nMatrícula: ");
-        sb.append(matricula);
-        sb.append("\nMarca: ");
-        sb.append(marca);
-        sb.append("\nModelo: ");
-        sb.append(modelo);
-        sb.append("\nKm: ");
-        sb.append(Km);
-        return sb.toString();
+        StringBuilder data = new StringBuilder();
+
+        data.append("\nMatrícula: ");
+        data.append(matricula);
+        data.append("\nMarca: ");
+        data.append(marca);
+        data.append("\nModelo: ");
+        data.append(modelo);
+        data.append("\nKm: ");
+        data.append(Km);
+
+        return data.toString();
     }
 }
 

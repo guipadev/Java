@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Problem1 {
+public class Problem1eliminarNumeroDuplicado {
 
     public static void main(String[] args) {
 
@@ -23,10 +23,17 @@ public class Problem1 {
         numEntero.add(2);
         numEntero.add(1);
         numEntero.add(3);
+
+        System.out.println("--------------- LISTA INICIAL ---------------");
+
         System.out.println("Lista Inicial \n" + numEntero);
-        //Set<Integer> validacion = new HashSet<Integer>(numEntero);
-        //numEntero.clear();
-        //numEntero.addAll(validacion);
-        //System.out.println("Lista Final depurada \n" + numEntero);
+
+        Set<Integer> validacion = new HashSet<Integer>(numEntero);
+
+        numEntero.clear();
+
+        numEntero.addAll(validacion);
+
+        System.out.println("--------------- LISTA DEPURADA ---------------\n" + numEntero);
     }
 }

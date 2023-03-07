@@ -1,7 +1,5 @@
-package $12_Colecciones_EstructuraDatos.listaObjetos;
-
+package $12_Colecciones_EstructuraDatos.arrayListPeople;
 public class Persona {
-
     private String nombre;
     int edad;
     int CI;

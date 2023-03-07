@@ -1,11 +1,13 @@
-package $12_Colecciones_EstructuraDatos.listaObjetos;
+package $12_Colecciones_EstructuraDatos.arrayListPeople;
 
 import java.util.ArrayList;
 
 public class Main {
 
     public static void main(String[] args) {
+
         ArrayList<Alumno> listaDeAlmunos = new ArrayList<>();
+
         Alumno alu1 = new Alumno("Cristian", 25);
         Alumno alu2 = new Alumno("Jose", 24);
 

@@ -15,32 +15,43 @@ package $12_Colecciones_EstructuraDatos;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Problem5 {
+public class Problem5desplazarElementos {
 
     public static void main(String[] args) {
         ArrayList<Integer> A = leerArray();
+
         mostrar(A);
+
         //utilizando el método clásico
         desplazarDerecha(A);
+
         mostrar(A);
+
         //utilizando solo los métodos de ArrayList
         desplazarDerecha2(A);
+
         mostrar(A);
     }
 
     //pedir por teclado los valores del ArrayList
     public static ArrayList<Integer> leerArray() {
         Scanner sc = new Scanner(System.in);
+
         ArrayList<Integer> numeros = new ArrayList();
+
         int N;
+
         do {
             System.out.print("Número de elementos del array (>0): ");
             N = sc.nextInt();
         } while (N <= 0);
+
         for (int i = 0; i < N; i++) {
             System.out.print("elemento[" + i + "]= ");
+
             numeros.add(sc.nextInt());
         }
+
         return numeros;
     }
 
@@ -48,8 +59,12 @@ public class Problem5 {
     //desplazamos todos los elementos una posición a la derecha
     //finalmente guardamos en el primer elemento el valor guardado en el auxiliar
     public static void desplazarDerecha(ArrayList<Integer> a) {
+        System.out.println("------------------------ DESPLAZAR A LA DERECHA -> ------------------------");
+
         int i;
+
         int aux = a.get(a.size() - 1); //guardar el último elemento en una variable
+
         for (i = a.size() - 1; i > 0; i--) { //desplazar los elementos
             a.set(i, a.get(i - 1)); //a cada elemento se le asigna el anterior
         }
@@ -61,6 +76,7 @@ public class Problem5 {
     //insertamos este elemento al principio
     //eliminamos el último elemento
     public static void desplazarDerecha2(ArrayList<Integer> a) {
+        System.out.println("------------------------ DESPLAZAR A LA DERECHA -> -> ------------------------");
         int aux = a.get(a.size() - 1);
         a.add(0, aux);
         a.remove(a.size() - 1);
