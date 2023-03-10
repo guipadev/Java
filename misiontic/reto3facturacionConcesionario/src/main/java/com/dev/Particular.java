@@ -1,5 +1,7 @@
+package com.dev;
+
 public class Particular extends Vehiculo{
-    
+
     private String Color;
 
     public Particular() {
@@ -20,8 +22,8 @@ public class Particular extends Vehiculo{
         this.Color = Color;
     }
 
-    
-      
+
+
     @Override
     public String toString() {
         return "\tVehículo Particular - " + super.toString() + "\tColor: " + Color;

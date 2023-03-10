@@ -1,5 +1,7 @@
+package com.dev;
+
 public class Comercial extends Vehiculo {
-    
+
     private int cargaMax;
 
     public Comercial() {
@@ -23,13 +25,13 @@ public class Comercial extends Vehiculo {
     public void setCargaMax(int cargaMax) {
         this.cargaMax = cargaMax;
     }
-    
-    
 
-    
+
+
+
     @Override
     public String toString() {
         return "\tVehículo Comercial - " + super.toString() + "\tCarga máxima: " + cargaMax + "kg\n";
-        
+
     }
 }
