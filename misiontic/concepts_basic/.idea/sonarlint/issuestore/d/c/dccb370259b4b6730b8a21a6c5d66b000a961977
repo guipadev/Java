@@ -1,0 +1,19 @@
+
+E
+java:S3740"/Provide the parametrized type for this generic.(ãû™ 
+†
+java:S13198"kThe type of "datosAltura" should be an interface such as "List" rather than the implementation "ArrayList".(Éù„÷ûÿÿÿÿ
+|
+java:S1319K"aThe type of "a" should be an interface such as "List" rather than the implementation "ArrayList".(ôîºÊúÿÿÿÿ
+ƒ
+java:S1319X"aThe type of "a" should be an interface such as "List" rather than the implementation "ArrayList".(ƒ›„Îûÿÿÿÿ8ª€Ñäë0
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ô–ô­ÿÿÿÿÿ
+S	java:S106/"9Replace this use of System.out or System.err by a logger.(ë‚ƒÁüÿÿÿÿ
+S	java:S106A"9Replace this use of System.out or System.err by a logger.(ÈÉÒ´øÿÿÿÿ
+C
+java:S1659Y"&Declare "inferior" on a separate line.(Øãñá8ù€Ñäë0
+U	java:S106["9Replace this use of System.out or System.err by a logger.(½Ž¢³8ú€Ñäë0
+Z	java:S106]"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ8ú€Ñäë0
+Z	java:S106f"9Replace this use of System.out or System.err by a logger.(µ‡–Ÿýÿÿÿÿ8û€Ñäë0
+Z	java:S106h"9Replace this use of System.out or System.err by a logger.(Œ™±¯üÿÿÿÿ8û€Ñäë0
+Z	java:S106j"9Replace this use of System.out or System.err by a logger.(°ª©¸øÿÿÿÿ8ü€Ñäë0

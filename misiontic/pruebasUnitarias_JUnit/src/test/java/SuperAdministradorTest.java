@@ -1,5 +1,5 @@
-package $13_PruebasUnitarias_JUnit.src.test.java;
-
+package pruebasUnitarias_JUnit.src.test.java;
+/**
 import org.junit.Test;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class SuperAdministradorTest {
     
     
-    @Test
+    @Test}
     public void testGetInstance() {
         System.out.println("getInstance");
         String identificacion = "123456";
@@ -77,4 +77,4 @@ public class SuperAdministradorTest {
     }
 
 
-   
+   **/

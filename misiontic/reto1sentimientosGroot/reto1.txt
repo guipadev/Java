@@ -1,0 +1,33 @@
+Reto semana 1: 
+Entendiendo los sentimientos de Groot
+
+El lenguaje de Groot es muy complicado para expresar todo lo que quiere decir. 
+
+Los sentimientos tienen n capas:
+
+• Si n = 1, el sentimiento será "I am it", 
+• si n = 2 es "I am that I groot it", 
+• si n = 3 es "I am that I groot that I am it",
+• y así sucesivamente.
+
+Entrada: La cantidad n de capas
+
+Salida: Muestre la frase que Groot está tratando de decir.
+
+Ejemplo 1:
+Input   
+Output       
+1
+I am it
+
+Ejemplo 2:
+Input              
+Output
+2
+I am that I groot it
+
+Ejemplo 3:
+Input  
+Output
+3
+I am that I groot that I am it

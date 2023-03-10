@@ -1,0 +1,30 @@
+
+E
+java:S3740
+"/Provide the parametrized type for this generic.(Óû²¥
+k	java:S117$"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Î¸õØûÿÿÿÿ
+m	java:S117k"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ôä‚ï8‰×Ÿáë0
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ƒÔğ©
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Û¸ƒ¬
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Åäÿ¼úÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ìı¾µ
+X
+java:S1659""BDeclare "marca" and all following declarations on a separate line.(†Òç
+Y
+java:S1659$">Declare "i" and all following declarations on a separate line.(Î¸õØûÿÿÿÿ
+S	java:S106+"9Replace this use of System.out or System.err by a logger.(ñßğìûÿÿÿÿ
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(ƒ³Ñúÿÿÿÿ
+S	java:S1066"9Replace this use of System.out or System.err by a logger.(¢á§áúÿÿÿÿ
+S	java:S1069"9Replace this use of System.out or System.err by a logger.( Ø™ƒüÿÿÿÿ
+S	java:S106<"9Replace this use of System.out or System.err by a logger.(éİÌâüÿÿÿÿ
+N	java:S106?"9Replace this use of System.out or System.err by a logger.(¼Õ…Ç
+S	java:S106T"9Replace this use of System.out or System.err by a logger.(¨Í¹Æûÿÿÿÿ
+N	java:S106["9Replace this use of System.out or System.err by a logger.(ß™´Ì
+S	java:S106^"9Replace this use of System.out or System.err by a logger.(ï»ìŞúÿÿÿÿ
+S	java:S106b"9Replace this use of System.out or System.err by a logger.(›ñÇ‚ûÿÿÿÿ
+S	java:S106i"9Replace this use of System.out or System.err by a logger.(«§ıÿÿÿÿÿ
+S	java:S106j"9Replace this use of System.out or System.err by a logger.(—‰êûÿÿÿÿ
+N	java:S106m"9Replace this use of System.out or System.err by a logger.(’…õ”
+Z	java:S106q"9Replace this use of System.out or System.err by a logger.(›ñÇ‚ûÿÿÿÿ8ß¥´áë0
+;
+java:S1659‚"Declare "j" on a separate line.(¦¢Éëùÿÿÿÿ

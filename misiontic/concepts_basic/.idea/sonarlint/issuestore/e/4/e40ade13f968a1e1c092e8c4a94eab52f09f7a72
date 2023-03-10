@@ -1,0 +1,10 @@
+
+J
+java:S3740"/Provide the parametrized type for this generic.(Ë„ì¥úÿÿÿÿ
+}
+java:S1319"gThe type of "cadenas" should be an interface such as "List" rather than the implementation "ArrayList".(½ÜÛÖ
+}
+java:S13197"gThe type of "cadenas" should be an interface such as "List" rather than the implementation "ArrayList".(Ë‰‡ÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ô–ô­ÿÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(÷†
+N	java:S106("9Replace this use of System.out or System.err by a logger.(š¨Úû
