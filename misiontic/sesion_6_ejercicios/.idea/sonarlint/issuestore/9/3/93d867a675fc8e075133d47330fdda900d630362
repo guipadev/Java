@@ -1,0 +1,11 @@
+
+V	java:S125"<This block of commented-out lines of code should be removed.(êÜ†øÿÿÿÿ
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(øŸë¶şÿÿÿÿ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(¥…¨ªşÿÿÿÿ
+S	java:S106)"9Replace this use of System.out or System.err by a logger.(ÚĞçŠùÿÿÿÿ
+N	java:S106,"9Replace this use of System.out or System.err by a logger.(›˜ş§
+S	java:S106/"9Replace this use of System.out or System.err by a logger.(ŸúÀåúÿÿÿÿ
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(Ëª÷ıÿÿÿÿ
+N	java:S1065"9Replace this use of System.out or System.err by a logger.(âß‡®
+l
+java:S22345"VParameters to usar have the same names but not the same order as the method arguments.(âß‡®

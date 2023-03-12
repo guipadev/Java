@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0a0cf339-445b-4827-9b27-283dce0de9bb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../sesion_6_ejercicios/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sesion_6_ejercicios/src/main/java/Cubo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sesion_6_ejercicios/src/main/java/Problem1ElimaNumCeroArrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sesion_6_ejercicios/src/main/java/Problem2CalculoMaxDivisorArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../concepts_basic/src/main/java/Repaso_01/Cubo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../concepts_basic/src/main/java/Repaso_01/La_Cerca.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../concepts_basic/src/main/java/Repaso_01/Problema1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../concepts_basic/src/main/java/Repaso_01/Problema2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../concepts_basic/src/main/java/Repaso_01/PromedioNotas/Estudiante.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../concepts_basic/src/main/java/Repaso_01/PromedioNotas/ListaEstudiantes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../concepts_basic/src/main/java/Repaso_01/PromedioNotas/PromedioNotas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../concepts_basic/src/main/java/Repaso_01/Promocion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../concepts_basic/src/main/java/Repaso_01/PruebaADN.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../concepts_basic/src/main/java/Repaso_01/UtilesEscolares.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reto1inventarioCarros/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reto1inventarioCarros/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reto1inventarioCarros/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reto1inventarioCarros/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reto1inventarioCarros/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reto1inventarioCarros/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reto1inventarioCarros/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reto1inventarioCarros/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reto1inventarioCarros/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reto1inventarioCarros/src/main/java/com/dev/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reto1inventarioCarros/target/classes/com/dev/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_6_ejercicios/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../sesion_6_ejercicios/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_6_ejercicios/target/classes/UtilesEscolares.class" beforeDir="false" afterPath="$PROJECT_DIR$/../sesion_6_ejercicios/target/classes/UtilesEscolares.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2MvamSKFGzFUb4ucK9Xo1zIYayM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/yamid/Documents/Java/Java/misiontic/sesion_4_ejercicios"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a0cf339-445b-4827-9b27-283dce0de9bb" name="Changes" comment="" />
+      <created>1678650668929</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678650668929</updated>
+    </task>
+    <servers />
+  </component>
+</project>

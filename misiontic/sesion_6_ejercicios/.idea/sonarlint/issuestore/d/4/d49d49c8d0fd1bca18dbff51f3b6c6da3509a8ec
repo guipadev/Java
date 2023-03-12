@@ -1,0 +1,13 @@
+
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼Èõä8€òòºí0
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼Èõä8òòºí0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ÊôÅ ùÿÿÿÿ8Ö…òºí0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(®®àäûÿÿÿÿ8×…òºí0
+@
+java:S1659"#Declare "menor" on a separate line.(§Š—¡8»òòºí0
+K
+java:S1659".Declare "probar_siguiente" on a separate line.(¼Èõä8»òòºí0
+D
+java:S1125$"'Remove the unnecessary boolean literal.(ÁªŒ°8½òòºí0
+D
+java:S1125&"'Remove the unnecessary boolean literal.(—÷Ïè8½òòºí0

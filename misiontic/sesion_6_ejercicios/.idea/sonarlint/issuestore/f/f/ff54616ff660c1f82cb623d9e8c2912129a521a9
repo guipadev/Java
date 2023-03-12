@@ -1,0 +1,8 @@
+
+‰
+java:S4165"lRemove this useless assignment; "arregloEnteros" already holds the assigned value along all execution paths.(ŠÂ÷ˆ8åæøºí0
+Z	java:S106	"9Replace this use of System.out or System.err by a logger.(ÅÓ£Ñùÿÿÿÿ8Îì÷ºí0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ÉµõÓ8Ïì÷ºí0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Â´ùÅ8Ğì÷ºí0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ş ±†üÿÿÿÿ8çøºí0
+Z	java:S106 "9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8‚çøºí0
