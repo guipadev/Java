@@ -1,0 +1,6 @@
+
+|
+java:S1488"fImmediately return this expression instead of assigning it to the temporary variable "totalContagios".(Í¥Â™
+S	java:S106"9Replace this use of System.out or System.err by a logger.(éµžÔýÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(À¼Øý
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ú¤¹•ýÿÿÿÿ

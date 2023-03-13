@@ -1,0 +1,10 @@
+
+V
+java:S1659"ADeclare "area" and all following declarations on a separate line.(µì?
+M	java:S106"9Replace this use of System.out or System.err by a logger.(€ç(
+S	java:S106"9Replace this use of System.out or System.err by a logger.(®‰§úıÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(êœ ¼
+R
+java:S1854"<Remove this useless assignment to local variable "solucion".(àçÆµ
+C
+java:S1481"-Remove this unused "solucion" local variable.(àçÆµ

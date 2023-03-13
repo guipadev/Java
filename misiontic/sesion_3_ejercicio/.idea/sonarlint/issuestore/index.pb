@@ -1,0 +1,25 @@
+
+a
+1src/_02_condicionales/CondicionalesEnlazadas.java,2/2/22db0ab7f4d4f2ece606bb467ab99b915c49da8c
+[
++src/_02_condicionales/EstructuraSwitch.java,e/9/e924d7337d915271cad1efe355a78c9290ace4d8
+T
+$src/_02_condicionales/Problema1.java,c/1/c1593fac532e67a8de3d821a1b3f04872c58ef1c
+T
+$src/_02_condicionales/Problema2.java,0/9/09ded1de994f2d9aa7e42d2e19cbef315e21ca1c
+T
+$src/_02_condicionales/Problema3.java,1/0/10574552323a93743fab0930fb7e94052476fb87
+T
+$src/_02_condicionales/Problema4.java,7/4/74b74e2a345087908e0aacb1cd0d779dbc44af1b
+T
+$src/_02_condicionales/Problema5.java,d/9/d9af19a341e0bb5d4540f1ab23d5f5c171d8f053
+T
+$src/_02_condicionales/Problema6.java,1/9/1903b65b37ec2dd17b05db5dd76d7fb76ae9b73c
+O
+src/_02_condicionales/Real.java,b/0/b0798a26c777c91e373258b114dba4b9a26b3474
+^
+.src/_03_Funciones_Condicionales/Problema2.java,4/b/4b2ce25e95bbd93c5c8c9320a83f93e60139d9d5
+^
+.src/_03_Funciones_Condicionales/Problema3.java,3/2/32f360b141221d736b700ff1c2d1fe46cddc95d9
+^
+.src/_03_Funciones_Condicionales/Problema4.java,e/a/eab10a214508ae2c2213b562571094a852401531
