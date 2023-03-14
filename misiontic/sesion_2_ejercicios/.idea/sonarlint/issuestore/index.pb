@@ -11,3 +11,7 @@ L
 src/main/java/ValorReal.java,6/7/67c85073755f997a273e359285e61d77ba167e1b
 Q
 !src/main/java/VocalMinuscula.java,0/b/0b86d1f14a8279a48f65a26984c84ece934e9bef
+R
+"src/main/java/PruebaSeleccion.java,c/d/cd67fe0582006bdd608304f2bb28a6618de40489
+N
+src/main/java/ObtenerEdad.java,5/f/5fb3afa9da08e5bf3e2e4a86f30de8c6d8b95318
