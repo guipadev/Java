@@ -1,0 +1,14 @@
+
+†
+java:S1192"oDefine a constant instead of duplicating this literal "El usuario seleccionado no existe en la lista." 3 times.(ÜğÊã
+„
+java:S1192§"mDefine a constant instead of duplicating this literal "El grupo seleccionado no existe en la lista." 5 times.(ÕÆÎ“
+r
+java:S1192"VDefine a constant instead of duplicating this literal "TransacciÃ³n exitosa." 4 times.(•Š¨Îşÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(°›éÔøÿÿÿÿ
+O	java:S106€"9Replace this use of System.out or System.err by a logger.(¢Õú£
+O	java:S106•"9Replace this use of System.out or System.err by a logger.(ãì„Á
+O	java:S106«"9Replace this use of System.out or System.err by a logger.(ãµ–Ğ
+T	java:S106Á"9Replace this use of System.out or System.err by a logger.(½ÄÊìúÿÿÿÿ
+T
+java:S1144´"=Remove this unused private "notificarUsuariosDeGrupo" method.(‹øã¸
