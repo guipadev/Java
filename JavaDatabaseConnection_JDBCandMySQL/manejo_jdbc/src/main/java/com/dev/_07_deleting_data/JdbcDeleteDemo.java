@@ -14,24 +14,24 @@ public class JdbcDeleteDemo {
         String pass = "student";
 
         try {
-            // Get a connection to database
+            // Obtener una conexión a la base de datos
             myConn = DriverManager.getConnection(dbUrl, user, pass);
 
             // Create a statement
             myStmt = myConn.createStatement();
 
-            // Call helper method to display the employee's information
+            // Llamar al método auxiliar para mostrar la información del empleado
             System.out.println("BEFORE THE DELETE...");
             displayEmployee(myConn, "John", "Doe");
 
-            // DELETE the employee
+            // ELIMINAR el empleado
             System.out.println("\nDELETING THE EMPLOYEE: John Doe\n");
 
             int rowsAffected = myStmt.executeUpdate(
                     "delete from employees " +
                             "where last_name='Doe' and first_name='John'");
 
-            // Call helper method to display the employee's information
+            // Llamar al método auxiliar para mostrar la información del empleado
             System.out.println("AFTER THE DELETE...");
             displayEmployee(myConn, "John", "Doe");
 
@@ -49,14 +49,14 @@ public class JdbcDeleteDemo {
         ResultSet myRs = null;
 
         try {
-            // Prepare statement
+            // Preparar declaración
             myStmt = myConn
                     .prepareStatement("select last_name, first_name, email from employees where last_name=? and first_name=?");
 
             myStmt.setString(1, lastName);
             myStmt.setString(2, firstName);
 
-            // Execute SQL query
+            // Ejecutar consulta SQL
             myRs = myStmt.executeQuery();
 
             // Process result set
