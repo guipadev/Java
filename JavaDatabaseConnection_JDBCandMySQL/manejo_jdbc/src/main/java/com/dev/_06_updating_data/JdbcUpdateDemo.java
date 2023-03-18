@@ -14,26 +14,26 @@ public class JdbcUpdateDemo {
         String pass = "student";
 
         try {
-            // Get a connection to database
+            // Obtener una conexión a la base de datos
             myConn = DriverManager.getConnection(dbUrl, user, pass);
 
-            // Create a statement
+            // Crear una declaración
             myStmt = myConn.createStatement();
 
-            // Call helper method to display the employee's information
-            System.out.println("BEFORE THE UPDATE...");
+            // Llamar al método auxiliar para mostrar la información del empleado
+            System.out.println("ANTES DE LA ACTUALIZACIÓN...");
             displayEmployee(myConn, "John", "Doe");
 
-            // UPDATE the employee
-            System.out.println("\nEXECUTING THE UPDATE FOR: John Doe\n");
+            // Actualizando empleado
+            System.out.println("\nEJECUTAR LA ACTUALIZACIÓN PARA: John Doe\n");
 
             int rowsAffected = myStmt.executeUpdate(
                     "update employees " +
                             "set email='john.doe@luv2code.com' " +
                             "where last_name='Doe' and first_name='John'");
 
-            // Call helper method to display the employee's information
-            System.out.println("AFTER THE UPDATE...");
+            // Llamar al método auxiliar para mostrar la información del empleado
+            System.out.println("DESPUÉS DE LA ACTUALIZACIÓN...");
             displayEmployee(myConn, "John", "Doe");
 
         }
