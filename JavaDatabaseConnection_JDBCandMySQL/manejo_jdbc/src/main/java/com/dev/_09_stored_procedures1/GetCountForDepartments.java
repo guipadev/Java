@@ -14,26 +14,26 @@ public class GetCountForDepartments {
         CallableStatement myStmt = null;
 
         try {
-            // Get a connection to database
+            // Conexion a BD
             myConn = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/demo", "student", "student");
 
             String theDepartment = "Engineering";
 
-            // Prepare the stored procedure call
+            // Preparar la llamada al procedimiento almacenado
             myStmt = myConn
                     .prepareCall("{call get_count_for_department(?, ?)}");
 
-            // Set the parameters
+            // Establecer los parámetros
             myStmt.setString(1, theDepartment);
             myStmt.registerOutParameter(2, Types.INTEGER);
 
-            // Call stored procedure
-            System.out.println("Calling stored procedure.  get_count_for_department('" + theDepartment + "', ?)");
+            // Llamar a procedimiento almacenado
+            System.out.println("Llamando al procedimiento almacenado. get_count_for_department('" + theDepartment + "', ?)");
             myStmt.execute();
             System.out.println("Finished calling stored procedure");
 
-            // Get the value of the OUT parameter
+            // Obtener el valor del parámetro OUT
             int theCount = myStmt.getInt(2);
 
             System.out.println("\nThe count = " + theCount);
