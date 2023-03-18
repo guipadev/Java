@@ -10,25 +10,23 @@ public class Drivering {
         ResultSet myRs = null;
 
         try {
-            // 1. Get a connection to database
+            // 1. Conexion a BD
             myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo", "student" , "student");
 
-            // 2. Prepare statement
+            // 2. Preparando consulta
             myStmt = myConn.prepareStatement("select * from employees where salary > ? and department=?");
 
             // 3. Set the parameters
             myStmt.setDouble(1, 80000);
             myStmt.setString(2, "Legal");
 
-            // 4. Execute SQL query
+            // 4. Ejecutar SQL query
             myRs = myStmt.executeQuery();
 
-            // 5. Display the result set
+            // 5. Mostrar el conjunto de resultados
             display(myRs);
 
-            //
-            // Reuse the prepared statement:  salary > 25000,  department = HR
-            //
+            // Reutilice la declaración preparada: salario> 25000, departamento = HR
 
             System.out.println("\n\nReuse the prepared statement:  salary > 25000,  department = HR");
 
