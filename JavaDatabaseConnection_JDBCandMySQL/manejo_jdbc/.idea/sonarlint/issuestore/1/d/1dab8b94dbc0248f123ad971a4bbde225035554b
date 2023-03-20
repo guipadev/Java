@@ -1,0 +1,9 @@
+
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(£ï‰†ÿÿÿÿÿ8’›‘ï0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(‰Áô¶8•›‘ï0
+N
+java:S1481"1Remove this unused "rowsAffected" local variable.(è¬—Û8œ›‘ï0
+U	java:S106$"9Replace this use of System.out or System.err by a logger.(Æ˜µ¼8Ÿ›‘ï0
+s
+java:S3457E"Q%n should be used in place of \n to produce the platform-specific line separator.(¤—™­úÿÿÿÿ8¶›‘ï0
+Z	java:S106E"9Replace this use of System.out or System.err by a logger.(¤—™­úÿÿÿÿ8·›‘ï0

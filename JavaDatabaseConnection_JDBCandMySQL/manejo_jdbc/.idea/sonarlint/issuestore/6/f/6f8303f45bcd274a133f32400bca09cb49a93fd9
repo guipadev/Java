@@ -1,0 +1,9 @@
+
+q
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ð‰Ì€úÿÿÿÿ8ûæ†‘ï0
+e
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(Òñ¥â8úæ†‘ï0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(×ëË¡8ç¤†‘ï0
+n
+java:S3457F"Q%n should be used in place of \n to produce the platform-specific line separator.(ÄÁâ“8ô¤†‘ï0
+U	java:S106F"9Replace this use of System.out or System.err by a logger.(ÄÁâ“8õ¤†‘ï0
