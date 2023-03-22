@@ -8,6 +8,7 @@ public class Main {
         CuentaBancaria cb2 = new CuentaBancaria("EURO", "CDT");
 
         cb.mostrarDatos();
+
         cb2.mostrarDatos();
     }
 }

@@ -23,13 +23,16 @@ public class CuentaBancaria {
 
     // USO THIS SOBRE CARGA DE CONSTRUCTOR
     public CuentaBancaria(String moneda, String tipo) {
+
         this("ALIAS.POR.DEFECTO", moneda, tipo);
     }
     private String generarCBU() {
+
         return "121545625"; // Se deberia genera un # aleatorio
     }
 
     public void mostrarDatos () {
+
         System.out.println(CBU + " " + alias + " " + saldo);
     }
 

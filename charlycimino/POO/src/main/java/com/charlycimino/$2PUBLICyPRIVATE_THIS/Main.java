@@ -7,13 +7,16 @@ public class Main {
         CuentaBancaria cb = new CuentaBancaria();
 
         cb.mostrarDatos();
+
         cb.setAlias("miNuevoAlias");
         cb.mostrarDatos();
+
         cb.setAlias(null);
         cb.mostrarDatos();
 
-        String a = cb.getAlias();
-        System.out.println(a);
+        String alias = cb.getAlias();
+
+        System.out.println(alias);
 
     }
 }

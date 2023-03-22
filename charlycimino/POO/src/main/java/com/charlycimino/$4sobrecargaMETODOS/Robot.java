@@ -4,6 +4,7 @@ public class Robot {
     private String nombre;
 
     public Robot(String nombre) {
+
         setNombre(nombre);
     }
 
@@ -13,6 +14,7 @@ public class Robot {
         }
     }
     public void saludar(String nombrePersona) {
+
         System.out.println("Hola " + nombrePersona + ", soy " + nombre);
     }
 
