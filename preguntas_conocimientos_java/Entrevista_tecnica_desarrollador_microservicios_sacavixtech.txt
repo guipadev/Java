@@ -1,0 +1,90 @@
+https://www.youtube.com/watch?v=m5-e_ATKVGE
+https://www.youtube.com/watch?v=xbrs9c9SOkI&t=70s
+
+1. Defina la arquitectura microservicios ?
+- Es un enfoque para desarrollar una sola aplicación como un conjunto de pequeños microservicios
+- Cada uno delos cuales se ejecutan en su propio proceso
+- Se comunican con mecanismos ligeros
+- Estos servicios se basan en el negocio y se pueden implementar de forma independiente
+- Existe un mínimo de gestión centralizada de estos servicios
+- Puede escribirse en diferentes lenguajes de programación y utilizar diferentes tecnologías de almacenamiento de datos
+
+2. Cuáles son las ventajas de la arquitectura de microservicios ?
+- Permite asignar equipos específicos, pequeños y manejables
+- Permite implementar pruebas de forma más atómicas
+- Permite implementar pruebas de integración sectoridas
+- Es posible usar las tecnologías más adecuadas en cada microservicio, por ejemplo, para operaciones de búsqueda de clientes y productos,
+  prodremos incorporar un ElasticSearch para búsquedas de texto completo.
+- Facilita desagregar el despliegue de ciertos microservicios en diversos nodos, con múltiples instancias a demanda (escabilidad horizontal)
+
+3. Cuáles son los retos de implementar una arquitectura microservicios ?
+- Lograr diseño adecuado
+- Gestión de la infraestructura
+- Correcta gestión de la transaccionalidad y la consistencia de datos
+- Gestión del entorno distribuido y asumir que "Las 8 falacias de la computación distribuida" son un elemento a tener en cuenta en la implementación.
+  Una rede de datos siempre va a tener problemas.
+- Necesidad de la implementación de la cultura DevOps.
+
+4. En la arquitectura cómo puede resolver el problema de los parámetros de configuración de los microservicios y sus instancias ?
+- La arquitectura de microservicios, tienen muchos servicios distribuidos y cada uno de esos servicios puede tener instancias a la vez
+  Al esta el sistema distribuido es dificil ir añadiendo o colocando configuraciones, instancia, instancia de cada uno de esos pequeños servicios
+  Por eso existe un pátron fundamental denominado configuración centralizada, el funcionamiento básico es que cuando una aplicación de arquitectura
+  o instancia va a iniciar en el proceso de arranque ira a buscar su configuración en un lugar, leerla y después arrancar o culminar el arranque con
+  esos datos de configuracion
+  Existen varios sistemas como Spring Cloud Config de los mas usado en el ecosistema de spring
+  No se pede tener las configuraciones de forma local, necesariamente hay que tener un proveedor de configuraciones centralizado 
+
+5.Existe una manera al estar centralizada la configuración de poder recargar la configuración en caliente, en sistemas que ya están en ejecución ?
+  Digamos que tenemos un servicio de ofertas de restaurante y este microservicio tiene una configuración de una ruta donde lee por ejemplo el precio de las ofertas
+  y esa ruta en un momento determinado la vamos a cambiar y sin necesidad de parar ese servicio decirle que lea una nueva configuracion nueva de la ruta
+
+  Realmente se puede hacer, pero es un proceso complejo, ya que la forma de hacerlo es que el servicio de configuración centralizada, debe informar a los servicios
+  instancia que requieran configuración de que existe una nueva propiedad para ellas, y a partir de hay el mecanismo que implementa la instancia busca y recarga
+  esa configuración en caliente
+
+6. En una arquitectura de microservicios son comunes las llamadas servicio -> servicio, ¿Qué mecanismos pueden implementarse para evitar posibles fallos?
+- ¿Cómo garantizamos la resilencia?
+- Debemos conocer las "Falacias de la computación distribuida"
+- Dar una solución con Reintentos
+- Dar una solución con Circuit Breaker
+
+7. Explique cómo funciona un servicio de registro y descubrimiento así como su importancia para la infraestructura ?
+- Permite registrar y conocer la ubicación de las instancias activas de la infraestructura
+- Permite saber el estado de las instancias(UP/DOWN)
+- Permite el trabajo al balanceador de cargas
+- Facilita al API Gateway el poder operar a nivel de identificadores de microservicios y evitar ruteo especifico a ip
+
+- Contexto de la arquitectura microservicio, que automatiza un servicio de restaurante, en este escenario tenemos 2 microservicios:
+                        MICROSERVICIO_ORDENES
+                                   |
+                     SERVIDOR_DE_REGISTRO       SERVIDOR_DESCUBRIMIENTO
+  MENU_MICROSERVICIOS                           PAGO_MICROSERVICIOS
+  Menú_1(192.168.1.2)  Menú_2(192.168.1.3)      Pagos_1(192.168.1.7)  Pagos_2(192.168.1.8)
+  Menú_3(192.168.1.4)  Menú_4(192.168.1.5)     
+
+  Cuando tenemos mucha demanda tendremos 4 instancias levantadas de Menu y estas instancia tienen c/u un nodo determinado o direcion ip especifica
+  al igual que el micro de pago tendra 2 ip especificas
+
+8. En una arquitectura de microservicios la escabilidad es una caracteristica desada, como resultado de su aplicación pueden estar operativas
+   multiples instancias de varios microservicios. Suponga que una instancia del microservicio A debe llamar a otra instancia del microservicio B
+   ¿Qué técnica o estrategia serían correctas seguir para que la instancia de A llame a una instancia "adecuada" de B?
+- Balanceador de cargas: Round Robin, Round ponderado, Posición geográfica.
+
+9. La interacción de los servicios de la infraestructura con componentes externos (llamemos legacy) tienen lugar en muchos escenarios.
+   Es comun que los sistemas legacy entén desarrollados con tecnologías obsoletas o poco eficientes
+   ¿Qué solución técnica podría aplicarse para evitar implementar en los microservicios código específico demasiado atado al sistema legacy?
+- Implementar Capa anticorrupción, considerando tener en cuenta
+- La capa anticorrupción puede añadir latencia alas llamadas entre sitemas.
+- Si el flujo de llamadas es alto, deben tenerse en cuenta mecanismos de escabilidad en la capa y balanceo de carga entre múltiples instancias
+- La capa anticorrupción tendrá (probablemente) mecanismos de traducción de protocolos.
+
+10. Explique como funciona Bulkhead y su relación con la resilencia?
+
+
+11. Qué es la transaccionalidad distribuida y que relación tiene con los microservicios?
+- Una transacción puede definirse como un grupo de eventos que se deben ser llevaods a cabo como una unidad indivisible; existe si todos y cada uno
+de los eventos es exitoso o todos son rechazados. Debe ser atómica y consistente.
+- En los sistemas monolíticos, generalmente hay una sola fuente de datos. Muchas bases de datos garantizan la transaccionalidad.
+
+
+

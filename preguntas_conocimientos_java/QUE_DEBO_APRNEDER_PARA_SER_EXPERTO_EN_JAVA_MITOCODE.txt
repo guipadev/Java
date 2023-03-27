@@ -1,0 +1,74 @@
+
+MITOCODE - https://www.youtube.com/watch?v=jwjoOFbxjxs&list=RDCMUC9fAeSPVw7mAAbexCS7gPqw&index=2
+
+------------------------------------------------------------------------------------------------------------
+JUNIOR (350 - 800 USD)
+------------------------------------------------------------------------------------------------------------
+- Conocer la sintaxis
+- Programación Orientada a Objetos
+- Programación Funcional
+- Base de Datos
+- Git / GitHub...
+- Maven / Gradle (pom.xml, generar artefactos, jar, war)
+- JDK 8 LTS / JDK 11 LTS
+- Interfaces, Clases Abstractas
+- Algoritmos de búsqueda y ordenamiento
+- UML*
+------------------------------------------------------------------------------------------------------------
+SEMI-SENIOR (800 - 1700 USD)
+------------------------------------------------------------------------------------------------------------
+- Junior
+- Principios SOLID
+- Datasources, servidores de aplicaciones (pool de conexiones)
+- Hilos y Concurrencia
+- Framework Spring (Hibernate(Implementación de JPA), MyBatis | JPA(es una especificación)), Spring MVC, IoC/DI | CDI Context Depedency Injection
+- Java Enterprise 
+- Servicio REST
+- Servicios SOAP (ESB | Enterprise Service Bus | Oracle Service Bus | MessageBroker)
+- Seguridad Sesiones (HttpSession), Staless (JWT, OUATH2), Spring Security, JAAS
+- Colas *RabbitMQ
+- Mensajeria
+- Envio de correo (javax.mail)
+- JSP, Servlets, Thymeleaf
+- Dominio Patrones de Diseño (fabrica, fachada, singleton, mvc, DI, DAO, Repository, Strategy)
+- Swagger*
+- Sockets*
+- Programación Reactiva*
+- Microservicios*
+- NoSQL MongoDB
+- Testing*
+------------------------------------------------------------------------------------------------------------
+SENIOR (experiencia calidad de proyectos 1700 - 2500 USD)
+------------------------------------------------------------------------------------------------------------
+- Semi Senior
+- Diseño de arquitecturas y modelamiento
+- Testing JUnit Mockito
+- Técnicas de pruebas (caja blanca, caja negra -> clase equivalente)
+- Modelos de madurez (Richardson API REST)
+- Kafka (mensajeria asincrona)
+------------------------------------------------------------------------------------------------------------
+Complementarias SemiSenior - Senior
+------------------------------------------------------------------------------------------------------------
+- Docker
+- CI/CD Jenkins*
+- Cloud Computing*, AWS, Azure, GCP | DigitalOcean, Lonode, MongoDBAtlas
+- Selenium* 
+- Cucumber*
+- Integración con fronts (Angular, ReactJS, Vue)
+- Firebase (Auth, Firestore, Firestorage, CloundFunctions(serverless), Hosting)
+- Proveedores de identidad como servicio AWS Cognito, OKTA, Keycloack
+- Kubernetes (Orquestación de contenedores)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
