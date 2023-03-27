@@ -6,7 +6,7 @@ public class Main {
 
         Empresa xMen = new Empresa();
 
-        //xMen.agregarPersona(new Persona("gambito", "explosivos", "Bajo"));
+        // xMen.agregarPersona(new Persona("gambito", "explosivos", "Bajo"));
         xMen.agregarPersona(new Persona("ciclope", "rayos x", NivelEstudio.MEDIO));
         xMen.agregarPersona(new Persona("gambito", "explosivos", NivelEstudio.BAJO));
         xMen.agregarPersona(new Persona("guepardo", "garras", NivelEstudio.BAJO));
@@ -15,7 +15,7 @@ public class Main {
         xMen.agregarPersona(new Persona("fenix", "telequinecis", NivelEstudio.MUYALTO));
         xMen.agregarPersona(new Persona("magneto", "metalero", NivelEstudio.ALTO));
 
-        //xMen.mostrarPorNivel("alto");
+        // xMen.mostrarPorNivel("alto");
         xMen.mostrarPorNivel(NivelEstudio.MUYALTO);
 
     }
