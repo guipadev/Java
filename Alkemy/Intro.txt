@@ -1,0 +1,14 @@
+Entity
+Para poder almacenar los datos que se generan las API REST es necesario establecer una conexión a una base de datos la que nos permite contener todos los nuevos datos o modificaciones de datos ya existentes, a través de JPA. De esta manera, podemos representar los datos mediante objetos, que son conocidos como entity.Para poder almacenar los datos que se generan las API REST es necesario establecer una conexión a una base de datos la que nos permite contener todos los nuevos datos o modificaciones de datos ya existentes, a través de JPA. De esta manera, podemos representar los datos mediante objetos, que son conocidos como entity.La particularidad de las clases de estos objetos es que están mapeadas por medio de una tabla en base de datos y para identificar se establece una anotación.
+
+Estas clases son conocidas como POJO’s (Plain Old Java Objects) en las cuales sus atributos representan cada columna de una tabla. Mediante anotaciones podemos configurar nuestra entity, como el tipo de clave primaria, el formato de fecha y relaciones entre tablas.
+
+Es necesario tener actualizado el archivo pom.xml con el driver correspondiente de base de datos y haber configurado el archivo application.properties con la base de datos.
+
+Repository
+El repository es el encargado de establecer todas las consultas de las base de datos a través de spring boot, permitiendo la abstracción de las consultas SQL y poder prescindir de ellas, mediante interfaces que extiendan de JpaRepository de esta manera nos brinda consultas básicas preestablecidas que podremos usar, además se puede utilizar JPQL similar a SQL pero utilizando a los objetos en las consultas. Y en caso de necesitar una sentencia SQL es posible utilizarla.
+
+Normalmente se suele usar una interfaz sin implementación con anotación y en otros casos se implementan estas interfaces para ser tratadas con criteria.
+
+Service
+El service es el encargado de establecer la lógica de negocio que tendrá nuestro sistema, se establecen interfaces que serán implementadas para definir cada método definido en las interfaces. Y la clase encargada de sobreescribir los métodos contendra la anotación de service para ser diferenciada por spring boot.
