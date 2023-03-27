@@ -1,0 +1,8 @@
+Persistencia/AlumnoJpaController.class
+Logica/TestJPA.class
+Persistencia/exceptions/IllegalOrphanException.class
+Persistencia/exceptions/PreexistingEntityException.class
+Logica/Alumno_.class
+Persistencia/ControladoraPersistencia.class
+Logica/Alumno.class
+Persistencia/exceptions/NonexistentEntityException.class

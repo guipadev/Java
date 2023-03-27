@@ -1,0 +1,13 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Á üÏıÿÿÿÿ
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¬¢¬ùÿÿÿÿ8Ì‰ÛâØ0
+I
+java:S1068",Remove this unused "variedad" private field.(¬š€8Ï‰ÛâØ0
+K
+java:S1068".Remove this unused "tipoTronco" private field.(½Ô²8Ï‰ÛâØ0
+L
+java:S1068"/Remove this unused "radioTronco" private field.(Ø¢ÌÍ8Ğ‰ÛâØ0
+F
+java:S1068")Remove this unused "color" private field.(È„…¦8Ñ‰ÛâØ0
+O
+java:S1068	"-Remove this unused "tipoHojas" private field.(¸Ò¨ÿùÿÿÿÿ8Ñ‰ÛâØ0

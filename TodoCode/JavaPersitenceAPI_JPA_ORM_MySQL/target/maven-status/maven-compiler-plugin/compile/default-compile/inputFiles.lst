@@ -1,0 +1,7 @@
+/home/yadev/home/NetBeansProjects/JPA_Conexion_MySQL/src/main/java/Persistencia/ControladoraPersistencia.java
+/home/yadev/home/NetBeansProjects/JPA_Conexion_MySQL/src/main/java/Logica/TestJPA.java
+/home/yadev/home/NetBeansProjects/JPA_Conexion_MySQL/src/main/java/Persistencia/AlumnoJpaController.java
+/home/yadev/home/NetBeansProjects/JPA_Conexion_MySQL/src/main/java/Persistencia/exceptions/IllegalOrphanException.java
+/home/yadev/home/NetBeansProjects/JPA_Conexion_MySQL/src/main/java/Persistencia/exceptions/NonexistentEntityException.java
+/home/yadev/home/NetBeansProjects/JPA_Conexion_MySQL/src/main/java/Persistencia/exceptions/PreexistingEntityException.java
+/home/yadev/home/NetBeansProjects/JPA_Conexion_MySQL/src/main/java/Logica/Alumno.java
