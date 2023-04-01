@@ -1,0 +1,17 @@
+Sea A un arreglo
+Sea Inicio = 0
+Sea Fin = tamaño(A) - 1
+Sea PosicionElementoBuscado = -1
+Sea Encontrado = falso
+
+Mientras Encontrado sea igual a falso y Inicio <= Fin
+    Sea Medio = (Inicio + Fin) / 2
+    Si A[Medio] es igual a ElementoBuscado
+        PosicionElementoBuscado = Medio
+        Encontrado = verdadero
+    Por el contrario si A[Medio] < ElementoBuscado
+        Inicio = Medio + 1
+    Por el contrario si A[Medio] > ElementoBuscado
+        Fin = Medio - 1
+    
+retornar PosicionElementoBuscado
