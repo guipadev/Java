@@ -1,15 +1,7 @@
 package com.dev.modulo2.arreglosyvectores;
 
 /**
- * PATRONES DE RECORRIDO
- *
- * ARREGLOS ID (TAMAÑO VARIABLE)
- *
- * BÚSQUEDAS
- *
  * REVISIÓN CASO DE ESTUDIO: EL AVIÓN
- *
- * ARREGLO 2D
  *
  * REVISIÓN CASO DE ESTUDIO: EL VISOR DE IMÁGINES
  */

@@ -167,22 +167,21 @@ public class Avion {
     }
 
     /**
+     * RECORRIDOS PARCIALES
      * Busca un pasajero en las sillas ejecutivas
      * @param pasajero - pasajero a buscar - pasajero != null
-     * @return silla en la que se encontr� el pasajero. Si no lo encuentra retorna null
+     * @return silla en la que se encontra el pasajero. Si no lo encuentra retorna null
      */
-    public Silla buscarPasajeroEjecutivo( Pasajero pasajero )
-    {
+    public Silla buscarPasajeroEjecutivo( Pasajero pasajero ) {
         boolean encontrado = false;
         Silla silla = null;
-        for( int i = 0; i < SILLAS_EJECUTIVAS && !encontrado; i++ )
-        {
-            silla = sillasEjecutivas[ i ];
-            if( silla.sillaAsignada( ) && silla.darPasajero( ).igualA( pasajero ) )
-            {
+
+        for(int i = 0; i < SILLAS_EJECUTIVAS && !encontrado; i++) {
+            silla = sillasEjecutivas[i];
+            if( silla.sillaAsignada() && silla.darPasajero().igualA(pasajero))
                 encontrado = true;
-            }
         }
+
         if( encontrado )
             return silla;
         else
@@ -233,25 +232,23 @@ public class Avion {
     }
 
     /**
-     * Retorna el n�mero de sillas ejecutivas ocupadas
+     * RECORRIDOS TOTALES
+     * Retorna el numero de sillas ejecutivas ocupadas
      * @return numero de ejecutivas sillas ocupadas
      */
-    public int contarSillasEjecutivasOcupadas( )
-    {
+    public int contarSillasEjecutivasOcupadas() {
         int contador = 0;
-        for( int i = 0; i < SILLAS_EJECUTIVAS; i++ )
-        {
-            if( sillasEjecutivas[ i ].sillaAsignada( ) )
-            {
+
+        for( int i = 0; i < SILLAS_EJECUTIVAS; i++) {
+            if( sillasEjecutivas[ i ].sillaAsignada())
                 contador++;
-            }
         }
         return contador;
     }
 
     /**
-     * Retorna el n�mero de sillas econ�micas ocupadas
-     * @return numero de sillas econ�micas ocupadas
+     * Retorna el numero de sillas economicas ocupadas
+     * @return numero de sillas economicas ocupadas
      */
     public int contarSillasEconomicasOcupadas( )
     {

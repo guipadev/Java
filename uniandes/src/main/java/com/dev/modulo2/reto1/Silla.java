@@ -90,6 +90,7 @@ public class Silla {
     }
 
     /**
+     * INSTRUCCIÓN CONDICIONAL SIMPLE
      * Indica si la silla est� asignada.
      * @return true si la silla esta asignada, false en caso contrario
      */
@@ -102,15 +103,16 @@ public class Silla {
     }
 
     /**
+     * INSTRUCCIÓN CONDICIONAL EN CASCADA
      * Indica si la silla est� asignada al pasajero dado.
      * @param p - pasajero a comparar con el de la silla
      * @return true si el pasajero ocupa la silla, false si la silla est� vac�a o no coincide el pasajero.
      */
-    public boolean sillaAsignadaPasajero( Pasajero p )
+    public boolean sillaAsignadaPasajero( Pasajero pasajeroCliente )
     {
         if( null == pasajero )
             return false;
-        else if( pasajero.igualA( p ) )
+        else if( pasajero.igualA(pasajeroCliente))
             return true;
         else
             return false;

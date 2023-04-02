@@ -54,6 +54,7 @@ public class Pasajero
     }
 
     /**
+     * EXPRESIOÓN BOOLEANA
      * Indica si el pasajero es igual a otro.
      * @param otroPasajero - pasajero a comparar - otroPasajero != null
      * @return true si es el mismo pasajero, false en caso contrario

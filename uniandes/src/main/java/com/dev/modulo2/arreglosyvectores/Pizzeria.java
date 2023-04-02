@@ -14,6 +14,16 @@ public class Pizzeria {
      * - Estados civiles de una persona
      */
     public final static int CANTIDAD_COCINEROS = 4;
+    public final static int FILAS = 3;
+    public final static int COLUMNAS = 4;
+
+    /**
+     * ARREGLO 2D
+     * Almacenar colecciones de elementos en 2 dimensiones
+     * - Matrices
+     * - Se comportan igual que los arreglos en 1D pero se especiican 2 "coordenadas"
+     */
+    private Mesa[][] mesas;
 
     /*
     private Cocinero cocinero1;
@@ -29,9 +39,13 @@ public class Pizzeria {
      */
     public Pizzeria() {
         cocineros = new Cocinero[CANTIDAD_COCINEROS];
-
         // Agregar elementos a un arreglo
         cocineros[0] = new Cocinero();
+
+        mesas = new Mesa[FILAS][COLUMNAS];
+        // Agregar elementos arreglo 2D
+        mesas[0][0] = new Mesa();
+
     }
 
 
@@ -71,7 +85,8 @@ public class Pizzeria {
         return suma;
     }
 
-    // 5) INSTRUCCIONES REPETITIVAS FOR
+    //5) INSTRUCCIONES REPETITIVAS FOR
+    //6) Patron de recorrido total -> Revisar todos los elementos
     public int darTotalUnidadesProducidasFor() {
         int suma = 0;
 
@@ -95,5 +110,55 @@ public class Pizzeria {
         }
 
         return suma;
+    }
+
+    //6) Patron de recorrido parcial -> Revisar los elementos hasta cumplir una condición
+    public boolean existerSuperCocinero() {
+        boolean existe = false;
+
+        for (int i = 0; i < CANTIDAD_COCINEROS; i++) {
+            if (cocineros[i] != null && cocineros[i].darCantidadProducida() > 1000)
+                existe = true;
+        }
+        return existe;
+    }
+
+    // Recorrido Array 2D
+    //¿Cuántos clientes hay en la pizzería?
+    public int contarClientes() {
+
+        int clientes = 0;
+
+        for (int i = 0; i < FILAS; i++)
+            for (int j = 0; j < COLUMNAS; j++) {
+                Mesa actual = mesas[i][j];
+                clientes += actual.darClientesSentados();
+            }
+
+        return clientes;
+    }
+
+    /**
+     * OTROS RECORRIDOS EN ARREGLOS 2D
+     * - Diagonal
+     * - 2 Diagonales
+     * - Escalera
+     * - Vecinos de un elemento
+     * - Vecinos en cruz de un elemento
+     */
+    //¿Existe una mesa vacía?
+    public boolean hayVacia() {
+
+        boolean vacia = false;
+
+        for (int i = 0; i < FILAS && !vacia; i++)
+            for (int j = 0; j < COLUMNAS && !vacia; j++) {
+                Mesa actual = mesas[i][j];
+
+                if(actual.darClientesSentados() == 0)
+                    vacia = true;
+            }
+
+        return vacia;
     }
 }
