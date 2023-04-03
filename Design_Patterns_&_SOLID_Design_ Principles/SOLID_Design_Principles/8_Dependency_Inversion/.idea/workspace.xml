@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="28febe3f-42ab-4e09-8963-b3de71040008" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../uniandes/.idea/sonarlint/issuestore/5/9/5993dccd5ddb0c72bcfd07b32388e918773005ac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../uniandes/.idea/sonarlint/issuestore/7/e/7e546c5a78fc9bc8efd055b64c3e86737ce9d2de" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../uniandes/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../uniandes/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../uniandes/src/main/java/com/dev/modulo1/clasesyobjetos/Cocinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../uniandes/src/main/java/com/dev/modulo1/clasesyobjetos/Cocinero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../uniandes/src/main/java/com/dev/modulo1/clasesyobjetos/Pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../uniandes/src/main/java/com/dev/modulo1/clasesyobjetos/Pizza.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Nv2O8wcbHR5C3EhhNGkv7WLmXo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="28febe3f-42ab-4e09-8963-b3de71040008" name="Changes" comment="" />
+      <created>1680530201986</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680530201986</updated>
+    </task>
+    <servers />
+  </component>
+</project>

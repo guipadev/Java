@@ -111,4 +111,8 @@ public class Pizza {
 
         return resta * cantidadProducida;
     }
+
+    public double darPrecio() {
+        return precioDeVenta;
+    }
 }

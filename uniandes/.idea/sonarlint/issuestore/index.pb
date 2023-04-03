@@ -1,10 +1,6 @@
 
 O
 src/main/java/com/dev/Main.java,5/e/5e0ced2ef51d7e56b7915cb42ebcf23b6fd3ad7a
-j
-:src/main/java/com/dev/modulo1/clasesyobjetos/Cocinero.java,5/9/5993dccd5ddb0c72bcfd07b32388e918773005ac
-g
-7src/main/java/com/dev/modulo1/clasesyobjetos/Pizza.java,7/e/7e546c5a78fc9bc8efd055b64c3e86737ce9d2de
 b
 2src/main/java/com/dev/modulo1/reto1/Consorcio.java,5/1/51957a4f5a8cbd564ecf5ac45a9f198322d6044f
 `
