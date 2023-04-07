@@ -23,3 +23,7 @@ a
 1src/main/java/com/dev/modulo2/reto1/Pasajero.java,f/3/f3fa7df001303113340442e808029c0dc948ede6
 ^
 .src/main/java/com/dev/modulo2/reto1/Avion.java,c/7/c71326f5009001ee1b89d1d7e2a14bb2d3d679b6
+g
+7src/main/java/com/dev/modulo1/clasesyobjetos/Pizza.java,7/e/7e546c5a78fc9bc8efd055b64c3e86737ce9d2de
+j
+:src/main/java/com/dev/modulo1/clasesyobjetos/Cocinero.java,5/9/5993dccd5ddb0c72bcfd07b32388e918773005ac
