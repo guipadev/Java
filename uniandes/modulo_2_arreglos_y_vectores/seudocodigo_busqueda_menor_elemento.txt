@@ -1,0 +1,11 @@
+Sea A un arreglo
+Sea ElementoMenor = A[0]
+Sea N = 1
+
+Mientras N < tamaño(A)
+    Si ElementoMenor > A[N]
+        ElmenetoMenor = A[N]
+   
+    N = N + 1
+    
+retornar ElementoMenor
