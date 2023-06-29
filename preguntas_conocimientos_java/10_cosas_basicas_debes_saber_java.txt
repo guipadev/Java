@@ -1,5 +1,5 @@
 10 cosas básicas que debes saber de Java
-https://youtu.be/vgkL3Ovi-kU
+https://youtu.be/vgkL3Ovi-kU (José Dimas Luján Castillo)
 
 1 ¿Versiones de Java importantes?
 v 1.8 = 8 la mas importante, ya que desde la version 6 debemos considerar que la variable no la podemos
@@ -39,7 +39,7 @@ y la de manejo de los nulos.
 
 7 ¿Que tipo de herencia maneja Java? 
 - La que maneja Java es la herencia simple
-- Hay la multiple, pero esta no la maneja
+- Hay la multiple, pero esta no la maneja (creo que C++ y C# lo hacen)
 
 A veces se dice que las interfaces son como hacer herencia multiple, pero probablemente no es así
 ya que lo que hace es la implementacion de una interfaz

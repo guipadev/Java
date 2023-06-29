@@ -1,0 +1,164 @@
+Preguntas & Respuestas para entrevista como desarrollador Spring Boot
+
+https://www.youtube.com/watch?v=r1n6Dw9wYvI&list=RDLVr1n6Dw9wYvI&start_radio=1&t=63s
+SACAViX Tech
+
+1. ¿cuál es la diferencia fundamental entre Spring Framework y Spring Boot?
+
+Básicamente, Spring Boot es un proyecto de Spring que añade algunas mejoras importantes. 
+Podemos decir que Spring Boot es lo mismo que Spring, pero con la adición de un servidor de aplicaciones embebido para facilitar el desarrollo y la implementación. 
+Además, proporciona una configuración más sencilla, lo que nos permite trabajar de forma más rápida y que las librerías se autoconfiguren de manera más fácil. 
+En resumen, Spring Boot es una mejora de Spring.
+
+2. ¿Qué es un bean en Spring?
+ 
+Básicamente, en el contexto de Spring, un bean es una pieza de software que es gestionada por Spring. 
+Estos beans son administrados por el contenedor de Spring y se definen dentro del archivo de configuración de la aplicación. 
+Cada bean tiene un ciclo de vida y se pueden inyectar en otras partes de la aplicación.
+
+3. Que es el ámbito de un bean?
+
+El ámbito de un bean define su ciclo de vida y visibilidad en el contexto de una aplicación Spring. 
+Los ámbitos disponibles son: singleton, request, session y application. 
+Podemos especificar el ámbito de un bean utilizando la anotación correspondiente encima de la clase anotada.
+
+4. ¿Cuántas instancias de cada bean se crean por defecto en Spring? 
+
+En la mayoría de los casos, por defecto se crea una única instancia de cada bean. 
+Es muy raro ver una aplicación que no utilice el ámbito singleton.
+
+5. Que sonn los starters de Spring Boot. 
+
+Los starters son utilidades que facilitan la creación y configuración de aplicaciones en Spring. 
+Mejoran la gestión de dependencias y añaden autoconfiguración. 
+
+Algunos ejemplos de starters importantes son: 
+spring-boot-starter-web y spring-boot-starter-data-jpa, que se utilizan para el manejo de aplicaciones web y la persistencia de datos, respectivamente.
+
+6. Diferencias entre JPA y Hibernate?
+
+JPA es una especificación que define interfaces y cómo se debe gestionar la persistencia dentro del ecosistema de Spring. 
+
+Hibernate, por otro lado, es una implementación de estas interfaces. En pocas palabras, JPA es la especificación y Hibernate es una de las implementaciones.
+
+7. Que es sobre Spring Initializr?
+
+Spring Initializr es una herramienta en línea que nos permite generar un proyecto base para iniciar el desarrollo de aplicaciones Spring. 
+Nos proporciona un esqueleto de proyecto con las dependencias que especificamos. 
+Además, cuenta con una interfaz integrada con los principales IDEs, como Eclipse, IntelliJ y NetBeans, 
+que son los más comunes para el desarrollo de aplicaciones Spring.
+
+8. Diferencias entre las anotaciones @Repository, @Service y @Controller. 
+
+Básicamente, no hay diferencia funcional entre ellas. 
+Son simplemente anotaciones semánticas que debemos utilizar dependiendo del tipo de clase que estemos anotando. 
+Por ejemplo, si estamos anotando una clase que es un componente o un servicio, debemos utilizar las anotaciones @Component o @Service, respectivamente. 
+Estas anotaciones le indican al contenedor de Spring que cree un bean a partir de la clase anotada.
+
+9. ¿Explica la notación `@RestController` en Spring Boot? 
+
+Básicamente, esta notación no es de las más viejas dentro de los sistemas de aplicaciones de Spring Boot. 
+Se introdujo para facilitar la creación de API REST de una forma más sencilla. 
+Forma parte de Spring MVC y combina lo que sería la anotación `@Controller`, que marca una clase como controlador, y `@ResponseBody`, que indica el tipo de respuesta de un método determinado. 
+Básicamente, permite serializar y analizar la respuesta que se da a los medios de comunicación en dependencia del tipo de API que estemos creando, lo cual facilita la creación de APIs REST.
+
+10. ¿Cuál es la función de la anotación `@Aspect` en Spring? 
+Aparecen las siglas AOP, que significa Programación Orientada a Aspectos. 
+Básicamente, lo que permite es crear aspectos. 
+Así como la programación orientada a objetos permite crear objetos, la programación orientada a aspectos permite crear aspectos. 
+Los aspectos son piezas de código que, de igual forma, se usan para no ensuciar el código de la aplicación cuando esta es muy grande y permiten, de alguna manera, 
+desde la infraestructura transversal de las aplicaciones, realizar una funcionalidad determinada. 
+
+Por ejemplo, se pueden crear anotaciones particulares dentro de Spring que permitan auditar la ejecución de determinada función, quién la ejecutó, entre otras cosas. 
+El uso de aspectos es muy diverso y se usa bastante dentro de las aplicaciones Spring.
+
+11. ¿Qué función tiene la anotación `@Profile` y por qué es importante? 
+
+`@Profile` es una anotación que permite crear perfiles. 
+Un perfil define de alguna manera qué configuraciones se van a aplicar sobre un proyecto, independientemente del perfil que se utilice para la ejecución. 
+Los perfiles permiten, de alguna manera, instanciar las aplicaciones con determinadas características y a partir de ello realizar determinadas acciones. 
+
+Por ejemplo, es común tener un perfil de desarrollo que tiene las configuraciones propias del entorno del desarrollador, como la base de datos del desarrollador, las redes del desarrollador, etc. 
+Además de esto, se pueden tener otros perfiles, como un perfil para pruebas o un perfil productivo, donde se conectan realmente las aplicaciones a los sistemas de la empresa. 
+Así se pueden definir múltiples perfiles que permiten levantar instancias con diferentes configuraciones de las aplicaciones.
+
+12. ¿Qué hace la anotación `@SpringBootApplication` internamente? 
+
+Cuando hablamos de un proyecto Spring Boot, entre el método principal `main` del programa, siempre va a estar la anotación `@SpringBootApplication`. 
+Bueno, esta anotación es simplemente la combinación de otras tres anotaciones que permiten la configuración y autoconfiguración de los starters, 
+además de habilitar el componente que escanea los paquetes o componentes que forman parte de nuestra aplicación. 
+En resumen, permite inicializar todo lo necesario para que nuestra aplicación Spring Boot pueda iniciar y trabajar correctamente.
+
+13. ¿Qué patrones de ingeniería de desarrollo de software están presentes en Spring Boot? 
+¿Puedes agregar algún ejemplo? 
+
+Los patrones más evidentes dentro de Spring y Spring Boot
+
+Patrón Singleton, que es un patrón de creación; el patrón Proxy, que es un patrón de estructura; y los patrones Cache y Template, que son patrones de comportamiento. 
+
+Por ejemplo, cuando anotamos una clase con `@Repository`, `@Service` o `@Component`, se va a crear un bean siempre y cuando no se cambie el alcance de ese bean, 
+lo cual sería un ejemplo del patrón Singleton. 
+
+El patrón Proxy también tiene lugar en varios puntos, por ejemplo, cuando usamos `@Transactional`, hay una capa de proxy allí. 
+En este caso, se trata de un ejemplo de patrón Proxy.
+
+14. ¿Para qué se usa `@Transactional` en Spring? 
+
+En Spring, `@Transactional` se utiliza para garantizar la consistencia en la ejecución de métodos relacionados con bases de datos. 
+Cuando marcamos un método con `@Transactional` y ese método internamente ejecuta operaciones sobre la base de datos, esto permite 
+que se ejecute todo el método correctamente o no se ejecute nada. 
+Si ocurre alguna excepción, se realiza un rollback y se deshacen las operaciones que ya se habían hecho, dejando el sistema en un estado consistente. 
+En resumen, `@Transactional` se utiliza para mantener la consistencia en la ejecución de un método, ya sea que se realicen todas las operaciones o ninguna.
+
+15. ¿Cuál es la inyeccion de dependencias y cómo lo implementa Spring? 
+
+La inyección de dependencia es un patrón utilizado en la programación de software para separar responsabilidades y reducir el acoplamiento. 
+Básicamente, evita que una clase tenga la responsabilidad de crear instancias de otra clase. 
+En el funcionamiento de Spring, se utiliza ampliamente la inyección de dependencia, que se puede observar cuando creamos los beans. 
+Estos beans se vuelven disponibles en el contexto de la aplicación y se inyectan en las clases que los necesitan de manera independiente y sencilla. 
+Esta inyección de dependencias se realiza mediante la palabra clave `@Autowired` o mediante la anotación `@Inject`.
+
+16. ¿Cuáles son las formas de inyección de dependencia presentes en Spring y cuál es la más adecuada? 
+
+Básicamente, existen tres formas fundamentales de inyección de dependencia en aplicaciones modernas de desarrollo en Java. 
+- inyección por atributo o propiedad
+- inyección por método `setter` 
+- inyección por constructor
+
+De estas tres, la más adecuada es la inyección por constructor, ya que facilita el testing de la aplicación de una manera más sencilla.
+
+17. ¿Para qué se usa `@Value` y qué lenguaje utiliza esta anotación para funcionar? 
+`@Value` se utiliza para leer propiedades de archivos de configuración y aplicarlas a una propiedad anotada. 
+
+Si tenemos la propiedad `valores` en un archivo y la anotamos con `@Value("${valores}")`, se buscará ese valor dentro de un archivo de configuración local o remoto 
+dependiendo del sistema que estemos utilizando. 
+
+Utilizando las llaves `${}` y el nombre de la propiedad, se leerá ese valor y se aplicará al inicio de la aplicación en la propiedad anotada. 
+
+El lenguaje utilizado entre las comillas es llamado SpEL (Spring Expression Language), que es un lenguaje bastante complejo. 
+
+18. ¿Cuál es el puerto expuesto por defecto de una aplicación Spring? 
+
+Básicamente, el puerto por defecto es el puerto 8080, y se puede cambiar mediante la directiva `server.port` en el archivo de configuración. 
+También se pueden utilizar puertos aleatorios. 
+
+19. ¿Qué es Spring Boot y cómo facilita las funciones de monitoreo y administración de una aplicación? 
+
+Spring Boot es un componente bastante importante dentro de Spring, y facilita las funciones de monitoreo y administración de nuestra aplicación. 
+Habilita por defecto varias herramientas que pueden ser utilizadas de manera sencilla, out of the box. 
+
+Solo es necesario agregar la dependencia y así estará disponible. 
+
+Por ejemplo, al agregar la dependencia de Actuator, podemos tener acceso a toda la información de salud de la aplicación. 
+Además, se pueden apagar o reiniciar la aplicación desde una ruta específica. 
+Hay algunas consideraciones de seguridad a tener en cuenta cuando esto se hace en un entorno de producción, 
+pero básicamente esto es lo que Spring Boot ofrece.
+
+20. ¿Conoce algo sobre Spring Cloud? 
+
+Spring Cloud es un proyecto basado en Spring que implementa soluciones listas para producción para el desarrollo de sistemas basados en microservicios. 
+Algunos de los componentes importantes en Spring Cloud son Spring Cloud Config, que maneja la configuración centralizada; 
+Spring Cloud Gateway, que implementa el API Gateway; y Eureka, que proporciona un sistema de registro y descubrimiento de servicios. 
+
+Muchos de estos componentes están influenciados por Netflix OSS, que fue uno de los primeros en desarrollar soluciones basadas en microservicios con Spring Cloud.
+

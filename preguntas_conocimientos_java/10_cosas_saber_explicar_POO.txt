@@ -1,5 +1,5 @@
 10 cosas que tiene que saber explicar de la programación orientada a objetos
-https://youtu.be/BWaznGQu0bQ
+https://youtu.be/BWaznGQu0bQ (josedimaslujan)
 
 
 1. Que es una clase?
