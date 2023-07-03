@@ -76,6 +76,12 @@
 - Evaluación perezosa, efectos
 
 
+- Comentarios
+
+//
+/*  */
+- Tipos de datos enteros
+- Tipos de datos de punto flotante
 
 
 
