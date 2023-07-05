@@ -102,7 +102,7 @@ en este lugar
   - Atributos públicos y protegidos
 
 La utilidad **javadoc** genera documentación código fuente a partir de comentariso /** */
-
+```
 /**
  * @param descripción de variable
  * @return describe contenido que retorna el método
@@ -112,7 +112,7 @@ La utilidad **javadoc** genera documentación código fuente a partir de comenta
  * @since cualquier descripción de la versión que introdujo esta característica
  * @deprecated indica que la clase, método o variable ya no deberia utilizarse
  */
-
+```
 
 ### Tipos de datos enteros
 Números que carecen de parte fraccionaria. Permitido valores negativos:
