@@ -78,8 +78,14 @@
 
 - Comentarios
 
-//
-/*  */
+// En una sola linea
+
+/*  
+Varias lineas de codigo
+Se pueden tener
+en este lugar
+*/
+
 - Tipos de datos enteros
 - Tipos de datos de punto flotante
 
