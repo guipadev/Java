@@ -311,16 +311,56 @@ Los hilos en Java tienen la utilidad de permitir la ejecución de tareas de form
 El proyecto Loom en Java es una iniciativa reciente que está cambiando la forma en que funcionan los hilos en la plataforma Java. 
 
 
+### Synchronized en Java para que se usa ?
+
+La palabra "synchronized" es una palabra reservada en Java que indica que un método o bloque de código solo puede ser ejecutado por un hilo a la vez. Es un elemento fundamental para garantizar el concepto de "thread-safety" (seguridad de hilos) en las aplicaciones.
+
+Utilizar la palabra "synchronized" en Java asegura que el código o método designado se ejecute de manera segura en entornos concurrentes, evitando problemas de acceso y modificación simultánea de datos compartidos por múltiples hilos.
+
+Para declarar e implementar un método como sincronizado en Java, se utiliza la palabra clave "synchronized" antes de la definición del método. Esto garantiza que solo un hilo pueda ejecutar el método a la vez, evitando problemas de concurrencia.
+
+En resumen, la palabra reservada "synchronized" en Java se utiliza para garantizar que un método o bloque de código sea ejecutado por un solo hilo a la vez, asegurando la seguridad de hilos en entornos concurrentes.
+
+### Diferencia entre interfaz y clase abstracta ?
+
+En primer lugar, una interfaz en Java es un recurso de programación utilizado para definir contratos. Define los métodos que posteriormente se implementarán en las clases que la implementen. A partir de Java 8, también se pueden implementar métodos en una interfaz.
+
+Por otro lado, una clase abstracta es una clase particular que puede tener atributos y puede tener tanto métodos concretos como métodos abstractos. Hasta aquí, no hay muchas diferencias entre una interfaz y una clase abstracta.
+
+La principal diferencia radica en que una interfaz solo puede tener constantes, mientras que una clase abstracta puede tener atributos de clase y métodos concretos. Esta es una distinción importante.
+
+Además, otra diferencia fundamental es que una clase puede heredar solo una clase abstracta, pero puede implementar múltiples interfaces. Esto significa que una clase puede tener una única clase abstracta como clase padre, pero puede implementar múltiples interfaces para adquirir diferentes funcionalidades.
 
 
+### Qué es una condición de carrera ?
 
+La condición de carrera es un concepto importante en programación que se refiere a una situación en la cual varios hilos o procesos acceden simultáneamente a un mismo recurso computacional. 
 
+La condición de carrera se considera una situación indeseada, ya que puede provocar cambios no controlados en el estado de variables o recursos compartidos. Para prevenir o controlar las condiciones de carrera, se utiliza el recurso de programación conocido como sincronización.
 
+La sincronización se utiliza para coordinar y sincronizar el acceso de diferentes hilos o elementos a recursos compartidos, asegurando que los cambios de estado se realicen de manera controlada y evitando conflictos.
 
+Es importante comprender y manejar adecuadamente las condiciones de carrera para garantizar la integridad y consistencia de los datos en programas multihilo.
 
+### Novedades en las interfaces de JDK 8 y 9
 
+Desde las últimas versiones de Java (Java 8 y Java 9), se han añadido recursos útiles para el trabajo con interfaces en Java. 
+Java 8 introdujo la posibilidad de implementar en la interfaz métodos estáticos y métodos por defecto, conocidos como "defaults". 
+Java 9 presentó el cambio más significativo al permitir la implementación de métodos privados en las interfaces.
 
+Probablemente te preguntes qué sentido tiene un método privado en una interfaz. 
+Básicamente, nos posibilita aplicar el principio de responsabilidad única cuando utilizamos métodos por defecto o métodos estáticos dentro de la propia interfaz. 
+Esto nos permite separar la implementación de ese método o tipo de métodos.
 
+### Que es el Context Switching
+
+Aquí tienes el texto organizado:
+
+El context switching o cambio de contexto. 
+El context switching es un principio mediante el cual se puede almacenar el estado de un hilo para luego poder reanudarlo y continuar su ejecución.
+
+El context switching es el proceso o principio que permite que varios hilos o procesos compartan una misma CPU. 
+Es esencialmente un principio para garantizar una programación multihilo efectiva.
 
 
 
