@@ -4,7 +4,7 @@ https://www.youtube.com/watch?v=xbrs9c9SOkI&t=70s
 1. Defina la arquitectura microservicios ?
 - Es un enfoque para desarrollar una sola aplicación como un conjunto de pequeños microservicios
 - Cada uno delos cuales se ejecutan en su propio proceso
-- Se comunican con mecanismos ligeros
+- Se comunican con mecanismos ligeros http rest
 - Estos servicios se basan en el negocio y se pueden implementar de forma independiente
 - Existe un mínimo de gestión centralizada de estos servicios
 - Puede escribirse en diferentes lenguajes de programación y utilizar diferentes tecnologías de almacenamiento de datos
@@ -65,20 +65,20 @@ https://www.youtube.com/watch?v=xbrs9c9SOkI&t=70s
   Cuando tenemos mucha demanda tendremos 4 instancias levantadas de Menu y estas instancia tienen c/u un nodo determinado o direcion ip especifica
   al igual que el micro de pago tendra 2 ip especificas
 
-8. En una arquitectura de microservicios la escabilidad es una caracteristica desada, como resultado de su aplicación pueden estar operativas
-   multiples instancias de varios microservicios. Suponga que una instancia del microservicio A debe llamar a otra instancia del microservicio B
-   ¿Qué técnica o estrategia serían correctas seguir para que la instancia de A llame a una instancia "adecuada" de B?
+8. En una arquitectura de microservicios la escabilidad es una caracteristica desada, como resultado de su aplicación pueden estar operativas multiples instancias de varios microservicios. Suponga que una instancia del microservicio A debe llamar a otra instancia del microservicio B  ¿Qué técnica o estrategia serían correctas seguir para que la instancia de A llame a una instancia "adecuada" de B?
+
 - Balanceador de cargas: Round Robin, Round ponderado, Posición geográfica.
 
-9. La interacción de los servicios de la infraestructura con componentes externos (llamemos legacy) tienen lugar en muchos escenarios.
-   Es comun que los sistemas legacy entén desarrollados con tecnologías obsoletas o poco eficientes
-   ¿Qué solución técnica podría aplicarse para evitar implementar en los microservicios código específico demasiado atado al sistema legacy?
+9. La interacción de los servicios de la infraestructura con componentes externos (llamemos legacy) tienen lugar en muchos escenarios. Es comun que los sistemas legacy entén desarrollados con tecnologías obsoletas o poco eficientes ¿Qué solución técnica podría aplicarse para evitar implementar en los microservicios código específico demasiado atado al sistema legacy?
+
 - Implementar Capa anticorrupción, considerando tener en cuenta
 - La capa anticorrupción puede añadir latencia alas llamadas entre sitemas.
 - Si el flujo de llamadas es alto, deben tenerse en cuenta mecanismos de escabilidad en la capa y balanceo de carga entre múltiples instancias
 - La capa anticorrupción tendrá (probablemente) mecanismos de traducción de protocolos.
 
 10. Explique como funciona Bulkhead y su relación con la resilencia?
+
+Bulkhead es un patrón arquitectónico que se utiliza para mejorar la resiliencia en sistemas distribuidos. El objetivo principal del patrón Bulkhead es prevenir que el fallo de un componente individual afecte negativamente a todo el sistema, limitando el impacto y propagación de los errores.
 
 
 11. Qué es la transaccionalidad distribuida y que relación tiene con los microservicios?
