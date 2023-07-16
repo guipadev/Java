@@ -1,4 +1,4 @@
-package com.yomdev.Matriz2DbidimensionalesAnidadas;
+package com.yomdev.matriz_2D_bidimensionales_anidadas;
 
 /**
  * Una matriz multidimensional es simplemente una matriz de matrices.
