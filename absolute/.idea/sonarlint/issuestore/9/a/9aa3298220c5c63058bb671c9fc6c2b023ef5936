@@ -1,0 +1,9 @@
+
+•
+java:S1598"zThis file "Main.java" should be located in "Absolute/WHILE" directory, not in "/home/yamid/Documents/Java/absolute/WHILE".(Æ±ëÇùÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Æ±ëÇùÿÿÿÿ
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ñ¶Ñ¹ıÿÿÿÿ8û¿°Ó•1
+R
+java:S1751"5Remove this "break" statement or make it conditional.(›ûä·8ü¿°Ó•1
+>
+java:S1116"Remove this empty statement.(ôŸìúÿÿÿÿ8ı¿°Ó•1

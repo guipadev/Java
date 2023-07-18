@@ -1,0 +1,8 @@
+
+¡
+java:S1598"…This file "EjemploPassword.java" should be located in "Absolute/WHILE" directory, not in "/home/yamid/Documents/Java/absolute/WHILE".(Æ±ëÇùÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Æ±ëÇùÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¬Ýïíøÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ïÏ¢³ûÿÿÿÿ
+K
+java:S1751"5Remove this "break" statement or make it conditional.(›ûä·

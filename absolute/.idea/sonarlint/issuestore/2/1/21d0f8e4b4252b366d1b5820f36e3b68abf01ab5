@@ -1,0 +1,7 @@
+
+š
+java:S1598"This file "App.java" should be located in "Absolute/MATRICES" directory, not in "/home/yamid/Documents/Java/absolute/MATRICES".(„»£•üÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(„»£•üÿÿÿÿ
+G
+java:S1197",Move the array designators [][] to the type.(ý—ÒÖûÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(³×ÃA
