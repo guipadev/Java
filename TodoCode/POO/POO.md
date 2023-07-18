@@ -188,3 +188,49 @@ estacionar(Bus);
 - QUEUE
 - MAP
 
+### Tipos principales de Collections
+
+								|I Collection  |
+								|--------------|
+
+					↑					↑				   ↑
+				|I List	|	|A Abstract Collection|		|I Set|
+				|-------|   |---------------------|		|-----|
+						↑		↑				↑		↑
+					|AbastractList|				|A AbastractSet|
+					|-------------|				|--------------|
+					↑			↑					↑		↑
+|A AbstractSequentialList|	|C ArrayList|		|C HashSet|	|C TreeHashSet|
+|------------------------|	|-----------|		|---------|	|-------------|
+		↑											↑
+|C LinkedList|									|C LinkedHashSet|
+|------------|									|---------------|									
+
+
+
+								|I Map |
+								|------|
+
+									↑
+							|A AbstractMap |
+							|--------------|
+							↑			↑
+					|C HashMap |	|C TreeHashMap|
+					|----------|	|-------------|
+						↑			
+				|C LinkedHashMap|
+				|---------------|
+
+## LIST (LISTAS)
+
+- Las **listas** son un *conjunto de elementos relacionados entre si* que tienen un determinado *orden*.
+- Su *tamaño es dinámico* (puede cambiar en el tiempo)
+- En Java existen diferentes tipos de Lista:
+	- ArrayLists
+	- LinkedList
+	- Stack
+
+### ARRAYLIST
+
+- Es una **clase** que se representa como una **matriz dinámica** que permite almacenar elementos.
+- Hereda de la clase **AbstractList**, la cual implementa la **interfaz List**.
