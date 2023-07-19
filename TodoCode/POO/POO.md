@@ -230,7 +230,124 @@ estacionar(Bus);
 	- LinkedList
 	- Stack
 
-### ARRAYLIST
+### ArrayList
 
 - Es una **clase** que se representa como una **matriz dinámica** que permite almacenar elementos.
 - Hereda de la clase **AbstractList**, la cual implementa la **interfaz List**.
+- Permite **colecciones** o **elementos duplicados**.
+- El **orden** de los registros es el **orden en que fueron insertados**.
+- Permitir **acceso aleatorio** (tiene índice).
+- Manipulación **lenta** (recorrer todo el arraylist para hacer un cambio).
+
+### LinkedList
+
+- Es una **clase**.
+- Representa a una **lista doblemente enlazada** (ida y vuelta).
+- Permite **duplicados**.
+- Mantiene el **orden de inserción**.
+- Manipulación más rápida.
+- Puede ser usada/tratada no solo como **lista**, sino también como **pila**, o como **cola*.
+- Permite hacer _inserciones o eliminiaciones_ al **principio** o al **final** de la colección (por eso es que puede ser tratado como una pila o una cola).
+
+### Funcionamiento de Lista
+
+| Lista | → | Luisina | ← | Juan | ← | Ibra |				
+|-------|   |---------| → |------| → |------|
+
+### ArrayList vs LinkedList
+
+### Linked List
+| null | ← | 2 | ← | 23 | ← | a | ← | dd | ← | 7a | → | null |				
+|------|   |---| → |----| → |---| → |----| → |----|	  |------|
+            head 							  tall	
+
+### Array
+
+| 2 | 23 | a | dd | 7a |				
+|---|----|---|----|----|
+	0	 1 	 2 	  3    4
+
+## Como se elimina ? 
+
+### LinkedList
+				 _______Borra Juan_______
+				↓						 |
+| Lista | → | Luisina | ← | Juan | ← | Ibra |				
+|-------|   |---------| → |------| → |------|
+				|___________↑___________↑
+							|						
+						Ubicación
+
+### ArrayList
+
+Initial ArrayLists| 10| 20 | 30| 1  | 2  |				
+				  |---|----|---|----|----|
+					0	 1 	 2 	  3    4
+					↑____↑___↑____↑____↑___ Index	
+
+
+remove (index)	| 10|  | 30| 1 | 2 |	During in between call				
+remove(1)		|---|--|---|---|---|
+				  0	  1  2 	 3   4
+
+				| 10| 30| 1 | 2 |		After call				
+				|---|---|---|---|
+				  0	  1   2   3
+
+
+## Qué son las excepciones ?
+
+- Una **excepción** es un evento que ocurre durante la ejecucción de un programa que rompe el flujo normal de ejecucción.
+- Cuando se habla de excepciones nos referimos  a un **evento excepcional** (algo muy difícil que pase o fuera de lo común).
+
+## Qué cosas causan excepciones ?
+
+- Muchas cosas pueden causar excepciones, entre ellos:
+	- Errores hardware
+	- Operaciones matemáticas no posibles (Ej: dividir por cero)
+	- Errores de programa (Ej: error de desbordamiento de un arreglo)
+	- Apertura de un archivo inexistente
+	- Entre otras...
+
+## Tipos de Excepciones
+
+- Hay dos tipos bien diferenciados:
+	- Propias de Java como lenguaje
+	- Personalizadas
+
+## Excepciones Propias de Java
+
+									| 	 Object	   |
+									|--------------|
+										   ↑
+										   |
+									| 	Throwable  |
+									|--------------|
+					 ______________________↑___________________________
+					|												   |
+				 | Error |										| Exception |
+				 |-------|   									|-----------|
+		 ____________↑______________			 		 ______________↑____________
+		|			 |				|					|							|
+| OutOfMemoryError | | | StackOverflowError |	| RuntimeException|			| IOException |
+|------------------| | |--------------------|	|-----------------|			|-------------|
+					 |									↑						  ↑	
+		 ____________|				 ___________________|___________              |______________
+		|							|			 |					|             |              |
+| LinkageError | 	| IllegalArgumentException | |	| IndexOutOfBoundsException | |	| FileNotFoundException |
+|--------------|	|--------------------------| |	|---------------------------| |	|-----------------------|
+								    ↑			 |				  	↑			  |
+		     _______________________|	 ________|					|			  |_____________
+			|							|							|							|				
+| NumberFormatException |	| ArithmeticException |	| ArrayIndexOutOfBoundsException |	| SocketException |
+|-----------------------|	|---------------------|	|--------------------------------|	|-----------------|
+
+## Excepciones Personalizadas
+
+- Para poder construir excepciones propias, hay que tener en cuenta los siguientes bloques:
+	- **try:** Bloque donde puede ocurrir la excepción.
+	- **catch:** Es como el "else" del try (se ejecuta al dispararse una excepción en el bloque try)
+	- **finally:** Bloque de código que se ejecuta siempre (sin importar si hbieron errores o no)
+	- **throw:** Lanzar una excepción cualquiera
+	- **throws:** Determinar qué excepciones puede lanzar un método
+
