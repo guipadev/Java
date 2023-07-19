@@ -15,7 +15,7 @@ Se encontrara toda la configuración para realizar los cambios como nombre BD, u
 
 ## Script SQL
 - Crea BD
-CREATE SCHEMA pruebajpa DEFAULT CHARACTER SET utf8 ;
+CREATE SCHEMA pruebajpa DEFAULT CHARACTER SET utf8;
 
 - Consulta tabla
 SELECT * FROM pruebajpa.ALUMNO;
