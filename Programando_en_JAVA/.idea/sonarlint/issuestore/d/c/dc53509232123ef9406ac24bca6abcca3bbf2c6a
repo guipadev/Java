@@ -1,0 +1,13 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ó„‹·
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ŠŒÚ¶üÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¹û¾ë
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ŠŒÚ¶üÿÿÿÿ
+]
+java:S2175"GA "HashMap<Integer, String>" cannot contain a "int" in a "String" type.(¢¬ãÇ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¡ŽçÕýÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(„žÚ±
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(åÝ…Úÿÿÿÿÿ
+O
+java:S2864%"4Iterate over the "entrySet" instead of the "keySet".(é•Û€ÿÿÿÿÿ
+N	java:S106&"9Replace this use of System.out or System.err by a logger.(û¦õá

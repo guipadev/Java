@@ -1,0 +1,14 @@
+
+—
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ç±úš
+_
+java:S1854"DRemove this useless assignment to local variable "ejemploVariable2".(ƒ”×üÿÿÿÿ
+_
+java:S1854
+"DRemove this useless assignment to local variable "ejemploVariable2".(íâñõüÿÿÿÿ
+P
+java:S1481
+"5Remove this unused "ejemploVariable2" local variable.(íâñõüÿÿÿÿ
+C	java:S108")Either remove or fill this block of code.(Ùˆı€ùÿÿÿÿ
+[
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ç±úš

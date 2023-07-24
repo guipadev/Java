@@ -1,0 +1,13 @@
+
+X
+java:S1854	"=Remove this useless assignment to local variable "vehiculo3".(Û„§ûÿÿÿÿ
+X
+java:S1854"=Remove this useless assignment to local variable "vehiculo2".(±Û´‹úÿÿÿÿ
+R
+java:S1854"<Remove this useless assignment to local variable "vehiculo".(ßŠ©€
+C
+java:S1481"-Remove this unused "vehiculo" local variable.(ßŠ©€
+I
+java:S1481".Remove this unused "vehiculo2" local variable.(±Û´‹úÿÿÿÿ
+I
+java:S1481	".Remove this unused "vehiculo3" local variable.(Û„§ûÿÿÿÿ

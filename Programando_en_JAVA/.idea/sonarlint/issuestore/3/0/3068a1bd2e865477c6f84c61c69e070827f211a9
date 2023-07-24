@@ -1,0 +1,22 @@
+
+k
+java:S1104"UMake variable2 a static final constant or non-public and provide accessors if needed.(Í€ª
+b	java:S101'"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¦ßƒë
+—
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ûåâ
+œ
+java:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(›š¿Çÿÿÿÿÿ
+—
+java:S1186""€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ñËôû
+œ
+java:S1186$"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ıèØîüÿÿÿÿ
+—
+java:S1186+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Çµí‘
+X
+java:S2094'"BRemove this empty class, write its code or make it an "interface".(¦ßƒë
+>
+java:S3985'"(Remove this unused private "hola" class.(¦ßƒë
+C
+java:S1068"-Remove this unused "variable3" private field.(Ãã÷›
+B
+java:S1144"",Remove this unused private "metodo3" method.(ñËôû
