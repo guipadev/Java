@@ -1,9 +1,8 @@
 package com.curso.clasesgenericas;
 
-/*
-s 
-*/
-public abstract class Animal<E> { //Podemos colocar tanto tipo de datos como necesitemos, pero al momento de hacer la instancia especificar el tipo
+// Podemos colocar tanto tipo de datos como necesitemos, pero al momento de hacer
+// la instancia especificar el tipo
+public abstract class Animal<E> {
     
     private E id;
     private String grupo;

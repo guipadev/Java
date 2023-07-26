@@ -1,0 +1,15 @@
+
+y
+java:S1488G"^Immediately return this expression instead of assigning it to the temporary variable "cajero".(¦¿™øøÿÿÿÿ
+n
+java:S1104"SMake general a static final constant or non-public and provide accessors if needed.(€’éêÿÿÿÿÿ
+o
+java:S1104"TMake clientes a static final constant or non-public and provide accessors if needed.(ûÀ„úùÿÿÿÿ
+H
+java:S1444"-Make this "public static general" field final(€’éêÿÿÿÿÿ
+G
+java:S1948"%Make "clientes" private or transient.(ûÀ„úùÿÿÿÿ8¶ïêÿ˜1
+W
+java:S1854*"<Remove this useless assignment to local variable "clientes".(¥¼´çüÿÿÿÿ
+N	java:S106+"9Replace this use of System.out or System.err by a logger.(å•Ñµ
+N	java:S106B"9Replace this use of System.out or System.err by a logger.(¢ÙŠ‹

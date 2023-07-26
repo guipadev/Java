@@ -1,0 +1,15 @@
+
+?
+java:S2140*")Use "java.util.Random.nextInt()" instead.(§©§ø
+D
+java:S2140+")Use "java.util.Random.nextInt()" instead.(Ôé¹¸þÿÿÿÿ
+S	java:S1067"9Replace this use of System.out or System.err by a logger.(ýâ©˜üÿÿÿÿ
+S	java:S1069"9Replace this use of System.out or System.err by a logger.(ÞžÒ—üÿÿÿÿ
+N	java:S106@"9Replace this use of System.out or System.err by a logger.(ªÎø˜
+S	java:S106B"9Replace this use of System.out or System.err by a logger.(ÞžÒ—üÿÿÿÿ
+J
+java:S1611K"/Remove the parentheses around the "c" parameter(†û„ƒÿÿÿÿÿ
+p
+java:S1612K"UReplace this lambda with method reference 'Casilla::incrementarNumeroMinasAlrededor'.(†û„ƒÿÿÿÿÿ
+6	java:S131V""Add a default case to this switch.(ìúÇV
+[	java:S106®"9Replace this use of System.out or System.err by a logger.(”ôÙŸúÿÿÿÿ8úÈüþ˜1

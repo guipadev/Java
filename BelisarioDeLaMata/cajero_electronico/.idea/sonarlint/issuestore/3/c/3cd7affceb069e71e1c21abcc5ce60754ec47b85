@@ -1,0 +1,51 @@
+
+J
+java:S16049"(Make this anonymous inner class a lambda(Û´é½ÿÿÿÿÿ8ğËÂÿ˜1
+E
+java:S1604@"(Make this anonymous inner class a lambda(Øå¯8ñËÂÿ˜1
+J
+java:S1604G"(Make this anonymous inner class a lambda(¬¨„Âşÿÿÿÿ8òËÂÿ˜1
+J
+java:S1604N"(Make this anonymous inner class a lambda(óİ›ıÿÿÿÿ8óËÂÿ˜1
+J
+java:S1604U"(Make this anonymous inner class a lambda(†§îÿûÿÿÿÿ8õËÂÿ˜1
+J
+java:S1604\"(Make this anonymous inner class a lambda(ëÄéâüÿÿÿÿ8öËÂÿ˜1
+K
+java:S1604Ò"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8÷ËÂÿ˜1
+~
+java:S1450Ú"`Remove the "btnConsultarSaldo" field and declare it as a local variable in the relevant methods.(¯‚ÛÜ8éÌÂÿ˜1
+t
+java:S1450Û"]Remove the "btnIrAOtroLado" field and declare it as a local variable in the relevant methods.(ºÎ™Š
+q
+java:S1450Ü"ZRemove the "btnRetiro10" field and declare it as a local variable in the relevant methods.(İáÌ¦
+q
+java:S1450İ"ZRemove the "btnRetiro20" field and declare it as a local variable in the relevant methods.(éøŒ
+v
+java:S1450Ş"ZRemove the "btnRetiro50" field and declare it as a local variable in the relevant methods.(Òí£Äùÿÿÿÿ
+s
+java:S1450ß"\Remove the "btnRetiroOtro" field and declare it as a local variable in the relevant methods.(ÍàÓö
+\
+java:S1161/":Add the "@Override" annotation above this method signature(¦³±ÿÿÿÿÿ8ˆÍÂÿ˜1
+H
+java:S1172Š"*Remove this unused method parameter "evt".(ˆüåÓ8ºÍÂÿ˜1
+M
+java:S1172"*Remove this unused method parameter "evt".(«™¨øøÿÿÿÿ8½ÍÂÿ˜1
+M
+java:S1172“"*Remove this unused method parameter "evt".(ÖŸóˆùÿÿÿÿ8ÁÍÂÿ˜1
+H
+java:S1172—"*Remove this unused method parameter "evt".(Ó˜×8ÅÍÂÿ˜1
+M
+java:S1172›"*Remove this unused method parameter "evt".(ÎÏĞĞıÿÿÿÿ8ÉÍÂÿ˜1
+G
+java:S1172¤"*Remove this unused method parameter "evt".(³à¿h8ÍÍÂÿ˜1
+M
+java:S1172¨"*Remove this unused method parameter "evt".(¶†Ÿşÿÿÿÿ8ÑÍÂÿ˜1
+M
+java:S1197¹"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8ÙÍÂÿ˜1
+c
+java:S2147È"ECombine this catch with the one at line 198, which has the same body.(¨¦Š½8ÛÍÂÿ˜1
+c
+java:S2147Ê"ECombine this catch with the one at line 198, which has the same body.(ã€ 8ÜÍÂÿ˜1
+b
+java:S2147Ì"ECombine this catch with the one at line 198, which has the same body.(ñÎ¯%8ÜÍÂÿ˜1
