@@ -1,0 +1,15 @@
+
+e
+java:S2095'"JUse try-with-resources or close this "ServerSocket" in a "finally" clause.(—²ßŞüÿÿÿÿ
+=
+java:S2189+""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+N	java:S106)"9Replace this use of System.out or System.err by a logger.(£ô¼
+L
+java:S14814"1Remove this unused "clientSocket" local variable.(Ü›ŞÆıÿÿÿÿ
+V	java:S125;"<This block of commented-out lines of code should be removed.(åÑùµÿÿÿÿÿ
+[
+java:S4719O"9Replace charset name argument with StandardCharsets.UTF_8(¸Ìıÿÿÿÿ8Ö±¿Î™1
+P
+java:S1128"3Remove this unused import 'java.io.BufferedReader'.(€é²Å8“Ş¿Î™1
+S
+java:S1128"6Remove this unused import 'java.io.InputStreamReader'.(ãˆÎÉ8”Ş¿Î™1
