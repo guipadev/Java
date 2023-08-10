@@ -124,10 +124,19 @@ Números que carecen de parte fraccionaria. Permitido valores negativos:
 
 
 ### Tipos de datos de punto flotante
+Denotan números con parte fraccionaria.
+- **float** 32 bits = 4 bytes rango 1,4e-45 a 3,4e+038
+- **double** 6 bits = 8 bytes rango 4,9e-324 a 1,8e+308
 
+### Valores especiales 
+- infinito positivo   Double.POSITIVE_INFINITY
+- infinito negativo Double.NEGATIVE_INFINITY
+  - NaN    Double.NaN
 
+## El tipo de datos de los caracteres
+- **char** 16 bits = 2 bytes rango 0 a 65.536
+- ASCII 0 a 127 valores de 0 a 255.
 
-- El tipo de datos de los caracteres
 - El tipo de datos lógicos
 - Literales
 - Variables
