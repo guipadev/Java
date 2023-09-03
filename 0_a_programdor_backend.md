@@ -85,7 +85,7 @@ Teste código en general como un conjunto. Llamada back box, donde no vemos el c
 
 ## CI/CD Continuous Integration - Continuous Deployment
 
-Practica de automatizar la creacion, pruebas y despliegue de nuestras aplicaciones con el objetivo detectar errores a fases tempranas, previo al despliegue en producción.
+Practica de automatizar la creacion, pruebas y despliegue de nuestras aplicaciones con el objetivo detectar errores a fases tempranas, previo al despliegue en producción.**Jenkis**
 
 **GitHub Actions**
 
