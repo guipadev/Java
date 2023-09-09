@@ -2,10 +2,10 @@ https://www.youtube.com/watch?v=vpdxpVft2eg
 
 1. Que es TDD?
 test driver development es una práctica enfocadas a las pruebas
-Involucra pues el tema de la factorización es el tema de hacer tests 
+Involucra pues el tema de la factorización es el tema de hacer tests
 
 2. Que es ajax?
-cuando refresca una pequeña porción de la pantalla una pequeña porción de el aplicativo 
+cuando refresca una pequeña porción de la pantalla una pequeña porción de el aplicativo
 tecnología para hacer peticiones asíncronas
 
 3. Qué diferencia hay entre una etiqueta div y una etiqueta span?
@@ -29,16 +29,16 @@ OPTION otra opciones
 Sirva para indicar como fue la respuesta del servicio
 200 petición exitosa
 201 el recurso ha sido creado
-404 recursos que no existen 
+404 recursos que no existen
 204 no se encontró el contenido
 401 no autorizado
-403 que es prohibido y 
-la gama de códigos relacionados con 500 que son errores de tipo de servidor 
+403 que es prohibido y
+la gama de códigos relacionados con 500 que son errores de tipo de servidor
 400 que tiene que ver con bacths request
 405 method not soport
 Expresan situaciones cuando damos respuesta a un servicio, lo que me permite una excelente comunicación con el front que consume
 
-7. Con qué lenguajes o frameworks sueles trabajar? 
+7. Con qué lenguajes o frameworks sueles trabajar?
 Pregunta abierta para conocer el stack que conoces o trabaja. Aquí indicar las tecnologias y como las va conectando entre ellas.
 Un stack front Angular, back Spring Boot, comunicación servicios REST, seguridad proveedor cloud como clickcloud, amazon comito
 conexion a BD mediante la abstracción JPA a Postgress o Mongo.
@@ -47,8 +47,8 @@ conexion a BD mediante la abstracción JPA a Postgress o Mongo.
 back se despliegaria de forma independiente en un servidor tradicional o ponerlo en un contendor y subirlo algun cloud
 front ya compilado (html, css, js) archivos estaticos que pueden subirse a un Apache, S3
 
-9. Cuando prefieres usar BD SQL a NoSQL ? 
-Base de datos Relacional; aplicación priorida que los datos mantengan una estructura/forma que no cambie en el tiempo, normalización de datos y 
+9. Cuando prefieres usar BD SQL a NoSQL ?
+Base de datos Relacional; aplicación priorida que los datos mantengan una estructura/forma que no cambie en el tiempo, normalización de datos y
 respetando los principios ACID (Atomicidad, Consistencia, Aislamiento y Durabilidad)
 Base de datos No Relacionales: No importa tener la estructura con el tiempo y hay una flexibidad, escabilidad y búsqueda rápida de información
 
@@ -59,7 +59,7 @@ SOAP es un protocolo, se estructura con etiquetas XML y necesita de un contrato 
 e indica como se van a consumir con ciertas estructuras
 
 11. cuál es la diferencia en javascript de let, const y var ?
-EMACS6 
+EMACS6
 var esta obsoleto
 let define el alcance donde fue definida
 const es lo mismo pero no permite reasignar nuevemente otro valor
@@ -67,7 +67,7 @@ const es lo mismo pero no permite reasignar nuevemente otro valor
 12. Que es una función flecha - Arrow Function ?
 Es la forma abreviada de expresar una funcion
 
-13. En qué consiste la normalización de datos ? 
+13. En qué consiste la normalización de datos ?
 Técnica que se aplica a conjunto de datos para reducir la redundancia.
 No siempre la teoria funciona ante la practica ejemplo:
 Se consulta información de proveedores y clientes, datos que estan en una misma tabla, lo cual demora.
@@ -78,7 +78,7 @@ Uso protocolos como Auth2, que utiliza internamiento tambien los token JWT
 Proteger cada petición HEADER con algún identificador ajeno al JWT
 
 15. Que es JWT ?
-Jason Web Token, es un mecanismo que tiene un formato especial, que al codificarse puede presentar cierta estructura 
+Jason Web Token, es un mecanismo que tiene un formato especial, que al codificarse puede presentar cierta estructura
 como una firma que lo componen un header, payload, y signature
 Es una forma de identificar a traves de una cadena de texto en un formato especial, para que el back reconozca ese recurso
 y sepa devolverte esa información, sin este recurso el backend no va a poder autorizar la respuesta hacia el cliente
@@ -89,15 +89,14 @@ Un protocolo de autorización para acceder a cierto permisos en otras aplicacion
 
 17. Que gestores/productos de seguridad como servicio conoces ?
 Kognito, Keycloack, AWS Cognito, identity server, Okta
-GCP, AWS, AZURE son proveedores que abstraen toda la funcionalidad de la seguridad 
+GCP, AWS, AZURE son proveedores que abstraen toda la funcionalidad de la seguridad
 para despreocuparnos de crear roles, tokens, politicas todo esto manual a realizarlo desde un panel administrativo
 en seguridad, permisos, roles, usuarios, restablecer contraseñas mediante correo etc..
 
 18. Se puede modificar el payload  JWT ?
 Si, pero la firma lo dectetara como corrupto.
 
-
-19. Cuando usarías Angular frente React o viceversa ? 
+19. Cuando usarías Angular frente React o viceversa ?
 Primero es base con que esta más familiarizado el equipo de trabajo.
 Cuando hay escesiva manipulacion del DOM para el diseño de interfaces se usuaria React tiene mejores tiempos de respuesta.
 Cuando se necesita un Stack más definido seria Angular, ya que trae librerias integradas listas para el uso diario.
@@ -117,11 +116,11 @@ liberia Java  RxJava y React Flux, para JS esta RxJS
 
 22. Que es un mock ?
 Son objetos pre programados, con anticipación tú le vas diciendo cuál es su comportamiento que prácticamente van a devolverte una salida esperada
-simular una respuesta cuando estás haciendo alguna operación, uso pruebas unitarias, ejecutar algún proceso y que te devuelve unos datos ficticios 
- 
+simular una respuesta cuando estás haciendo alguna operación, uso pruebas unitarias, ejecutar algún proceso y que te devuelve unos datos ficticios
+
 
 23. Que es una inyección de dependencias ?
-Patrón de diseño donde el mismo framework se encarga de proporcionar las instancias en el tiempo oportuno 
+Patrón de diseño donde el mismo framework se encarga de proporcionar las instancias en el tiempo oportuno
 esto permite pues gestionar mejor las instancias en el proyecto, desacoplar el código
 
 24 Que pre procesadores de css conoces ?
@@ -140,11 +139,11 @@ No puedes consumir recursos de un dominio arepas.com diferente al actual queso.n
 Puedo habilitar ese consumo de dominio a todos los verbos http o ciertas operaciones
 
 28. Que es CSRF ?
-Cross Site Request Forgery (CSRF o XSRF) 
+Cross Site Request Forgery (CSRF o XSRF)
 Es un ataque a sitio web, enviando código malicioso, usualmente en formularios POST, el cual se envia al servidor
 En Spring MV al habilitar la protección CSRF, en cada petion POST se deben enviar unos tokens, asi proteges
 
-29. Como evitas una inyeccion SQL? 
+29. Como evitas una inyeccion SQL?
 Java al trabajar con JDBC tiene los famosos Types of Statements, enviar los parametros a BD evitando las inyecciones maliciosas.
 Uso de ORM, JDBC, Hibernate ya son librerias que evitan esto.
 
@@ -189,7 +188,7 @@ Es cuando empiezas anidar diferentes callback que son inecesarias y dificiles de
 
 41. Que es una observable ?
 Es un flujo de datos que se usa mucho en el paradigma reactivo tanto para front y back
-Para que cualquier suscripción a ese flujo de datos, cuando suceda un cambio ese flujo de datos esa suscripción se entere de ese cambio 
+Para que cualquier suscripción a ese flujo de datos, cuando suceda un cambio ese flujo de datos esa suscripción se entere de ese cambio
 y cuando se entere de ese cambio tras algún proceso por ejemplo subir archivos, mostrar una tabla, tras algún evento
 
 42. Usaria jquery o angular para una landing page ?
@@ -208,10 +207,10 @@ Es negociar la clave aquí, evaluando habilidades blandas
 Trabajaria en equipo, siempre y cuando esten los roles bien definidos, compromisos y alcances pactados.
 Trabajaria solo, donde tal vez el equipo no puede aportar mucho y yo cuento con la experiencia adecuada para esto y luego puedo transmitirlo al equipo.
 
-46. Qué harías si algo de toma mucho tiempo en encontrar la solución ? 
-Cuando estas obstaculizado lo mejor es levantar la mano pedir ayuda así quizás alguien el equipo haya visto poco pero algo te puede aportar 
+46. Qué harías si algo de toma mucho tiempo en encontrar la solución ?
+Cuando estas obstaculizado lo mejor es levantar la mano pedir ayuda así quizás alguien el equipo haya visto poco pero algo te puede aportar
 Aveces cuando estas tan metido en el problema, los ves con los mismo ojos una y otra vez con el mismo sentido erroneo
 Pero cuando lo ve otra persona, te da otro enfoque y te da la solución de pensarlo de otra forma y tal vez ahí esta la solución
 
-47. Cómo te liberas de los bloqueos mentales ? 
+47. Cómo te liberas de los bloqueos mentales ?
 Hacer pausas de ir a la tienda y caminando puede liberar esa tension.
