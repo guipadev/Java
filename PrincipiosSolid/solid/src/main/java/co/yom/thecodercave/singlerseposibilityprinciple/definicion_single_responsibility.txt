@@ -1,0 +1,8 @@
+Principio de Responsabilidad Unica:
+Una Clase debe tener una y una sola razón para cambiar
+
+Aveces es un poco confuso porque razon para cambiar,
+puede ser traducido como responsabilidad directamente
+
+Y lo que quiere decir es que la clase tiene que tener una única responsabilidad
+Si la clase tiene más de una responsabilidad, entonces rompe el principio

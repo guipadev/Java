@@ -1,0 +1,3 @@
+Dependency Inversion Principle - Principio de Inversión de Dependencia
+
+Hay que depender de abstracciones y no de clases concretas

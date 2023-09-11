@@ -1,0 +1,4 @@
+Dependency Injection - Inyección de Dependencia
+
+Se deriva del último de los principios SOLID, que es el Dependency Inversión (Inversión de Dependencia)
+Donde las entidades deben depender de abstracciones y no de implementaciones concretas
