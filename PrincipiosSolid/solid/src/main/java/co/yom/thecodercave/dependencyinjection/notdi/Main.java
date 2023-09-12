@@ -1,5 +1,10 @@
 package co.yom.thecodercave.dependencyinjection.notdi;
 
+import co.yom.thecodercave.dependencyinjection.notdi.services.CustomerRepository;
+import co.yom.thecodercave.dependencyinjection.notdi.services.CustomerService;
+import co.yom.thecodercave.dependencyinjection.notdi.services.ComunicationService;
+import co.yom.thecodercave.dependencyinjection.notdi.services.EmailService;
+
 /**
  * A partir de una lista de clientes que tiene una BD, queremos enviarles determinados mensajes
  *
@@ -9,9 +14,13 @@ public class Main {
     public static void main(String[] args) {
 
         // Servicio clientes
-        var customerService = new CustomerService();
+        var mysqlConnection = new MySQLConnection("localhost", "root", "", 3306, "mydb");
+        var customerRepository = new CustomerRepository(mysqlConnection);
+        var customerService = new CustomerService(customerRepository);
         // Servicio comunicacion
-        var communicationService = new CommunicationService();
+        var emailService = new EmailService();
+        var communicationService = new ComunicationService(emailService);
+
 
         // Obtención de clientes
         var customers = customerService.GetCustomers();

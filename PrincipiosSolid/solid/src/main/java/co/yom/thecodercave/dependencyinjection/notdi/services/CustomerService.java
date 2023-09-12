@@ -6,6 +6,7 @@ import java.util.List;
 
 public class CustomerService {
 
+    // CustomerRepository es invocado aquí el cual genera una dependencia con el repository
     private final CustomerRepository repository;
 
     // Se instancia un repositorio de los clientes

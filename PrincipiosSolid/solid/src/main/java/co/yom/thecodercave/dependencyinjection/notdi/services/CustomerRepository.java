@@ -12,6 +12,10 @@ import java.util.List;
  */
 public class CustomerRepository {
 
+    /**
+     * Este repositorio tiene una dependencia con MySQL, pero si necesitamos conectarnos a otra
+     * BD Oracle, Postgress debemos crear una nueva clase e inyectar sobre el tipo necesario conexion
+     */
     private final MySQLConnection connection;
 
     public CustomerRepository(MySQLConnection connection) {

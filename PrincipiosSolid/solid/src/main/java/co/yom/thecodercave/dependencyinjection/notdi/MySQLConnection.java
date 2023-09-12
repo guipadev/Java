@@ -1,7 +1,9 @@
 package co.yom.thecodercave.dependencyinjection.notdi;
 
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class MySQLConnection {
@@ -10,7 +12,9 @@ public class MySQLConnection {
     private final String password;
     private final String host;
     private final int port;
-    private  String database;
+    private final String database;
+
+    private Connection connection;
 
     public MySQLConnection(String username, String password, String host, int port, String database) {
         this.username = username;
