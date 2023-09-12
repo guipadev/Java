@@ -1,0 +1,15 @@
+
+d
+java:S1104"NMake Id a static final constant or non-public and provide accessors if needed.(«Ó´Œ
+f
+java:S1104	"PMake Name a static final constant or non-public and provide accessors if needed.(õ¤üà
+l
+java:S1104
+"QMake Email a static final constant or non-public and provide accessors if needed.(­³îØüÿÿÿÿ
+l
+java:S1104"QMake Phone a static final constant or non-public and provide accessors if needed.(þ œÅýÿÿÿÿ
+b	java:S116"MRename this field "Id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«Ó´Œ
+d	java:S116	"ORename this field "Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ¤üà
+j	java:S116
+"PRename this field "Email" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­³îØüÿÿÿÿ
+j	java:S116"PRename this field "Phone" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(þ œÅýÿÿÿÿ
