@@ -1,5 +1,6 @@
 package co.yom.thecodercave.dependencyinjection.notdi.services;
 
+import co.yom.thecodercave.dependencyinjection.notdi.MySQLConnection;
 import co.yom.thecodercave.dependencyinjection.notdi.Customer;
 
 import java.util.ArrayList;
@@ -18,7 +19,7 @@ public class CustomerRepository {
     }
 
     public List<Customer> GetCustomers() {
-        if (connection.getClass() == MySQLConnection.class) {
+        if (connection instanceof MySQLConnection) {
             System.out.println("Get Customers from MySQL");
         }
 
