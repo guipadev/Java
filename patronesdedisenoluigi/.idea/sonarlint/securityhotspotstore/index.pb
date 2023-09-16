@@ -67,3 +67,9 @@ Fsrc/main/java/co/luigicode/patronescreacionales/prototype/Warrior.java,a/c/ac3
 Lsrc/main/java/co/luigicode/patronescreacionales/prototype/TestPrototype.java,b/e/be3a2ffbaa9d7281e8f30d910800a6f76ebb5436
 m
 =src/main/java/co/luigicode/patronescreacionales/Definicion.md,c/7/c730c7e7ac9e6eddfc48a4f1400f555222c26c12
+|
+Lsrc/main/java/co/luigicode/patronescreacionales/singleton/TestSingleton.java,a/0/a0278934e9eaa1004769fc84e9a563f945473835
+u
+Esrc/main/java/co/luigicode/patronescreacionales/singleton/Player.java,c/9/c9ce9d3293fee53d5336d9a82338506b44d2ee2a
+w
+Gsrc/main/java/co/luigicode/patronescreacionales/singleton/Definicion.md,b/8/b863f066d8684ce1e8bcd91aac8ee99348e206b3
