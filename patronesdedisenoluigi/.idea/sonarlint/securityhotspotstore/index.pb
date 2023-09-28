@@ -103,3 +103,11 @@ Jsrc/main/java/co/luigicode/patronesestructurales/bridge/enemy/Warrior.java,1/2
 Tsrc/main/java/co/luigicode/patronesestructurales/bridge/fighter/MageFighterImpl.java,7/b/7bb4856a760539b1f96a06511aade1f0064c4f5b
 w
 Gsrc/main/java/co/luigicode/patronesestructurales/bridge/TestBridge.java,2/9/2985848031b9db492407008c58dfaabb007cc83b
+x
+Hsrc/main/java/co/luigicode/patronesestructurales/composite/BaseItem.java,0/3/03c866e0992825c0fb6811738272ff99a1bfd1f9
+t
+Dsrc/main/java/co/luigicode/patronesestructurales/composite/Item.java,3/4/34683f3658fc8f6c812505955f27f1a926680707
+s
+Csrc/main/java/co/luigicode/patronesestructurales/composite/Bag.java,8/f/8fcafcbdd0c895b4c91a7b8262c485c1292b49fd
+}
+Msrc/main/java/co/luigicode/patronesestructurales/composite/TestComposite.java,9/b/9bbc2dbffc342bf19704ff425010b6e05b14807d
