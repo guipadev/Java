@@ -18,7 +18,7 @@ public class TestDecorator {
         humanWarrior.attack();
 
         System.out.println("========================== Human Warrior Mage ==========================");
-        Enemy humanWarriorMage = new WarriorEnemyDecorator(new MageEnemyDecorator(new Human())));
+        Enemy humanWarriorMage = new WarriorEnemyDecorator(new MageEnemyDecorator(new Human()));
         humanWarriorMage.attack();
 
         System.out.println("========================== Warrior Mage Assassin ==========================");
