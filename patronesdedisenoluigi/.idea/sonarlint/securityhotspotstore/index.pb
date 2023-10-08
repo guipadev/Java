@@ -147,3 +147,5 @@ r
 Bsrc/main/java/co/luigicode/patronesestructurales/facade/Forja.java,1/7/17bf98db38474e6d7a816891e6b194e1f3d08091
 {
 Ksrc/main/java/co/luigicode/patronesestructurales/facade/FacadeHerreria.java,d/5/d5d85b4a8b5a208ae56172bfdf881a31cac2bd3d
+}
+Msrc/main/java/co/luigicode/patronesestructurales/flyweight/TestFlyweight.java,d/6/d63252605356afae09fef8b62b88335525774705
