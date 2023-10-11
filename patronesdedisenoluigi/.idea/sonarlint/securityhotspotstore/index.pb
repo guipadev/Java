@@ -167,3 +167,15 @@ s
 Csrc/main/java/co/luigicode/patronesestructurales/flyweight/Npc.java,c/e/ce021f75947153ca37e1da3a58f7c07e2ea8507c
 ƒ
 Ssrc/main/java/co/luigicode/patronesestructurales/flyweight/assets/Prefabricado.java,1/1/1137e209c0d04eccf9583c0b6a27e66c9a96e92a
+t
+Dsrc/main/java/co/luigicode/patronesestructurales/proxy/Definicion.md,d/1/d1accecd02e440c777ea1b0a395e0987961c2e30
+s
+Csrc/main/java/co/luigicode/patronesestructurales/proxy/Estados.java,6/1/6123399fb0931915f9f94d300f5307336aaf0765
+q
+Asrc/main/java/co/luigicode/patronesestructurales/proxy/Juego.java,f/8/f8a4f0cd6a0ce80d2f0976ec5db043370ccdeffd
+z
+Jsrc/main/java/co/luigicode/patronesestructurales/proxy/ProxyJuegoImpl.java,6/f/6f8819e5745e920e4dbb7afcdf4e6ebffe26e728
+u
+Esrc/main/java/co/luigicode/patronesestructurales/proxy/JuegoImpl.java,8/3/83498750e462330885c9d54bd99bf21a9874dc82
+t
+Dsrc/main/java/co/luigicode/patronesestructurales/proxy/TestProy.java,a/6/a66e604413b4fa15529a38e88ace0b064ef1e9fc
