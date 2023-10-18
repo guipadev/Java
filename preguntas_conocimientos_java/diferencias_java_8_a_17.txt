@@ -1,0 +1,78 @@
+Java 8 LTS
+- Incluir Lambdas
+- API Steam
+
+Java 9
+- Colecciones Lista, Conjunto y Mapas
+- List, Set, Map
+- Métodos takeWhile, dropWhile e iterate, ifPresentOrElse
+- Interfaces con métodos privados
+- JShell
+- HTTPClient
+
+Java 10
+- Garbage Collection
+- introducción de la palabra clave “var”
+
+Java 11 LTS
+- Strings and Files obtuvieron un par de métodos nuevos
+- ejecutar archivos fuente de Java sin tener que compilarlos primero
+- Inferencia de tipo de variable local (var) para parámetros lambda
+- HttpClient Java 9 en su versión final sin vista previa.
+- Flight Recorder, No-Op Garbage Collector, Nashorn-Javascript-Engine obsoleto, etc.
+
+Java 12
+Un par de funciones nuevas y limpiezas, la compatibilidad con Unicode 11 y una vista previa de la nueva expresión de cambio
+
+Java 13
+- Soporte para Unicode 12.1
+- Las expresiones de cambio ahora pueden devolver un valor.
+- Y puede usar una sintaxis de estilo lambda para sus expresiones, sin los problemas de caída / interrupción
+
+Java 14
+- Las expresiones de cambio que se obtuvieron como vista previa en las versiones 12 y 13, ahora están estandarizadas.
+- Ahora hay clases de registro, (potencialmente) getters / setters, equals / hashcode, toString.
+- Finalmente, las NullPointerExceptions describen exactamente qué variable era nula.
+- Coincidencia de patrones para InstanceOf (versión preliminar) Pattern Matching For InstanceOf (Preview)
+- Hay una herramienta jpackage de incubación , que permite empaquetar su aplicación Java en paquetes específicos de la plataforma, incluidas todas las dependencias necesarias.
+- Se ha eliminado el recolector de basura Concurrent Mark Sweep (CMS) y se ha agregado el recolector de basura Z experimental.
+
+Java 15
+- Bloques de texto / cadenas de varias líneas """ texto """
+- Clases selladas – Vista previa
+- Registros y coincidencia de patrones
+- Motor JavaScript Nashorn
+- ZGC: listo para producción recolector
+
+Java 16
+- Ahora puede conectarse a sockets de dominio Unix (también compatible con macOS y Windows (10+).
+- API de vinculador externo: vista previa
+- Registros y coincidencia de patrones
+- Las clases selladas todavía están en vista previa.
+
+Java 17 LTS
+
+Java 18
+
+Java 19
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
