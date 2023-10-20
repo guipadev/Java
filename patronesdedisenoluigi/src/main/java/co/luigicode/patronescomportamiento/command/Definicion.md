@@ -19,3 +19,9 @@ Comando que serian los jefes
 ## Ejemplo juego
 
 mover al player hacia adelante, atras, lados y que salte
+
+Receptor
+Clase que realiza el trabajo
+
+Comandos
+Mandan

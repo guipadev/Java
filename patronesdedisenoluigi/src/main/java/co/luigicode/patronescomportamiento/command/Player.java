@@ -1,7 +1,9 @@
 package co.luigicode.patronescomportamiento.command;
 
 /**
- * Receptor
+ * Receptor que es la que trabaja y hace las cosas
+ * Y tiene todos los jefecillos que son los Command
+ * Que al ejecutar le manda hacer algo a la Clase
  */
 public class Player {
 
