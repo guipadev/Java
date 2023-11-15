@@ -271,3 +271,17 @@ w
 Gsrc/main/java/co/luigicode/patronescomportamiento/strategy/Enemigo.java,7/0/70cc84ed56f8fd16761de8128c42413bdafaddf8
 |
 Lsrc/main/java/co/luigicode/patronescomportamiento/strategy/TestStrategy.java,f/9/f950ec2eb635786da7f73e3794382332afa0232b
+à
+Xsrc/main/java/co/luigicode/patronescomportamiento/templatemethod/TestTemplateMethod.java,f/a/fae479017f4253ebbae8812a554e2a399da473e6
+à
+Xsrc/main/java/co/luigicode/patronescomportamiento/templatemethod/ConcretaPlantillaA.java,4/f/4f49d6bb5d73e79e642e9e6baa0b41ba50686a88
+ò
+hsrc/main/java/co/luigicode/patronescomportamiento/templatemethod/ejemplovideojuego/EnemigoPlantilla.java,4/0/402430f501e9a259430672898e2d73eda6049267
+ê
+`src/main/java/co/luigicode/patronescomportamiento/templatemethod/ejemplovideojuego/Guerrero.java,a/4/a4c9abcfdfd98baf484dfac3c77add34d669cc27
+å
+\src/main/java/co/luigicode/patronescomportamiento/templatemethod/ejemplovideojuego/Mago.java,e/e/ee5ad8a5c2f8a20131d8d4131d190ff9383ae04f
+å
+\src/main/java/co/luigicode/patronescomportamiento/templatemethod/ejemplovideojuego/Test.java,7/d/7d7d46d8c6bb5bbe86d3f7bcc71f52bc5c2d24b2
+
+Osrc/main/java/co/luigicode/patronescomportamiento/templatemethod/Plantilla.java,c/1/c17ca8f27b86d70e0f7c25efb41f2f78e589cdd9
