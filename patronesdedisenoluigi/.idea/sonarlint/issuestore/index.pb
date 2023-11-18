@@ -285,3 +285,17 @@ hsrc/main/java/co/luigicode/patronescomportamiento/templatemethod/ejemplovideoju
 \src/main/java/co/luigicode/patronescomportamiento/templatemethod/ejemplovideojuego/Test.java,7/d/7d7d46d8c6bb5bbe86d3f7bcc71f52bc5c2d24b2
 
 Osrc/main/java/co/luigicode/patronescomportamiento/templatemethod/Plantilla.java,c/1/c17ca8f27b86d70e0f7c25efb41f2f78e589cdd9
+v
+Fsrc/main/java/co/luigicode/patronescomportamiento/visitor/Visitor.java,6/2/62dd8410ffb63909e18396f972ff69b06df2c59b
+x
+Hsrc/main/java/co/luigicode/patronescomportamiento/visitor/Visitable.java,5/a/5a4c3397ee1204d884eea9bdada00ab4581b5cc0
+w
+Gsrc/main/java/co/luigicode/patronescomportamiento/visitor/Guerrero.java,5/a/5a317cf26e87dd8627a526eaa2b5ab9a7db7ff18
+s
+Csrc/main/java/co/luigicode/patronescomportamiento/visitor/Mago.java,e/3/e31647f976520c6fdec63221749b300bdf8f772c
+v
+Fsrc/main/java/co/luigicode/patronescomportamiento/visitor/Asesino.java,d/9/d9f784ee10bb0c30c2c4e0effb7d6e258e8bcd60
+}
+Msrc/main/java/co/luigicode/patronescomportamiento/visitor/EnemigoVisitor.java,0/1/012d28dbb803d59fbf6f57b406930e8760fe1f99
+z
+Jsrc/main/java/co/luigicode/patronescomportamiento/visitor/TestVisitor.java,d/2/d28ad333f37c77146a5609ebc44773877fe93169
