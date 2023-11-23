@@ -15,3 +15,7 @@ U
 -src/main/java/co/yom/arreglos/AppArreglo.java,1/4/14940b2f529fec6eb6aaac2fef010e4dc69dd202
 ^
 .src/main/java/co/yom/matrices/Arreglo2Dim.java,4/4/44ffacbd959096070954645c424d20a9d317f171
+a
+1src/main/java/co/yom/matrices/ArregloMas2Dim.java,d/6/d6d5cd2adc17ccead1b539b39b3e294be8d05951
+g
+7src/main/java/co/yom/matrices/ArregloComoParametro.java,8/3/835c95c37787eb816fd90496f3361482710febd2
