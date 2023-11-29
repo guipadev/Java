@@ -1,0 +1,11 @@
+
+`
+java:S1226">Introduce a new variable instead of reusing the parameter "x".(Ò×Áùÿÿÿÿ8»—Êá¿1
+G
+java:S1197"*Move the array designators [] to the type.(–ùêÅ8ûêÇá¿1
+W
+java:S1854"5Remove this useless assignment to local variable "x".(Ò×Áùÿÿÿÿ8Ê—Êá¿1
+G
+java:S1197"*Move the array designators [] to the type.(ÈèŸø8›Éá¿1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ÆÅ¢®8‚ëÇá¿1
+Z	java:S106$"9Replace this use of System.out or System.err by a logger.(´×®üùÿÿÿÿ8„ëÇá¿1

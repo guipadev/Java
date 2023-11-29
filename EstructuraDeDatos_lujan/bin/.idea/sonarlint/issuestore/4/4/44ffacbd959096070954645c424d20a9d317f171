@@ -1,0 +1,21 @@
+
+]
+java:S1854";Remove this useless assignment to local variable "matriz2".(Ïöîıÿÿÿÿ8öøƒ¦¿1
+\
+java:S1854
+":Remove this useless assignment to local variable "matriz".(ª¾Ÿ¸ÿÿÿÿÿ8÷øƒ¦¿1
+N
+java:S1197
+",Move the array designators [][] to the type.(ª¾Ÿ¸ÿÿÿÿÿ8ùøƒ¦¿1
+M
+java:S1481
+"+Remove this unused "matriz" local variable.(ª¾Ÿ¸ÿÿÿÿÿ8üøƒ¦¿1
+N
+java:S1197",Move the array designators [][] to the type.(Ïöîıÿÿÿÿ8ıøƒ¦¿1
+N
+java:S1481",Remove this unused "matriz2" local variable.(Ïöîıÿÿÿÿ8şøƒ¦¿1
+I
+java:S1197",Move the array designators [][] to the type.(Üè8ùƒ¦¿1
+K
+java:S2140")Use "java.util.Random.nextInt()" instead.(àÍ·şÿÿÿÿ8“ùƒ¦¿1
+U	java:S106""9Replace this use of System.out or System.err by a logger.(¿Ç8ŸÀ†¦¿1
