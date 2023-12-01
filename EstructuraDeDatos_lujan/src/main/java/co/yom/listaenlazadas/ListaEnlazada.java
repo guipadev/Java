@@ -18,7 +18,27 @@ public class ListaEnlazada {
         return this;
     }
 
-    public void agregarFinal() {
+    public void agregarFinal(int dato) {
+        Nodo nuevoF;
+        nuevoF = new Nodo(dato);
+        // El último elemento apunta a nulo, indicando que termino la lista enlazada
+        nuevoF.ref = null;
+
+        if (primero == null) {
+            primero = nuevoF;
+            return;
+        }
+
+        Nodo tmp;
+
+        /**
+         * Temporal = primero
+         * Pedimimos le referencia de temporal mientras/hasta que sea diferente de nulo
+         * Cuando acaba de ejecutarse el temporal
+         */
+        for (tmp = primero; tmp.getRef() != null; tmp = tmp.getRef()) {
+            tmp.setRef(nuevoF);
+        }
     }
 
     public void buscar() {

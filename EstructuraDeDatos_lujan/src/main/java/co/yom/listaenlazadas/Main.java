@@ -10,8 +10,12 @@ public class Main {
         listaEnlazada.agregarInicio(2);
         listaEnlazada.agregarInicio(3);
         listaEnlazada.agregarInicio(4);
+
+        listaEnlazada.agregarFinal(5);
+
         listaEnlazada.verLista();
 
-        // Rta: 4 3 2 1, el primer elemento fue el 1 y asi sucesivamente, el último en cola es el primero
+        // Rta: 4 3 2 1, el primer elemento fue el 1 y asi sucesivamente, el último en
+        // cola es el primero
     }
 }
