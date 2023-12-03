@@ -35,16 +35,42 @@ public class ListaEnlazada {
          * Temporal = primero
          * Pedimimos le referencia de temporal mientras/hasta que sea diferente de nulo
          * Cuando acaba de ejecutarse el temporal
+         * 
+         * Este for solo se utiliza para recorrer por eso no se usan llaves
          */
-        for (tmp = primero; tmp.getRef() != null; tmp = tmp.getRef()) {
-            tmp.setRef(nuevoF);
-        }
+        for (tmp = primero; tmp.getRef() != null; tmp = tmp.getRef())
+            ;
+        tmp.setRef(nuevoF);
     }
 
     public void buscar() {
     }
 
-    public void eliminar() {
+    public void eliminar(int dato) {
+        boolean encontrado;
+
+        Nodo actual, anterior;
+
+        actual = primero;
+        anterior = null;
+        encontrado = false;
+
+        while (actual != null && !encontrado) {
+            encontrado = (actual.dato == dato);
+
+            if (!encontrado) {
+                anterior = actual;
+                actual = actual.getRef();
+            }
+
+            if (actual != null) {
+                if (actual == primero) {
+                    primero = actual.ref;
+                } else {
+                    anterior.setRef(actual.ref);
+                }
+            }
+        }
     }
 
     public void verLista() {
