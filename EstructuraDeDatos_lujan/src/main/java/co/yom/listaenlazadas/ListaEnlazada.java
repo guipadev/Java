@@ -43,7 +43,12 @@ public class ListaEnlazada {
         tmp.setRef(nuevoF);
     }
 
-    public void buscar() {
+    public Nodo buscar(int dato) {
+        Nodo nodob;
+        for (nodob = primero; nodob != null; nodob = nodob.getRef());
+            if (dato == nodob.dato)
+                return nodob;
+        return null;
     }
 
     public void eliminar(int dato) {
