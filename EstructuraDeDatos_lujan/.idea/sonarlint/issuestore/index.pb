@@ -19,7 +19,3 @@ g
 7src/main/java/co/yom/matrices/ArregloComoParametro.java,8/3/835c95c37787eb816fd90496f3361482710febd2
 ]
 -src/main/java/co/yom/listaenlazadas/Nodo.java,7/0/7048daa681fc6fba6ab93302c75329f9219a50e0
-f
-6src/main/java/co/yom/listaenlazadas/ListaEnlazada.java,0/a/0a47a20f71918e5ec385f3d1b35bfbb7ddbe93f9
-]
--src/main/java/co/yom/listaenlazadas/Main.java,d/8/d8b39f939c037689281259b93373c21711b25e40
