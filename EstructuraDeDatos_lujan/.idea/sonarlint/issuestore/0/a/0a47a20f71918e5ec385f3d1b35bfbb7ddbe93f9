@@ -1,0 +1,8 @@
+
+
+java:S26811"|This line will not be executed in a loop; only the first line of this 2-line block will be. The rest will execute only once.(ח¡Úךרÿÿÿÿ8ÜסנÊֵ1
+e
+java:S22591"CA "NullPointerException" could be thrown; "nodob" is nullable here.(ח¡Úךרÿÿÿÿ8ÚֿשÊֵ1
+H
+java:S16599"&Declare "anterior" on a separate line.(«¸ֳדüÿÿÿÿ8ענÊֵ1
+Z	java:S106V"9Replace this use of System.out or System.err by a logger.(¶ס©י‏ÿÿÿÿ8¡ענÊֵ1
