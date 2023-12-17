@@ -1,6 +1,5 @@
 package Persistencia;
 
-import Logica.Carrera;
 import Persistencia.exceptions.NonexistentEntityException;
 import java.io.Serializable;
 import java.util.List;
@@ -11,6 +10,7 @@ import javax.persistence.EntityNotFoundException;
 import javax.persistence.Persistence;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
+
 
 public class CarreraJpaController implements Serializable {
 
