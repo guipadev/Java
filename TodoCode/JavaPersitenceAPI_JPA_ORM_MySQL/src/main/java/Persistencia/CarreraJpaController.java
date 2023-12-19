@@ -1,5 +1,10 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package Persistencia;
 
+import Logica.Carrera;
 import Persistencia.exceptions.NonexistentEntityException;
 import java.io.Serializable;
 import java.util.List;
@@ -11,16 +16,18 @@ import javax.persistence.Persistence;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
-
+/**
+ *
+ * @author yamid
+ */
 public class CarreraJpaController implements Serializable {
 
     public CarreraJpaController(EntityManagerFactory emf) {
         this.emf = emf;
     }
     
-     // Creamos nuestro constructor alumno cuando se invoque a el mismo
-    public CarreraJpaController () {
-        emf = Persistence.createEntityManagerFactory("testJPAPU");
+    public CarreraJpaController() {
+        emf = Persistence.createEntityManagerFactory("pruebaJPAPU");
     }
     
     private EntityManagerFactory emf = null;

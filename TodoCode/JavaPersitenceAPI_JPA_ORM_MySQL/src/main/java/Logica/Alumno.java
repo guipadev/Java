@@ -13,7 +13,7 @@ import javax.persistence.TemporalType;
 public class Alumno implements Serializable {
     
     @Id
-    private String dni;
+    private int id;
     @Basic
     private String nombre;
     private String apellido;
@@ -21,32 +21,30 @@ public class Alumno implements Serializable {
     private Date fechaNac;
     
     // Relacion de alumno solo puede tener una carrera
-    @OneToOne
+    @OneToOne 
     private Carrera carre;
 
     public Alumno() {
     }
 
-    public Alumno(String dni, String nombre, String apellido, Date fechaNac, Carrera carre) {
-        this.dni = dni;
+    public Alumno(int id, String nombre, String apellido, Date fechaNac, Carrera carre) {
+        this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.fechaNac = fechaNac;
         this.carre = carre;
     }
 
-    
-
     Alumno(String string, String ernesto, String perez) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-    public String getDni() {
-        return dni;
+    public int getId() {
+        return id;
     }
 
-    public void setDni(String dni) {
-        this.dni = dni;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNombre() {

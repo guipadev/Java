@@ -1,3 +1,7 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package Persistencia;
 
 import Logica.Alumno;
@@ -13,6 +17,10 @@ import javax.persistence.Persistence;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
+/**
+ *
+ * @author yamid
+ */
 public class AlumnoJpaController implements Serializable {
 
     public AlumnoJpaController(EntityManagerFactory emf) {
@@ -20,11 +28,9 @@ public class AlumnoJpaController implements Serializable {
     }
     
     
-    // Creamos nuestro constructor alumno cuando se invoque a el mismo
-    public AlumnoJpaController () {
-        emf = Persistence.createEntityManagerFactory("testJPAPU");
+    public AlumnoJpaController() {
+        emf = Persistence.createEntityManagerFactory("pruebaJPAPU");
     }
-    
     
     private EntityManagerFactory emf = null;
 
@@ -51,7 +57,7 @@ public class AlumnoJpaController implements Serializable {
         }
     }
 
-    public void edit(Alumno alumno) throws NonexistentEntityException, Exception {
+    public void edit(int alumno) throws NonexistentEntityException, Exception {
         EntityManager em = null;
         try {
             em = getEntityManager();
@@ -74,7 +80,7 @@ public class AlumnoJpaController implements Serializable {
         }
     }
 
-    public void destroy(String id) throws NonexistentEntityException {
+    public void destroy(int id) throws NonexistentEntityException {
         EntityManager em = null;
         try {
             em = getEntityManager();
@@ -119,7 +125,7 @@ public class AlumnoJpaController implements Serializable {
         }
     }
 
-    public Alumno findAlumno(String id) {
+    public Alumno findAlumno(int id) {
         EntityManager em = getEntityManager();
         try {
             return em.find(Alumno.class, id);
