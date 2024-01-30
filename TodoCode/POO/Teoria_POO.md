@@ -305,13 +305,33 @@ remove(1)		|---|--|---|---|---|
 				|---|---|---|---|
 				  0	  1   2   3
 
+## MAP
+
+- Un **Map** es un colección de pares **clave-valor** donde **cada clave** está asociada a un **único valor**.
+- **Map** en Java **no puede contener claves duplicadas**.
+- Permite acceso rápido a los valores a través de las claves.
+- Java proporciona _diferentes implementaciones_ de Map:
+    - HashMap
+    - TreeMap
+    - LinkedHashMap
+    - entre otras...
+
+### Métodos de Map
+- La interfaz Map tiene una serie de métodos que podemos utilizar, veamos algunos de los más utilizados:
+    - **put (C clave, V valor)**: AGregar un par clave-valor a la collection Map.
+    - **get (OBject clave)**: Devuelve el valor asociado a la clave brindad o null si la clave no existe.
+    - **constainsKey (Object clave)**: Verifica si el Map contiene la clave especificada.
+    - **constainsValue (Object valor)**: Comprueba si el Map contiene el valor especificado.
+    - **remove (OBject clave)**: Elimina el registro asociado a la clave brindada.
+    - **keySet()**: Devuelve un conjunto de todas las claves en el Map.
+    - **values()**: Devuelve una colección de todos los valores que contiene el Map.
 
 ## Qué son las excepciones ?
 
 - Una **excepción** es un evento que ocurre durante la ejecucción de un programa que rompe el flujo normal de ejecucción.
 - Cuando se habla de excepciones nos referimos  a un **evento excepcional** (algo muy difícil que pase o fuera de lo común).
 
-## Qué cosas causan excepciones ?
+### Qué cosas causan excepciones ?
 
 - Muchas cosas pueden causar excepciones, entre ellos:
 	- Errores hardware
@@ -326,7 +346,7 @@ remove(1)		|---|--|---|---|---|
 	- Propias de Java como lenguaje
 	- Personalizadas
 
-## Excepciones Propias de Java
+### Excepciones Propias de Java
 
 									| 	 Object	   |
 									|--------------|
@@ -353,7 +373,7 @@ remove(1)		|---|--|---|---|---|
 | NumberFormatException |	| ArithmeticException |	| ArrayIndexOutOfBoundsException |	| SocketException |
 |-----------------------|	|---------------------|	|--------------------------------|	|-----------------|
 
-## Excepciones Personalizadas
+### Excepciones Personalizadas
 
 - Para poder construir excepciones propias, hay que tener en cuenta los siguientes bloques:
 	- **try:** Bloque donde puede ocurrir la excepción.
@@ -361,3 +381,26 @@ remove(1)		|---|--|---|---|---|
 	- **finally:** Bloque de código que se ejecuta siempre (sin importar si hbieron errores o no)
 	- **throw:** Lanzar una excepción cualquiera
 	- **throws:** Determinar qué excepciones puede lanzar un método
+
+## Relaciones entre clases
+
+- **1 a 1** Un objeto de una clase puede relacionarse SOLO con uno de otras
+- **1 a N** Un objeto de una clase puede relacionarse con muchos de otras
+- **N a 1** La inversa de 1 a n _mismo tipo de relación pero cambia el sentido_
+- **N a N** Muchos objetos de una clase pueden relacionarse con muchos de otras
+
+## Enum (Enumeraciones)
+- En Java,**enum** es una palabra clave utilizada para definir un tipo de dato especial que representa un **conjunto fijo de constantes**.
+- Estas constantes son valores predefinidos que representan elementos distintos de un conjunto.
+
+```
+enum DiaSemana {
+    LUNES, MARTES, MIERCOLES, JUEVES, VIERNES, SABADO, DOMINGO
+}
+```
+
+```
+enum TipoDeVehiculo {
+    AUTOMOVIL, MOTOCICLETA, CAMIONETA, BICICLETA
+}
+```

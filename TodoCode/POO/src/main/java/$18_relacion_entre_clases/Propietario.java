@@ -1,25 +1,21 @@
-package relacionEntreClases;
+package $18_relacion_entre_clases;
 
 public class Propietario {
     
     private Long id;
     private String apelllido, nombre;
 
-    @Override
-    public String toString() {
-        return "Propietario{" + "id=" + id + ", apelllido=" + apelllido + ", nombre=" + nombre + '}';
-    }
-    
-    
-    
-
-    public Propietario() {
-    }
+    public Propietario() { }
 
     public Propietario(Long id, String apelllido, String nombre) {
         this.id = id;
         this.apelllido = apelllido;
         this.nombre = nombre;
+    }
+    
+    @Override
+    public String toString() {
+        return "Propietario{" + "id=" + id + ", apelllido=" + apelllido + ", nombre=" + nombre + '}';
     }
 
     public Long getId() {

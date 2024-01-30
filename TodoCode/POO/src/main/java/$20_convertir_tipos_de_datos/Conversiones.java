@@ -1,4 +1,4 @@
-package convertir_tipos_de_datos;
+package $20_convertir_tipos_de_datos;
 
 public class Conversiones {
  

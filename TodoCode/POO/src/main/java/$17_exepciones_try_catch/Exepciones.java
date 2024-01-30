@@ -1,4 +1,4 @@
-package exepciones;
+package $17_exepciones_try_catch;
 
 public class Exepciones {
 
@@ -7,7 +7,7 @@ public class Exepciones {
         // Si no capturamos esta operación genera un error en el sistema, el cual nos indica
         // Pero el usuario no sabra el porque, pero ahora al capturarla le diremos
         
-        try {
+        try { // Exception aritmetica porque no se puede dividir en 0
             int resultado = 3/0;
         }
         catch (Exception e) {

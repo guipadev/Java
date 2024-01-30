@@ -1,19 +1,5 @@
-/*
-Crear una clase llamada VideoJuego, que tenga los siguientes atributos:
-codigo, titulo, consola, cantidadJugadores, categoria(tener en cuenta todos sus 
-atributos, constructores, métodos getters y setters).
+package $19_ejercicio_video_juego_interfaces_abstractas;
 
-- Crear una ArrayList de tipo VideoJuego. Crear 5 videojegos y guardarlos en la collection.
-- Recorrer la ArrayList creada y mostrar por pantalla el titulo, consola y cantidad de jugadores 
-  de los video juegos almacenados.
-- Cambiar el nombre y la cantidad de jugadores de dos videojuegos. 
-  Mostrar por pantalla los datos de todos los videojuegos luego del cambio.
-- Recorrer la ArrayList y mostrar por pantalla únicamente a los videojuegos que sean 
-  de la consola "Nintendo 64" 
-*/
-package ejercicioIntegradorVideoJuegoPOO;
-
-import ejercicioIntegradorVideoJuegoPOO.logica.VideoJuego;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,7 +8,7 @@ public class EjercicioVideojuego {
 
     public static void main(String[] args) {
         
-        // PUNTO 2
+    // PUNTO 2
     List<VideoJuego> listaVideojuegos = new ArrayList<VideoJuego>();
     
     // Creación

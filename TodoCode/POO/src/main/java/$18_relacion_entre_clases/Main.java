@@ -1,9 +1,9 @@
-package relacionEntreClases;
+package $18_relacion_entre_clases;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Relaciones {
+public class Main {
 
     public static void main(String[] args) {
         

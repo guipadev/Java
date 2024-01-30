@@ -1,4 +1,4 @@
-package ejercicioIntegradorVideoJuegoPOO.logica;
+package $19_ejercicio_video_juego_interfaces_abstractas;
 
 public class VideoJuego {
 
