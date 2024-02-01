@@ -1,13 +1,0 @@
-
-[	java:S107"AConstructor has 9 parameters, which is greater than 7 authorized.(ÔèŞˆıÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(¬¢¬ùÿÿÿÿ
-B
-java:S1068",Remove this unused "variedad" private field.(¬š€
-D
-java:S1068".Remove this unused "tipoTronco" private field.(½Ô²
-E
-java:S1068"/Remove this unused "radioTronco" private field.(Ø¢ÌÍ
-?
-java:S1068")Remove this unused "color" private field.(È„…¦
-H
-java:S1068"-Remove this unused "tipoHojas" private field.(¸Ò¨ÿùÿÿÿÿ
