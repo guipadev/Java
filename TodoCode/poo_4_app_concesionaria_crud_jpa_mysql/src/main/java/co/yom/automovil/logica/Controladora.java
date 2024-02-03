@@ -27,5 +27,9 @@ public class Controladora {
         controlPersis.borrarAuto(idAuto);
     }
 
+    public Automovil traerAutos(int idAuto) {
+        return controlPersis.traerAutos(idAuto);
+    }
+
     
 }

@@ -26,5 +26,9 @@ public class ControladoraPersistencia {
             Logger.getLogger(ControladoraPersistencia.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+
+    public Automovil traerAutos(int idAuto) {
+        return autoJpa.findAutomovil(idAuto);
+    }
     
 }

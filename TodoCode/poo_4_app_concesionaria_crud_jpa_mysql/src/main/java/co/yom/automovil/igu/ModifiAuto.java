@@ -1,10 +1,22 @@
 package co.yom.automovil.igu;
 
+import co.yom.automovil.logica.Automovil;
+import co.yom.automovil.logica.Controladora;
+
 public class ModifiAuto extends javax.swing.JFrame {
 
+    // Instanciamos la controladora, para acceder/comunicarnos con la controladora de la lógica
+    Controladora control = new Controladora();
+    
+    // Var global
+    Automovil auto = new Automovil();
+    
     // Agregamos al constructor que llegar un Id de automovil
+    // Al recibir el Id ya podemos llamar un método, para que llame la lógica y traer los datos necesarios
     public ModifiAuto(int idAuto) {
         initComponents();
+        
+        cargarDatosAuto(idAuto);
     }
 
     @SuppressWarnings("unchecked")
@@ -249,4 +261,9 @@ public class ModifiAuto extends javax.swing.JFrame {
     private javax.swing.JTextField txtMotor;
     private javax.swing.JTextField txtPatente;
     // End of variables declaration//GEN-END:variables
+
+    private void cargarDatosAuto(int idAuto) {
+
+        auto = control.traerAutos(idAuto);
+    }
 }
