@@ -1,8 +1,14 @@
 package co.yom.automovil.igu;
 
+import co.yom.automovil.logica.Automovil;
+import co.yom.automovil.logica.Controladora;
+import java.util.List;
 import javax.swing.table.DefaultTableModel;
 
 public class ConsultaAutomovil extends javax.swing.JFrame {
+    
+    // Inyectamos Controladora
+    Controladora control = new Controladora();
 
     /**
      * Creates new form ConsultaAutomovil
@@ -182,7 +188,12 @@ public class ConsultaAutomovil extends javax.swing.JFrame {
         
         modeloTabla.setColumnIdentifiers(titulos);
         
+        // Traer los datos de autos desde BD
+        List<Automovil> listaAutomoviles = control.traerAutos();
+        
         // Asiganar titulos a tabla
         tablaAutos.setModel(modeloTabla);
+        
+        // Carga de auto desde back de BD
     }
 }

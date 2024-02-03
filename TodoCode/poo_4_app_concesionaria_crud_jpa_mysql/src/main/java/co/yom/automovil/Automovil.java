@@ -2,7 +2,6 @@ package co.yom.automovil;
 
 import co.yom.automovil.igu.Principal;
 
-
 public class Automovil {
 
     public static void main(String[] args) {
@@ -11,5 +10,7 @@ public class Automovil {
         Principal pantalla = new Principal();
         pantalla.setVisible(true);
         pantalla.setLocationRelativeTo(null);
-    }
+        
+    }   
+
 }
