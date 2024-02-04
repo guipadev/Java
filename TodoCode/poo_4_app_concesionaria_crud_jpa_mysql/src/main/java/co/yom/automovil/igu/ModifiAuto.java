@@ -2,11 +2,14 @@ package co.yom.automovil.igu;
 
 import co.yom.automovil.logica.Automovil;
 import co.yom.automovil.logica.Controladora;
+import javax.swing.JDialog;
+import javax.swing.JOptionPane;
 
 public class ModifiAuto extends javax.swing.JFrame {
 
     // Instanciamos la controladora, para acceder/comunicarnos con la controladora de la lógica
-    Controladora control = new Controladora();
+    // Inicialmente como null
+    Controladora control = null;
     
     // Var global
     Automovil auto = new Automovil();
@@ -14,8 +17,12 @@ public class ModifiAuto extends javax.swing.JFrame {
     // Agregamos al constructor que llegar un Id de automovil
     // Al recibir el Id ya podemos llamar un método, para que llame la lógica y traer los datos necesarios
     public ModifiAuto(int idAuto) {
+        // Nos aseguramos que siempre se cree una nueva instancia cuando se llama al controlador
+        control = new Controladora();
+        
         initComponents();
         
+        // Al iniciar la pantalla mostrar los datos del auto
         cargarDatosAuto(idAuto);
     }
 
@@ -226,7 +233,26 @@ public class ModifiAuto extends javax.swing.JFrame {
     }//GEN-LAST:event_txtMarcaActionPerformed
 
     private void btnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarActionPerformed
-
+        // Todas las var del auto guardar en var auxiliares
+        // Todos los datos que el usuario agregue sean nuevos o no, seran copiados a var auxiliares
+        String modelo = txtModelo.getText();
+        String marca = txtMarca.getText();
+        String motor = txtMotor.getText();
+        String color = txtColor.getText();
+        String patente = txtPatente.getText();
+        int cantPuertas = Integer.parseInt(txtCantPuertas.getText());
+    
+        control.modificarAuto(auto, color, modelo, marca, motor, patente, cantPuertas);
+        
+        // Msj
+        mostrarMensaje("Edición realizada correctamente", "Info", "Edición Exitosa");
+        
+        // Cerrar ventana modificación, posterior mostrar ventana de consulta, con los datos actualizados
+        ConsultaAutomovil consul = new ConsultaAutomovil();
+        consul.setVisible(true);
+        consul.setLocationRelativeTo(null);
+        
+        this.dispose();
         
     }//GEN-LAST:event_btnModificarActionPerformed
 
@@ -264,6 +290,31 @@ public class ModifiAuto extends javax.swing.JFrame {
 
     private void cargarDatosAuto(int idAuto) {
 
+        // Busco por Id auto en BD
         auto = control.traerAutos(idAuto);
+        
+        // Seteo los valores de ese auto en el formulario
+        txtModelo.setText(auto.getModelo());
+        txtMarca.setText(auto.getMarca());
+        txtColor.setText(auto.getColor());
+        txtMotor.setText(auto.getMotor());
+        txtPatente.setText(auto.getPatente());
+        txtCantPuertas.setText(String.valueOf(auto.getCantPuertas()));
+        
+    }
+    
+    // Mensaje de dialogo
+    public void mostrarMensaje(String mensaje, String tipo, String titulo) {
+        JOptionPane optionPane = new JOptionPane(mensaje);
+
+        if (tipo.equals("Infor")) {
+            optionPane.setMessageType(JOptionPane.INFORMATION_MESSAGE);
+        } else if (tipo.equals("Error")) {
+            optionPane.setMessageType(JOptionPane.ERROR_MESSAGE);
+        }
+
+        JDialog dialog = optionPane.createDialog(titulo);
+        dialog.setAlwaysOnTop(true);
+        dialog.setVisible(true);
     }
 }
