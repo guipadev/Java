@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Singleton/3_Implementation_Initialization_Holder/src/|misiontic/reto5crud_Redflix_BD_MYSQL/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Builder/1-design-patterns-handson/src/|OpenBootCamp/1_CursoJavaBasico_OpenBootcamp/src/|JavaDatabaseConnection_JDBCandMySQL/manejo_jdbc/src/main/java/com/dev/|Design_Patterns_&amp;_SOLID_Design_ Principles/SOLID_Design_Principles/8_Dependency_Inversion/src/main/java/|patronObserver_rx_morsa/src/main/java/|morsa/|uniandes/modulo_2_arreglos_y_vectores/m2_caso_visorImagen/test/source/|TodoCode/ejercicioPracticosJava/src/main/java/|misiontic/SalaApoyoEjercicios/src/main/java/|absolute/prueba/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Command/1_command_begin/udemy-design-patterns-handson/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Adapter/2_implementation_Object_Adapter/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Pattern_Summary_Document/all-design-patterns/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/SOLID_Design_Principles/7_Interface_Segregation_ok/src/main/java/|uniandes/modulo_2_arreglos_y_vectores/m2_caso_avion/test/source/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Proxy/4_dynamic_proxy/src/|misiontic/|BelisarioDeLaMata/CursoParaElProgramadorJava/src/main/java/|misiontic/sesion_7_ejerciciosanimacionesCarro/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Interpreter/2_interpreter/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Singleton/4_Implementation_Enum/src/|OpenBootCamp/0_IntroduccionProgramacion_OpenBootcamp/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Interpreter/1_interpreter_end/src/|misiontic/concepts_basic/src/main/java/|charlycimino/POO/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Observer/2_observer/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Prototype/1_prototype_begin_v2/src/|java_mysql_lucasMoy/Ejercicio 4/src/main/java/|uniandes/modulo_4_herencia/m4_ejercicio_lineasTelefonicas/source/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Decorator/0_decorator_begin/src/|misiontic/sesion_5_ejercicio/src/main/java/|misiontic/ejercicioRedSocial/src/main/java/|TodoCode/JAVA_WEB_EE_con_ JSP/PrimerServlet/src/java/|la_tg_avanza/Java_con_MySQL/ProcedimientosAlmacenados/src/main/java/|Programando_en_JAVA/src/main/java/|misiontic/reto2inventarioCarros/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Singleton/0_Implementation_Eager_Singleton/src/|codejavu/ejerciciosJava/|Design_Patterns_&amp;_SOLID_Design_ Principles/SOLID_Design_Principles/1_Single_Responsibility_Principle_ok/src/main/java/|Alkemy/icons_labs_alkemy/src/test/java/|misiontic/pruebasUnitarias_JUnit_2/src/test/java/|pildoras/src/|misiontic/reto3facturacionConcesionario/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Prototype/0_prototype_begin_v2/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Chain_of_Responsibility/2_chain_of_responsibility_begin/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Proxy/1_proxy/src/|java_mysql_lucasMoy/Ejercicio 3/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/SOLID_Design_Principles/0_Single_Responsibility_Principle/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/SOLID_Design_Principles/3_Open_Closed_ok/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/SOLID_Design_Principles/5_Liskov_Substotiton_Principle_ok/src/main/java/|misiontic/ejercicioCuboPoliformismo/src/main/java/|Javarevisited/Crear_servidor_HTTP_ServerSocket/src/main/java/|TodoCode/poo_3_crud_peluqueria_canina/target/generated-sources/annotations/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Builder/0-design-patterns-handson/src/|la_tg_avanza/Java_con_MySQL/BD_Registros/src/main/java/|java_mysql_lucasMoy/Ejercicio 2/src/main/java/|CleanArchitectureTorneo-unsimpledev/test/|misiontic/sesion_2_ejercicios/src/main/java/|misiontic/pruebasUnitarias_JUnit/src/main/java/|uniandes/modulo_3_ordenamiento/m3_ordenamientoBurbuja/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Memento/2_memento/src/|makigas/scanner/|uniandes/modulo_3_ordenamiento/m3_ordenamientoInsercion/src/|misiontic/ejercicioEncapsulamiento/src/main/java/|uniandes/src/main/java/|java_mysql_lucasMoy/2 - Input de textos/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Mediator/2_mediator_Java11Plus/src/|uniandes/modulo_4_herencia/m4_caso_lineasTelefonicas/source/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Object_Pool/0_object_pool/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/SOLID_Design_Principles/9_Dependency_Inversion_ok/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Singleton/1_Implementation_Eager_Singleton/src/|TodoCode/poo_2_jpa_crud_mysql/target/generated-sources/annotations/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Memento/1_memento/src/|misiontic/reto5crud_Redflix_BD_MYSQL/src/test/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Decorator/1_decorator_begin/src/|uniandes/modulo_4_herencia/m4_ejercicio_lineasTelefonicas/test/source/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Iterator/1_iterator/src/|java_mysql_lucasMoy/Ejercicio 1/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Iterator/2_iterator/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/SOLID_Design_Principles/2_Open_Closed/src/main/java/|PruebaAlgoritmos/src/main/java/|misiontic/sesion_6_ejercicios/src/main/java/|uniandes/modulo_1_clases_y_objetos/app_ejercicio_elecciones/test/source/|TodoCode/poo_4_app_concesionaria_crud_jpa_mysql/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Template_Method/2_template_method/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/State/2_state/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Singleton/2_Implementation_Lazy_Singleton/src/|Java-Collections-Framework/src/main/java/|java_mysql_lucasMoy/Calculadora de IMC/src/main/java/|java_mysql_lucasMoy/1 - Hola Mundo/src/main/java/|Los_4_Tipos_de_Datos_Abstractos_importantes/src/main/java/|misiontic/sesion_3_ejercicio/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Null_Object/1_null_object/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Strategy/1_strategy/src/|TodoCode/poo_2_jpa_crud_mysql/src/main/java/|uniandes/modulo_1_clases_y_objetos/app_lineasTelefonicas/source/|BelisarioDeLaMata/cajero_electronico/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Pattern_Summary_Document/all-design-patterns-Java11Plus/src/|EstructuraDeDatos_lujan/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Object_Pool/1_object_pool/src/|freedCodeCamp/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Visitor/2_visitor/src/|PrincipiosSolid/solid/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Proxy/2_proxy/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Visitor/1_visitor/src/|BelisarioDeLaMata/juego_buscaminas/src/|CleanArchitectureTorneo-unsimpledev/src/|test/java/|misiontic/sesion_4_ejercicios/src/main/java/|patronesdedisenoluigi/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Abstract_Factory/0_abstract_factory_begin/src/|HackerRank/Interview Preparation Kit/Warm-up Challenges/|uniandes/modulo_1_clases_y_objetos/app_ejercicio_elecciones/source/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Mediator/0_mediator/src/|ValidacionJWT_cazadordigital/src/main/java/|misiontic/ejercicioAnimacionCiudad/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Mediator/3_mediator_Java11Plus/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Strategy/2_strategy/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Simple_Factory/0_simple_factory_begin/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Composite/1_composite/src/|misiontic/pruebasUnitarias_JUnit/src/test/java/|uniandes/modulo_1_clases_y_objetos/app_lineasTelefonicas/test/source/|uniandes/modulo_4_herencia/m4_caso_lineasTelefonicas/test/source/|youlearncode/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/SOLID_Design_Principles/6_Interface_Segregation/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Brigde/0_bridge_begin/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Observer/1_observer/src/|codejavu/ejerciciosJava/ejerciciosJavaBasico/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Composite/0_composite/src/|pildoras/src/com/pildo/|w3schools/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Null_Object/2_null_object/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Abstract_Factory/1_abstract_factory_begin/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Builder/2-design-patterns-handson/src/|uniandes/modulo_2_arreglos_y_vectores/m2_caso_avion/source/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Factory_Method/1_factory_method_end/src/|BelisarioDeLaMata/SolucionEjerciciosJava/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/State/1_state/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Brigde/1_bridge_begin/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Mediator/1_mediator/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Pattern_Summary_Document/design_principles - BASE 2/src/main/java/|misiontic/reto1sentimientosGroot/src/main/java/|java_mysql_lucasMoy/Gestion de Clientes con MySql/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Factory_Method/0_factory_method_end/src/|uniandes/modulo_5_interfaz_grafica/m5_SistemaPacientes/source/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Command/2_command_end/udemy-design-patterns-handson/src/|misiontic/ejercicioCalculadoraSwitch/src/main/java/|misiontic/pruebasUnitarias_JUnit_2/src/main/java/|Alkemy/icons_labs_alkemy/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Simple_Factory/1_simple_factory_begin/src/|JavaDatabaseConnection_JDBCandMySQL/manejo_jdbc/src/main/java/|Programando_en_JAVA/src/test/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Command/2_command_end/command_end/udemy-design-patterns-handson/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Chain_of_Responsibility/1_chain_of_responsibility/src/|TodoCode/poo_3_crud_peluqueria_canina/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Adapter/0_implementation_Class_Adapter/src/|TodoCode/poo_1/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Adapter/1_implementation_Class_Adapter/src/|Design_Patterns_&amp;_SOLID_Design_ Principles/SOLID_Design_Principles/4_Liskov_Substotiton_Principle/src/main/java/|HackerRank/InterviewPreparationKit/src/main/java/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Template_Method/1_template_method/src/|uniandes/modulo_2_arreglos_y_vectores/m2_caso_visorImagen/source/|Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Proxy/3_dynamic_proxy/src/" kind="src" path=""/>
+	<classpathentry kind="src" path="absolute/prueba/src/main/java"/>
+	<classpathentry kind="src" path="Alkemy/icons_labs_alkemy/src/main/java"/>
+	<classpathentry kind="src" path="Alkemy/icons_labs_alkemy/src/test/java"/>
+	<classpathentry kind="src" path="BelisarioDeLaMata/cajero_electronico/src"/>
+	<classpathentry kind="src" path="BelisarioDeLaMata/CursoParaElProgramadorJava/src/main/java"/>
+	<classpathentry kind="src" path="BelisarioDeLaMata/juego_buscaminas/src"/>
+	<classpathentry kind="src" path="BelisarioDeLaMata/SolucionEjerciciosJava/src/main/java"/>
+	<classpathentry kind="src" path="charlycimino/POO/src/main/java"/>
+	<classpathentry kind="src" path="CleanArchitectureTorneo-unsimpledev/src"/>
+	<classpathentry kind="src" path="CleanArchitectureTorneo-unsimpledev/test"/>
+	<classpathentry excluding="ejerciciosJavaBasico/src/main/java/" kind="src" path="codejavu/ejerciciosJava"/>
+	<classpathentry kind="src" path="codejavu/ejerciciosJava/ejerciciosJavaBasico/src/main/java"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Pattern_Summary_Document/all-design-patterns/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Pattern_Summary_Document/all-design-patterns-Java11Plus/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Pattern_Summary_Document/design_principles - BASE 2/src/main/java"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Chain_of_Responsibility/1_chain_of_responsibility/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Chain_of_Responsibility/2_chain_of_responsibility_begin/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Command/1_command_begin/udemy-design-patterns-handson/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Command/2_command_end/command_end/udemy-design-patterns-handson/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Command/2_command_end/udemy-design-patterns-handson/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Interpreter/1_interpreter_end/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Interpreter/2_interpreter/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Iterator/1_iterator/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Iterator/2_iterator/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Mediator/0_mediator/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Mediator/1_mediator/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Mediator/2_mediator_Java11Plus/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Mediator/3_mediator_Java11Plus/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Memento/1_memento/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Memento/2_memento/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Null_Object/1_null_object/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Null_Object/2_null_object/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Observer/1_observer/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Observer/2_observer/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/State/1_state/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/State/2_state/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Strategy/1_strategy/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Strategy/2_strategy/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Template_Method/1_template_method/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Template_Method/2_template_method/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Visitor/1_visitor/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Behavioral/Visitor/2_visitor/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Abstract_Factory/0_abstract_factory_begin/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Abstract_Factory/1_abstract_factory_begin/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Builder/0-design-patterns-handson/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Builder/1-design-patterns-handson/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Builder/2-design-patterns-handson/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Factory_Method/0_factory_method_end/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Factory_Method/1_factory_method_end/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Object_Pool/0_object_pool/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Object_Pool/1_object_pool/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Prototype/0_prototype_begin_v2/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Prototype/1_prototype_begin_v2/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Simple_Factory/0_simple_factory_begin/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Simple_Factory/1_simple_factory_begin/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Singleton/0_Implementation_Eager_Singleton/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Singleton/1_Implementation_Eager_Singleton/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Singleton/2_Implementation_Lazy_Singleton/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Singleton/3_Implementation_Initialization_Holder/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Creational/Singleton/4_Implementation_Enum/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Adapter/0_implementation_Class_Adapter/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Adapter/1_implementation_Class_Adapter/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Adapter/2_implementation_Object_Adapter/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Brigde/0_bridge_begin/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Brigde/1_bridge_begin/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Composite/0_composite/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Composite/1_composite/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Decorator/0_decorator_begin/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Decorator/1_decorator_begin/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Proxy/1_proxy/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Proxy/2_proxy/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Proxy/3_dynamic_proxy/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/Design_Patterns_Structural/Proxy/4_dynamic_proxy/src"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/SOLID_Design_Principles/0_Single_Responsibility_Principle/src/main/java"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/SOLID_Design_Principles/1_Single_Responsibility_Principle_ok/src/main/java"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/SOLID_Design_Principles/2_Open_Closed/src/main/java"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/SOLID_Design_Principles/3_Open_Closed_ok/src/main/java"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/SOLID_Design_Principles/4_Liskov_Substotiton_Principle/src/main/java"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/SOLID_Design_Principles/5_Liskov_Substotiton_Principle_ok/src/main/java"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/SOLID_Design_Principles/6_Interface_Segregation/src/main/java"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/SOLID_Design_Principles/7_Interface_Segregation_ok/src/main/java"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/SOLID_Design_Principles/8_Dependency_Inversion/src/main/java"/>
+	<classpathentry kind="src" path="Design_Patterns_&amp;_SOLID_Design_ Principles/SOLID_Design_Principles/9_Dependency_Inversion_ok/src/main/java"/>
+	<classpathentry kind="src" path="EstructuraDeDatos_lujan/src/main/java"/>
+	<classpathentry kind="src" path="freedCodeCamp/src/main/java"/>
+	<classpathentry kind="src" path="HackerRank/InterviewPreparationKit/src/main/java"/>
+	<classpathentry kind="src" path="HackerRank/Interview Preparation Kit/Warm-up Challenges"/>
+	<classpathentry kind="src" path="java_mysql_lucasMoy/1 - Hola Mundo/src/main/java"/>
+	<classpathentry kind="src" path="java_mysql_lucasMoy/2 - Input de textos/src/main/java"/>
+	<classpathentry kind="src" path="java_mysql_lucasMoy/Calculadora de IMC/src/main/java"/>
+	<classpathentry kind="src" path="java_mysql_lucasMoy/Ejercicio 1/src/main/java"/>
+	<classpathentry kind="src" path="java_mysql_lucasMoy/Ejercicio 2/src/main/java"/>
+	<classpathentry kind="src" path="java_mysql_lucasMoy/Ejercicio 3/src/main/java"/>
+	<classpathentry kind="src" path="java_mysql_lucasMoy/Ejercicio 4/src/main/java"/>
+	<classpathentry kind="src" path="java_mysql_lucasMoy/Gestion de Clientes con MySql/src/main/java"/>
+	<classpathentry kind="src" path="Java-Collections-Framework/src/main/java"/>
+	<classpathentry excluding="com/dev/" kind="src" path="JavaDatabaseConnection_JDBCandMySQL/manejo_jdbc/src/main/java"/>
+	<classpathentry kind="src" path="JavaDatabaseConnection_JDBCandMySQL/manejo_jdbc/src/main/java/com/dev"/>
+	<classpathentry kind="src" path="Javarevisited/Crear_servidor_HTTP_ServerSocket/src/main/java"/>
+	<classpathentry kind="src" path="la_tg_avanza/Java_con_MySQL/BD_Registros/src/main/java"/>
+	<classpathentry kind="src" path="la_tg_avanza/Java_con_MySQL/ProcedimientosAlmacenados/src/main/java"/>
+	<classpathentry kind="src" path="Los_4_Tipos_de_Datos_Abstractos_importantes/src/main/java"/>
+	<classpathentry kind="src" path="makigas/scanner"/>
+	<classpathentry excluding="reto5crud_Redflix_BD_MYSQL/src/main/java/|SalaApoyoEjercicios/src/main/java/|sesion_7_ejerciciosanimacionesCarro/src/main/java/|concepts_basic/src/main/java/|sesion_5_ejercicio/src/main/java/|ejercicioRedSocial/src/main/java/|reto2inventarioCarros/src/main/java/|pruebasUnitarias_JUnit_2/src/test/java/|reto3facturacionConcesionario/src/main/java/|ejercicioCuboPoliformismo/src/main/java/|sesion_2_ejercicios/src/main/java/|pruebasUnitarias_JUnit/src/main/java/|ejercicioEncapsulamiento/src/main/java/|reto5crud_Redflix_BD_MYSQL/src/test/java/|sesion_6_ejercicios/src/main/java/|sesion_3_ejercicio/src/|sesion_4_ejercicios/src/main/java/|ejercicioAnimacionCiudad/src/main/java/|pruebasUnitarias_JUnit/src/test/java/|reto1sentimientosGroot/src/main/java/|ejercicioCalculadoraSwitch/src/main/java/|pruebasUnitarias_JUnit_2/src/main/java/" kind="src" path="misiontic"/>
+	<classpathentry kind="src" path="misiontic/concepts_basic/src/main/java"/>
+	<classpathentry kind="src" path="misiontic/ejercicioAnimacionCiudad/src/main/java"/>
+	<classpathentry kind="src" path="misiontic/ejercicioCalculadoraSwitch/src/main/java"/>
+	<classpathentry kind="src" path="misiontic/ejercicioCuboPoliformismo/src/main/java"/>
+	<classpathentry kind="src" path="misiontic/ejercicioEncapsulamiento/src/main/java"/>
+	<classpathentry kind="src" path="misiontic/ejercicioRedSocial/src/main/java"/>
+	<classpathentry kind="src" path="misiontic/pruebasUnitarias_JUnit_2/src/main/java"/>
+	<classpathentry kind="src" path="misiontic/pruebasUnitarias_JUnit_2/src/test/java"/>
+	<classpathentry kind="src" path="misiontic/pruebasUnitarias_JUnit/src/main/java"/>
+	<classpathentry kind="src" path="misiontic/pruebasUnitarias_JUnit/src/test/java"/>
+	<classpathentry kind="src" path="misiontic/reto1sentimientosGroot/src/main/java"/>
+	<classpathentry kind="src" path="misiontic/reto2inventarioCarros/src/main/java"/>
+	<classpathentry kind="src" path="misiontic/reto3facturacionConcesionario/src/main/java"/>
+	<classpathentry kind="src" path="misiontic/reto5crud_Redflix_BD_MYSQL/src/main/java"/>
+	<classpathentry kind="src" path="misiontic/reto5crud_Redflix_BD_MYSQL/src/test/java"/>
+	<classpathentry kind="src" path="misiontic/SalaApoyoEjercicios/src/main/java"/>
+	<classpathentry kind="src" path="misiontic/sesion_2_ejercicios/src/main/java"/>
+	<classpathentry kind="src" path="misiontic/sesion_3_ejercicio/src"/>
+	<classpathentry kind="src" path="misiontic/sesion_4_ejercicios/src/main/java"/>
+	<classpathentry kind="src" path="misiontic/sesion_5_ejercicio/src/main/java"/>
+	<classpathentry kind="src" path="misiontic/sesion_6_ejercicios/src/main/java"/>
+	<classpathentry kind="src" path="misiontic/sesion_7_ejerciciosanimacionesCarro/src/main/java"/>
+	<classpathentry kind="src" path="morsa"/>
+	<classpathentry kind="src" path="OpenBootCamp/0_IntroduccionProgramacion_OpenBootcamp/src"/>
+	<classpathentry kind="src" path="OpenBootCamp/1_CursoJavaBasico_OpenBootcamp/src"/>
+	<classpathentry kind="src" path="patronesdedisenoluigi/src/main/java"/>
+	<classpathentry kind="src" path="patronObserver_rx_morsa/src/main/java"/>
+	<classpathentry excluding="com/pildo/" kind="src" path="pildoras/src"/>
+	<classpathentry kind="src" path="pildoras/src/com/pildo"/>
+	<classpathentry kind="src" path="PrincipiosSolid/solid/src/main/java"/>
+	<classpathentry kind="src" path="Programando_en_JAVA/src/main/java"/>
+	<classpathentry kind="src" path="Programando_en_JAVA/src/test/java"/>
+	<classpathentry kind="src" path="PruebaAlgoritmos/src/main/java"/>
+	<classpathentry kind="src" path="test/java"/>
+	<classpathentry kind="src" path="TodoCode/ejercicioPracticosJava/src/main/java"/>
+	<classpathentry kind="src" path="TodoCode/JAVA_WEB_EE_con_ JSP/PrimerServlet/src/java"/>
+	<classpathentry kind="src" path="TodoCode/poo_1/src/main/java"/>
+	<classpathentry kind="src" path="TodoCode/poo_2_jpa_crud_mysql/src/main/java"/>
+	<classpathentry kind="src" path="TodoCode/poo_2_jpa_crud_mysql/target/generated-sources/annotations"/>
+	<classpathentry kind="src" path="TodoCode/poo_3_crud_peluqueria_canina/src/main/java"/>
+	<classpathentry kind="src" path="TodoCode/poo_3_crud_peluqueria_canina/target/generated-sources/annotations"/>
+	<classpathentry kind="src" path="TodoCode/poo_4_app_concesionaria_crud_jpa_mysql/src/main/java"/>
+	<classpathentry kind="src" path="uniandes/modulo_1_clases_y_objetos/app_ejercicio_elecciones/source"/>
+	<classpathentry kind="src" path="uniandes/modulo_1_clases_y_objetos/app_ejercicio_elecciones/test/source"/>
+	<classpathentry kind="src" path="uniandes/modulo_1_clases_y_objetos/app_lineasTelefonicas/source"/>
+	<classpathentry kind="src" path="uniandes/modulo_1_clases_y_objetos/app_lineasTelefonicas/test/source"/>
+	<classpathentry kind="src" path="uniandes/modulo_2_arreglos_y_vectores/m2_caso_avion/source"/>
+	<classpathentry kind="src" path="uniandes/modulo_2_arreglos_y_vectores/m2_caso_avion/test/source"/>
+	<classpathentry kind="src" path="uniandes/modulo_2_arreglos_y_vectores/m2_caso_visorImagen/source"/>
+	<classpathentry kind="src" path="uniandes/modulo_2_arreglos_y_vectores/m2_caso_visorImagen/test/source"/>
+	<classpathentry kind="src" path="uniandes/modulo_3_ordenamiento/m3_ordenamientoBurbuja/src"/>
+	<classpathentry kind="src" path="uniandes/modulo_3_ordenamiento/m3_ordenamientoInsercion/src"/>
+	<classpathentry kind="src" path="uniandes/modulo_4_herencia/m4_caso_lineasTelefonicas/source"/>
+	<classpathentry kind="src" path="uniandes/modulo_4_herencia/m4_caso_lineasTelefonicas/test/source"/>
+	<classpathentry kind="src" path="uniandes/modulo_4_herencia/m4_ejercicio_lineasTelefonicas/source"/>
+	<classpathentry kind="src" path="uniandes/modulo_4_herencia/m4_ejercicio_lineasTelefonicas/test/source"/>
+	<classpathentry kind="src" path="uniandes/modulo_5_interfaz_grafica/m5_SistemaPacientes/source"/>
+	<classpathentry kind="src" path="uniandes/src/main/java"/>
+	<classpathentry kind="src" path="ValidacionJWT_cazadordigital/src/main/java"/>
+	<classpathentry kind="src" path="w3schools"/>
+	<classpathentry kind="src" path="youlearncode/src/main/java"/>
+	<classpathentry kind="output" path="BelisarioDeLaMata/CursoParaElProgramadorJava/target/classes"/>
+</classpath>
