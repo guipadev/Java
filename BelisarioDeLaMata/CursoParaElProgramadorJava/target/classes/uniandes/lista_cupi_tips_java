@@ -1,0 +1,4198 @@
+======================================================================================================
+No finalizar la signatura de un método con ";"
+======================================================================================================
+Descripción
+La signatura de un método nunca debe finalizar con ;. En caso de que la signatura del método termine con ;, el compilador de Java no reconocerá el cuerpo del método y enviará un error.
+
+CORRECTO
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   
+   public Vehiculo ()
+   
+   {
+      kilometrosRecorridos = 0;
+   }
+   
+   public int darKilometrosRecorridos ()
+   {
+      return kilometrosRecorridos;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El carro se inicializó con " 
+      + vehiculo.darKilometrosRecorridos() + " km recorridos.");
+   } 
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   
+   public Vehiculo ();
+//                   ^ El ";" no debe ir allí
+   {
+      kilometrosRecorridos = 0;
+   }
+   
+   public int darKilometrosRecorridos ()
+   {
+      return kilometrosRecorridos;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El carro se inicializó con " 
+      + vehiculo.darKilometrosRecorridos() + " km recorridos.");
+   } 
+}
+
+======================================================================================================
+Usar métodos públicos y privados adecuadamente
+======================================================================================================
+Para poder llamar un método de una clase desde otra clase, es necesario que el método sea public. 
+En caso que el método sea private, la clase que intente llamar el método no lo podrá hacer.
+
+CORRECTO
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0;
+   }
+   
+   public int darKilometrosRecorridos ()
+// ^ El método es público y puede ser llamado desde otras clases.
+   {
+      return kilometrosRecorridos;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El carro se inicializó con " 
+      + vehiculo.darKilometrosRecorridos() + " km recorridos.");
+   }
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0;
+   }
+   
+   private int darKilometrosRecorridos ()
+// ^ El método es privado y NO puede ser llamado desde otras clases.
+   {
+      return kilometrosRecorridos;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El carro se inicializó con " 
+      + vehiculo.darKilometrosRecorridos() + " km recorridos.");
+   }
+}
+
+======================================================================================================
+Comportamiento de la división con distintos tipos de datos
+======================================================================================================
+Para dividir variables y obtener el resultado con su parte decimal es necesario que el denominador sea de tipo double. 
+Adicionalmente, para guardar el resultado con la parte decimal es necesario hacerlo en una variable de tipo double o float.
+
+CORRECTO
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   private double tiempoDeRecorrido;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0;
+      tiempoDeRecorrido = 0;
+   }
+   
+   public void agregarRecorrido(int kilometrosRecorridosP, double tiempoDeRecorridoP )
+   {
+      kilometrosRecorridos += kilometrosRecorridosP;
+      tiempoDeRecorrido += tiempoDeRecorridoP;
+   }
+   
+   public double darVelocidadPromedioDelRecorrido ()
+   {
+      return kilometrosRecorridos/tiempoDeRecorrido;
+      
+      
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.agregarRecorrido(125, 4);
+      // Con esta instrucción se imprime en la consola
+       System.out.println("El vehículo recorrió 125 km en 4 horas y su velocidad" + 
+      " promedio fue  " + vehiculo.darVelocidadPromedioDelRecorrido() + " km/h.");
+   }
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   private int tiempoDeRecorrido;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0;
+      tiempoDeRecorrido = 0;
+   }
+   
+   public void agregarRecorrido(int kilometrosRecorridosP, double tiempoDeRecorridoP )
+   {
+      kilometrosRecorridos += kilometrosRecorridosP;
+      tiempoDeRecorrido += tiempoDeRecorridoP;
+   }
+   
+   public double darVelocidadPromedioDelRecorrido ()
+   {
+      return kilometrosRecorridos/tiempoDeRecorrido;
+//                               ^ El tiempo de recorrido es de tipo int, 
+//                                  por lo tanto la división retornará un entero
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.agregarRecorrido(125, 4);
+      // Con esta instrucción se imprime en la consola
+       System.out.println("El vehículo recorrió 125 km en 4 horas y su velocidad" + 
+      " promedio fue  " + vehiculo.darVelocidadPromedioDelRecorrido() + " km/h.");
+   }
+}
+
+======================================================================================================
+No llamar a un método desde sí mismo
+======================================================================================================
+No se debe llamar a un método desde sí mismo. Al hacer esto, se llamaría el método infinitas veces 
+hasta que se acaba la memoria que el programa tiene asignada.
+
+CORRECTO
+class Vehiculo 
+{
+   private double kilometrosRecorridos;
+   private double tiempoDeRecorrido;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0.0;
+      tiempoDeRecorrido = 0.0;
+   }
+   
+   public void agregarRecorrido(double kilometrosRecorridosP, double tiempoDeRecorridoP )
+   {
+      kilometrosRecorridos += kilometrosRecorridosP;
+      tiempoDeRecorrido += tiempoDeRecorridoP;
+   }
+   
+   public double darVelocidadPromedioDelRecorrido ()
+   {
+      return kilometrosRecorridos/tiempoDeRecorrido;
+      
+      
+      
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.agregarRecorrido(125.0, 4.0);
+      // Con esta instrucción se imprime en la consola
+       System.out.println("El vehículo recorrió 125 km en 4 horas y su velocidad" + 
+      " promedio fue  " + vehiculo.darVelocidadPromedioDelRecorrido() + " km/h.");
+   }
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   private double kilometrosRecorridos;
+   private double tiempoDeRecorrido;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0.0;
+      tiempoDeRecorrido = 0.0;
+   }
+   
+   public void agregarRecorrido(double kilometrosRecorridosP, double tiempoDeRecorridoP )
+   {
+      kilometrosRecorridos += kilometrosRecorridosP;
+      tiempoDeRecorrido += tiempoDeRecorridoP;
+   }
+   
+   public double darVelocidadPromedioDelRecorrido()
+   {
+      return     darVelocidadPromedioDelRecorrido();
+//               ^ Se está llamando al mismo método que se está implementando. 
+//                Por lo tanto, el método darVelocidadPromedioDelRecorrido() 
+//                se está llamando un número de veces infinito.
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.agregarRecorrido(125.0, 4.0);
+      // Con esta instrucción se imprime en la consola
+       System.out.println("El vehículo recorrió 125 km en 4 horas y su velocidad" + 
+      " promedio fue  " + vehiculo.darVelocidadPromedioDelRecorrido() + " km/h.");
+   }
+}
+
+======================================================================================================
+La declaración de un atributo no lleva paréntesis
+======================================================================================================
+La declaración de un atributo nunca lleva paréntesis
+
+CORRECTO
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0;
+   }
+   
+   public int darKilometrosRecorridos ()
+   {
+      return kilometrosRecorridos;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El carro se inicializó con " 
+      + vehiculo.darKilometrosRecorridos() + " km recorridos.");
+   } 
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   private int kilometrosRecorridos();
+//                                 ^^ Los paréntesis no deben ir en la declaración de atributos.
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0;
+   }
+   
+   public int darKilometrosRecorridos ()
+   {
+      return kilometrosRecorridos;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El carro se inicializó con " 
+      + vehiculo.darKilometrosRecorridos() + " km recorridos.");
+   } 
+}
+
+======================================================================================================
+Separar los parámetros de un método con ","
+======================================================================================================
+Los parámetros de un método siempre deben estar separados por ,.
+
+CORRECTO
+class Vehiculo 
+{
+   private double kilometrosRecorridos;
+   private double tiempoDeRecorrido;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0.0;
+      tiempoDeRecorrido = 0.0;
+   }
+   
+   public void agregarRecorrido(double kilometrosRecorridosP, double tiempoDeRecorridoP )
+   
+   {
+      kilometrosRecorridos += kilometrosRecorridosP;
+      tiempoDeRecorrido += tiempoDeRecorridoP;
+   }
+   
+   public double darVelocidadPromedioDelRecorrido ()
+   {
+      return kilometrosRecorridos/tiempoDeRecorrido;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.agregarRecorrido(125.0, 4.0);
+      // Con esta instrucción se imprime en la consola
+       System.out.println("El vehículo recorrió 125 km en 4 horas y su velocidad" + 
+      " promedio fue  " + vehiculo.darVelocidadPromedioDelRecorrido() + " km/h.");
+   }
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   private double kilometrosRecorridos;
+   private double tiempoDeRecorrido;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0.0;
+      tiempoDeRecorrido = 0.0;
+   }
+   
+   public void agregarRecorrido(double kilometrosRecorridosP  double tiempoDeRecorridoP )
+//                                                          ^ Falta la coma (",").
+   {
+      kilometrosRecorridos += kilometrosRecorridosP;
+      tiempoDeRecorrido += tiempoDeRecorridoP;
+   }
+   
+   public double darVelocidadPromedioDelRecorrido ()
+   {
+      return kilometrosRecorridos/tiempoDeRecorrido;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.agregarRecorrido(125.0, 4.0);
+      // Con esta instrucción se imprime en la consola
+       System.out.println("El vehículo recorrió 125 km en 4 horas y su velocidad" + 
+      " promedio fue  " + vehiculo.darVelocidadPromedioDelRecorrido() + " km/h.");
+   }
+}
+
+======================================================================================================
+Indicar el tipo de los parámetros en la signatura de un método
+======================================================================================================
+En la signatura de un método se debe especificar el tipo de cada parámetro. 
+Para ello, se debe escribir el tipo del parámetro antes de escribir el nombre del mismo.
+
+CORRECTO
+class Vehiculo 
+{
+   private double kilometrosRecorridos;
+   private double tiempoDeRecorrido;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0.0;
+      tiempoDeRecorrido = 0.0;
+   }
+   
+   public void agregarRecorrido(double kilometrosRecorridosP, double tiempoDeRecorridoP )
+   
+   {
+      kilometrosRecorridos += kilometrosRecorridosP;
+      tiempoDeRecorrido += tiempoDeRecorridoP;
+   }
+   
+   public double darVelocidadPromedioDelRecorrido ()
+   {
+      return kilometrosRecorridos/tiempoDeRecorrido;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.agregarRecorrido(125.0, 4.0);
+      // Con esta instrucción se imprime en la consola
+       System.out.println("El vehículo recorrió 125 km en 4 horas y su velocidad" + 
+      " promedio fue  " + vehiculo.darVelocidadPromedioDelRecorrido() + " km/h.");
+   }
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   private double kilometrosRecorridos;
+   private double tiempoDeRecorrido;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0.0;
+      tiempoDeRecorrido = 0.0;
+   }
+   
+   public void agregarRecorrido( kilometrosRecorridosP, double tiempoDeRecorridoP )
+   //                           ^ Falta indicar el tipo del parámetro kilometrosRecorridosP
+   {
+      kilometrosRecorridos += kilometrosRecorridosP;
+      tiempoDeRecorrido += tiempoDeRecorridoP;
+   }
+   
+   public double darVelocidadPromedioDelRecorrido ()
+   {
+      return kilometrosRecorridos/tiempoDeRecorrido;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.agregarRecorrido(125.0, 4.0);
+      // Con esta instrucción se imprime en la consola
+       System.out.println("El vehículo recorrió 125 km en 4 horas y su velocidad" + 
+      " promedio fue  " + vehiculo.darVelocidadPromedioDelRecorrido() + " km/h.");
+   }
+}
+
+======================================================================================================
+Indicar el comienzo y el fin del cuerpo de un método con corchetes { }
+======================================================================================================
+Para indicar el comienzo del cuerpo de un método se debe utilizar {. Para indicar el fin del cuerpo del método se debe utilizar }
+
+CORRECTO
+class Vehiculo 
+{
+   private double kilometrosRecorridos;
+   private double tiempoDeRecorrido;
+   
+   public Vehiculo ()
+   {
+      
+      kilometrosRecorridos = 0.0;
+      tiempoDeRecorrido = 0.0;
+   }
+   
+   
+   public void agregarRecorrido(double kilometrosRecorridosP, double tiempoDeRecorridoP )
+   {
+      kilometrosRecorridos += kilometrosRecorridosP;
+      tiempoDeRecorrido += tiempoDeRecorridoP;
+   }
+   
+   public double darVelocidadPromedioDelRecorrido ()
+   {
+      return kilometrosRecorridos/tiempoDeRecorrido;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.agregarRecorrido(125.0, 4.0);
+      // Con esta instrucción se imprime en la consola
+       System.out.println("El vehículo recorrió 125 km en 4 horas y su velocidad" + 
+      " promedio fue  " + vehiculo.darVelocidadPromedioDelRecorrido() + " km/h.");
+   }
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   private double kilometrosRecorridos;
+   private double tiempoDeRecorrido;
+   
+   public Vehiculo ()
+   
+// ^ Falta indicar el comienzo del cuerpo del método con {
+      kilometrosRecorridos = 0.0;
+      tiempoDeRecorrido = 0.0;
+   
+// ^ Falta indicar el final del cuerpo del método con }
+   
+   public void agregarRecorrido(double kilometrosRecorridosP, double tiempoDeRecorridoP )
+   {
+      kilometrosRecorridos += kilometrosRecorridosP;
+      tiempoDeRecorrido += tiempoDeRecorridoP;
+   }
+   
+   public double darVelocidadPromedioDelRecorrido ()
+   {
+      return kilometrosRecorridos/tiempoDeRecorrido;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.agregarRecorrido(125.0, 4.0);
+      // Con esta instrucción se imprime en la consola
+       System.out.println("El vehículo recorrió 125 km en 4 horas y su velocidad" + 
+      " promedio fue  " + vehiculo.darVelocidadPromedioDelRecorrido() + " km/h.");
+   }
+}
+
+======================================================================================================
+Ejecutar al menos un return cuando se indique un tipo de retorno diferente de void
+======================================================================================================
+Si el tipo de retorno de un método es diferente de void, en el cuerpo del método debe haber al menos una instrucción return ejecutable.
+
+CORRECTO
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0;
+   }
+   
+   public int darKilometrosRecorridos ()
+   
+   {
+      return kilometrosRecorridos;
+   
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El carro se inicializó con " 
+      + vehiculo.darKilometrosRecorridos() + " km recorridos.");
+   } 
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0;
+   }
+   
+   public int darKilometrosRecorridos ()
+// ^ Se indicó un tipo de retorno diferente de void
+   {
+      kilometrosRecorridos = kilometrosRecorridos;
+//    ^ No se realizó ningún retorno en el cuerpo del método
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El carro se inicializó con " 
+      + vehiculo.darKilometrosRecorridos() + " km recorridos.");
+   } 
+}
+
+======================================================================================================
+Finalizar instrucciones en el cuerpo de un método con ";"
+======================================================================================================
+Siempre se debe finalizar con ; las instrucciones de un método.
+
+CORRECTO
+class Vehiculo 
+{
+   private double kilometrosRecorridos;
+   private double galones;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0.0;
+      galones = 0.0;
+   }
+   
+   public double agregarRecorrido(double kilometrosRecorridosP)
+   {
+      double galonesConsumidos = kilometrosRecorridosP/40.0;
+      galones -= galonesConsumidos;
+      
+      kilometrosRecorridos += kilometrosRecorridosP;
+      return galonesConsumidos;
+      
+   }
+   
+   public void abastecerTanque(double galonesP)
+   {
+      galones += galonesP;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.abastecerTanque(10.0);
+      double galonesConsumidos = vehiculo.agregarRecorrido(125.0);
+      // Con esta instrucción se imprime en la consola
+       System.out.println("El vehículo recorrió 125 km y consumió " 
+                           + galonesConsumidos + " galones.");
+   }
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   private double kilometrosRecorridos;
+   private double galones;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0.0;
+      galones = 0.0;
+   }
+   
+   public double agregarRecorrido(double kilometrosRecorridosP)
+   {
+      double galonesConsumidos = kilometrosRecorridosP/40.0;
+      galones -= galonesConsumidos
+//                                ^ Falta ; para terminar la instrucción
+      kilometrosRecorridos += kilometrosRecorridosP;
+      return galonesConsumidos
+//                            ^ Falta ; para terminar la instrucción
+   }
+
+   public void abastecerTanque(double galonesP)
+   {
+      galones += galonesP;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.abastecerTanque(10.0);
+      double galonesConsumidos = vehiculo.agregarRecorrido(125.0);
+      // Con esta instrucción se imprime en la consola
+       System.out.println("El vehículo recorrió 125 km y consumió " 
+                           + galonesConsumidos + " galones.");
+   }
+}
+
+======================================================================================================
+No escribir instrucciones después de ejecutar un retorno
+======================================================================================================
+No puede haber instrucciones que se ejecuten después de una línea de retorno, porque, al retornar, se termina la ejecución del método.
+
+CORRECTO
+class Vehiculo 
+{
+   private double kilometrosRecorridos;
+   private double galones;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0.0;
+      galones = 0.0;
+   }
+   
+   public double agregarRecorrido(double kilometrosRecorridosP)
+   {
+      double galonesConsumidos = kilometrosRecorridosP/40.0;
+      galones -= galonesConsumidos;
+      kilometrosRecorridos += kilometrosRecorridosP;
+      return galonesConsumidos;
+      
+      
+   }
+   
+   public void abastecerTanque(double galonesP)
+   {
+      galones += galonesP;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.abastecerTanque(10.0);
+      double galonesConsumidos = vehiculo.agregarRecorrido(125.0);
+      // Con esta instrucción se imprime en la consola
+       System.out.println("El vehículo recorrió 125 km y consumió " 
+                           + galonesConsumidos + " galones.");
+   }
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   private double kilometrosRecorridos;
+   private double galones;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0.0;
+      galones = 0.0;
+   }
+   
+   public double agregarRecorrido(double kilometrosRecorridosP)
+   {
+      double galonesConsumidos = kilometrosRecorridosP/40.0;
+      galones -= galonesConsumidos;
+      return galonesConsumidos;
+      kilometrosRecorridos += kilometrosRecorridosP;
+//    ^ Esta instrucción de código no se ejecutará, porque
+//    antes se ejecutará una instrucción de retorno. 
+   }
+   
+   public void abastecerTanque(double galonesP)
+   {
+      galones += galonesP;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.abastecerTanque(10.0);
+      double galonesConsumidos = vehiculo.agregarRecorrido(125.0);
+      // Con esta instrucción se imprime en la consola
+       System.out.println("El vehículo recorrió 125 km y consumió " 
+                           + galonesConsumidos + " galones.");
+   }
+}
+
+======================================================================================================
+No escribir instrucciones de retorno en un método void
+======================================================================================================
+Si el tipo de un método es void, en el cuerpo del método no debe haber ningún retorno.
+
+CORRECTO
+class Vehiculo 
+{
+   private double kilometrosRecorridos;
+   private double tiempoDeRecorrido;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0.0;
+      tiempoDeRecorrido = 0.0;
+   }
+   
+   
+   public void agregarRecorrido(double kilometrosRecorridosP, double tiempoDeRecorridoP )
+   {
+      kilometrosRecorridos += kilometrosRecorridosP;
+      tiempoDeRecorrido += tiempoDeRecorridoP;
+      
+      
+   }
+   
+   public double darVelocidadPromedioDelRecorrido ()
+   {
+      return kilometrosRecorridos/tiempoDeRecorrido;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.agregarRecorrido(125.0, 4.0);
+      // Con esta instrucción se imprime en la consola
+       System.out.println("El vehículo recorrió 125 km en 4 horas y su velocidad" + 
+      " promedio fue  " + vehiculo.darVelocidadPromedioDelRecorrido() + " km/h.");
+   }
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   private double kilometrosRecorridos;
+   private double tiempoDeRecorrido;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0.0;
+      tiempoDeRecorrido = 0.0;
+   }
+   
+   
+   public void agregarRecorrido(double kilometrosRecorridosP, double tiempoDeRecorridoP )
+   {
+      kilometrosRecorridos += kilometrosRecorridosP;
+      tiempoDeRecorrido += tiempoDeRecorridoP;
+      return kilometrosRecorridos;
+//    ^ No se puede retornar en el cuerpo de un método void
+   }
+   
+   public double darVelocidadPromedioDelRecorrido ()
+   {
+      return kilometrosRecorridos/tiempoDeRecorrido;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.agregarRecorrido(125.0, 4.0);
+      // Con esta instrucción se imprime en la consola
+       System.out.println("El vehículo recorrió 125 km en 4 horas y su velocidad" + 
+      " promedio fue  " + vehiculo.darVelocidadPromedioDelRecorrido() + " km/h.");
+   }
+}
+
+======================================================================================================
+Las variables locales solo pueden ser usadas al interior del método donde fueron declarada
+======================================================================================================
+Las variables locales solo pueden ser usadas al interior del método donde fueron declaradas. 
+Por lo tanto, cuando se requiere utilizar una variable en diferentes métodos, es necesario declarar la variable como un atributo (o variable global).
+
+CORRECTO
+class Vehiculo 
+{
+   private double kilometrosRecorridos;
+   private double tiempoDeRecorrido;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0.0;
+      
+      tiempoDeRecorrido = 0.0;
+   }
+   
+   
+   public void agregarRecorrido(double kilometrosRecorridosP, double tiempoDeRecorridoP )
+   {
+      kilometrosRecorridos += kilometrosRecorridosP;
+      
+      
+      tiempoDeRecorrido += tiempoDeRecorridoP;
+   }
+   
+   public double darVelocidadPromedioDelRecorrido ()
+   {
+      return kilometrosRecorridos/tiempoDeRecorrido;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.agregarRecorrido(125.0, 4.0);
+      // Con esta instrucción se imprime en la consola
+       System.out.println("El vehículo recorrió 125 km en 4 horas y su velocidad" + 
+      " promedio fue  " + vehiculo.darVelocidadPromedioDelRecorrido() + " km/h.");
+   }
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   
+   private double tiempoDeRecorrido;
+   
+   public Vehiculo ()
+   {
+      double kilometrosRecorridos = 0.0;
+//    ^ Kilómetros recorridos es una variable local. Por lo tanto no puede ser utilizada por otros métodos
+      tiempoDeRecorrido = 0.0;
+   }
+   
+   
+   public void agregarRecorrido(double kilometrosRecorridosP, double tiempoDeRecorridoP )
+   {
+      kilometrosRecorridos += kilometrosRecorridosP;
+//    ^ Kilómetros recorridos no puede ser utilizada,
+//       porque es una variable local de otro método
+      tiempoDeRecorrido += tiempoDeRecorridoP;
+   }
+   
+   public double darVelocidadPromedioDelRecorrido ()
+   {
+      return kilometrosRecorridos/tiempoDeRecorrido;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.agregarRecorrido(125.0, 4.0);
+      // Con esta instrucción se imprime en la consola
+       System.out.println("El vehículo recorrió 125 km en 4 horas y su velocidad" + 
+      " promedio fue  " + vehiculo.darVelocidadPromedioDelRecorrido() + " km/h.");
+   }
+}
+
+======================================================================================================
+Llamar métodos de otra clase por medio de una asociación
+======================================================================================================
+Para llamar un método de otra clase, se debe tener una asociación a un objeto de dicha clase.
+
+CORRECTO
+class RentaDeVehiculos 
+{
+   private Vehiculo vehiculo1;
+      
+   public RentaDeVehiculos (){
+      vehiculo1 = new Vehiculo();
+      vehiculo1.darKilometrosRecorridos();      
+   }
+   
+   public Vehiculo darVehiculo1 () {
+      return vehiculo1;
+   }
+}
+
+class Vehiculo {
+   private int kilometrosRecorridos;
+   
+   public Vehiculo () {
+      kilometrosRecorridos = 0;
+   }
+   
+   public int darKilometrosRecorridos (){
+      return kilometrosRecorridos;
+   }   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El vehiculo 1 de la empresa rentadora de vehículos se inicializó con " 
+      + rentaDeVehiculos.darVehiculo1().darKilometrosRecorridos() + " km recorridos.");
+   } 
+}
+
+INCORRECTO
+class RentaDeVehiculos 
+{
+   private Vehiculo vehiculo1;
+      
+   public RentaDeVehiculos ()
+   {
+      vehiculo1 = new Vehiculo();
+      darKilometrosRecorridos();
+//    ^ El método inicializarVehiculo() no es de la clase RentaDeVehiculos, 
+//       entonces se debe llamar el método por medio de la asociación 
+//       a la clase Vehículo (vehiculo1)
+   }
+   
+   public Vehiculo darVehiculo1 ()
+   {
+      return vehiculo1;
+   }
+}
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0;
+   }
+   
+   public int darKilometrosRecorridos ()
+   {
+      return kilometrosRecorridos;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El vehiculo 1 de la empresa rentadora de vehículos se inicializó con " 
+      + rentaDeVehiculos.darVehiculo1().darKilometrosRecorridos() + " km recorridos.");
+   } 
+}
+
+======================================================================================================
+Nunca asignar un valor a un llamado de un método
+======================================================================================================
+Nunca asignar un valor a un llamado de un método. Esto quiere decir que expresiones del tipo foo=x; 
+sí compilaran, mientras que expresiones como foo()=x; no lo harán.
+
+CORRECTO
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0;
+   }
+   
+   public int darKilometrosRecorridos ()
+   {
+      return kilometrosRecorridos;
+   }
+   
+   public void aumentarKilometros (int kilometrosP)
+   {
+      kilometrosRecorridos = kilometrosRecorridos + kilometrosP;
+      
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.aumentarKilometros(5);
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El carro ha recorrido " 
+      + vehiculo.darKilometrosRecorridos() + " km.");
+   } 
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0;
+   }
+   
+   public int darKilometrosRecorridos ()
+   {
+      return kilometrosRecorridos;
+   }
+   
+   public void aumentarKilometros (int kilometrosP)
+   {
+      darKilometrosRecorridos() = kilometrosRecorridos + kilometrosP;
+//    ^ Al llamado de un método no se le puede asignar un valor
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.aumentarKilometros(5);
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El carro ha recorrido " 
+      + vehiculo.darKilometrosRecorridos() + " km.");
+   } 
+}
+
+======================================================================================================
+Cuando se asigna el valor de una variable de tipo primitivo a otra, ambas variables son independientes
+======================================================================================================
+Cuando se hace una asignación del valor de una variable de tipo primitivo a otra, este valor se duplica en la memoria. 
+Lo anterior implica que, cuando se modifica una de ellas, la otra no se modifica.
+
+CORRECTO
+public Vehiculo ()
+   {
+      kilometrosRecorridos = 0;
+   }
+   
+   public int darKilometrosRecorridos ()
+   {
+      return kilometrosRecorridos;
+   }
+   
+   public int darMetrosUltimoRecorrido()
+   {
+      return metrosUltimoRecorrido;
+   }
+   
+   public void aumentarKilometros (int kilometrosP)
+   {
+      metrosUltimoRecorrido = kilometrosP;
+      metrosUltimoRecorrido = metrosUltimoRecorrido*1000;
+//    ^ Esta instrucción NO modifica el valor de kilometrosP
+      kilometrosRecorridos = kilometrosRecorridos + kilometrosP;
+      
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.aumentarKilometros(5);
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El carro ha recorrido " 
+      + vehiculo.darKilometrosRecorridos() + " km y recorrió " 
+      + vehiculo.darMetrosUltimoRecorrido() + " metros en su ultimo trayecto");
+   } 
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   private int metrosUltimoRecorrido;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0;
+   }
+   
+   public int darKilometrosRecorridos ()
+   {
+      return kilometrosRecorridos;
+   }
+   
+   public int darMetrosUltimoRecorrido()
+   {
+      return metrosUltimoRecorrido;
+   }
+   
+   public void aumentarKilometros (int kilometrosP)
+   {
+      metrosUltimoRecorrido = kilometrosP;
+      metrosUltimoRecorrido = metrosUltimoRecorrido*1000;
+//    ^ Esta instrucción NO modifica el valor de kilometrosP
+      kilometrosRecorridos = kilometrosRecorridos + kilometrosP/1000;
+//    ^ No es necesario dividir los kilometrosP ya que esta variable no se modificó
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.aumentarKilometros(5);
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El carro ha recorrido " 
+      + vehiculo.darKilometrosRecorridos() + " km y recorrió " 
+      + vehiculo.darMetrosUltimoRecorrido() + " metros en su ultimo trayecto");
+   } 
+}
+
+======================================================================================================
+El nombre de la variable que se utiliza en el llamado a un método, no tiene que ser el mismo de la signatura
+======================================================================================================
+El nombre de la variable que se utiliza como parámetro en el llamado a un método, no tiene que ser el mismo
+que se utilizó en la signatura de dicho método. Esto se debe a que el compilador de Java reconoce el parámetro 
+al que corresponde la variable por el orden y tipo de los parámetros que reciben los métodos.
+
+CORRECTO
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   
+   public Vehiculo () {
+      kilometrosRecorridos = 0;
+   }
+   
+   public int darKilometrosRecorridos () {
+      return kilometrosRecorridos;
+   }
+   
+   public void aumentarCincoKilometros (){
+      int cincoKilometros = 5;
+      
+      aumentarKilometros(cincoKilometros);
+      
+   }
+   
+   public void aumentarKilometros (int kilometrosP) {
+      kilometrosRecorridos = kilometrosRecorridos + kilometrosP;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.aumentarCincoKilometros();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El carro ha recorrido " 
+      + vehiculo.darKilometrosRecorridos() + " km.");
+   } 
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0;
+   }
+   
+   public int darKilometrosRecorridos ()
+   {
+      return kilometrosRecorridos;
+   }
+   
+   public void aumentarCincoKilometros (){
+      int cincoKilometros = 5;
+      int kilometrosP = cincoKilometros;
+      aumentarKilometros(kilometrosP);
+//    ^ No es necesario que la variable con la que se llama el método sea kilometrosP
+   }
+   
+   public void aumentarKilometros (int kilometrosP)
+   {
+      kilometrosRecorridos = kilometrosRecorridos + kilometrosP;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.aumentarCincoKilometros();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El carro ha recorrido " 
+      + vehiculo.darKilometrosRecorridos() + " km.");
+   } 
+}
+
+======================================================================================================
+Llamar método analizador para acceder a un atributo en vez de llamarlo directamente
+======================================================================================================
+Para acceder al valor de un atributo dentro de la misma clase que lo declaró, no es necesario llamar al método analizador (getter) que retorna ese atributo. 
+Lo anterior no es incorrecto, pero por estar dentro de la misma clase y como buena práctica, el atributo debería accederse directamente en la clase 
+(Puede ejecutar el código para ver que el resultado es el mismo en ambos casos, pero se recomienda siempre utilizar las buenas prácticas de programación).
+
+CORRECTO
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0;
+   }
+   
+   public int darKilometrosRecorridos ()
+   {
+      return kilometrosRecorridos;
+   }
+   
+   public String mostrarMensajeKmsRecorridos()
+   {
+      String mensaje = "El vehículo ha recorrido "+
+                        kilometrosRecorridos+ " kms.";
+                        
+      return mensaje;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      // Con esta instrucción se imprime en la consola
+      System.out.println(vehiculo.mostrarMensajeKmsRecorridos());
+   } 
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0;
+   }
+   
+   public int darKilometrosRecorridos ()
+   {
+      return kilometrosRecorridos;
+   }
+   
+   public String mostrarMensajeKmsRecorridos()
+   {
+      String mensaje = "El vehículo ha recorrido "+
+                        darKilometrosRecorridos()+ " kms.";
+                        
+      return mensaje;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      // Con esta instrucción se imprime en la consola
+      System.out.println(vehiculo.mostrarMensajeKmsRecorridos());
+   } 
+}
+
+======================================================================================================
+Utilizar expresiones booleanas en un if
+======================================================================================================
+La expresión que se evalúa en un if siempre debe retornar un booleano, no puede ser un String, un int o un método que retorne un valor no booleano.
+
+CORRECTO
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0;
+   }
+   
+   public String darEstadoAceite ()
+   {
+      String estadoAceite;
+      if(kilometrosRecorridos > 20000)
+      
+      
+      {
+         estadoAceite = "necesita cambio";
+      }
+      else
+      {
+         estadoAceite = "no necesita cambio";
+      }
+      return estadoAceite;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El aceite del vehículo " 
+      + vehiculo.darEstadoAceite() + " .");
+   } 
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0;
+   }
+   
+   public String darEstadoAceite ()
+   {
+      String estadoAceite;
+      if(kilometrosRecorridos)
+//       ^ La expresión en el if no es de tipo booleano, porque 
+//          kilometrosRecorridos es de tipo int 
+      {
+         estadoAceite = "necesita cambio";
+      }
+      else
+      {
+         estadoAceite = "no necesita cambio";
+      }
+      return estadoAceite;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El aceite del vehículo " 
+      + vehiculo.darEstadoAceite() + " .");
+   } 
+}
+
+======================================================================================================
+Llamar las constantes de otras clases
+======================================================================================================
+Para llamar constantes que están declaradas en otras clases es necesario llamar primero a la clase y luego a la constante. 
+No es posible sólo llamar a la constante. Adicionalmente, es necesario que la constante que se quiere llamar de otra clase, 
+esté declarada como pública (public).
+
+CORRECTO
+class RentaDeVehiculos 
+{
+   private Vehiculo vehiculo1;
+   private Vehiculo vehiculo2;
+      
+   public RentaDeVehiculos ()
+   {
+      vehiculo1 = new Vehiculo(Vehiculo.TIPO_MARINO);
+      
+      
+      vehiculo2 = new Vehiculo(Vehiculo.TIPO_AEREO);
+      
+      
+   }
+   
+   public Vehiculo darVehiculo1 ()
+   {
+      return vehiculo1;
+   }
+   
+   public Vehiculo darVehiculo2 ()
+   {
+      return vehiculo2;
+   }
+}
+class Vehiculo 
+{
+   public static final String TIPO_TERRESTRE = "terrestre";
+   
+   public static final String TIPO_MARINO = "marino";
+   
+   public static final String TIPO_AEREO = "aéreo";
+   
+ 
+   private String tipoVehiculo;
+   
+   public Vehiculo (String tipoVehiculoP)
+   {
+      tipoVehiculo = tipoVehiculoP;
+   }
+   
+   public String darTipoVehiculo()
+   {
+      return tipoVehiculo;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El vehiculo 1 de la empresa rentadora de vehículos es de tipo " 
+      + rentaDeVehiculos.darVehiculo1().darTipoVehiculo() + ".\n El vehículo 2 "
+      + "de la empresa rentadora de vehículos es de tipo " 
+      + rentaDeVehiculos.darVehiculo2().darTipoVehiculo());
+   } 
+}
+
+INCORRECTO
+class RentaDeVehiculos 
+{
+   private Vehiculo vehiculo1;
+   private Vehiculo vehiculo2;
+      
+   public RentaDeVehiculos ()
+   {
+      vehiculo1 = new Vehiculo(         TIPO_MARINO);
+//                                 ^ Es necesario llamar a la clase Vehiculo 
+//                               para poder consultar la constante TIPO_MARINO
+      vehiculo2 = new Vehiculo(Vehiculo.TIPO_AEREO);
+//                            ^ La constante TIPO_AERO debe ser pública para
+//                            poder consultarla desde la clase RentaDeVehiculos
+   }
+   
+   public Vehiculo darVehiculo1 ()
+   {
+      return vehiculo1;
+   }
+   
+   public Vehiculo darVehiculo2 ()
+   {
+      return vehiculo2;
+   }
+}
+class Vehiculo 
+{
+   public static final String TIPO_TERRESTRE = "terrestre";
+   
+   public static final String TIPO_MARINO = "marino";
+   
+   private static final String TIPO_AEREO = "aéreo";
+   
+ 
+   private String tipoVehiculo;
+   
+   public Vehiculo (String tipoVehiculoP)
+   {
+      tipoVehiculo = tipoVehiculoP;
+   }
+   
+   public String darTipoVehiculo()
+   {
+      return tipoVehiculo;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El vehiculo 1 de la empresa rentadora de vehículos es de tipo " 
+      + rentaDeVehiculos.darVehiculo1().darTipoVehiculo() + ".\n El vehículo 2 "
+      + "de la empresa rentadora de vehículos es de tipo " 
+      + rentaDeVehiculos.darVehiculo2().darTipoVehiculo());
+   } 
+}
+
+======================================================================================================
+Nunca poner ";" al final de un if
+======================================================================================================
+Nunca se debe finalizar la instrucción if con ;. En caso de hacerlo, se ignoraría por completo la instrucción if y se ejecutaría todo el código.
+
+
+CORRECTO 
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0;
+   }
+   
+   public String darEstadoAceite ()
+   {
+      String estadoAceite = "no necesita cambio";
+      if(kilometrosRecorridos > 20000)
+      
+      {
+         estadoAceite = "NECESITA CAMBIO!";
+         
+      }
+      return estadoAceite;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El vehículo no necesita aceite y la respuesta fue:");
+      System.out.println("El aceite del vehículo " 
+      + vehiculo.darEstadoAceite() + " .");
+   } 
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0;
+   }
+   
+   public String darEstadoAceite ()
+   {
+      String estadoAceite = "no necesita cambio";
+      if(kilometrosRecorridos > 20000);
+//                                    ^ No se debe poner ;
+      {
+         estadoAceite = "NECESITA CAMBIO!";
+//       ^ Esta instrucción se ejecuta siempre, porque se ignoró el if al poner ;
+      }
+      return estadoAceite;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El vehículo no necesita aceite y la respuesta fue:");
+      System.out.println("El aceite del vehículo " 
+      + vehiculo.darEstadoAceite() + " .");
+   } 
+}
+
+======================================================================================================
+Se debe declarar una constante con "static" y "final"
+======================================================================================================
+Para declarar constantes se debe utilizar los modificadores static y final. Adicionalmente, los nombres de las constantes se deben escribir en mayúsculas y se debe separar las palabras con el carácter _
+
+
+CORRECTO 
+class Vehiculo 
+{
+   public static final String TIPO_TERRESTRE = "terrestre";
+   
+   public static final String TIPO_MARINO = "marino";
+   
+   public static final String TIPO_AEREO = "aéreo";
+   
+ 
+   private String tipoVehiculo;
+   
+   public Vehiculo (String tipoVehiculoP)
+   {
+      tipoVehiculo = tipoVehiculoP;
+   }
+   
+   public String darTipoVehiculo()
+   {
+      return tipoVehiculo;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo(Vehiculo.TIPO_TERRESTRE);
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El vehículo que se creó es de tipo  " 
+      + vehiculo.darTipoVehiculo() + ".");
+   } 
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   public static final String tipo_terrestre = "terrestre";
+//                            ^ El nombre de la constante debe estar en mayúsculas
+   public static       String TIPO_MARINO = "marino";
+//               ^ Falta el modificador final 
+   public        final String TIPO_AEREO = "aéreo";
+//        ^ Falta el modificador static 
+ 
+   private String tipoVehiculo;
+   
+   public Vehiculo (String tipoVehiculoP)
+   {
+      tipoVehiculo = tipoVehiculoP;
+   }
+   
+   public String darTipoVehiculo()
+   {
+      return tipoVehiculo;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo(Vehiculo.TIPO_TERRESTRE);
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El vehículo que se creó es de tipo  " 
+      + vehiculo.darTipoVehiculo() + ".");
+   } 
+}
+
+======================================================================================================
+El constructor debe tener el mismo nombre de la clase
+======================================================================================================
+
+
+CORRECTO 
+
+
+INCORRECTO
+
+
+
+
+======================================================================================================
+El método constructor no tiene tipo de retorno
+======================================================================================================
+El constructor se debe declarar sin tipo de retorno. 
+Por ejemplo, no se deben poner los tipos de retorno void, int o String en la declaración de un constructor.
+
+CORRECTO 
+class Vehiculo 
+{
+   public static final String TIPO_MARINO = "marino";
+   
+   private String tipoVehiculo;
+   
+   public Vehiculo (String tipoVehiculoP)
+   
+   
+   {
+      tipoVehiculo = tipoVehiculoP;
+   }
+   
+   public String darTipoVehiculo()
+   {
+      return tipoVehiculo;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo(Vehiculo.TIPO_MARINO);
+      // Con esta instrucción se imprime en la consola
+      System.out.println("Se ha creado un vehículo de tipo " 
+      + vehiculo.darTipoVehiculo() + ".");
+   } 
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   public static final String TIPO_MARINO = "marino";
+   
+   private String tipoVehiculo;
+   
+   public vehiculo (String tipoVehiculoP)
+//        ^ El nombre de la clase es "Vehiculo", mas no "vehiculo". 
+//       Por lo tanto para definir el constructor se debe utilizar "Vehiculo"
+   {
+      tipoVehiculo = tipoVehiculoP;
+   }
+   
+   public String darTipoVehiculo()
+   {
+      return tipoVehiculo;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo(Vehiculo.TIPO_MARINO);
+      // Con esta instrucción se imprime en la consola
+      System.out.println("Se ha creado un vehículo de tipo " 
+      + vehiculo.darTipoVehiculo() + ".");
+   } 
+}
+
+======================================================================================================
+Verificar que un objeto es diferente de null antes de utilizarlo
+======================================================================================================
+Siempre se debe verificar que un objeto sea diferente de null para poderlo usar. 
+Si se llega a usar sin hacer la verificación, es posible obtener el error NullPointerException durante la ejecución del programa.
+
+CORRECTO 
+class RentaDeVehiculos 
+{
+   private Vehiculo vehiculo1;
+      
+   public String darTipoPrimerVehiculo ()
+   {
+      String mensaje = "";
+      if(vehiculo1 == null){
+         mensaje = "La empresa no tiene el vehículo 1 registrado";
+      } else{
+         mensaje = "El vehículo 1 de la empresa rentadora de vehículos" 
+                  + "es de tipo "  + vehiculo1.darTipoVehiculo();
+      }
+      return mensaje;
+   }
+}
+class Vehiculo 
+{
+   public static final String TIPO_TERRESTRE = "terrestre";
+   
+   public static final String TIPO_MARINO = "marino";
+   
+   public static final String TIPO_AEREO = "aéreo";
+   
+ 
+   private String tipoVehiculo;
+   
+   public Vehiculo (String tipoVehiculoP)
+   {
+      tipoVehiculo = tipoVehiculoP;
+   }
+   
+   public String darTipoVehiculo()
+   {
+      return tipoVehiculo;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      // Con esta instrucción se imprime en la consola
+      System.out.println(rentaDeVehiculos.darTipoPrimerVehiculo() + ".");
+   } 
+}
+
+INCORRECTO
+class RentaDeVehiculos 
+{
+   private Vehiculo vehiculo1;
+      
+   public String darTipoPrimerVehiculo ()
+   {
+      return "El vehículo 1 de la empresa rentadora de vehículos" 
+            + "es de tipo "  + vehiculo1.darTipoVehiculo();
+//                             ^ El vehículo número 1 puede ser null, entonces 
+//                               es necesario verificar que no sea null para 
+//                               poder utilizar el método darTipoVehiculo().
+
+
+
+   }
+}
+class Vehiculo 
+{
+   public static final String TIPO_TERRESTRE = "terrestre";
+   
+   public static final String TIPO_MARINO = "marino";
+   
+   public static final String TIPO_AEREO = "aéreo";
+   
+ 
+   private String tipoVehiculo;
+   
+   public Vehiculo (String tipoVehiculoP)
+   {
+      tipoVehiculo = tipoVehiculoP;
+   }
+   
+   public String darTipoVehiculo()
+   {
+      return tipoVehiculo;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      // Con esta instrucción se imprime en la consola
+      System.out.println(rentaDeVehiculos.darTipoPrimerVehiculo() + ".");
+   } 
+}
+
+
+
+======================================================================================================
+Comparar variables de tipo String con "equals"
+======================================================================================================
+Para saber si dos variables de tipo String son iguales se debe utilizar el método equals. 
+Nunca se debe utilizar == para comparar variables de tipo String.
+
+
+CORRECTO 
+class Vehiculo 
+{
+   public static final String TIPO_AEREO = "aéreo";
+  
+   private String tipoVehiculo;
+   
+   public Vehiculo (String tipoVehiculoP)
+   {
+      tipoVehiculo = tipoVehiculoP;
+   }
+   
+   public boolean esDeTipoAereo()
+   {
+      if(tipoVehiculo.equals(TIPO_AEREO))
+      
+      {
+         return true;
+      }
+      else
+      {
+         return false;   
+      }
+   }
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo(new String(Vehiculo.TIPO_AEREO));
+      // Con esta instrucción se imprime en la consola
+      System.out.println("Se creó un vehículo de tipo aéreo y al llamar el" 
+      + " método esDeTipoAereo se obtuvo como respuesta: " 
+      + vehiculo.esDeTipoAereo() + ".");
+   } 
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   public static final String TIPO_AEREO = "aéreo";
+  
+   private String tipoVehiculo;
+   
+   public Vehiculo (String tipoVehiculoP)
+   {
+      tipoVehiculo = tipoVehiculoP;
+   }
+   
+   public boolean esDeTipoAereo()
+   {
+      if(tipoVehiculo == TIPO_AEREO)
+//                    ^^ No utilizar == para comparar variables de tipo String
+      {
+         return true;
+      }
+      else
+      {
+         return false;   
+      }
+   }
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo(new String(Vehiculo.TIPO_AEREO));
+      // Con esta instrucción se imprime en la consola
+      System.out.println("Se creó un vehículo de tipo aéreo y al llamar el" 
+      + " método esDeTipoAereo se obtuvo como respuesta: " 
+      + vehiculo.esDeTipoAereo() + ".");
+   } 
+}
+
+======================================================================================================
+Utilizar condicionales no excluyentes de forma adecuada
+======================================================================================================
+En los condicionales no excluyentes, todas las condiciones se evalúan sin excepción. Por lo tanto, 
+se ejecutaría el cuerpo de todas aquellas condiciones que se cumplan. 
+Lo contrario pasa con los condicionales excluyentes, en los que, si una condición se cumple, no se siguen evaluando las condiciones.
+
+
+CORRECTO 
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   private int añosDeUso;
+   
+   public Vehiculo (int kilometrosRecorridosP, int añosDeUsoP )
+   {
+      kilometrosRecorridos = kilometrosRecorridosP;
+      añosDeUso = añosDeUsoP;
+   }
+   
+   public int darCantidadCondicinesParaCmabiarAceite ()
+   {
+      int cantidadCondicones = 0;
+      
+      if(kilometrosRecorridos > 20000)
+      {
+         cantidadCondicones++;
+      }
+      if(añosDeUso > 5)
+      
+      
+      {
+         cantidadCondicones++;
+      }
+      
+      return cantidadCondicones;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo(30000, 6);
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El vehículo ha recorrido 30000 km y ha tenido 6 años de uso. "
+      + "Esto quiere decir que hay 2 condiciones que indican que se debe cambiar el aceite. Y el vehiculo indica que hay: " 
+      + vehiculo.darCantidadCondicinesParaCmabiarAceite() + ".");
+   } 
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   private int añosDeUso;
+   
+   public Vehiculo (int kilometrosRecorridosP, int añosDeUsoP )
+   {
+      kilometrosRecorridos = kilometrosRecorridosP;
+      añosDeUso = añosDeUsoP;
+   }
+   
+   public int darCantidadCondicinesParaCmabiarAceite ()
+   {
+      int cantidadCondicones = 0;
+      
+      if(kilometrosRecorridos > 20000)
+      {
+         cantidadCondicones++;
+      }
+      else if(añosDeUso > 5)
+//    ^ Al poner "else" la condición sobre los años de uso sólo se comprueba 
+//    cuando la condicón sobre los kilómetros recorridos es falsa
+      {
+         cantidadCondicones++;
+      }
+      
+      return cantidadCondicones;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo(30000, 6);
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El vehículo ha recorrido 30000 km y ha tenido 6 años de uso. "
+      + "Esto quiere decir que hay 2 condiciones que indican que se debe cambiar el aceite. Y el vehiculo indica que hay: " 
+      + vehiculo.darCantidadCondicinesParaCmabiarAceite() + ".");
+   } 
+}
+
+======================================================================================================
+Utilizar condicionales excluyentes de forma adecuada
+======================================================================================================
+En los condicionales excluyentes, se evalúan las condiciones de forma secuencial hasta que se encuentra una cuyo resultado sea verdadero. 
+Por lo tanto, sólo se ejecutará a lo sumo un de los cuerpos de los condicionales.
+Lo contrario pasa con los condicionales no excluyentes, en los que, sí se evalúan todas las condiciones y se podrían ejecutar todos los cuerpos de los condicionales.
+
+
+CORRECTO 
+class Vehiculo 
+{
+   public final static int CONSUMO_PRENDIDO_Y_CON_LUZ_PRENDIDA = 5;
+   private boolean estaEncendido;
+   private boolean interruptorDeLuzPrendido;
+   
+   public Vehiculo()
+   {
+      estaEncendido = false;
+      interruptorDeLuzPrendido = true;
+   }
+   
+   public int darConsumoDeEnergia ()
+   {
+      int consumo = 0;
+      if(!estaEncendido)
+      {
+         consumo = 0;
+      }
+      else if(interruptorDeLuzPrendido)
+      
+      
+      {
+         consumo = CONSUMO_PRENDIDO_Y_CON_LUZ_PRENDIDA;
+      }
+      return consumo;
+   }
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El vehículo consume 0 kWh cuando no está encendido y tiene el interruptor de la luz activado. El vehículo indica que está consumiento: " +  vehiculo.darConsumoDeEnergia() + " kWh.");
+   } 
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   public final static int CONSUMO_PRENDIDO_Y_CON_LUZ_PRENDIDA = 5;
+   private boolean estaEncendido;
+   private boolean interruptorDeLuzPrendido;
+   
+   public Vehiculo()
+   {
+      estaEncendido = false;
+      interruptorDeLuzPrendido = true;
+   }
+   
+   public int darConsumoDeEnergia ()
+   {
+      int consumo = 0;
+      if(!estaEncendido)
+      {
+         consumo = 0;
+      }
+      if(interruptorDeLuzPrendido)
+//    ^ Como el condicional no es excluyente se va a indicar un 
+//      consumo de energía incluso cuando el vehículo no está encendido
+      {
+         consumo = CONSUMO_PRENDIDO_Y_CON_LUZ_PRENDIDA;
+      }
+      return consumo;
+   }
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El vehículo consume 0 kWh cuando no está encendido y tiene el interruptor de la luz activado. El vehículo indica que está consumiento: " +  vehiculo.darConsumoDeEnergia() + " kWh.");
+   } 
+}
+
+======================================================================================================
+Utilizar solo un return por método
+======================================================================================================
+Cuando un método tiene un tipo de retorno en su signatura, es buena práctica realizar el retorno solamente un vez, al final del método. 
+Lo anterior se debe a que cuando un método es complejo y tiene instrucciones de retorno en varias partes, 
+es difícil identificar los errores o modificar el código.
+
+CORRECTO 
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0;
+   }
+   
+   public String darEstadoAceite ()
+   {
+      String estadoAceite;
+      if(kilometrosRecorridos > 20000)
+      {
+         estadoAceite = "necesita cambio";
+         
+      }
+      else
+      {
+         estadoAceite = "no necesita cambio";
+         
+      }
+      return estadoAceite;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El aceite del vehículo " 
+      + vehiculo.darEstadoAceite() + ".");
+   } 
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0;
+   }
+   
+   public String darEstadoAceite ()
+   {
+    
+      if(kilometrosRecorridos > 20000)
+      {
+         return "necesita cambio";
+//       ^ Hay varios puntos de retorno
+      }
+      else
+      {
+         return "no necesita cambio";
+//       ^ Hay varios puntos de retorno
+      }
+
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El aceite del vehículo " 
+      + vehiculo.darEstadoAceite() + ".");
+   } 
+}
+
+
+
+======================================================================================================
+Cuando se declara un if sin corchetes, el cuerpo del if sólo será la siguiente línea
+======================================================================================================
+Cuando no se indica el principio y el final del cuerpo de un if con corchetes, el cuerpo del if será solamente la instrucción siguiente. 
+Por esta razón es preferible siempre acotar el cuerpo del if con los corchetes.
+
+
+CORRECTO 
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   private double tiempoDeRecorrido;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0;
+      tiempoDeRecorrido = 0;
+   }
+   
+   public void agregarRecorrido(int kilometrosRecorridosP, double tiempoDeRecorridoP )
+   {
+      if(kilometrosRecorridosP >= 0 && tiempoDeRecorridoP >= 0)
+      {
+         kilometrosRecorridos += kilometrosRecorridosP;
+         
+         tiempoDeRecorrido += tiempoDeRecorridoP;
+      }
+   }
+   
+   public double darVelocidadPromedioDelRecorrido ()
+   {
+      return kilometrosRecorridos/tiempoDeRecorrido;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.agregarRecorrido(125, 4);
+      vehiculo.agregarRecorrido(-125, -5);
+      // Con esta instrucción se imprime en la consola
+       System.out.println("El vehículo recorrió 125 km en 4 horas y su velocidad" + 
+      " promedio fue  " + vehiculo.darVelocidadPromedioDelRecorrido() + " km/h.");
+   }
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   private double tiempoDeRecorrido;
+   
+   public Vehiculo ()
+   {
+      kilometrosRecorridos = 0;
+      tiempoDeRecorrido = 0;
+   }
+   
+   public void agregarRecorrido(int kilometrosRecorridosP, double tiempoDeRecorridoP )
+   {
+      if(kilometrosRecorridosP >= 0 && tiempoDeRecorridoP >= 0)
+      
+         kilometrosRecorridos += kilometrosRecorridosP;
+//       ^ Esta instrucción sí hace parte del cuerpo del if
+         tiempoDeRecorrido += tiempoDeRecorridoP;
+//       ^ Esta instrucción se ejecuta siempre, incluso sí el tiempo recorrido es negativo
+   }
+   
+   public double darVelocidadPromedioDelRecorrido ()
+   {
+      return kilometrosRecorridos/tiempoDeRecorrido;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.agregarRecorrido(125, 4);
+      vehiculo.agregarRecorrido(-125, -5);
+      // Con esta instrucción se imprime en la consola
+       System.out.println("El vehículo recorrió 125 km en 4 horas y su velocidad" + 
+      " promedio fue  " + vehiculo.darVelocidadPromedioDelRecorrido() + " km/h.");
+   }
+}
+
+
+======================================================================================================
+Utilizar los operadores ||, && y ! sólo con expresiones booleanas
+======================================================================================================
+Los operadores lógicos || y && deben recibir siempre dos expresiones boleanas y el operador ! debe recibir una expresión boleana. 
+Los siguientes son ejemplos de expresiones booleanas true, false, x<10, unBoolean y string.equals(otroString). 
+Por otro lado, expresiones no booleanas son: unString, unInt, unDouble, entre otras.
+
+
+CORRECTO 
+class Vehiculo 
+{
+   private double nivelAguaParabrisas;
+   private double nivelAguaMotor;
+   
+   public Vehiculo (double nivelAguaParabrisasP, double nivelAguaMotorP )
+   {
+      nivelAguaParabrisas = nivelAguaParabrisasP;
+      nivelAguaMotor = nivelAguaMotorP;
+   }
+   
+   public boolean estaConBajoNivelDeAgua ()
+   {
+      boolean bajoNivel = false;
+      if ( nivelAguaParabrisas < 0.3 || nivelAguaMotor < 0.3 )
+      //   ^ Sí es expresión booleana   ^ Sí es expresión booleana   
+      {
+         bajoNivel = true;
+      }
+      return bajoNivel;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo(0.4, 0.1);
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El vehículo tiene el nivel de agua utilizado para el"+
+      " parabrisas en 0.4 y el nivel del agua del motor en 0.1. Por lo tanto" +
+      " el método estaConBajoNivelDeAgua debe retornar true. En la ejecución" +
+      " se retornó: " + vehiculo.estaConBajoNivelDeAgua());
+   } 
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   private double nivelAguaParabrisas;
+   private double nivelAguaMotor;
+   
+   public Vehiculo (double nivelAguaParabrisasP, double nivelAguaMotorP )
+   {
+      nivelAguaParabrisas = nivelAguaParabrisasP;
+      nivelAguaMotor = nivelAguaMotorP;
+   }
+   
+   public boolean estaConBajoNivelDeAgua ()
+   {
+      boolean bajoNivel = false;
+      if ( (nivelAguaParabrisas || nivelAguaMotor )< 0.3)
+      //    ^ No es expresión booleana   ^ No es expresión booleana   
+      {
+         bajoNivel = true;
+      }
+      return bajoNivel;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo(0.4, 0.1);
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El vehículo tiene el nivel de agua utilizado para el"+
+      " parabrisas en 0.4 y el nivel del agua del motor en 0.1. Por lo tanto" +
+      " el método estaConBajoNivelDeAgua debe retornar true. En la ejecución" +
+      " se retornó: " + vehiculo.estaConBajoNivelDeAgua());
+   } 
+}
+
+
+
+======================================================================================================
+Separar expresiones booleanas en dos cuando se tengan expresiones como 3<x<8
+======================================================================================================
+Los operadores lógicos ==, !=, <, <=, > y >= deben recibir dos expresiones numéricas. 
+Los siguientes son ejemplos de expresiones numéricas: unInt, unDouble, unFloat y unDouble+2.1. 
+Por otro lado, expresiones no numéricas son: unString, unBoolean, x > 3, entre otras. 
+Como consecuencia de lo anterior, expresiones como 3 < x < 8 no son válidas y se deben escribir de la siguiente manera 3 < x && x < 8. 
+Nota: 
+los operadores == y != también pueden recibir referencias a objetos, pero es necesario entender bien el funcionamiento de estos para utilizarlos adecuadamente.
+
+
+CORRECTO 
+class Vehiculo 
+{
+   private double nivelAgua;
+   
+   public void inicializar (double nivelAguaP )
+   {
+      nivelAgua = nivelAguaP;
+   }
+   
+   public boolean estaNivelMedioDeAgua ()
+   {
+      boolean nivelMedio = false;
+      if ( 0.3 <  nivelAgua &&  nivelAgua < 0.7 )
+      
+      
+      {
+         nivelMedio = true;
+      }
+      return nivelMedio;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.inicializar(0.4);
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El vehículo tiene el nivel de agua de 0.4, lo que" +
+      " indica que está en un nivel medio.  Por lo tanto el método" +
+      " estaNivelMedioDeAgua debe retornar true. En este caso la ejecución" +
+      " retornó: " + vehiculo.estaNivelMedioDeAgua());
+   } 
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   private double nivelAgua;
+   
+   public void inicializar (double nivelAguaP )
+   {
+      nivelAgua = nivelAguaP;
+   }
+   
+   public boolean estaNivelMedioDeAgua ()
+   {
+      boolean nivelMedio = false;
+      if ( 0.3 <  nivelAgua < 0.7 )
+      // El compilador toma esta expresión como (0.3 < nivelAgua) < 0.7,
+      // por lo tanto se está comparando una expresión booleana con una numérica
+      {
+         nivelMedio = true;
+      }
+      return nivelMedio;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.inicializar(0.4);
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El vehículo tiene el nivel de agua de 0.4, lo que" +
+      " indica que está en un nivel medio.  Por lo tanto el método" +
+      " estaNivelMedioDeAgua debe retornar true. En este caso la ejecución" +
+      " retornó: " + vehiculo.estaNivelMedioDeAgua());
+   } 
+}
+
+
+======================================================================================================
+Las variables y atributos son referencias a los objetos, mas no son los objetos
+======================================================================================================
+Cuando se crea un objeto y este se asigna a una variable, la variable queda con una referencia al objeto. 
+Adicionalmente, si una a una variable se le asigna otra, esta ultima queda con la referencia al mismo objeto que tenía asignada la primera. 
+Como consecuencia, al llamar métodos de la clase sobre las dos variables, se modifica el mismo objeto. 
+Nota: 
+lo descrito en este cupitip no aplica para variables de tipos primitivos 
+(ver cupitip "Cuando se asigna el valor de una variable de tipo primitivo a otra, ambas variables son independientes")
+
+
+CORRECTO 
+class RentaDeVehiculos 
+{
+   private Vehiculo vehiculo1;
+   private Vehiculo vehiculo2;
+   private Vehiculo temporal;
+      
+   public RentaDeVehiculos ()
+   {
+      vehiculo1 = new Vehiculo(); // Se crea un objeto (objeto1) y vehiculo1 va 
+                                  // a tener una referencia a dicho objeto.
+      vehiculo2 = new Vehiculo(); // Se crea otro objeto (objeto2) y vehiculo2 
+                                  // va a tener una referencia a dicho objeto.
+      
+      temporal = vehiculo1; // temporal ahora tiene una referencia 
+                            // al objeto referenciado por la variable vehiculo1,
+                            // es decir objeto1
+      temporal.asignarTipoVehiculo(Vehiculo.TIPO_MARINO); // Este llamado al método 
+      // asignarTipoVehiculo modificará al objeto1
+      
+      temporal = vehiculo2; // temporal ahora tiene una referencia 
+                            // al objeto referenciado por la variable vehiculo2,
+                            // es decir objeto2
+      temporal.asignarTipoVehiculo(Vehiculo.TIPO_AEREO); // Este llamado al método 
+      // asignarTipoVehiculo modificará al objeto2
+   }
+   
+   public Vehiculo darVehiculo1 ()
+   {
+      return vehiculo1;
+   }
+   
+   public Vehiculo darVehiculo2 ()
+   {
+      return vehiculo2;
+   }
+}
+class Vehiculo 
+{
+   public static final String TIPO_TERRESTRE = "terrestre";
+   
+   public static final String TIPO_MARINO = "marino";
+   
+   public static final String TIPO_AEREO = "aéreo";
+   
+ 
+   private String tipoVehiculo;
+   
+   public void asignarTipoVehiculo (String tipoVehiculoP)
+   {
+      tipoVehiculo = tipoVehiculoP;
+   }
+   
+   public String darTipoVehiculo()
+   {
+      return tipoVehiculo;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      // Con esta instrucción se imprime en la consola
+      Vehiculo temporal = rentaDeVehiculos.darVehiculo1();
+      System.out.println("Se debe crear un vehículo de tipo marino y otro de" + 
+      " tipo aéreo. A continuación se muestra el resultado:");
+      if(temporal != null)
+      {
+         System.out.println("El vehiculo 1 de la empresa rentadora de vehículos" +
+         " es de tipo " + temporal.darTipoVehiculo() + ".");
+      } 
+      else
+      {
+         System.out.println("Error: el vehículo 1 no fue inicializado.");  
+      }
+      temporal = rentaDeVehiculos.darVehiculo2();
+      if(temporal != null)
+      {
+         System.out.println("El vehiculo 2 de la empresa rentadora de vehículos" +
+         " es de tipo " + temporal.darTipoVehiculo() + ".");
+      } 
+      else
+      {
+         System.out.println("Error: el vehículo 2 no fue inicializado.");  
+      }
+      
+   } 
+}
+
+
+INCORRECTO
+class RentaDeVehiculos 
+{
+   private Vehiculo vehiculo1;
+   private Vehiculo vehiculo2;
+   private Vehiculo temporal;
+      
+   public RentaDeVehiculos ()
+   {
+      vehiculo1 = new Vehiculo(); // Se crea un objeto (objeto1) y vehiculo1 va 
+                                  // a tener una referencia a dicho objeto.
+      vehiculo2 = vehiculo1;// NO se crea otro objeto y vehiculo2 va a tener una
+                            // referencia al objeto referenciado por vehiculo1,
+                            // es decir, al objeto1.
+      
+      vehiculo1.asignarTipoVehiculo(Vehiculo.TIPO_MARINO); // Este llamado al método 
+      // asignarTipoVehiculo modificará al objeto1
+      vehiculo2.asignarTipoVehiculo(Vehiculo.TIPO_AEREO); // Este llamado al método 
+      // asignarTipoVehiculo modificará al objeto1
+      
+      
+      
+      // Al finalizar la ejecución, las variables vehiculo1 y vehiculo2 van a 
+      // tener una referencia al objeto1 y el objeto1 va a ser de tipo aéreo.
+      
+   }
+   
+   public Vehiculo darVehiculo1 ()
+   {
+      return vehiculo1;
+   }
+   
+   public Vehiculo darVehiculo2 ()
+   {
+      return vehiculo2;
+   }
+}
+class Vehiculo 
+{
+   public static final String TIPO_TERRESTRE = "terrestre";
+   
+   public static final String TIPO_MARINO = "marino";
+   
+   public static final String TIPO_AEREO = "aéreo";
+   
+ 
+   private String tipoVehiculo;
+   
+   public void asignarTipoVehiculo (String tipoVehiculoP)
+   {
+      tipoVehiculo = tipoVehiculoP;
+   }
+   
+   public String darTipoVehiculo()
+   {
+      return tipoVehiculo;
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      // Con esta instrucción se imprime en la consola
+      Vehiculo temporal = rentaDeVehiculos.darVehiculo1();
+      System.out.println("Se debe crear un vehículo de tipo marino y otro de" + 
+      " tipo aéreo. A continuación se muestra el resultado:");
+      if(temporal != null)
+      {
+         System.out.println("El vehiculo 1 de la empresa rentadora de vehículos" +
+         " es de tipo " + temporal.darTipoVehiculo() + ".");
+      } 
+      else
+      {
+         System.out.println("Error: el vehículo 1 no fue inicializado.");  
+      }
+      temporal = rentaDeVehiculos.darVehiculo2();
+      if(temporal != null)
+      {
+         System.out.println("El vehiculo 2 de la empresa rentadora de vehículos" +
+         " es de tipo " + temporal.darTipoVehiculo() + ".");
+      } 
+      else
+      {
+         System.out.println("Error: el vehículo 2 no fue inicializado.");  
+      }
+      
+   } 
+}
+
+
+======================================================================================================
+No inicializar un vector con un tamaño por parámetro
+======================================================================================================
+La inicialización de vectores se realiza a partir de la clase ArrayList. 
+Dado que se trata de un arreglo de tamaño variable nunca se debe especificar la capacidad.
+
+
+CORRECTO 
+import java.util.*;
+
+class RentaDeVehiculos 
+{
+   private ArrayList<Vehiculo> vehiculos;
+      
+   public RentaDeVehiculos ()
+   {
+      vehiculos = new ArrayList<Vehiculo>();
+      
+      
+   }
+   
+   public ArrayList<Vehiculo> darVehiculos()
+   {
+      return vehiculos;
+   }
+}
+class Vehiculo 
+{
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("La empresa rentadora de vehículos fue creada con "
+         + rentaDeVehiculos.darVehiculos().size() + " vehículos");
+   } 
+}
+
+INCORRECTO
+import java.util.*;
+
+class RentaDeVehiculos 
+{
+   private ArrayList<Vehiculo> vehiculos;
+      
+   public RentaDeVehiculos ()
+   {
+      vehiculos = new ArrayList<Vehiculo>(99);
+//    ^ El vector se creó con una CAPACIDAD INICIAL de 99, pero esto no es 
+//       necesario y puede ser ineficiente.
+   }
+   
+   public ArrayList<Vehiculo> darVehiculos()
+   {
+      return vehiculos;
+   }
+}
+class Vehiculo 
+{
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("La empresa rentadora de vehículos fue creada con "
+         + rentaDeVehiculos.darVehiculos().size() + " vehículos");
+   } 
+}
+
+
+======================================================================================================
+Declarar y crear arreglos de tamaño fijo correctamente
+======================================================================================================
+Para la declaración de arreglos de tamaño fijo se debe escribir el nombre del tipo primitivo o la clase de los objetos que se van a guardar 
+en el arreglo seguido de corchetes cuadrados [ ] y el nombre del arreglo. 
+Adicionalmente, para inicializar un arreglo se debe indicar el tamaño que va a tener.
+
+
+CORRECTO 
+class RentaDeVehiculos 
+{
+   public final static int NUM_VEHICULOS = 30;
+   public final static int NUM_SUCURSALES = 5;
+   private Vehiculo [] vehiculos;
+   
+   
+   private double [] gananciasSucursales;
+      
+   public RentaDeVehiculos ()
+   {
+      vehiculos = new Vehiculo[NUM_VEHICULOS];
+      gananciasSucursales = new double [NUM_SUCURSALES];
+      
+      
+   }
+   
+   public Vehiculo [] darVehiculos()
+   {
+      return vehiculos;
+   }
+   
+   public double [] darGananciasSucursales()
+   {
+      return gananciasSucursales;
+   }
+}
+class Vehiculo 
+{
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("La empresa rentadora de vehículos tiene capacidad para tener "
+         + rentaDeVehiculos.darVehiculos().length + " vehículos y "
+         + rentaDeVehiculos.darGananciasSucursales().length + " sucursales");
+   } 
+}
+
+INCORRECTO
+
+class RentaDeVehiculos 
+{
+   public final static int NUM_VEHICULOS = 30;
+   public final static int NUM_SUCURSALES = 5;
+   private [] Vehiculo vehiculos;
+//         ^^ Primero se define el tipo de objetos o valores que 
+//             se va a guardar y luego sí se ponen los corchetes []
+   private double [] gananciasSucursales;
+      
+   public RentaDeVehiculos ()
+   {
+      vehiculos = new Vehiculo[NUM_VEHICULOS];
+      gananciasSucursales = new double;
+//                                    ^ Se debe indicar la cantidad de elementos
+//                                     que va a tener el arreglo
+   }
+   
+   public Vehiculo [] darVehiculos()
+   {
+      return vehiculos;
+   }
+   
+   public double [] darGananciasSucursales()
+   {
+      return gananciasSucursales;
+   }
+}
+class Vehiculo 
+{
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("La empresa rentadora de vehículos tiene capacidad para tener "
+         + rentaDeVehiculos.darVehiculos().length + " vehículos y "
+         + rentaDeVehiculos.darGananciasSucursales().length + " sucursales");
+   } 
+}
+
+
+
+======================================================================================================
+El encabezado de un while nunca finaliza con ";"
+======================================================================================================
+Nunca se debe finalizar el encabezado de un while con ;. 
+En caso de hacerlo, el cuerpo del while se ejecutará una sola vez y sólo cuando la condición del while sea false 
+(como si el cuerpo estuviera por fuera del while). 
+Por lo tanto, si la condición del while se cumple la primera vez y depende de las acciones del cuerpo, el programa nunca terminará.
+
+CORRECTO 
+class RentaDeVehiculos 
+{
+   public final static int NUM_SUCURSALES = 5;
+   private double [] gananciasSucursales;
+      
+   public RentaDeVehiculos ()
+   {
+      gananciasSucursales = new double [NUM_SUCURSALES];
+   }
+   
+   public boolean estanLasGananciasPorEncimaDeLaMeta( double meta)
+   {
+      double gananciasAcomuladas = 0.0;
+      int indiceActual = 0;
+      while(gananciasAcomuladas <= meta && indiceActual< NUM_SUCURSALES)
+      
+      
+      
+      {
+         gananciasAcomuladas += gananciasSucursales[indiceActual];
+         indiceActual++;
+      }
+      
+      return gananciasAcomuladas > meta;
+   }
+   public void registrarGananciasSucursal ( int idSucursal, double ganancias)
+   {
+      gananciasSucursales[idSucursal] = ganancias;
+   }
+}
+
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      rentaDeVehiculos.registrarGananciasSucursal(0, 3000.0);
+      rentaDeVehiculos.registrarGananciasSucursal(1, 5000.0);
+      rentaDeVehiculos.registrarGananciasSucursal(2, 6000.0);
+      rentaDeVehiculos.registrarGananciasSucursal(3, 7000.0);
+      rentaDeVehiculos.registrarGananciasSucursal(4, 2000.0);
+      // Con esta instrucción se imprime en la consola
+      System.out.println("La empresa rentadora de vehículos tiene ventas" 
+         + " acomuladas mayores a la meta de 20000. Y el programa respondió \""
+         + rentaDeVehiculos.estanLasGananciasPorEncimaDeLaMeta(2000)
+         + "\" a la pregunta: ¿Están las ganancias por encima de la meta?");
+   } 
+}
+
+INCORRECTO
+class RentaDeVehiculos 
+{
+   public final static int NUM_SUCURSALES = 5;
+   private double [] gananciasSucursales;
+      
+   public RentaDeVehiculos ()
+   {
+      gananciasSucursales = new double [NUM_SUCURSALES];
+   }
+   
+   public boolean estanLasGananciasPorEncimaDeLaMeta( double meta)
+   {
+      double gananciasAcomuladas = 0.0;
+      int indiceActual = 0;
+      while(gananciasAcomuladas <= meta && indiceActual< NUM_SUCURSALES);
+//                                                                      ^
+//                   No se debe terminar el encabezado de un while con ";". 
+//                   Es posible que el programa no termine nunca su ejecución 
+      {
+         gananciasAcomuladas += gananciasSucursales[indiceActual];
+         indiceActual++;
+      }
+      
+      return gananciasAcomuladas > meta;
+   }
+   public void registrarGananciasSucursal ( int idSucursal, double ganancias)
+   {
+      gananciasSucursales[idSucursal] = ganancias;
+   }
+}
+
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      rentaDeVehiculos.registrarGananciasSucursal(0, 3000.0);
+      rentaDeVehiculos.registrarGananciasSucursal(1, 5000.0);
+      rentaDeVehiculos.registrarGananciasSucursal(2, 6000.0);
+      rentaDeVehiculos.registrarGananciasSucursal(3, 7000.0);
+      rentaDeVehiculos.registrarGananciasSucursal(4, 2000.0);
+      // Con esta instrucción se imprime en la consola
+      System.out.println("La empresa rentadora de vehículos tiene ventas" 
+         + " acomuladas mayores a la meta de 20000. Y el programa respondió \""
+         + rentaDeVehiculos.estanLasGananciasPorEncimaDeLaMeta(2000)
+         + "\" a la pregunta: ¿Están las ganancias por encima de la meta?");
+   } 
+}
+
+
+
+
+======================================================================================================
+El encabezado de un for nunca finaliza con ";"
+======================================================================================================
+Nunca se debe finalizar el encabezado de un for con ;. En caso de hacerlo, el cuerpo del for se ejecutará una sola vez y sólo cuando la condición del for sea false (como si el cuerpo estuviera por fuera del for). A diferencia del while, el for no se quedará en ciclo infinito al cometer dicho error debido a que las condiciones de parada dependen de la signatura misma del for.
+
+
+CORRECTO 
+class RentaDeVehiculos 
+{
+   public final static int NUM_SUCURSALES = 5;
+   private double [] gananciasSucursales;
+      
+   public RentaDeVehiculos ()
+   {
+      gananciasSucursales = new double [NUM_SUCURSALES];
+   }
+   
+   public boolean estanLasGananciasPorEncimaDeLaMeta( double meta)
+   {
+      double gananciasAcomuladas = 0.0;
+      for(int indiceActual = 0; indiceActual< NUM_SUCURSALES; indiceActual++)
+
+
+      {
+         gananciasAcomuladas += gananciasSucursales[indiceActual];
+         indiceActual++;
+      }
+      
+      return gananciasAcomuladas > meta;
+   }
+   
+   public void registrarGananciasSucursal ( int idSucursal, double ganancias)
+   {
+      gananciasSucursales[idSucursal] = ganancias;
+   }
+}
+
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      rentaDeVehiculos.registrarGananciasSucursal(0, 3000.0);
+      rentaDeVehiculos.registrarGananciasSucursal(1, 5000.0);
+      rentaDeVehiculos.registrarGananciasSucursal(2, 6000.0);
+      rentaDeVehiculos.registrarGananciasSucursal(3, 7000.0);
+      rentaDeVehiculos.registrarGananciasSucursal(4, 2000.0);
+      // Con esta instrucción se imprime en la consola
+      System.out.println("La empresa rentadora de vehículos tiene ventas" 
+         + " acomuladas mayores a la meta de 20000. Y el programa respondió \""
+         + rentaDeVehiculos.estanLasGananciasPorEncimaDeLaMeta(2000)
+         + "\" a la pregunta: ¿Están las ganancias por encima de la meta?");
+   } 
+}
+
+INCORRECTO
+class RentaDeVehiculos 
+{
+   public final static int NUM_SUCURSALES = 5;
+   private double [] gananciasSucursales;
+      
+   public RentaDeVehiculos ()
+   {
+      gananciasSucursales = new double [NUM_SUCURSALES];
+   }
+   
+   public boolean estanLasGananciasPorEncimaDeLaMeta( double meta)
+   {
+      double gananciasAcomuladas = 0.0;
+      for(int indiceActual = 0; indiceActual< NUM_SUCURSALES; indiceActual++);
+//                                                                           ^
+//                         No se debe terminar el encabezado de un for con ";". 
+      {
+         gananciasAcomuladas += gananciasSucursales[indiceActual];
+         indiceActual++;
+      }
+      
+      return gananciasAcomuladas > meta;
+   }
+   
+   public void registrarGananciasSucursal ( int idSucursal, double ganancias)
+   {
+      gananciasSucursales[idSucursal] = ganancias;
+   }
+}
+
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      rentaDeVehiculos.registrarGananciasSucursal(0, 3000.0);
+      rentaDeVehiculos.registrarGananciasSucursal(1, 5000.0);
+      rentaDeVehiculos.registrarGananciasSucursal(2, 6000.0);
+      rentaDeVehiculos.registrarGananciasSucursal(3, 7000.0);
+      rentaDeVehiculos.registrarGananciasSucursal(4, 2000.0);
+      // Con esta instrucción se imprime en la consola
+      System.out.println("La empresa rentadora de vehículos tiene ventas" 
+         + " acomuladas mayores a la meta de 20000. Y el programa respondió \""
+         + rentaDeVehiculos.estanLasGananciasPorEncimaDeLaMeta(2000)
+         + "\" a la pregunta: ¿Están las ganancias por encima de la meta?");
+   } 
+}
+
+
+======================================================================================================
+Garantizar la finalización del while
+======================================================================================================
+Para garantizar que un while termine, es requisito que las variables que participan en la condición del while, cambien en el cuerpo del mismo.
+
+
+CORRECTO 
+class RentaDeVehiculos 
+{
+   public final static int NUM_SUCURSALES = 5;
+   private double [] gananciasSucursales;
+      
+   public RentaDeVehiculos ()
+   {
+      gananciasSucursales = new double [NUM_SUCURSALES];
+   }
+   
+   public boolean estanLasGananciasPorEncimaDeLaMeta( double meta)
+   {
+      double gananciasAcumuladas = 0.0;
+      int indiceActual = 0;
+      while(indiceActual< NUM_SUCURSALES)
+      {
+         gananciasAcumuladas += gananciasSucursales[indiceActual];
+         indiceActual++;
+         
+      }
+      
+      return gananciasAcumuladas > meta;
+   }
+   public void registrarGananciasSucursal ( int idSucursal, double ganancias)
+   {
+      gananciasSucursales[idSucursal] = ganancias;
+   }
+}
+
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      rentaDeVehiculos.registrarGananciasSucursal(0, 3000.0);
+      rentaDeVehiculos.registrarGananciasSucursal(1, 5000.0);
+      rentaDeVehiculos.registrarGananciasSucursal(2, 6000.0);
+      rentaDeVehiculos.registrarGananciasSucursal(3, 7000.0);
+      rentaDeVehiculos.registrarGananciasSucursal(4, 2000.0);
+      // Con esta instrucción se imprime en la consola
+      System.out.println("La empresa rentadora de vehículos tiene ventas" 
+         + " acumuladas mayores a la meta de 20000. Y el programa respondió \""
+         + rentaDeVehiculos.estanLasGananciasPorEncimaDeLaMeta(2000)
+         + "\" a la pregunta: ¿Están las ganancias por encima de la meta?");
+   } 
+}
+
+INCORRECTO
+class RentaDeVehiculos 
+{
+   public final static int NUM_SUCURSALES = 5;
+   private double [] gananciasSucursales;
+      
+   public RentaDeVehiculos ()
+   {
+      gananciasSucursales = new double [NUM_SUCURSALES];
+   }
+   
+   public boolean estanLasGananciasPorEncimaDeLaMeta( double meta)
+   {
+      double gananciasAcumuladas = 0.0;
+      int indiceActual = 0;
+      while(indiceActual< NUM_SUCURSALES)
+      {
+         gananciasAcumuladas += gananciasSucursales[indiceActual];
+//       ^ Dado que indiceActual participa en la condición del while,
+//          se debe modificar para que el while termine.
+      }
+      
+      return gananciasAcumuladas > meta;
+   }
+   public void registrarGananciasSucursal ( int idSucursal, double ganancias)
+   {
+      gananciasSucursales[idSucursal] = ganancias;
+   }
+}
+
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      rentaDeVehiculos.registrarGananciasSucursal(0, 3000.0);
+      rentaDeVehiculos.registrarGananciasSucursal(1, 5000.0);
+      rentaDeVehiculos.registrarGananciasSucursal(2, 6000.0);
+      rentaDeVehiculos.registrarGananciasSucursal(3, 7000.0);
+      rentaDeVehiculos.registrarGananciasSucursal(4, 2000.0);
+      // Con esta instrucción se imprime en la consola
+      System.out.println("La empresa rentadora de vehículos tiene ventas" 
+         + " acumuladas mayores a la meta de 20000. Y el programa respondió \""
+         + rentaDeVehiculos.estanLasGananciasPorEncimaDeLaMeta(2000)
+         + "\" a la pregunta: ¿Están las ganancias por encima de la meta?");
+   } 
+}
+
+======================================================================================================
+Inicializar un ArrayList antes de usar sus métodos
+======================================================================================================
+Una variable de tipo ArrayList se comporta como una de cualquier otra clase. Por lo tanto, 
+al llamar un método de ArrayList sin inicializar la variable, se obtendrá el error NullPointerException
+
+
+CORRECTO 
+import java.util.*;
+
+class RentaDeVehiculos 
+{
+   private ArrayList<Vehiculo> vehiculos;
+      
+   public RentaDeVehiculos ()
+   {
+      vehiculos = new ArrayList<Vehiculo>();
+   }
+   
+   public void agregarVehículo(Vehiculo vehiculoP)
+   {
+      vehiculos.add(vehiculoP);
+   }
+   
+   public ArrayList<Vehiculo> darVehiculos()
+   {
+      return vehiculos;
+   }
+}
+class Vehiculo 
+{
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      rentaDeVehiculos.agregarVehículo(new Vehiculo());
+      // Con esta instrucción se imprime en la consola
+      System.out.println("La empresa rentadora de vehículos fue creada y ahora "
+      + "tiene "+ rentaDeVehiculos.darVehiculos().size() + " vehículos");
+   } 
+}
+
+INCORRECTO
+import java.util.*;
+
+class RentaDeVehiculos 
+{
+   private ArrayList<Vehiculo> vehiculos;
+      
+   public RentaDeVehiculos ()
+   {
+      // Falta inicializar el vector de vehiculos
+   }
+   
+   public void agregarVehículo(Vehiculo vehiculoP)
+   {
+      vehiculos.add(vehiculoP);
+   }
+   
+   public ArrayList<Vehiculo> darVehiculos()
+   {
+      return vehiculos;
+   }
+}
+class Vehiculo 
+{
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      rentaDeVehiculos.agregarVehículo(new Vehiculo());
+      // Con esta instrucción se imprime en la consola
+      System.out.println("La empresa rentadora de vehículos fue creada y ahora "
+      + "tiene "+ rentaDeVehiculos.darVehiculos().size() + " vehículos");
+   } 
+}
+
+======================================================================================================
+No utilizar los métodos get, set ni remove cuando un ArrayList está vacío
+======================================================================================================
+Los métodos get(), set() y remove() siempre esperan recibir como parámetro un número válido que sea mayor o igual a 0 y menor a la cantidad de elementos. Particularmente, si hay 0 elementos en el vector la condición mencionada no se cumple nunca independientemente del parámetro que reciban estos métodos.
+
+CORRECTO 
+import java.util.*;
+
+class RentaDeVehiculos 
+{
+   private ArrayList<Vehiculo> vehiculos;
+      
+   public RentaDeVehiculos ()
+   {
+      vehiculos = new ArrayList<Vehiculo>();
+   }
+   
+   public Vehiculo darPrimerVehiculo()
+   {
+      if(!vehiculos.isEmpty())
+      {
+         return vehiculos.get(0);
+      }
+      return null;
+   }
+   
+}
+class Vehiculo 
+{
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      rentaDeVehiculos.darPrimerVehiculo();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("La empresa rentadora de vehículos fue creada y "
+      + "no tiene vehículos. ");
+   } 
+}
+
+INCORRECTO
+import java.util.*;
+
+class RentaDeVehiculos 
+{
+   private ArrayList<Vehiculo> vehiculos;
+      
+   public RentaDeVehiculos ()
+   {
+      vehiculos = new ArrayList<Vehiculo>();
+   }
+   
+   public Vehiculo darPrimerVehiculo()
+   {
+      
+      
+         return vehiculos.get(0);
+//    Se debe comprobar que exista el elemento 0 antes de llamar al método get. 
+//    Lo mismo aplica para los métodos set y remove.
+   }
+   
+}
+class Vehiculo 
+{
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      rentaDeVehiculos.darPrimerVehiculo();
+      // Con esta instrucción se imprime en la consola
+      System.out.println("La empresa rentadora de vehículos fue creada y "
+      + "no tiene vehículos. ");
+   } 
+}
+
+
+======================================================================================================
+Hacer cast de objetos a la clase que corresponda
+======================================================================================================
+Cuando se quiere hacer cast a un objeto para poder acceder a los métodos de la clase a la que pertenecen, 
+se debe estar seguro de que el objeto sí sea de la clase a la que se quiere hacer cast. 
+Por ejemplo, si un objeto es de tipo String no se puede hacer cast de este a Vehículo.
+
+
+CORRECTO 
+import java.util.*;
+
+class RentaDeVehiculos 
+{
+   private ArrayList<Vehiculo> vehiculos;
+      
+   public RentaDeVehiculos ()
+   {
+      vehiculos = new ArrayList<Vehiculo>();
+   }
+   
+   public String darMarcaPrimerVeehiculo()
+   {
+      if(vehiculos.size() > 0)
+      {
+         return ((Vehiculo)vehiculos.get(0)).darMarca();
+         
+         
+      }
+      return null;
+   }
+   
+   public void agregarVehículo(String marcaVehiculo)
+   {
+      Vehiculo vehiculoNuevo = new Vehiculo(marcaVehiculo);
+      vehiculos.add(vehiculoNuevo);
+   }
+   
+   public ArrayList<Vehiculo> darVehiculos()
+   {
+      return vehiculos;
+   }
+}
+class Vehiculo 
+{
+   private String marca;
+   public Vehiculo (String marcaP)
+   {
+      marca = marcaP;
+   }
+   public String darMarca()
+   {
+      return marca;
+   }
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      rentaDeVehiculos.agregarVehículo("Audi");
+      // Con esta instrucción se imprime en la consola
+      System.out.println("La empresa rentadora de vehículos fue creada y su primer "
+      + " vehículo es de marca " + rentaDeVehiculos.darMarcaPrimerVeehiculo() );
+   } 
+}
+
+
+INCORRECTO
+import java.util.*;
+
+class RentaDeVehiculos 
+{
+   private ArrayList<Vehiculo> vehiculos;
+      
+   public RentaDeVehiculos ()
+   {
+      vehiculos = new ArrayList<Vehiculo>();
+   }
+   
+   public String darMarcaPrimerVeehiculo()
+   {
+      if(vehiculos.size() > 0)
+      {
+         return ((String)vehiculos.get(0));
+//                   ^ El objeto que está guardado en vehiculos es de tipo 
+//                      Vehiculo, mas no de tipo String
+      }
+      return null;
+   }
+   
+   public void agregarVehículo(String marcaVehiculo)
+   {
+      Vehiculo vehiculoNuevo = new Vehiculo(marcaVehiculo);
+      vehiculos.add(vehiculoNuevo);
+   }
+   
+   public ArrayList<Vehiculo> darVehiculos()
+   {
+      return vehiculos;
+   }
+}
+class Vehiculo 
+{
+   private String marca;
+   public Vehiculo (String marcaP)
+   {
+      marca = marcaP;
+   }
+   public String darMarca()
+   {
+      return marca;
+   }
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      rentaDeVehiculos.agregarVehículo("Audi");
+      // Con esta instrucción se imprime en la consola
+      System.out.println("La empresa rentadora de vehículos fue creada y su primer "
+      + " vehículo es de marca " + rentaDeVehiculos.darMarcaPrimerVeehiculo() );
+   } 
+}
+
+======================================================================================================
+Acceder a los objetos de una arreglo o un vector adecuadamente
+======================================================================================================
+Cuando se quiere acceder a los objetos de un arreglo se deben utilizar los corchetes cuadrados [ ] y no el método .get(). 
+Por el contrario, cuando se quiere acceder a los objetos que están en un ArrayList se debe utilizar el método .get() y no los corchetes cuadrados [ ].
+
+
+CORRECTO 
+import java.util.*;
+class RentaDeVehiculos 
+{
+   public final static int NUM_SUCURSALES = 5;
+   private ArrayList<Vehiculo> vehiculos;
+   private double [] gananciasSucursales;
+      
+   public RentaDeVehiculos ()
+   {
+      vehiculos = new ArrayList<Vehiculo>();
+      gananciasSucursales = new double [NUM_SUCURSALES];
+   }
+   
+   public Vehiculo darVehiculoEnLaPosicion(int pos)
+   {
+      return vehiculos.get(pos);
+      
+      
+   }
+   
+   public double darGananciasDeSucursal( int numSucursal)
+   {
+      return gananciasSucursales[numSucursal];
+      
+      
+   }
+   
+   public void agregarVehiculo( String marcaVehiculo)
+   {
+      Vehiculo nuevoVehiculo = new Vehiculo(marcaVehiculo);
+      vehiculos.add(nuevoVehiculo);
+   }
+   
+   public void registrarGananciasSucursal( int numSucursal, double ganancias)
+   {
+      gananciasSucursales[numSucursal] = ganancias;
+   }
+}
+class Vehiculo 
+{
+   private String marca;
+   public Vehiculo (String marcaP)
+   {
+      marca = marcaP;
+   }
+   public String darMarca()
+   {
+      return marca;
+   }
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      rentaDeVehiculos.agregarVehiculo("Honda");
+      rentaDeVehiculos.agregarVehiculo("BMW");
+      rentaDeVehiculos.agregarVehiculo("Audi");
+      rentaDeVehiculos.registrarGananciasSucursal(0, 20000.0);
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El segundo vehículo de la empresa rentadora de vehículos es de marca "
+         + rentaDeVehiculos.darVehiculoEnLaPosicion(1).darMarca() + " y las ganancias de la primera sucursal fueron "
+         + rentaDeVehiculos.darGananciasDeSucursal(0));
+   } 
+}
+
+INCORRECTO
+import java.util.*;
+class RentaDeVehiculos 
+{
+   public final static int NUM_SUCURSALES = 5;
+   private ArrayList<Vehiculo> vehiculos;
+   private double [] gananciasSucursales;
+      
+   public RentaDeVehiculos ()
+   {
+      vehiculos = new ArrayList<Vehiculo>();
+      gananciasSucursales = new double [NUM_SUCURSALES];
+   }
+   
+   public Vehiculo darVehiculoEnLaPosicion(int pos)
+   {
+      return vehiculos[pos];
+//           ^ vehiculos es un vector (ArrayList), por lo tanto se debe 
+//             ultilizar el método "get".
+   }
+   
+   public double darGananciasDeSucursal( int numSucursal)
+   {
+      return gananciasSucursales.get(numSucursal);
+//           ^ gananciasSucursales es un arreglo, por lo tanto se debe ultilizar
+//             los corchetes cuadrados [].
+   }
+   
+   public void agregarVehiculo( String marcaVehiculo)
+   {
+      Vehiculo nuevoVehiculo = new Vehiculo(marcaVehiculo);
+      vehiculos.add(nuevoVehiculo);
+   }
+   
+   public void registrarGananciasSucursal( int numSucursal, double ganancias)
+   {
+      gananciasSucursales[numSucursal] = ganancias;
+   }
+}
+class Vehiculo 
+{
+   private String marca;
+   public Vehiculo (String marcaP)
+   {
+      marca = marcaP;
+   }
+   public String darMarca()
+   {
+      return marca;
+   }
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      RentaDeVehiculos rentaDeVehiculos = new RentaDeVehiculos();
+      rentaDeVehiculos.agregarVehiculo("Honda");
+      rentaDeVehiculos.agregarVehiculo("BMW");
+      rentaDeVehiculos.agregarVehiculo("Audi");
+      rentaDeVehiculos.registrarGananciasSucursal(0, 20000.0);
+      // Con esta instrucción se imprime en la consola
+      System.out.println("El segundo vehículo de la empresa rentadora de vehículos es de marca "
+         + rentaDeVehiculos.darVehiculoEnLaPosicion(1).darMarca() + " y las ganancias de la primera sucursal fueron "
+         + rentaDeVehiculos.darGananciasDeSucursal(0));
+   } 
+}
+
+======================================================================================================
+No utilizar la palabra throws en el cuerpo de un método
+======================================================================================================
+En el cuerpo del método se debe utilizar la palabra throw, mas no la palabra throws.
+
+CORRECTO 
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   private double tiempoDeRecorrido;
+   
+   public void inicializar ()
+   {
+      kilometrosRecorridos = 0;
+      tiempoDeRecorrido = 0;
+   }
+   
+   public void agregarRecorrido(int kilometrosRecorridosP, double tiempoDeRecorridoP )
+   {
+      kilometrosRecorridos += kilometrosRecorridosP;
+      tiempoDeRecorrido += tiempoDeRecorridoP;
+   }
+   
+   public double darVelocidadPromedioDelRecorrido () throws Exception
+   {
+      if(tiempoDeRecorrido == 0){
+         throw new Exception("El recorrido no ha empezado, por lo tanto no se " 
+         
+            +  "puede calcular la velocidad promedio del recorrido.");
+      }
+      
+      return kilometrosRecorridos/tiempoDeRecorrido;
+      
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.inicializar();
+      // Con esta instrucción se imprime en la consola
+      try{
+         System.out.println("El vehículo recorrió 125 km en 4 horas y su velocidad" + 
+         " promedio fue  " + vehiculo.darVelocidadPromedioDelRecorrido() + " km/h.");
+      } catch (Exception e){
+         System.out.println(e.getMessage());
+      }
+      
+   }
+}
+
+INCORRECTO
+class Vehiculo 
+{
+   private int kilometrosRecorridos;
+   private double tiempoDeRecorrido;
+   
+   public void inicializar ()
+   {
+      kilometrosRecorridos = 0;
+      tiempoDeRecorrido = 0;
+   }
+   
+   public void agregarRecorrido(int kilometrosRecorridosP, double tiempoDeRecorridoP )
+   {
+      kilometrosRecorridos += kilometrosRecorridosP;
+      tiempoDeRecorrido += tiempoDeRecorridoP;
+   }
+   
+   public double darVelocidadPromedioDelRecorrido () throws Exception
+   {
+      if(tiempoDeRecorrido == 0){
+         throws new Exception("El recorrido no ha empezado, por lo tanto no se " 
+//       ^ Se debe lanzar una excepción con throw, mas no con throws
+            +  "puede calcular la velocidad promedio del recorrido.");
+      }
+      
+      return kilometrosRecorridos/tiempoDeRecorrido;
+      
+   }
+   
+}
+
+/**
+ * En CupiTips usamos excepcionalmente la clase Main con el fin de 
+ * mostrar el resultado de la ejecución del código fuente a probar.
+ **/
+class Main 
+{
+   public static void main (String [] args)
+   {
+      Vehiculo vehiculo = new Vehiculo();
+      vehiculo.inicializar();
+      // Con esta instrucción se imprime en la consola
+      try{
+         System.out.println("El vehículo recorrió 125 km en 4 horas y su velocidad" + 
+         " promedio fue  " + vehiculo.darVelocidadPromedioDelRecorrido() + " km/h.");
+      } catch (Exception e){
+         System.out.println(e.getMessage());
+      }
+      
+   }
+}
+
+

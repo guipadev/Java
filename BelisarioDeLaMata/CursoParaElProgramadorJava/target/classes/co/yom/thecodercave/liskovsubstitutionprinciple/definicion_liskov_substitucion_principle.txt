@@ -1,0 +1,6 @@
+Liskov Substitution Principle - Principio de Sustitución de Liskov
+
+Las clase derivadas pueden poder sustituirse por sus clases bases
+Básicamente que los objetos tienen que poder ser reemplazados por las instancias
+o por sus propias instancias es decir de los objetos que heredan de ese mismo objeto
+sin que el sistema se rompa, sin alterar el funcionamiento del sistema

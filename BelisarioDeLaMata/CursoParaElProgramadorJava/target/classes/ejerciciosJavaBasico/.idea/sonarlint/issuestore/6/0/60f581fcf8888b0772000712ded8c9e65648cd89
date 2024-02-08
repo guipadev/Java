@@ -1,0 +1,25 @@
+
+s
+java:S1192Z"]Define a constant instead of duplicating this literal "No existe esa caracteristica" 3 times.(êÓˆò
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ÿ¾ùÿÿÿÿ
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(Çµí‘
+c
+java:S1659("HDeclare "cantCampero" and all following declarations on a separate line.(çŒ¢àùÿÿÿÿ
+X	java:S125."<This block of commented-out lines of code should be removed.(àò¦â8Èşÿ‰ğ0
+S	java:S106<"9Replace this use of System.out or System.err by a logger.(Ìİ¤±üÿÿÿÿ
+N	java:S106N"9Replace this use of System.out or System.err by a logger.(‰ñÔÖ
+S	java:S106R"9Replace this use of System.out or System.err by a logger.(Ñ÷›°üÿÿÿÿ
+N	java:S106V"9Replace this use of System.out or System.err by a logger.(Èó»ö
+N	java:S106Z"9Replace this use of System.out or System.err by a logger.(êÓˆò
+S	java:S106f"9Replace this use of System.out or System.err by a logger.(Ñ÷›°üÿÿÿÿ
+S	java:S106j"9Replace this use of System.out or System.err by a logger.(øÑÀøüÿÿÿÿ
+N	java:S106n"9Replace this use of System.out or System.err by a logger.(êÓˆò
+N	java:S106y"9Replace this use of System.out or System.err by a logger.(Èó»ö
+S	java:S106}"9Replace this use of System.out or System.err by a logger.(øÑÀøüÿÿÿÿ
+O	java:S106"9Replace this use of System.out or System.err by a logger.(êÓˆò
+O	java:S106‡"9Replace this use of System.out or System.err by a logger.(ë›ı
+T	java:S106"9Replace this use of System.out or System.err by a logger.(›¥ˆ­úÿÿÿÿ
+T	java:S106”"9Replace this use of System.out or System.err by a logger.(¼Ğíšúÿÿÿÿ
+O	java:S106—"9Replace this use of System.out or System.err by a logger.(ıØ§—
+T	java:S106¨"9Replace this use of System.out or System.err by a logger.(ú¡ôİøÿÿÿÿ

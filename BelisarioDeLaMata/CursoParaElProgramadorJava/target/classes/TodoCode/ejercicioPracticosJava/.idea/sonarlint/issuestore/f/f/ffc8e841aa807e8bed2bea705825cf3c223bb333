@@ -1,0 +1,19 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(çü–¿
+^
+java:S1854"<Remove this useless assignment to local variable "teclado2".(å­ãœøÿÿÿÿ8¢þ‡âØ0
+G
+java:S1197"*Move the array designators [] to the type.(þ·«8¥þ‡âØ0
+F
+java:S1197"*Move the array designators [] to the type.(ðÌí{8§þ‡âØ0
+G
+java:S1197"*Move the array designators [] to the type.(ÛÏå8¬þ‡âØ0
+O
+java:S1481"-Remove this unused "teclado2" local variable.(å­ãœøÿÿÿÿ8Çþ‡âØ0
+U	java:S106 "9Replace this use of System.out or System.err by a logger.(ýÉ–ì8Éþ‡âØ0
+Z	java:S106#"9Replace this use of System.out or System.err by a logger.(—¿Úµûÿÿÿÿ8Ëþ‡âØ0
+Z	java:S106&"9Replace this use of System.out or System.err by a logger.(”æûÓûÿÿÿÿ8Îþ‡âØ0
+Z	java:S106B"9Replace this use of System.out or System.err by a logger.(äÔ²œúÿÿÿÿ8Óþ‡âØ0
+U	java:S106C"9Replace this use of System.out or System.err by a logger.(ÀÎ¨¢8Ôþ‡âØ0
+Z	java:S106E"9Replace this use of System.out or System.err by a logger.(ì±Ö˜þÿÿÿÿ8Öþ‡âØ0
+Z	java:S106F"9Replace this use of System.out or System.err by a logger.(ÅË©Þþÿÿÿÿ8Ùþ‡âØ0

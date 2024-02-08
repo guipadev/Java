@@ -1,0 +1,8 @@
+
+U	java:S106"9Replace this use of System.out or System.err by a logger.(úã‡8ëÀ’‘ï0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¼—Ş‘øÿÿÿÿ8îÀ’‘ï0
+s
+java:S34574"Q%n should be used in place of \n to produce the platform-specific line separator.(¹ìä˜ıÿÿÿÿ8öÀ’‘ï0
+Z	java:S1064"9Replace this use of System.out or System.err by a logger.(¹ìä˜ıÿÿÿÿ8÷À’‘ï0
+G
+java:S1144H"*Remove this unused private "close" method.(èÁø½8şÀ’‘ï0

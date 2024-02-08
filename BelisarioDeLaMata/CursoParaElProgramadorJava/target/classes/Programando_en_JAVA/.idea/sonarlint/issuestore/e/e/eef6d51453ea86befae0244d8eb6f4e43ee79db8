@@ -1,0 +1,20 @@
+
+p
+java:S1192"ZDefine a constant instead of duplicating this literal "Hola desde nuestra lambda" 3 times.(Šóå¾
+N	java:S106"9Replace this use of System.out or System.err by a logger.(çÆâÆ
+Q	java:S125"<This block of commented-out lines of code should be removed.(¼·Ø
+B
+java:S1602",Remove useless curly braces around statement(Šóå¾
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Šóå¾
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(…¥©ıÿÿÿÿ
+Q	java:S125*"<This block of commented-out lines of code should be removed.(¼·Ø
+L
+java:S1611+"7Remove the parentheses around the "parametro" parameter(¼œÕ
+M	java:S106+"9Replace this use of System.out or System.err by a logger.(¼œÕ
+S	java:S106:"9Replace this use of System.out or System.err by a logger.(…¥©ıÿÿÿÿ
+Q	java:S125?"<This block of commented-out lines of code should be removed.(¼·Ø
+M
+java:S1611@"7Remove the parentheses around the "parametro" parameter(»’ë
+S	java:S106A"9Replace this use of System.out or System.err by a logger.(——â¦ıÿÿÿÿ
+S	java:S106J"9Replace this use of System.out or System.err by a logger.(ª±šòşÿÿÿÿ
+N	java:S106K"9Replace this use of System.out or System.err by a logger.(èÎş”

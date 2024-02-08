@@ -1,0 +1,107 @@
+https://www.youtube.com/watch?v=DCbAm1NZ1zc&list=RDCMUC9fAeSPVw7mAAbexCS7gPqw&index=5
+
+0. Que proyecto puedo hacer despues de un CRUD para seguir aprendiendo?
+CRUD es esencial, adicional temas de logueo, seguridad, subida de archivos, copiado de archivos, usar una API de terceros...
+Retarse con imagenes, con graficos estadisticos, pasandole data a traves de un procedimiento almacenado
+Realizar Test con JUnit y Mockito
+
+1. ¿Cual es la diferencia entre Spring Framework y Spring Boot?
+Spring Framework es el marco de trabajo, es el uso de clases, metodos para trabajar como lo proporciona el framework
+Spring Boot, es un proyecto/herramienta que facilita ser más productivo en el uso de Spring Framework, evitando configuraciones engorrosas
+
+2. ¿Que es la Inyección de Dependencias?
+Es un patron de diseño, hace que el proyecto sea más adecuado para pruebas unitarias, que las dependencias o instancia no sean generadas de forma manual
+Como que el programado haga un New o solicite atributes de ese objeto, si no que el mismo framework se encarge de proporcionar las instancias en el momento oportuno
+Forma parte de un principio mayor conocido como la Inversión de Control
+
+3. ¿Como podria describir el Spring IoC container ?
+Es el contenedor principal de Spring, es el utiliza las inyecciones de dependencias, para poder administrar, todo el ciclo de vida de los objetos que Spring va
+a gestionar internamente
+Cuando utilizamos Spring vamos a estar generando algo conocido como Bean que son objetos adminsitrables por Spring y donde van estar estos objetos es en el IoC Container
+Para que nosostros más adelante podamos recuperarlos, administrarlos y destruirlos etc...
+
+4. ¿Que es un Bean y cuales son sus alcances?
+Es un Objeto que maneja el Contenedor de Spring, practicamente nosotros vamos administrar estos objetos.
+EL alcance o scoop
+Existe dos ambitos el Singleton y el Prototype
+El Singleton, Bean va a tener la misma instancia durante todo el aplicativo
+El Prototype, es una copia de una instancia, este por defecto esta creando tus instancia en Spring
+Tambien esta el Request, Sesion, Application y el WebSocket, que son otros ambitos que puede manejar un Bean
+
+5. ¿Que es SPring AoP?
+Programación Orientada a Aspectos, es la forma como Spring, ofrece para poder hacer programación transversal.
+Osea que podamos abstraer lógica que se repita en diferentes partes del código pero que se gestione de manera independiente de nuestra lógica de negocio
+
+6. ¿Que es un Autowired?
+Es la técnica o forma de hacer inyecciones automáticamente de instancias Bean que Spring devuelve al aplicativo, usando antocación @Autowired
+y se puede trabajar en atributo, set, método asesor o un constructor
+
+7. ¿Que Bean u Objeto de spring necesitas, si hay 2 implementaciones de una misma interfaz?
+Mediante el uso de otra anotación @Qualifier ya permite indicar que nombre exacto de Bean necesito traer y utilizarlo en el aplicativo
+Hay otra anotación llamada @Primary  que podemos usar para decidir qué bean inyectar cuando hay ambigüedad con respecto a la inyección de dependencia.
+
+8. ¿Cómo se gestiona las transacciones en Spring Framework?
+Como gestiona si tienes un error al momento de insertar en base de datos, quiere hacer un Rollback, hacer un Rollbakc parcial, quizas no afectar un proceso anterior
+pero si a un siguente, como trabajarias ese punto?
+Indicar que se trabajaria mediante el uso de transacciones con Spring mediante anotaciones @Transactional
+Pero tambien especificando estrategias de aislamiento que se conoce como Isolation
+
+9. ¿Se puede trabajar Spring Boot con otro lenguaje de programación?
+Si, Java, kotlin y groovy
+
+10. ¿Cuales son los archivos de configuración que presenta spring boot?
+application.properties, application.propertie.yml
+
+11. ¿Cuales son los estereotipos de Spring Framework y que funcion cumple?
+Estereotipos contextualizar a una clase por alguna razón
+repository (acceso a bd)
+service (logica negocio)
+controller (control)
+component (quiza un utilitario)
+Pero tambien sirve para que Spring pueda tener un Bean en su IoC Container
+Cuando tu estereotipo es una clase, da la facilidad que más adelante, tú puedas hacer una inyección de dependencias de una instancia de esa clase
+
+12. ¿Cuales son las anotaciones que spring boot aplication presume?
+Ahora con el método Main que esta en la clase principal se levanta facilmente la aplicación, pero esta tiene una anotación especial @SpringBootAplication
+La cual resumen un conjunto de otras anotaciones como:
+@SpringBootConfiguration
+@EnableAutoConfiguration
+@Component (barre rápidamente los paquetes en busca de estereotipos o anotaciones)
+
+13. ¿Que contenendores embebidos se puede utilizar en Spring Boot?
+TomCat esta embebido
+Jetty y Undertow son otros.
+Si son temas de WebFlux para programación reactiva se trabaja con Netty.
+
+14. ¿Como ejecutas en consola el código de spring boot?
+Se debe implementar la interfaz Command Line Runner, permite sobreescribir un método xx pudiendo generar tus códigos en consola
+Normalmente se usa para precargar data apenas levanta el aplicativo o hacer logica en ese momento
+
+15. ¿Como lees el contenido del archivo properties?
+Mediante @Value{(xx.yy}) para extraer la información atravez de la llave
+Mediante un property source
+Mediante un Environment
+Mediante un  @ConfigurationProperties
+Estas son las formas tipicas para leer configuraciones que esta dentro de un archivo de propiedades
+
+16. ¿Como puede establecer diferentes entornos para QA, Dev, Produccion y tener archivos de configuración de acuerdo a ese entorno ?
+Spring Boot, permite reconocer los properties con ciertos sufijos como el application_dev.properties application_qa.properties application_test.properties application_prod.properties
+en conjunto con el profile de spring se puede gestionar diferentes entornos y diferentes configuraciones
+
+17. ¿Spring Boot es compatible con proyectos antiguos de Spring Framework?
+Si, puedes utilizar una anotación import resorts, la cual permite importar archivos de configuracion de proyecto antiguos de spring.
+
+18. ¿Que anotacion usas para obtener el JSON y enviarlo a un Objeto en Java?
+Ejemplo tenemos una data que viene por postman o por peticion http, cualquier aplicativo que uses mandas JSON como lo recibes en Spring y lo transforma en Objeto Java
+La anotación tipica es @RequesBody
+La anotación @ResponseBody desde spring devuelve JSON
+
+19. ¿Como se gestiona la internacionalización en Spring ?
+La interfaz LocaleResolver tiene implementaciones que determinan la configuración regional actual en función de la sesión, las cookies, el encabezado Accept-Language o un valor fijo.
+Con el cual hasta se puede cambiar el idioma a las respuesta que spring ofrece
+
+20. ¿Spring Security forma parte de Spring Framework?
+No, es un proyecto independiente, que se acopla al ecosistema de Spring. Así como spring batch, spring cloud, spring data etc.
+
+21. ¿Diferencia de usar a favor @Autowired en vez del constructor?
+El resultado es el mismo, la diferencia es en pruebas unitarias, es más facil traer las instancia las dependencias en un constructor que en un atributo

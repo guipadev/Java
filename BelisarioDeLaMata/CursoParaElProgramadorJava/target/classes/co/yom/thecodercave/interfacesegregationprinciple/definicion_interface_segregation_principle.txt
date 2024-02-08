@@ -1,0 +1,7 @@
+Interface Segregation Principle - Principio Segregación de la Interfaz
+
+Muchas interfaces especificas, son mejor que una gran interfaz que trate
+de abarcar todo
+
+Cuando creemos una interfaz tenga una finalidad muy concreta
+

@@ -1,0 +1,12 @@
+
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬šŸÚ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìùÍ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À˜‡ø
+•
+java:S1598"zThis file "Main.java" should be located in "Absolute/ARRAY" directory, not in "/home/yamid/Documents/Java/absolute/ARRAY".(€“›°úÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(€“›°úÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(÷ß¬‰
+N	java:S106"9Replace this use of System.out or System.err by a logger.(šô‹ò
+U	java:S106!"9Replace this use of System.out or System.err by a logger.(°‚Ğİ8ÙŒ¼×•1
+Z	java:S106*"9Replace this use of System.out or System.err by a logger.(´Š­¶şÿÿÿÿ8ÛŒ¼×•1
+U	java:S106-"9Replace this use of System.out or System.err by a logger.(øàŞë8ƒ®Ï×•1

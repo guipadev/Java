@@ -1,0 +1,14 @@
+
+o
+java:S2095P"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(àä¨†øÿÿÿÿ8±ø‹ö±1
+q
+java:S2095Q"OUse try-with-resources or close this "ObjectInputStream" in a "finally" clause.(ÑÒ»¥øÿÿÿÿ8²ø‹ö±1
+]
+java:S1117#";Rename "estados" which hides the field declared at line 13.(ÌÈÍİşÿÿÿÿ8ºø‹ö±1
+a
+java:S2147*"DCombine this catch with the one at line 40, which has the same body.(ıàÑÎ8»ø‹ö±1
+]
+java:S11175";Rename "estados" which hides the field declared at line 13.(âØ€èúÿÿÿÿ8Âø‹ö±1
+c	java:S899:"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ8Æø‹ö±1
+]
+java:S1117R";Rename "estados" which hides the field declared at line 13.(¶¿°Åøÿÿÿÿ8Óø‹ö±1

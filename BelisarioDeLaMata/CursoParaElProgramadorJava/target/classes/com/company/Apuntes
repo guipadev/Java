@@ -1,0 +1,73 @@
+
+
+
+- Qué es la sobrecarga de funciones y cómo funciona.
+    Una función es sobrecargada porque aparecera duplicado su nombre. Pero tienen diferentes parametros o tipo de dato.
+    - Sobrecarga de funciones
+    - Sobrecarga con distintos tipos de datos
+    - Comprobación
+
+- Estructuras de Control
+
+    -la sentencia if y sus posibilidades.
+        - Creación de clase y método “main”
+        - Definición de estructura “if”
+        - Combinar condiciones
+        - Añadir “else” y por qué usarlo
+        - Añadir “else if” y por qué usarlo
+        - Depurar código
+
+    -  bucles for y como utilizarlo
+        Se utiliza para recorrer arrays para iterar sobre su valores
+        - Nueva clase y método “main”
+        - Sintaxis del bucle “for”
+        - Imprimir un texto varias veces
+        - Cambio de operador
+        - Depuración de código
+        - Cuándo usarlos
+        - Alterar el bucle
+
+    - bucle while y par
+        - Nueva clase y método “main”
+        - Estructura del bucle “while”
+        - Bucles infinitos y condición de salida
+        - Comprobar bucle infinito
+
+    - La importancia del continue y break.
+        - Estructuras de control
+        - Estructura “if” / “continue
+        - Uso de “break”
+        - Uso dentro de bucle “for”
+
+- Qué son las sentencias switch y para que sirven.
+    - Sintaxis de de sentencias “switch”
+    - Caso por defecto
+    - Comprobaciones
+    - Cuándo usar sentencias “switch”
+
+- Qué son y como crear las clases.
+    - Creación de archivo java
+    - Nueva clase y sus elementos
+    - Atributos
+    - Constructores
+    - Extensión “Tabnine”
+    - Asignación de parámetros
+    - Comportamientos o métodos
+    - Estructuras de control
+    - Estructura de una clase
+
+- Qué son y cómo crear objetos.
+    - Creación de objetos
+    - Distintos constructores: sobrecarga
+    - Invocación de métodos
+    - Cambiar valores
+    - Depuración del código
+
+- Qué es la herencia.
+    - Introducción
+    - Nueva clase con herencia
+    - Atributo, constructores y métodos exclusivos de esta clase
+    - Creación de objeto
+    - Qué nos permite la herencia
+
+-

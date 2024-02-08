@@ -1,0 +1,9 @@
+
+—
+java:S1186)"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Çµí‘
+A
+java:S2201"&The return value of "of" must be used.(æë†Õÿÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ø±Û¯
+I
+java:S2201".The return value of "ofNullable" must be used.(üÇü½ÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(×ÚÓûÿÿÿÿ

@@ -1,0 +1,17 @@
+
+u
+java:S2293š"YReplace the type specification in this constructor call with the diamond operator ("<>").(å­şÜÿÿÿÿÿ
+{
+java:S1488š"_Immediately return this expression instead of assigning it to the temporary variable "miLista".(å­şÜÿÿÿÿÿ
+C
+java:S2326"!Studen is not used in the method.(¢ÇÔÏøÿÿÿÿ8’ùµ•š1
+c	java:S119"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(¢ÇÔÏøÿÿÿÿ
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(’¶¹‚
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(Ÿ•Ûıÿÿÿÿ
+S	java:S106B"9Replace this use of System.out or System.err by a logger.(Íƒ¿úÿÿÿÿ
+N	java:S106a"9Replace this use of System.out or System.err by a logger.(¯»İ
+N	java:S106j"9Replace this use of System.out or System.err by a logger.(¬•œ„
+S	java:S106p"9Replace this use of System.out or System.err by a logger.(Õ¤®¤ÿÿÿÿÿ
+N	java:S106}"9Replace this use of System.out or System.err by a logger.(°¹şã
+Y	java:S125Œ"<This block of commented-out lines of code should be removed.(Û·Æ8¡ùµ•š1
+W	java:S125—"<This block of commented-out lines of code should be removed.(£Ã¬Äøÿÿÿÿ

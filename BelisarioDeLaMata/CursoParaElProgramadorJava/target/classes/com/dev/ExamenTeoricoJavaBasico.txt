@@ -1,0 +1,95 @@
+1. Defina los siguientes terminos:
+- Que es Java
+Lenguaje de programación POO de alto nivel, creado por Sun Microsystems, comprado por Oracle y más populares.
+- Que es un proyecto
+Un espacio donde se tendra el código fuente agrupado y permite la interacción entre su sistema
+- Que es una clase
+Plantilla para crear objetos, archivo donde estara alojado código fuente del algoritmo
+
+2. Que son las convenciones en Java?
+Conjunto de normas/lineamientos para garantizar buenas prácticas en el lenguaje y programe con un mismo idioma
+Si cumplo con las convenciones, podre entender y viceversa el código del programador que este en Europa
+
+3. Que es una variable, haga un ejemplo de variable?
+Es un contenedor que contiene un valor, en Java se tiene con su respectivo tipo de dato. Y es mutable.
+
+4. Que son las variables primitivas?
+5. Cuales son las variables primitivas en java?
+byte, short, int, long, float, double, char, boolean y solo contiene un valor
+
+4.1 Variables de referencia?
+Uno define el tipo de dato, la clase especial que da Java es String
+Son las clases en general objetos Perro firulais = new Perro(); tendra varias caracteristicas como edad, nombre, raza etc
+
+6. Que es una constante?
+Es un contenedor inmutable, final int EDAD_ESTUDIANTE = 4;
+
+7. Cual es la diferencia entre una variable y una constante?
+Una muta y la otra no.
+
+8. Que es una palabra reservada en Java?
+Son palabras definidas por el lenguaje para una función en especifica if, do while, for, y no se pueden utilizar
+
+9. Marque con una X las sentencias que arrojan error:
+- boolean ingresar = "true";    X
+- String cad = Hola Mundo;      X
+- final int SUELDO = 345800     X
+- INT x = 4;                    X
+- double y = 56;
+- int edad = 12.5;              X
+- int for = 9;                  X
+- Int suma = 2 + 3;             X
+- Public Clas SUMAR             X
+- double x = "Hola";            X
+
+10. Que es una estructura de control en Java, mencionelas.
+Permite definir o controlar el flujo del sistema o el flujo de mis algoritmos
+- secuencial (pero esta es lineal)
+- condicionales simples: Un camino opcional
+- Condicional doble: Es un camino u otro
+- condicional multiple o anidado: varios/multiples caminos
+- seleccion multiple: switch case que tiene una bifurcación
+- ciclos o estructuras iterativas/bucles: while, do while, for, foreach
+
+11. Indique para que sirven las siguientes líneas de código:
+- JOptionPane.showMessageDialog(null, "Mensaje")
+Mensaje emergente
+- JOptionPane.showInputDialog("Mensaje")
+Solicita ingresar dato
+- int x = 4;
+Declara e inicializa una variable
+- public class Principal {...}
+Es una clase principal
+
+12. Mencione a se debe los errores que marca el sisguien código
+public static void main(String[] args) {
+    int edad = Integer.parseInt(JOptionPane.showMessageDialog(null, "Ingrese la edad"));
+    String nombre = Double.parseDouble("Ingrese su nombre");
+    System.out.println("Su nombre es: " + nombre + " Su edad es: " + edad);
+    System.out.println();
+}
+
+Cambiar por el showInput, para ingresar dato, no solo mostrar dato.
+Cambiar el String por double, y ingresar el showInputDialog, para solicitar el dato
+
+13. Pase el siguiene código a eclipse y documentelo indicando que esta haciendo cada linea:
+String cadena; // declara la variable cadena
+double ladoA; // declara la var como double
+double ladoB; // declara la var como double
+double resultado; // declara la var resultado
+
+// Asigna dato a var cadena y ladoA
+cadena = JOptionPane.showInputDialog(null, "Ingrese la longitud del lado A: ");
+ladoA = Double.parseDouble(cadena);
+
+//
+cadena = JOptionPane.showInputDialog(null, "Ingrese la longitud del lado B: ");
+ladoB = Double.parseDouble(cadena); //
+resultado = ladoA * ladoB;
+
+//
+JOptionPane.showMessageDialog(null, "El resultado es: " + resultado);
+
+14. Cree un algoritmo que solicite 2 números e indique cual es el mayor, cual es el menor o si son iguales.
+
+15. Halle el area de un triangulo rectangulo si su base y altura son de un valor

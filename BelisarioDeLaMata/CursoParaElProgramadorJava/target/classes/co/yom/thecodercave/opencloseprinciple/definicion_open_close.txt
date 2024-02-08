@@ -1,0 +1,9 @@
+Open-Closed Principle
+El principio de Abierto y Cerrado, es más difícil decirlo que hacerlo
+Básicamente usted debería ser capaz de extender el comportamiento de una clase
+sin modificar la misma clase
+
+Extender el comportamiento de una clase por ejemplo la clase ReportingServices
+Sin cambiar la clase en si, en la solución cumplimos con dicho principio ya que
+la clase no la tocamos nunca, solo agregamos implementaciones o se modifican pero
+desde la clase corresponde

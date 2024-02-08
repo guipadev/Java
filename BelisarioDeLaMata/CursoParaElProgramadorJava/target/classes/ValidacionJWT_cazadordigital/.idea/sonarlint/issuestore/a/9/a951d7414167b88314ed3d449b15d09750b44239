@@ -1,0 +1,10 @@
+
+}
+java:S14882"[Immediately return this expression instead of assigning it to the temporary variable "jwt".(ª¤ƒÿÿÿÿÿ8´úìÕ¸1
+b
+java:S2184"FCast one of the operands of this multiplication operation to a "long".( J8¹úìÕ¸1
+T	java:S106"9Replace this use of System.out or System.err by a logger.(àË/8ÅûìÕ¸1
+{
+java:S2142 "^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä±·–8ÊûìÕ¸1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(‹³à¡8ÌûìÕ¸1
+Z	java:S106!"9Replace this use of System.out or System.err by a logger.(©şêÜúÿÿÿÿ8ÑûìÕ¸1

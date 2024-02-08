@@ -1,0 +1,20 @@
+
+’
+java:S1192"pDefine a constant instead of duplicating this literal "El rango de la nota a ingresa debe ser de 0 a 5" 3 times.(ßäÑÿÿÿÿÿ8óÒÅ„ğ0
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(•ĞûP
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(Çµí‘8ôÕÅ„ğ0
+R
+java:S1854"<Remove this useless assignment to local variable "cantidad".(öÚÎ½
+M
+java:S18549"7Remove this useless assignment to local variable "rta".(ëç‰À
+X
+java:S1659"BDeclare "nota2" and all following declarations on a separate line.(­ˆ¡
+C
+java:S1481"-Remove this unused "cantidad" local variable.(öÚÎ½
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ßäÑÿÿÿÿÿ
+Z	java:S106&"9Replace this use of System.out or System.err by a logger.(ßäÑÿÿÿÿÿ8–ïÃ„ğ0
+Z	java:S106/"9Replace this use of System.out or System.err by a logger.(ßäÑÿÿÿÿÿ8†ÖÅ„ğ0
+>
+java:S14819"(Remove this unused "rta" local variable.(ëç‰À
+Z	java:S106<"9Replace this use of System.out or System.err by a logger.(™¨Áàûÿÿÿÿ8‰ÖÅ„ğ0

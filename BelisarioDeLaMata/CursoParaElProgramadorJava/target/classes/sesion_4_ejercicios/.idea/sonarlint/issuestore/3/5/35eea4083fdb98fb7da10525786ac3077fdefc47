@@ -1,0 +1,10 @@
+
+z
+java:S4165&"_Remove this useless assignment; "x" already holds the assigned value along all execution paths.(Ùé¬èşÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(±­¨ùÿÿÿÿ
+>
+java:S1172"(Remove this unused method parameter "n".(Æ¨ı¨
+S	java:S106"9Replace this use of System.out or System.err by a logger.(´‹¹öşÿÿÿÿ
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(ê×Ğ€úÿÿÿÿ
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(Ç§˜Œ
+S	java:S106)"9Replace this use of System.out or System.err by a logger.(ã ¬ÿÿÿÿÿ

@@ -1,0 +1,22 @@
+
+f
+java:S1192"PDefine a constant instead of duplicating this literal "Es un triangulo" 3 times.(Ù·¸Û
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­Þ®Àýÿÿÿÿ8Þ®Ù’ë0
+N
+java:S2589*"8Remove this expression which always evaluates to "false"(ñó·Ã
+Y
+java:S1854"<Remove this useless assignment to local variable "solucion".(Ñ’”Ê8¬ÿÁ“ë0
+J
+java:S1481"-Remove this unused "solucion" local variable.(Ñ’”Ê8­ÿÁ“ë0
+T
+java:S1659">Declare "b" and all following declarations on a separate line.(®îŸÈ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ðó‘Ó
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ØÅûÑüÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(§û²©þÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ù·¸Û
+N	java:S106!"9Replace this use of System.out or System.err by a logger.(Ù·¸Û
+N	java:S106#"9Replace this use of System.out or System.err by a logger.(Ù·¸Û
+N	java:S106%"9Replace this use of System.out or System.err by a logger.(Ë¼ä×
+N	java:S106)"9Replace this use of System.out or System.err by a logger.(šóë­
+S	java:S106+"9Replace this use of System.out or System.err by a logger.(§ÏËáüÿÿÿÿ
+M	java:S106-"9Replace this use of System.out or System.err by a logger.(âî‹

@@ -1,0 +1,14 @@
+
+J
+java:S3740"/Provide the parametrized type for this generic.(ƒŒ‡™ùÿÿÿÿ
+
+java:S1319"iThe type of "vehiculos" should be an interface such as "List" rather than the implementation "ArrayList".(åÙÉé
+W
+java:S49731"<Strings and Boxed types should be compared using "equals()".(Ç’ïøıÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Øá“µ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Á¬«ƒ
+W
+java:S1854-";Remove this useless assignment to local variable "comando".(ç®b8§¹¼Èì0
+N	java:S106#"9Replace this use of System.out or System.err by a logger.(ÆÀûı
+F
+java:S1197-"*Move the array designators [] to the type.(ç®b8«¹¼Èì0

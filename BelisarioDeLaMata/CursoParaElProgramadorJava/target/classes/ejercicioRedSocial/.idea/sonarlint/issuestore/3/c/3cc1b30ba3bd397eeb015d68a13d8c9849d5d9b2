@@ -1,0 +1,13 @@
+
+k	java:S117D"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã•Ìöÿÿÿÿÿ
+2
+java:S1643G"Use a StringBuilder instead.(™ŠÌÿ
+7
+java:S1643g"Use a StringBuilder instead.(ÛÀÈ¦úÿÿÿÿ
+t
+java:S1488p"_Immediately return this expression instead of assigning it to the temporary variable "usuario".(»ƒË\
+l
+java:S1104"QMake email a static final constant or non-public and provide accessors if needed.( Ò¿ûøÿÿÿÿ
+l
+java:S1104"QMake alias a static final constant or non-public and provide accessors if needed.(¯îãðÿÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¦èð©ùÿÿÿÿ

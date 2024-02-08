@@ -1,0 +1,138 @@
+
+MITOCODE - https://www.youtube.com/watch?v=sWgdVwpTQfQ
+
+1 ¿Qué es Java?
+lenguaje de programación de alto nivle, para desarrollo multipropósito escritorio, consola, web y últimamente cloud, soporta paradigmas POO y Funcional, fuertemente tipado.
+
+2 ¿Para qué usar Maven o Gradle en tus proyectos de Java?
+Gestión de dependencia y configurar como voy a generar el compilado del proyecto JAR, WAR, EAR. Como va estar la estructura interna y que tipo de carpetas va a reconocer.
+
+EAR requiere un servidor de aplicaciones totalmente compatible con la plataforma Java, Enterprise Edition (Java EE) o Jakarta Enterprise Edition (EE), como WebSphere o JBoss.
+WAR requiere un servidor de aplicaciones compatible con Java EE Web Profile para ejecutarse.
+JAR solo requiere una instalación Java.
+
+3 ¿Qué versión de Java introdujo la programación funcional?
+Java 8 de 2014
+
+4 ¿Qué es un constructor?
+Es un método que sirve o se invoca al momento de la generación de un objeto en la instancia de una clase
+Este método puede permitir inicializar ciertos atributos o invocar otros métodos en el momento de la construcción de un objeto
+Un constructor tambien puede soportar sobre carga de métodos
+
+5 ¿Cuáles son las interfaces funcionales más comunes?
+Una interfaz que solo tiene un solo método definido abstracto
+Predicare retorna un Boolean
+Consumer retorna un Objeto
+Supplier retorna un Void
+Functional
+
+6 ¿Se puede generar una función lambda a partir de una interfaz funcional?
+Si, es uno de los objetivos tambien de las interfaces funcionales, que podamos generar expresiones lambda a partir de este método definido
+
+7 ¿Una interfaz puede tener métodos por defecto y métodos estáticos?
+Si puede tener ambos estaticos y por defecto
+Default métodos que son introducciones nuevas
+Static métodos que también pueden agregarse a las interfaces
+
+8 ¿Qué es la sobrecarga de métodos?
+Es cuando tiene un método con el mismo nombre pero con diferente cantidad y tipo de parametros
+
+9 ¿Qué es una instancia?
+Invocación, creación de un Objeto
+Cuando tienes una clase y quieres una representación viva de ella, entonces generas un objeto, una instancia
+Con ese objeto de instancia ya se puede interaccionar con los atributos y métodos de la clase
+
+10 ¿Cuáles son los pilares de la POO?
+Herencia, Abstracción, Encapsulamiento, Polimorfismo
+
+11 ¿Qué es la herencia?
+Es cuando una Clase recibe o Extiende, propiedades y métodos de otra, para que se pueda reutilizar
+Comúnmente la herencia puede ser altamente empleada cuando quieras hacer abstracciones de código
+
+12 ¿Qué es el polimorfismo?
+Poli = múltiple morfismo = formas
+Un método se puede comportar de diferentes maneras de acuerdo a la instancia que lo invoqué
+Lo cual permite abstraer código, reutilizar métodos y que cambie las implementaciones según quien invoca
+
+13 ¿Qué es una interfaz?
+Es un tipo de elemento en Java que sirve como un contrato, osea una plantilla donde se definene métodos no implementados, por defecto y estaticos
+Usualmente la interfaz sirve para que otra clase la implemente y sobreescriba la lógica de programación que requiera esa Clase
+Usualmente para abstracciones o evitar redundancia de código
+
+14 ¿Qué es una clase abstracta?
+
+Esta clase tiene algunos métodos no implementados que son considerados como métodos abstractos
+Utiliza la palabra reservada abstract y tiene atributos y algunos métodos ya implementados
+Sirve para generar algunos métodos que otras clases al momento de heredarlas las puedan implementar
+
+15 ¿Cuándo usarías una clase abstracta vs una interfaz?
+
+Se puede hacer que una clase implemente varias interfaces y poder implementar y sobreescribir varios comportamientos
+de diferentes interfaces (simular herencia multiple)
+
+Una Clase Abstracta solo puede ser heredada y luego sobreescribe los métodos abstractos que tenga
+Osea que la Clase Abstracta se Hereda y la Interfaz se Implementa (simular herencia multiple)
+
+16 ¿Qué diferencia hay entre un List y un ArrayList?
+
+List es la interfaz y de esta derivan diferentes implementaciones y una de ella es ArrayList
+ArrayList es una implementación, ya que es una clase concreta de la interfaz List
+
+17 ¿Qué diferencia hay entre List y Set?
+
+Hambas son interfaces y las implementaciones son diferentes
+
+List permite agregar elementos
+
+Set evita valores duplicados, se permite agregar varios elementos, pero no duplicados
+Si son elementos tipo primitivos, la verificación de duplicidad es sencilla, pero si son elementos tipo objeto,
+en Set tendriamos que sobreescribir el método Equals
+
+18 ¿Qué es un Map?
+
+Es una Interfaz, tiene implementaciones como HasMap, HasTable, LinkedHasMap y TripMap
+Funciona con el indicativo clave valor, coloquialmente algunos le llaman diccionario,
+para poder tener estructuras donde a partir de un identificador, yo llego a obtener su valor
+
+19 ¿Qué permite la palabra final?
+
+Sirve para indicar que lo que tú marcas con ello no pueda ser modificado más adelante
+Comúnmente se utiliza para denotar constantes
+
+20 ¿Cuáles son las dos formas comunes para crear un hilo en Java?
+
+Se puede usar la Herencia la clase Thread que sobreescribe el método Run
+Y bajo el mismo concepto podemos hacer una implementación a la interfaz Runnable para sobreescribir el método Run
+
+21 ¿Qué es JDBC?
+
+Java Data Base Connectivity
+Es un API, una especificación que básicamente a través del lenguaje Java, puedas conectarse a un motor de Base de Datos
+No es una libreria, la libreria vendria hacer el conector de MySQL, Postgress, Oracle, SQL Server, los cuales implementan la especificación JDBC
+
+Cuando agregamos al pom.xml a tus dependencias,el Jar osea esa libreria esta implementando la especificación JDBC
+
+22 ¿Qué es un wrapper?
+
+Es la forma tipo clase de los primitivos
+int     =   Integer
+boolean =   Boolean
+
+Al ser una clase tiene algunos métodos y puede acepta valores Null
+
+En cambio los primitivos valores por defectos, como boolean = false, int = 0
+
+23 ¿Cuándo usarías un primitivo vs un wrapper?
+
+Uso Wrapper cuando hay la posibilidad recibir valores Null, un ejemplo cuando se realice una consulta a BD, pueda que ciertas columnas vengas con valores Null
+
+24 ¿Desde qué versión de Java ya no viene incluida la JRE?
+
+A partir de la versión 11 viene directo el JDK y ya no pensar en la JRE.
+
+25 ¿Para qué sirve la keyboard var?
+
+Introducido a partir de la versión de Java 10.
+
+Si colocamos var x = 5; se va a comportar como entero, pero no puede cambiar su tipo más adelante.
+Como nace debe morir.

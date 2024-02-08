@@ -1,0 +1,14 @@
+
+E
+java:S3740"/Provide the parametrized type for this generic.(¥ήπ
+E
+java:S3740"/Provide the parametrized type for this generic.(¥ήπ
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ώς²ώÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ιτ—τ
+X
+java:S1854"BRemove this useless assignment to local variable "listadoCerrado".(έΝµ
+I
+java:S1481"3Remove this unused "listadoCerrado" local variable.(έΝµ
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(Òθα
+N	java:S106)"9Replace this use of System.out or System.err by a logger.(κη‹±
+S	java:S106,"9Replace this use of System.out or System.err by a logger.(ινχ„ωÿÿÿÿ

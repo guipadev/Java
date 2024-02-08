@@ -1,0 +1,10 @@
+Sea A un arreglo
+Sea N = 0
+Sea Contador = 0
+
+Mientras N < tamaño(A)
+    Si A[N] cumple con X
+        Contador = Contador + 1
+    N = N + 1
+    
+retornar Contador

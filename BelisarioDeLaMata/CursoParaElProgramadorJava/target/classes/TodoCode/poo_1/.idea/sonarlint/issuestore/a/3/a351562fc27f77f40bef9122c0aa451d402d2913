@@ -1,0 +1,13 @@
+
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÍØ¼ùÿÿÿÿ
+a
+java:S1192"KDefine a constant instead of duplicating this literal "Plataforma" 3 times.(ŒÑê­
+b
+java:S1192"LDefine a constant instead of duplicating this literal "Nintendo 64" 4 times.(ŒÑê­
+ø
+java:S1598"áThis file "EjercicioVideojuego.java" should be located in "ejercicioIntegradorVideoJuegoPOO" directory, not in "/home/yamid/Documents/Java/TodoCode/POO/src/main/java/19_ejercicioIntegradorVideoJuegoPOO_Interfaces_Abstractas".(ß¾ö”
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ß¾ö”
+N	java:S106,"9Replace this use of System.out or System.err by a logger.(ÆÀûı
+N	java:S1063"9Replace this use of System.out or System.err by a logger.(ÀÌ–Å
+S	java:S106?"9Replace this use of System.out or System.err by a logger.(¨Ç˜¯ûÿÿÿÿ

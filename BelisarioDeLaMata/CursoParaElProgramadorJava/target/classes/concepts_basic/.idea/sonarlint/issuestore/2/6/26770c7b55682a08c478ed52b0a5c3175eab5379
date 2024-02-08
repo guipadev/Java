@@ -1,0 +1,17 @@
+
+m
+java:S1104"RMake nombre a static final constant or non-public and provide accessors if needed.(¯‰–‚úÿÿÿÿ
+f
+java:S1104"PMake edad a static final constant or non-public and provide accessors if needed.(ÛÂº¨
+h
+java:S1104"RMake genero a static final constant or non-public and provide accessors if needed.(ôøğ‘
+k
+java:S1104"PMake peso a static final constant or non-public and provide accessors if needed.(é¥æ±üÿÿÿÿ
+g
+java:S1104"RMake altura a static final constant or non-public and provide accessors if needed.(ğØo
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÎÓ£şÿÿÿÿ
+W
+java:S1126&"AReplace this if-then-else statement by a single return statement.(éº©í
+D
+java:S1172.".Remove this unused method parameter "persona".(ü¹–·
+N	java:S106/"9Replace this use of System.out or System.err by a logger.(ŞñË§

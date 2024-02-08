@@ -1,0 +1,101 @@
+10 cosas que tiene que saber explicar de la programación orientada a objetos
+https://youtu.be/BWaznGQu0bQ (josedimaslujan)
+
+
+1. Que es una clase?
+Siempre va a ser un archivo (plantilla/template) en donde nosotros definimos la estructura 
+de lo que después va a ser un objeto que regularmente contiene:
+El nombre de la clase las propiedades o atributos y va a tener métodos que esos normalmente 
+lo que tenemos en una clase y sirve para más adelante con estas programando crear un objeto 
+sea primero esa clase y luego puedes crear un objeto no puedes crear un objeto sin tener una clase 
+
+2. Qué es un objeto?
+Un objeto es lo que podemos decir ya una clase que ha tomado vida decimos que ha tomado vida 
+porque ya tiene referencia de memoria 
+Muchas veces escuchamos que un objeto está muerto o que se le da vida de sus conceptos no es algo loco 
+ni disparatado 
+se dice muerto cuando se libera la memoria que estaba utilizando 
+se dice con vida cuando se le asigna memoria a las propiedades que necesita su objeto para estar vivo 
+
+Un objeto es la creación de darle vida digamos a lo que es una clase 
+
+3. Que es una clase abstracta?
+Tenemos lo que es una clase ya lo vimos 
+Clase abstracta es una clase que puede tener por lo menos un método abstracto es la definición del libro 
+
+Un método abstracto es un método que no tiene un comportamiento 
+Que solamente está definido por su nombre y los parámetros que va a utilizar no sabemos cómo se va a comportar 
+Osea es un método en el que tú pones un nombre, sus parámetros que vas a recibir 
+No tiene cómo se va a comportar, No tiene lo que va a ser ...
+
+Una clase abstracta al menos como minimo un método abstracto 
+Tambien una clase abstracta puede tener varios métodos abstractos 
+Si la clase abstracta no tiene ningun metodo abstracta no tiene sentido, 
+mejor crear una clase normal
+
+4. Que es una interface?
+Un interface es un elemento que va a tener todos los métodos abstractos 
+Todos los métodos que vas a definir en una interfase no van a tener en este caso código 
+
+5. Cuál es la diferencia entre clase y clase abstracta e interfaces?
+- Una clase tiene atributos y métodos 
+- Una clase una clase abstracta debe de tener al menos un método abstracto 
+- Una interfase va a tener todos sus métodos abstractos 
+
+6. Que es una instancia?
+Es la creación de un objeto 
+Ejemplo: 
+Clase Persona y creas a pepito un objeto del tipo persona de la clase persona 
+pepito es una instancia 
+creas a maría lo es un objeto de la clase este personal maría es otra instancia 
+cuantas instancias tenemos dos cuántos objetos tenemos dos 
+osea que si tenemos diez objetos tenemos diez instancias 
+
+La instancia es darle vida al objeto como decíamos cuando ya reservamos la memoria cuando ya tiene un nombre 
+y cuando ya podemos acceder a él 
+
+7. Qué es la herencia?
+La herencia lo que hace es indicarle cuál va a ser la clase padre 
+La clase padre es X y tienes una clase hijo 
+Como sabes quién es la clase hijo pues la que hereda 
+Dando acceso atributos y metododos de la clase Padrea a la clase hija
+
+8. Que tipo de herencias tenemos en la programación orientada a objetos?
+Hay dos tipos de herencias o que los lenguajes soportan regularmente o uno o el otro
+La herencia múltiple, puedes tener muchas clases padres
+La herencia simple es tienes una clase padre y solo heredas de el 
+
+9. Que es un constructor?
+Es un metodo que se va a ejecutar en la construcción del objeto
+Es como tu ultima oportunidad para ejecutar algo, para cambiar o asignar un valor
+Es la oportunidad para asignar valores, ejemplo:
+Se crea un objeto persona y quieres que tenga la propiedad nombre
+Osea que al momento de crear el objeto y le queremos poner el nombre, entonces pasamos como parametro al momento crear el objeto y le queremos poner
+Y luego asi el constructor lo puedeo utilizar para asignarle el nombre
+El objeto se cree definitivamente después lo puedes cambiar no hay ningún problema 
+pero ya está vivo el objeto esta es nuestra oportunidad de hacerlo digamos en el proceso exacto
+
+10. Que es el encapsulamiento?
+Es un ocultamiento
+Ejemplo si tú quieres acceder y cambiar el nombre del objeto 
+No deberías poderlo hacer con una simple línea de código deberías de decirle al objeto cambiar el nombre tu 
+Encapsular la información y protegerla tener de cierta manera algunos accesos para que no todos puedan entrar 
+no todos puedan ver los valores y no todos puedan modificar los valores el encapsulamiento es parte del paradigma
+de la programación orientada a objetos
+
+instrucciones proteger o encapsular digamos el contenido y solamente mediante unos hilos muy específicos 
+permitir el cambio y el acceso a esa información 
+
+11. Que es la sobrecarga de metodos?
+No es directamente de la POO
+La sobrecarga de metodos es la posibilidad que tenemos de utilizar el mismo metodo con el mismo nombre 10 veces
+Ejemplo: 
+Digamos tenemos el metodo comer() y lo tenemos 10 veces definido.
+Y el programa sabe cual ejecutar, gracias a los parametros
+Ya que los parametros no pueden ser los mismos, y no ser solamente en nombre, si no tambien en tipos
+Ejemplo:
+Los diez metodos de comer() pueden ser con un parametro, pero todos los tipos tendrian que ser distintos
+para que el lenguaje sepa cual va entrar en accion, cual va a entrar por una lista, entero, tupla, boolean...
+Ejemplo:
+Puede tener un metodo comer(int x) con un parametro, otro metodo comer(int x, int y) con dos parametros
+Puedes tener 10 metodos comer() con 2 parametros pero no todos pueden ser ejemplo (int x, string y) repetidos

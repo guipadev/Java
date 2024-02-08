@@ -1,0 +1,9 @@
+
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¶®à8ô°È²—1
+m	java:S117+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é®—8ŠöÏ²—1
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ö Àúÿÿÿÿ
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(º›Ÿıÿÿÿÿ8äÃ²—1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(‡è„úÿÿÿÿ8ü°È²—1
+V
+java:S2130+"9Use "Integer.parseInt" for this string-to-int conversion.(é®—8“öÏ²—1
+U	java:S1060"9Replace this use of System.out or System.err by a logger.(£ñ¥Û8”öÏ²—1

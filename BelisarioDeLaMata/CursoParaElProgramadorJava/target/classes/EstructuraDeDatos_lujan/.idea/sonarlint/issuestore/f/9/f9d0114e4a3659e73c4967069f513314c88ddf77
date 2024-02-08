@@ -1,0 +1,12 @@
+
+R
+java:S1854"5Remove this useless assignment to local variable "x".(ëáî8’ô¾Û¼1
+=
+java:S2129" Remove this "String" constructor(äÄ’Û8–ô¾Û¼1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(è×”àşÿÿÿÿ8—ô¾Û¼1
+=
+java:S2129" Remove this "String" constructor(ëáî8™ô¾Û¼1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Î’ÛÚ8›ô¾Û¼1
+T	java:S106"9Replace this use of System.out or System.err by a logger.(œ™À8›ô¾Û¼1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Î’ÛÚ8„Í¿Û¼1
+T	java:S106"9Replace this use of System.out or System.err by a logger.(œ™À8…Í¿Û¼1

@@ -1,0 +1,24 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ñ¸÷ßúÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ãÚĞÚ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Œù¦Ùúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‡½şÛúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÜÓ¿¡ûÿÿÿÿ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(äè¾8Õ›ŸÏë0
+Z	java:S106?"9Replace this use of System.out or System.err by a logger.(®Ú¯¼ùÿÿÿÿ8Ö›ŸÏë0
+U	java:S106B"9Replace this use of System.out or System.err by a logger.(ÔÏğ¤8Ø›ŸÏë0
+U	java:S106E"9Replace this use of System.out or System.err by a logger.(òâóÅ8…¬¡Ïë0
+Z	java:S106H"9Replace this use of System.out or System.err by a logger.(°Å¿°ÿÿÿÿÿ8¨“£Ïë0
+Z	java:S106J"9Replace this use of System.out or System.err by a logger.(°Å¿°ÿÿÿÿÿ8µÂ­Ïë0
+K
+java:S1854V"6Remove this useless assignment to local variable "o3".(ÉÅô|
+L
+java:S1854P"6Remove this useless assignment to local variable "o2".(”ÊÀ
+Q
+java:S1854O"6Remove this useless assignment to local variable "o1".(úöäÛúÿÿÿÿ
+B
+java:S1481O"'Remove this unused "o1" local variable.(úöäÛúÿÿÿÿ
+=
+java:S1481P"'Remove this unused "o2" local variable.(”ÊÀ
+<
+java:S1481V"'Remove this unused "o3" local variable.(ÉÅô|

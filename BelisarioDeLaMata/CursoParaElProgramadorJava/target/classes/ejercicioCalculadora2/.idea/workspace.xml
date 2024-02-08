@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="75076dc5-e3b6-41bc-aa0e-f6f27c2682f3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../ejercicio_supermercado/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejercicio_supermercado/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejercicio_supermercado/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejercicio_supermercado/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejercicio_supermercado/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejercicio_supermercado/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejercicio_supermercado/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejercicio_supermercado/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejercicio_supermercado/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejercicio_supermercado/src/main/java/supermercado/Alimenticio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejercicio_supermercado/src/main/java/supermercado/Inventario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejercicio_supermercado/src/main/java/supermercado/NoAlimenticio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejercicio_supermercado/src/main/java/supermercado/Producto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejercicio_supermercado/target/classes/supermercado/Alimenticio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejercicio_supermercado/target/classes/supermercado/Inventario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejercicio_supermercado/target/classes/supermercado/NoAlimenticio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejercicio_supermercado/target/classes/supermercado/Producto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejercicio_supermercado/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejercicio_supermercado/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/.idea/sonarlint/issuestore/0/9/09ded1de994f2d9aa7e42d2e19cbef315e21ca1c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/.idea/sonarlint/issuestore/1/0/10574552323a93743fab0930fb7e94052476fb87" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/.idea/sonarlint/issuestore/1/9/1903b65b37ec2dd17b05db5dd76d7fb76ae9b73c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/.idea/sonarlint/issuestore/2/2/22db0ab7f4d4f2ece606bb467ab99b915c49da8c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/.idea/sonarlint/issuestore/3/2/32f360b141221d736b700ff1c2d1fe46cddc95d9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/.idea/sonarlint/issuestore/4/b/4b2ce25e95bbd93c5c8c9320a83f93e60139d9d5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/.idea/sonarlint/issuestore/7/4/74b74e2a345087908e0aacb1cd0d779dbc44af1b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/.idea/sonarlint/issuestore/b/0/b0798a26c777c91e373258b114dba4b9a26b3474" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/.idea/sonarlint/issuestore/c/1/c1593fac532e67a8de3d821a1b3f04872c58ef1c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/.idea/sonarlint/issuestore/d/9/d9af19a341e0bb5d4540f1ab23d5f5c171d8f053" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/.idea/sonarlint/issuestore/e/9/e924d7337d915271cad1efe355a78c9290ace4d8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/.idea/sonarlint/issuestore/e/a/eab10a214508ae2c2213b562571094a852401531" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../sesion_3_ejercicio/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sesion_3_ejercicio/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Calculadora/Calculadora$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Calculadora/Calculadora$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Calculadora/Calculadora$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Calculadora/Calculadora$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Calculadora/Calculadora$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Calculadora/Calculadora$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Calculadora/Calculadora.class" beforeDir="false" afterPath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Calculadora/Calculadora.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Calculadora2/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Calculadora2/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/CicloWhile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Colecciones_EstructuraDatos/ArrayList_de_Objetos/Basico1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Colecciones_EstructuraDatos/ArrayList_de_Objetos/Coche.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Colecciones_EstructuraDatos/Lista.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Colecciones_EstructuraDatos/Problem1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Colecciones_EstructuraDatos/Problem4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Colecciones_EstructuraDatos/Problem5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Colecciones_EstructuraDatos/Problem6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Colecciones_EstructuraDatos/Problema2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Colecciones_EstructuraDatos/listaObjetos/Alumno.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Colecciones_EstructuraDatos/listaObjetos/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Colecciones_EstructuraDatos/listaObjetos/Persona.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Condicional.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Cubo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Edad/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Edad/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Edad/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Edad/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Ejercicios/funciones/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Encapsulamiento/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Encapsulamiento/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Encapsulamiento/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/EstructuraCiclicaWhile/DoWhile_Ejemplo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/EstructuraCiclicaWhile/ExaForzarTerminar_DoWhile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/EstructuraCiclicaWhile/ExaForzarTerminar_While.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/EstructuraCiclicaWhile/ExaForzarTerminar_While_Breack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/EstructuraCiclicaWhile/ExerWhile_EjecucionIndefinida.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/EstructuraCiclicaWhile/ExerWhile_ImprimirNumConCuadrado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/EstructuraCiclicaWhile/ExerWhile_ListNumImparyPares.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/EstructuraCiclicaWhile/ExerWhile_MinMachine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/EstructuraCiclicaWhile/ExerWhile_NumParesDesc2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/EstructuraCiclicaWhile/ExerWhile_NuncaIngresaAlCiclo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/EstructuraCiclicaWhile/ExerWhile_RepiteHastaIntroCodeASCII.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/EstructuraCiclicaWhile/ExerWhile_TasaCrecimientoPoblacion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/EstructuraCiclicaWhile/While_Ejemplo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/EstructuraCiclicaWhile/While_Example1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/EstructuraCiclicaWhile/While_Example2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/EstructuraCiclicaWhile/While_Example3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/EstructuraFuncionCondicionales/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/EstructuraFuncionCondicionales/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/EstructuraFuncionCondicionales/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/EstructuraFuncionCondicionales/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/EstructuraFuncionCondicionales/EstructuraFuncionCondicionales.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Funciones.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/HerenciayPolimorfismo/Automovil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/HerenciayPolimorfismo/Electrodomestico/Computador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/HerenciayPolimorfismo/Electrodomestico/Electrodomestico.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/HerenciayPolimorfismo/Electrodomestico/Herencia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/HerenciayPolimorfismo/Electrodomestico/Lavadora.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/HerenciayPolimorfismo/Electrodomestico/LavadoraSecadora.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/HerenciayPolimorfismo/Electrodomestico/Nevera.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/HerenciayPolimorfismo/Electrodomestico/Portatil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/HerenciayPolimorfismo/Electrodomestico/PortatilMac.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/HerenciayPolimorfismo/Electrodomestico/PortatilPc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/HerenciayPolimorfismo/Vehiculo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Lista.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/PROGRAMAR.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Problema1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Problema2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/ProgramacionOrientadaObjetos/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/ProgramacionOrientadaObjetos/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/ProgramacionOrientadaObjetos/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/ProgramacionOrientadaObjetos/EstructuraBasica/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/ProgramacionOrientadaObjetos/EstructuraBasica/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/ProgramacionOrientadaObjetos/EstructuraBasica/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/ProgramacionOrientadaObjetos/EstructuraBasica/EstructuraBasica.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/ProgramacionOrientadaObjetos/EstructuraBasica/out/production/EstructuraBasica/ProgramacionOrientadaObjetos/EstructuraBasica/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/ProgramacionOrientadaObjetos/EstructuraBasica/out/production/EstructuraBasica/ProgramacionOrientadaObjetos/EstructuraBasica/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/ProgramacionOrientadaObjetos/EstructuraBasica/out/production/EstructuraBasica/ProgramacionOrientadaObjetos/EstructuraBasica/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/ProgramacionOrientadaObjetos/EstructuraBasica/out/production/EstructuraBasica/ProgramacionOrientadaObjetos/EstructuraBasica/EstructuraBasica.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/ProgramacionOrientadaObjetos/Herencia_Multiple/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/ProgramacionOrientadaObjetos/Herencia_Multiple/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/ProgramacionOrientadaObjetos/Herencia_Multiple/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/ProgramacionOrientadaObjetos/Herencia_Multiple/Herencia_Multiple.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/ProgramacionOrientadaObjetos/ProgramacionOrientadaObjetos.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/PruebaDos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Repaso01/La_Cerca.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Repaso1/PromedioNotas/Estudiante.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Repaso1/PromedioNotas/ListaEstudiantes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Repaso1/PromedioNotas/PromedioNotas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Repaso1/Promocion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Repaso1/PruebaADN.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Repaso1/UtilesEscolares.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Sesion6/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Sesion6/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Sesion6/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Sesion7/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Sesion7/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/Sesion7/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/String/Ejemplo0String.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/String/Ejercicio1StringLetraRepetida.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/String/Ejercicio2StringSimbolosSonLetras.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/String/Ejercicio3StringContarConsonante.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/String/Ejercicio4CompararCadenas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/String/Ejercicio5ConcatenarCadenas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/String/Ejercicio6InvertirPalabras.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/String/Ejercicio7FraseEsPalindrome.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/TestMaven/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/TipsReto2/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/UML_Chat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/_06_Vectores_ArraysUnidimensionales/Ejemplo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/_06_Vectores_ArraysUnidimensionales/Ejemplo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/_08_POO_salachat/Problema_sala_chat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/_08_POO_salachat/UML_Chat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/_08_POO_salachat/diseño_UML.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/_10_Herencia_Polimorfismo/Electrodomestico/diseño_UML.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/_11_PatronesDeDiseno/decorator_uml.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/_11_PatronesDeDiseno/factory_uml.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/_11_PatronesDeDiseno/singleton_uml.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/cuboPoliformismo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/cuboPoliformismo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/cuboPoliformismo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/decorator_uml.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/electrodomestico_UML.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/factory_uml.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/singleton_uml.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/testJUnit_PruebaUnitarias/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/testJUnit_PruebaUnitarias/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/testJUnit_PruebaUnitarias/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/testJUnit_PruebaUnitarias/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/testJUnit_PruebaUnitarias/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/testJUnit_PruebaUnitarias/target/surefire-reports/Calculadora.CalculadoraTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/testJUnit_PruebaUnitarias/target/surefire-reports/Persona.PersonaTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/testJUnit_PruebaUnitarias/target/surefire-reports/TEST-Calculadora.CalculadoraTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/testJUnit_PruebaUnitarias/target/surefire-reports/TEST-Persona.PersonaTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/out/production/Java/trickOrTreat/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/src/Calculadora/Calculadora.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sesion_3_ejercicio/src/Calculadora/Calculadora.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Myoi8qJKymx2ph0euAakbhYk5v" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/yamid/Documents/Java/Java/misiontic/sesion_2_ejercicios"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75076dc5-e3b6-41bc-aa0e-f6f27c2682f3" name="Changes" comment="" />
+      <created>1678749308252</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678749308252</updated>
+    </task>
+    <servers />
+  </component>
+</project>

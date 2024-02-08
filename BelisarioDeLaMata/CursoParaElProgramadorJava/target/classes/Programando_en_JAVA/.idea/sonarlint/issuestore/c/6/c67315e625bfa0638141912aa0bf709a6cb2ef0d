@@ -1,0 +1,37 @@
+
+X
+java:S1854"=Remove this useless assignment to local variable "resultado".(ä¶€æûÿÿÿÿ
+A
+java:S1481"+Remove this unused "unByte" local variable.(”®Èª
+F
+java:S1481"0Remove this unused "unByteClase" local variable.(˜ŞˆÚ
+I
+java:S1481".Remove this unused "resultado" local variable.(ä¶€æûÿÿÿÿ
+A
+java:S1481",Remove this unused "unShort" local variable.(‡õæo
+G
+java:S1481"1Remove this unused "unShortClase" local variable.(çØç‘
+E
+java:S1481"*Remove this unused "unInt" local variable.(–îß¨ıÿÿÿÿ
+D
+java:S1481"/Remove this unused "unIntClase" local variable.(·±S
+A
+java:S1481"+Remove this unused "unLong" local variable.(ì›·Ñ
+K
+java:S1481 "0Remove this unused "unLongClase" local variable.(”‘ûüÿÿÿÿ
+G
+java:S1481"",Remove this unused "unFloat" local variable.(¨¿½şÿÿÿÿ
+F
+java:S1481#"1Remove this unused "unFloatClase" local variable.(¾Şú
+C
+java:S1481%"-Remove this unused "unDouble" local variable.(‡ÎË¬
+M
+java:S1481&"2Remove this unused "unDoubleClase" local variable.(úŒÛ¤şÿÿÿÿ
+I
+java:S1481(".Remove this unused "unBoolean" local variable.(Úğÿÿÿÿÿ
+I
+java:S1481)"3Remove this unused "unBooleanClase" local variable.(¯¡Œï
+F
+java:S1481+"+Remove this unused "unChar" local variable.(ŞËò…ùÿÿÿÿ
+F
+java:S1481,"0Remove this unused "unCharClase" local variable.(ù¾ê‡

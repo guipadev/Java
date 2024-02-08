@@ -1,0 +1,19 @@
+
+E
+java:S3740("/Provide the parametrized type for this generic.(ÔÓŞ
+†
+java:S1319%"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(»‚İ²
+|
+java:S1319="aThe type of "a" should be an interface such as "List" rather than the implementation "ArrayList".(Å¿‹…üÿÿÿÿ
+w
+java:S1319N"aThe type of "a" should be an interface such as "List" rather than the implementation "ArrayList".(Şğğš
+|
+java:S1319V"aThe type of "a" should be an interface such as "List" rather than the implementation "ArrayList".(µŠ½‹úÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒØë
+k	java:S117*"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±¢ÓÛüÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ô–ô­ÿÿÿÿÿ
+N	java:S106-"9Replace this use of System.out or System.err by a logger.(Ä„âÓ
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(×³‰„ùÿÿÿÿ
+N	java:S106>"9Replace this use of System.out or System.err by a logger.(èÓ’Ş
+Z	java:S106O"9Replace this use of System.out or System.err by a logger.(´Èô€ÿÿÿÿÿ8ÏªÜäë0
+Z	java:S106W"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ8ŞôŞäë0

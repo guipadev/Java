@@ -1,0 +1,13 @@
+
+f
+java:S1104"PMake edad a static final constant or non-public and provide accessors if needed.(ÛÂº¨
+m
+java:S1104"RMake nombre a static final constant or non-public and provide accessors if needed.(¯‰–‚úÿÿÿÿ
+k
+java:S1104"UMake colorOjos a static final constant or non-public and provide accessors if needed.(’†ıÉ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ËèÕ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(å£ùÿÿÿÿ
+N	java:S106!"9Replace this use of System.out or System.err by a logger.(‰ûÛ
+M	java:S106#"9Replace this use of System.out or System.err by a logger.(—˜§
+N	java:S106%"9Replace this use of System.out or System.err by a logger.(ûı†
+M	java:S106*"9Replace this use of System.out or System.err by a logger.(ÇÒ“

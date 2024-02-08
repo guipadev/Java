@@ -1,0 +1,13 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(·š†‡
+b
+java:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(Çµí‘
+Q
+java:S1854";Remove this useless assignment to local variable "userDto".(™ØÔ³
+Y
+java:S1854">Remove this useless assignment to local variable "diasDelAno".(‘²¾åøÿÿÿÿ
+J
+java:S1481"/Remove this unused "diasDelAno" local variable.(‘²¾åøÿÿÿÿ
+B
+java:S1481",Remove this unused "userDto" local variable.(™ØÔ³
+V	java:S125"<This block of commented-out lines of code should be removed.(†§‡îúÿÿÿÿ

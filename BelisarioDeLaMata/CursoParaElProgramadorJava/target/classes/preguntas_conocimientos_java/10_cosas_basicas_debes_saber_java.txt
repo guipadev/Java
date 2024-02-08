@@ -1,0 +1,70 @@
+10 cosas básicas que debes saber de Java
+https://youtu.be/vgkL3Ovi-kU (José Dimas Luján Castillo)
+
+1 ¿Versiones de Java importantes?
+v 1.8 = 8 la mas importante, ya que desde la version 6 debemos considerar que la variable no la podemos
+implementar libremente y tenemos que preocuparnos por estar cumpliendo el licenciamiento
+
+2 ¿Versiones tipos de Java?
+- JavaME Micro Edition que se hizo pensando en el desarrollo movil
+- JavaFX pensada en interfaces graficas
+- JavaSE Standar Edition abarca todas las opciones de las anteriores
+- JavaEE Enterpraite Edition contiene todas las opciones anteriores
+
+3 ¿Modificadores de acceso?
+- default     el cual no se pone nada
+- public      es el mas abierto
+- private     es mas estricto    
+- protected   
+
+4 ¿Final que es y como funciona?
+Se usa para variables, metodos y clases
+- Variable el valor no va a cambiar despues de asignado
+- Metodo al aplicarlo este no se va poder sobreescribir
+- Clase en este caso no vamos a poder extender de ella
+
+5 ¿Cuando tenemos que sobreescribir un metodo?
+- Cuando utilizamos algo que es abstracto en otro lado y lo queremos utilizar por lo cual debemos agregar la implementacion
+- Cuando utilizamos otrar clase tambien lo debemos hacer, ya que al quererlo usar se debe implementar
+- Tambien cuando queremos sobre escribir porque no queremos que el metodo funcione de esa manera
+- Porque querriamos sobre escribir un metodo porque lo necesitamos, nos lo pide java al querer implementar algo externo
+- o simplemente tengo la necesidad de que funcione de una manera distinta
+
+6 ¿Que es una excepcion?
+- Son los medios que nos ofrece los lenguajes de programacion para manejar situaciones que no son habituales
+tecnicamente un errores o fallos, anomalias
+- Las excepciones mas famosas de java son ioexepcion, aritmeticexception para las divisiones sobre 0,
+y la de manejo de los nulos.
+- Todo esto para que la aplicacion no se cierre, no colapse, no se rompa.
+
+7 ¿Que tipo de herencia maneja Java? 
+- La que maneja Java es la herencia simple
+- Hay la multiple, pero esta no la maneja (creo que C++ y C# lo hacen)
+
+A veces se dice que las interfaces son como hacer herencia multiple, pero probablemente no es así
+ya que lo que hace es la implementacion de una interfaz
+
+8 ¿Java es compilado o interpretado?
+Compila el codigo generado por el programador, pero la Virtual Machine es la que interpreta el codigo 
+y ejecuta para mostrar, por lo cual logra el objetivo de ser multiplataforma.
+
+9 ¿Que es this?
+- Con this hacemos referencia al mismo objeto
+- Cuando se menciona como un contexto, ejemplo te invito a mi casa y te paso el contexto donde te digo que solo
+puedes estar en mi sala, cocina o baño, significa que no vas a poder utilizar los otros contextos, 
+osea no puedes o no vas a existir en otros lados
+
+10 ¿Una super clase de Java?
+- Todos los lenguajes OOP tiene una super clase conocida como Object
+- Por ejemplo cuando creas una clase y no le pones herencia, no importa ya se esta haciendo una herencia
+ya que cuando creas un objeto y revisas los metodos que tiene disponibles te daras cuenta que hay unos 
+metodos definidos y no fueron creados por uno, hay confirmamos que al no poner la clase nosotros heredamos
+directamente de la super clase object 
+
+11 ¿Debemos usar JavaSE o JavaEE?
+- EE version mas completa
+- SE version mas austera
+- Pero depende que se quiere hacer en el proyecto, por ejemplo que apis, codigos, paquetes se van a necesitar
+- Por ej: se quiere una interfaz grafica, se podria utiliza SE utilizando javaFX
+- Si es para web debemos saber si es por el lado del servidor o cliente que son applets que ya no se usa o servels
+

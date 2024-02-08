@@ -1,0 +1,10 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(•áŸşÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ĞÀÒ­ùÿÿÿÿ
+S	java:S106 "9Replace this use of System.out or System.err by a logger.(ÿ”€¸üÿÿÿÿ
+C
+java:S1068"(Remove this unused "hola" private field.(ÒÍğêøÿÿÿÿ
+A
+java:S1068"+Remove this unused "ejemplo" private field.(ú¾‰
+D
+java:S1068")Remove this unused "adios" private field.(°³’öıÿÿÿÿ

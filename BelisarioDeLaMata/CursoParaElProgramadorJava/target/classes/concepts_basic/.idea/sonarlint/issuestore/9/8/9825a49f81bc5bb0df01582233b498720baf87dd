@@ -1,0 +1,7 @@
+
+b
+java:S1192
+"GDefine a constant instead of duplicating this literal "Blanco" 3 times.(Ì–æ°üÿÿÿÿ
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­8ÇÉÙÇë0
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÔÓĞÎúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(šãùôúÿÿÿÿ

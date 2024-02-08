@@ -1,0 +1,7 @@
+Lo que hace @override es justamente indicarle al compilador
+que justamente en tiempo de compilación
+Es decir antes de que se ejecute el código cheque justamente
+que lo que estamos sobre/escribiendo realmente representa un método
+con la misma firma en la superclase
+
+Para así evitar involuntarios errores en la sobre/escritura de métodos

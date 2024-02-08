@@ -1,0 +1,26 @@
+
+J
+java:S3740"/Provide the parametrized type for this generic.(ƒŒ‡™ùÿÿÿÿ
+
+java:S1319"iThe type of "vehiculos" should be an interface such as "List" rather than the implementation "ArrayList".(åÙÉé
+W
+java:S4973Y"<Strings and Boxed types should be compared using "equals()".(Ç’ïøıÿÿÿÿ
+V
+java:S21841"@Cast one of the operands of this addition operation to a "long".(—¤²×
+N	java:S106"9Replace this use of System.out or System.err by a logger.(à™å
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ßóƒÆ
+N	java:S106$"9Replace this use of System.out or System.err by a logger.(Èßú×
+N	java:S106%"9Replace this use of System.out or System.err by a logger.(ÜñÂ­
+S	java:S106,"9Replace this use of System.out or System.err by a logger.(€ş‰äıÿÿÿÿ
+N	java:S106-"9Replace this use of System.out or System.err by a logger.(ºôëú
+S	java:S106."9Replace this use of System.out or System.err by a logger.(çÒƒÂøÿÿÿÿ
+S	java:S106/"9Replace this use of System.out or System.err by a logger.(½ßÎŞøÿÿÿÿ
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(ŸíâÄıÿÿÿÿ
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(Ë¦îúÿÿÿÿ
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(†Ü­Ëÿÿÿÿÿ
+S	java:S1069"9Replace this use of System.out or System.err by a logger.(ğ ¸…ùÿÿÿÿ
+P
+java:S1854U";Remove this useless assignment to local variable "comando".(ç®b
+N	java:S106I"9Replace this use of System.out or System.err by a logger.(ÆÀûı
+?
+java:S1197U"*Move the array designators [] to the type.(ç®b

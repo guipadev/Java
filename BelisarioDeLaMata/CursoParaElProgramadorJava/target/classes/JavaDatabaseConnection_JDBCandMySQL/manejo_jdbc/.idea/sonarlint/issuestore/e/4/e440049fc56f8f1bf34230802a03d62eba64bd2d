@@ -1,0 +1,9 @@
+
+d
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(ÏÌ÷8ùåûï0
+j
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(ÑÉ¸½ûÿÿÿÿ8øåûï0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ÏŸ¢²8ç­ûï0
+N
+java:S1481"1Remove this unused "rowsAffected" local variable.(è¬—Û8ÿ­ûï0
+Z	java:S106%"9Replace this use of System.out or System.err by a logger.(ëÊÂÀúÿÿÿÿ8ƒ®ûï0

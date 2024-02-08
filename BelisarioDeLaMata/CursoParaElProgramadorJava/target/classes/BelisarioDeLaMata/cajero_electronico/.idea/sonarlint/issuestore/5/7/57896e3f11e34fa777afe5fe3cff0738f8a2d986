@@ -1,0 +1,21 @@
+
+>
+java:S1604#"(Make this anonymous inner class a lambda(«ğãã
+C
+java:S1604}"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ
+n
+java:S1450…"WRemove the "btnLogin" field and declare it as a local variable in the relevant methods.(Œ¨ëå
+x
+java:S1450†"\Remove the "lblContrasena" field and declare it as a local variable in the relevant methods.(«£Í¢ùÿÿÿÿ
+u
+java:S1450‡"YRemove the "lblUsuario" field and declare it as a local variable in the relevant methods.(¶‹ÔÅøÿÿÿÿ
+@
+java:S1172P"*Remove this unused method parameter "evt".(¾¥œš
+E
+java:S1197d"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ
+[
+java:S2147s"ECombine this catch with the one at line 113, which has the same body.(¨¦Š½
+[
+java:S2147u"ECombine this catch with the one at line 113, which has the same body.(ã€ 
+Z
+java:S2147w"ECombine this catch with the one at line 113, which has the same body.(ñÎ¯%

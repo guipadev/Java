@@ -1,0 +1,23 @@
+
+d
+4src/main/java/com/dev/_01_determinarMayorNo/App.java,c/b/cb5ded35fd10ceb9169cc19a91f2b3eaaa066b8e
+O
+src/main/java/com/dev/Main.java,5/e/5e0ced2ef51d7e56b7915cb42ebcf23b6fd3ad7a
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+`
+0src/main/java/com/dev/_02_areaTriangulo/App.java,9/e/9e53fd1a747ff457242b3c8906ff4ef3436185d4
+c
+3src/main/java/com/dev/_03_notasEstudiantes/App.java,6/6/66fa94e2e800dcc0feac657218f1b86bf163109e
+i
+9src/main/java/com/dev/_03_notasEstudiantes/AppMejora.java,b/c/bcf9f29b5eb941f5904290bc51136fd4ac64ed59
+e
+5src/main/java/com/dev/_05_calculaSumaNPrimos/App.java,0/2/0253aecb1daeb4965e60b0fefa34f0daa611dfdc
+f
+6src/main/java/com/dev/_05_calculaSumaNPrimos/App2.java,c/d/cdc8df2d7d5dff74495dce27b744e3981e180ea4
+f
+6src/main/java/com/dev/_05_calculaSumaNPrimos/App3.java,9/d/9d2c88ca12f3de662c8abb2f6394414f1c5d85bc
+\
+,src/main/java/com/dev/_06_lavaAutos/App.java,6/0/60f581fcf8888b0772000712ded8c9e65648cd89
+a
+1src/main/java/com/dev/ExamenTeoricoJavaBasico.txt,d/4/d46e4f6339e27e71cb22aa17ffe0b6786f4ee50f

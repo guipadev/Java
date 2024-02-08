@@ -1,0 +1,23 @@
+Second accede a una public Main clase con public atributos:
+
+/* Code from filename: Main.java
+public class Main {
+  public String fname = "John";
+  public String lname = "Doe";
+  public String email = "john@doe.com";
+  public int age = 24;
+}
+*/
+
+class Second {
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    System.out.println("Name: " + myObj.fname + " " + myObj.lname);
+    System.out.println("Email: " + myObj.email);
+    System.out.println("Age: " + myObj.age);
+  }
+}
+
+Definición y uso
+La public palabra clave es un modificador de acceso utilizado para clases, atributos,
+métodos y constructores, haciéndolos accesibles para cualquier otra clase.

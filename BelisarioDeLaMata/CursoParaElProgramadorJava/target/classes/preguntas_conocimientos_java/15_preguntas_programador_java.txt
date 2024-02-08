@@ -1,0 +1,184 @@
+https://www.youtube.com/watch?v=_tco4HJY6Yw&list=RDCMUC9fAeSPVw7mAAbexCS7gPqw&index=3
+MITOCODE
+-------------------------------------------------------------------------------------
+Preguntas No Técnicas:
+-------------------------------------------------------------------------------------
+0. Saber a que se dedica la empresa y sector.
+
+1. ¿Porque quiere ser un Java Developer?
+Aunque no existe el lenguaje perfecto, Java a demostrado con el tiempo que sigue siendo un lenguaje de alta preferencia para la industria
+Prueba de ellos empresas multinacionales que lo respaldan Netflix, Amazon, Microsoft
+Al definir mi carrera en este lenguaje tan consolidado, voy a tener muchas más posibilidades
+
+2. ¿Porque quiere trabajar como desarrollador Java en esta empresa y no en otra?
+Debemos haber investigando la empresa con anterioridad y nunca hablar mal de otras empresas
+
+3. ¿Tenemos un proyecto con un atraso de casi 2 semanas, como reaccionarias ante una situación de extres como esta?
+Aquí no hay una respuesta absoluta. Pero si una empresa esta acostumbra a tener este tipo de atrasos, espera que tengas disponibilidad extra.
+-------------------------------------------------------------------------------------
+Preguntas Técnicas:
+-------------------------------------------------------------------------------------
+1. ¿Porque se dice que Java es una plataforma independiente?
+Java es multiplataforma, gracias a su maquina virtual, lo cual se puede ejecutar en varios SO.
+
+2. ¿En que situaciones utilizarias las clases o tipos de datos Wrapper, frente a los valores primitivos?
+Si vamos a recibir valores nulos, en caso cuando utilizamos y realizamos una consulta a una BD.
+
+3. ¿Conceptos claves que se manejan en la programación orientada a objetos?
+Herencia, Abstracción, Encapsulamiento, Polimorfismo
+
+4. ¿Una interfaz puede implementar otra interfaz o una interfaz puede heredar de otra interfaz? 
+Pregunta para saber si trabajar con patrones de diseño.
+La respuesta es que una interfaz solo puede heredar de otra interfaz. Lo único que implementa una interfaz son las clases.
+
+5. ¿Cuando usarias una clase abstracta, ante una interfaz?
+- Una clase abstracta puede tener algunos atributos y metodos abstratos, y tambien unos métodos ya implementados. 
+Otra clase puede heredar la clase abstracta.
+- La interfaz solo tiene métodos abstractos, pero desde Java 8, esta el concepto método por defecto, 
+por lo cual en una interfaz podria tener algunos métodos ya implementados y simular de cierta forma lo que ofrece una clase abstracta.
+- Una clase solo puede heredar a otra clase, en Java no existe el concepto de herencia múltiple.
+- Para simular ese aspecto seria que una clase implemente varias interfaces.
+- Pero si quiere irse por una herencia tradicional y heredar los comportamientos de una clase mayor y sobreescribir su métodos abstractos, entonces bastaria con una clase abstracta.
+
+6. ¿Cuando usarias la Interfaz List<> contra la Interfaz Set<>?
+- Una interfaz List<> implementacion tipica ArrayList, permite ingresar valores como guste.
+- Una Interfaz Set<> implementación tipica HashSet, permite ingresar varios valores, pero no duplicados.
+
+7. ¿Cuantos métodos abstractos o no implementados puede tener una interfaz funcional?
+- La Interfaz Funcional, solo puede tener un solo método abstracto
+- Para que a partir de esa interfaz funcional, se pueda tener una expresión lambda
+
+8. ¿Cuales son las interfaces funcionales típicas que ofrece Java?
+Estas tiene un método que las representa
+- Predicate método llamado test para devolver un Boolean
+- Consumer retorna un Objeto
+- Supplier método que evalua un void
+- Function
+
+9. ¿Cuando usarias Runnable vs Thread?
+- Runnable es una interfaz y Thread es una clase
+- Si tengo un proceso que quiero volver asincrono y trabajar con hilos de forma tradicional, se podria agregar Thread 
+- Pero si yo quisiera aprovechar la facilidad de implementar varias interfaces y a parte de dar otra clase se debe usar Runnable
+- Ya que se puede sobreescribir el método que ofrece 
+
+10. ¿Que es la sincronización en Java, que es un método sincronizado?
+- Sección crítica, proteger un recurso de la aplicación, frente ambiente concurrencia, muchas sesiones quieren utilizar la sección al mismo tiempo
+y para evitar el valor cambie/mute de acuerdo a quien lo invocó, se debe proteger esta sección crítica.
+- Una forma común de proteger algún recurso que pueda estar en u espacio de multi concurrencia / hilos, es hacer un bloque asincrono
+- Si varias veces quieren ejecutar este método habra un encolamiento, un proceso de espera que termine un proceso y sigue continuando con otro
+- Por lo cual como desventaja consume un poco más de recurso pero asegura proteger ese recurso al utilizar un ambiente concurrente
+
+- Asincronia, si permite trabajar con los THREAD, RUNNABLE o implementación que ofrece Spring @Async, o programación reactiva flux con react
+
+11. ¿Cómo prueba usted su código?
+- Que libreria y framework conoces para probar el código.
+- APlico TDD, JUnit, Mockito (simula procesos y escenarios).
+
+12. ¿Ejecutar código embebido dentro de Java, osea existe script desarrollados en JavaScript que funcionan y debe crear en Java el proceso para ejecutarlo?
+- Proyecto nashorn permite ejecuta JS desde Java.
+- Libreria Java JJS
+
+13. ¿Dado un conjunto de elementos que estan en la lista, yo quiero eliminar los valores duplicados?
+Después de acceder a una lectura de registros de un archivo excel, BD, servicio Rest, esa consulta devolvio un lista de valores y deseo quitar los valores duplicados.
+ 
+Cuando se reciba la data sin importar si es de una BD, servicio externo, hoja de excel... 
+No vayas a contestar aplicar un FOR, después IF, preguntando el valor anterior es igual al siguiente
+esto demuestra que tienes un pensamiento imperativo, acostumbrado a la programación tradicional
+
+Es aceptable contestar usar la API String, trabajar con filter, distinct. 
+Si viene una lista transformarla a Set y sabes que por teoria el Set no acepta duplicados 
+y evitas uso de stream, filter. Ya que la clase Collector de Java se encarga.
+
+14. ¿Me puedes describir el ecosistema actual de Java Enterprise  JEE?
+A fines de 2017 e inicios de 2018, el dueño de Java EE fue Oracle, 
+el cual estaba quedando atras con versiones, lo dono a Eclipse Fundation. Y muere este proceso 2018 en oracle.
+En 2018 sale Java EE 8 bajo Eclipse Fundation, pero a partir de la versión 9 se llama Jakarta EE, 
+por cambio dueño y derechos de autor de la palabra Java
+Hubo un cambio en particular sobre la estructura de paquetes, ejemplo antes java.util.* y ahora jakarta.util.*
+
+15. ¿Comenta o describe sobre el esquema de licenciamiento de Java?
+2014 Java 8 LTS programación funcional
+Luego 9, 10
+11 LTS novedad que va ser de pago
+17 LTS anuncio cambio de ser gratuita tanto desarrollo como produccion por oracle, 
+hasta 1 año despues de la siguiente liberación del LTS (Java 21)
+versiones LTS cada 2 años y cada 6 meses caracteristicas nuevas
+
+El proyecto matrix es la JDK, sobre estre hay diferentes implementaciones como Oracle JDK, Open JDK, JDK Microsoft, Amazon Corretto
+Tienes implementaciones de JDK de diferentes empresas que hacen lo mismo, pero cada una a puesto su firma
+
+La gratuita era la Oracle, pero a partir de la 11 deciden no ser gratuita en produccion, si en desarrollo. 
+Algo como $25 USD por nucleo servidor... algo así por ejemplo
+Por lo cual se comenzo a utilizar Amazon Corretto entre otras
+
+================================================================================================================================================
+ 
+1. ¿Qué versiones de Java haz utilizado?
+He utilizado varias versiones de Java, incluyendo Java 8, Java 11 y Java 17.
+
+2. ¿Qué Frameworks de Java conoces?
+Spring Framework, Hibernate, Apache Struts y JavaServer Faces (JSF).
+
+3. ¿Qué servidores de aplicaciones conoces?
+Apache Tomcat, JBoss (WildFly), GlassFish y WebLogic.
+
+4. ¿Cómo funciona un Hash Map?
+Un Hash Map es una estructura de datos en Java que almacena pares clave-valor. 
+Funciona utilizando una función de hash para asignar una clave a una ubicación en la tabla de hash, 
+lo que permite un acceso rápido a los valores asociados a esa clave. 
+El HashMap utiliza una matriz interna y resuelve las colisiones utilizando listas enlazadas.
+
+5. ¿Menciona  5 patrones de diseño?
+- Singleton: asegura que una clase solo tenga una instancia y proporciona un punto de acceso global a ella.
+- Observer: permite la comunicación entre objetos en un patrón de "publicador/suscriptor".
+- Factory: proporciona una interfaz para crear objetos de una clase, pero permite a las subclases decidir qué clase concreta instanciar.
+- Decorator: agrega funcionalidad adicional a un objeto dinámicamente.
+- Strategy: encapsula un conjunto de algoritmos intercambiables y los hace intercambiables dentro de un objeto.
+
+6. Cuales son los tipos de datos primitivos
+- byte: representa números enteros de 8 bits.
+- short: representa números enteros de 16 bits.
+- int: representa números enteros de 32 bits.
+- long: representa números enteros de 64 bits.
+- float: representa números de coma flotante de 32 bits.
+- double: representa números de coma flotante de 64 bits.
+- boolean: representa un valor booleano (verdadero o falso).
+- char: representa un único carácter Unicode de 16 bits.
+
+7. ¿Qué es una Lambda?
+Una Lambda en Java es una expresión que representa una función anónima. 
+Proporciona una forma concisa de escribir código al permitir pasar funciones como argumentos a métodos o expresar comportamientos de forma más compacta. 
+Las Lambdas se introdujeron en Java 8 como parte de la programación funcional.
+
+8. Menciona 3 funcionalidades de Java introducidas en Java 11/8
+- En Java 11, se introdujo el método `String::isBlank()` que verifica si una cadena está vacía o contiene solo espacios en blanco.
+- En Java 8, se introdujo la interfaz `java.util.function.Predicate` que permite definir condiciones o predicados para filtrar elementos en colecciones.
+- En Java 8, se introdujo el concepto de Streams, que permite realizar operaciones de forma declarativa y paralela en colecciones de elementos.
+
+9. ¿Cuales JVM conoces? (Me refiero a vendors OpenJDK, Oracle JDK, corretto)
+- OpenJDK: una implementación de código abierto de la plataforma Java.
+- Oracle JDK: la implementación oficial de Java de Oracle.
+- Amazon Corretto: una distribución de OpenJDK mantenida por Amazon.
+
+10. ¿Que gestor de dependecias conoces?
+Apache Maven y Gradle.
+
+11. ¿Que es el garbage collection?
+(recolección de basura) en Java
+
+Es un proceso automático de administración de memoria. La JVM se encarga de identificar y liberar automáticamente la memoria de los objetos
+que ya no son accesibles o que ya no se utilizan en el programa. 
+Esto evita las fugas de memoria y libera al programador de la tarea de administrar manualmente la memoria.
+
+12. ¿Que es programación Funcional?
+Un paradigma de programación que se basa en el uso de funciones puras, donde las funciones son tratadas como valores y pueden pasarse como argumentos, 
+devolverse como resultados y almacenarse en variables. 
+En Java, la programación funcional se hizo más prominente con la introducción de Lambdas y Streams en Java 8. 
+La programación funcional se centra en escribir código declarativo y evitar el estado mutable.
+
+
+
+
+
+
+

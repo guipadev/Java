@@ -1,0 +1,379 @@
+---------------------------------------------------------------------------------
+Estructuras de datos (arrays, mapas, pilas, colas, árboles, listas enlazadas)
+---------------------------------------------------------------------------------
+Son formas de organizar y almacenar datos en una computadora para su uso eficiente y efectivo. 
+Algunas estructuras comunes incluyen arrays, mapas, pilas, colas, árboles y listas enlazadas.
+
+* Arrays: 
+  son estructuras de datos que permiten almacenar una colección de elementos del mismo tipo en una secuencia ordenada. 
+  Cada elemento se identifica por un índice numérico, y se puede acceder y modificar fácilmente utilizando este índice. 
+  Los arrays son eficientes para el acceso aleatorio y la lectura/escritura de elementos, pero no son tan eficientes para la inserción y eliminación de elementos en el medio.
+
+* Mapas: 
+  también conocidos como diccionarios o tablas hash, son estructuras de datos que permiten almacenar pares clave-valor, donde cada clave está asociada con un valor específico. 
+  Los mapas son eficientes para la búsqueda y recuperación de elementos a través de su clave, pero no garantizan un orden específico.
+
+* Pilas: 
+  son estructuras de datos que permiten agregar y eliminar elementos en la parte superior, siguiendo el principio "último en entrar, primero en salir" (LIFO). 
+  Las operaciones principales en una pila son "push" (agregar un elemento) y "pop" (eliminar un elemento).
+
+* Colas: 
+  son estructuras de datos que permiten agregar y eliminar elementos en la parte inferior, siguiendo el principio "primero en entrar, primero en salir" (FIFO). 
+  Las operaciones principales en una cola son "enqueue" (agregar un elemento) y "dequeue" (eliminar el elemento más antiguo).
+
+* Árboles: 
+  son estructuras de datos que permiten organizar elementos en una jerarquía de ramificaciones, donde cada nodo tiene uno o varios nodos secundarios. 
+  Los árboles se utilizan para representar estructuras de datos como el árbol genealógico, el sistema de archivos, la estructura de un sitio web, etc.
+
+* Listas enlazadas: 
+  son estructuras de datos que permiten almacenar elementos en una secuencia ordenada, donde cada elemento se enlaza con su sucesor mediante un puntero. 
+  Las listas enlazadas son eficientes para la inserción y eliminación de elementos en el medio, pero no son tan eficientes para el acceso aleatorio.
+---------------------------------------------------------------------------------
+Patrones de software
+---------------------------------------------------------------------------------
+Son soluciones comunes y probadas para problemas de diseño de software. 
+Los patrones pueden ser creacionales, estructurales o de comportamiento, y son utilizados por los desarrolladores para mejorar la calidad, 
+la mantenibilidad y la escalabilidad del software.
+
+* Patrón de fábrica: 
+  este patrón se utiliza para crear objetos sin especificar explícitamente la clase exacta del objeto que se creará. 
+  En su lugar, se utiliza una interfaz común para crear un objeto, lo que permite que el código sea más flexible y escalable.
+  
+  Un ejemplo de uso del patrón de fábrica podría ser una aplicación que requiere la creación de diferentes tipos de objetos, como diferentes tipos de vehículos. 
+  En lugar de tener un bloque de código para cada tipo de vehículo que se va a crear, se puede crear una fábrica que acepte un parámetro que determine qué tipo de objeto debe crearse. 
+  Así, la creación de objetos se puede gestionar de manera más elegante y modular.
+
+* Patrón de adaptador: 
+  este patrón se utiliza para convertir la interfaz de una clase en otra interfaz que se espera. 
+  Se utiliza comúnmente cuando se integran componentes que fueron desarrollados independientemente y no comparten una interfaz común.
+  
+  Un ejemplo común de adaptador es en el uso de bibliotecas externas. 
+  A menudo, estas bibliotecas no tienen la misma interfaz que se utiliza en el proyecto principal, lo que puede dificultar la integración. 
+  Al utilizar un adaptador, se puede crear una interfaz común que permita a la biblioteca y al proyecto principal trabajar juntos sin problemas.
+
+* Patrón de singleton: 
+  este patrón se utiliza para garantizar que una clase tenga solo una instancia y proporciona un punto global de acceso a esa instancia.
+
+  Un ejemplo de uso del patrón de singleton podría ser un registro de eventos en un sistema de producción. 
+  Se puede garantizar que solo hay una instancia del registro en ejecución en cualquier momento, lo que garantiza la consistencia y evita conflictos de datos.
+
+* Patrón de observador: 
+  este patrón se utiliza para establecer una relación de uno a muchos entre objetos para que cuando un objeto cambie de estado, 
+  todos los objetos que lo observan sean notificados y actualizados automáticamente.
+
+  Un ejemplo de uso del patrón de observador podría ser en una aplicación de chat en tiempo real. 
+  Cuando un usuario envía un mensaje, ese mensaje debe aparecer automáticamente en la pantalla de todos los demás usuarios que participan en la conversación. 
+  Al utilizar el patrón de observador, se puede garantizar que todos los usuarios sean notificados cuando se envía un mensaje, 
+  lo que hace que la aplicación sea más eficiente y fácil de usar.
+
+* Patrón de estrategia: 
+  este patrón se utiliza para permitir que un algoritmo sea seleccionado en tiempo de ejecución a partir de un conjunto de algoritmos diferentes. 
+  Esto proporciona una forma flexible de cambiar el comportamiento de un objeto en tiempo de ejecución.
+
+  Un ejemplo de uso del patrón de estrategia podría ser en una aplicación de procesamiento de imágenes que permite al usuario elegir entre diferentes algoritmos de procesamiento. 
+  Al utilizar el patrón de estrategia, se puede seleccionar el algoritmo adecuado en tiempo de ejecución en función de la preferencia del usuario.
+
+* Patrón de decorador: 
+  este patrón se utiliza para agregar funcionalidad a un objeto existente dinámicamente sin cambiar su interfaz. 
+  El patrón de decorador se basa en la composición de objetos en lugar de la herencia, lo que permite una mayor flexibilidad en la forma en que se agregan nuevas funcionalidades.
+ 
+  Un ejemplo de uso del patrón de decorador podría ser en una aplicación de edición de texto que permite al usuario agregar diferentes tipos de formato a un documento. 
+  Al utilizar el patrón de decorador, se pueden agregar diferentes tipos de formato dinámicamente sin tener que cambiar la interfaz de usuario.
+
+* Patrón de MVC: 
+  este patrón se utiliza para separar la aplicación en tres componentes principales: modelo (datos y lógica de negocio), vista (interfaz de usuario) 
+  y controlador (coordina la interacción entre modelo y vista). Esto permite una mayor modularidad, escalabilidad y reutilización de código.
+ 
+  Un ejemplo de uso del patrón de MVC podría ser en una aplicación web que interactúa con una base de datos. 
+  El modelo representaría la estructura de la base de datos y la lógica de negocios, la vista sería la interfaz de usuario que muestra los datos 
+  y el controlador sería el intermediario entre la vista y el modelo, coordinando la interacción entre ellos.
+
+---------------------------------------------------------------------------------
+principio SOLID
+---------------------------------------------------------------------------------
+Es un conjunto de cinco principios de diseño de software que buscan crear sistemas más fáciles de mantener y extender. Los principios son: Responsabilidad única, Abierto/cerrado, Sustitución de Liskov, Segregación de interfaz y Inversión de dependencia.
+
+-> Principio de responsabilidad única: 
+Este principio establece que cada clase debe tener una única responsabilidad en el sistema. 
+Por ejemplo, en una aplicación de venta en línea, una clase puede ser responsable de la gestión de los pedidos 
+y otra de la gestión de los pagos, cada una con una única responsabilidad específica.
+
+-> Principio de abierto/cerrado: 
+Este principio establece que las clases deben estar abiertas para la extensión pero cerradas para la modificación. 
+
+Por ejemplo:
+en una aplicación de procesamiento de imágenes, se puede agregar una nueva funcionalidad de procesamiento de imágenes sin modificar el código existente.
+
+Otro ejemplo: Supongamos que tenemos una clase "Vehiculo" que tiene un método "acelerar" que aumenta la velocidad del vehículo. 
+Ahora, queremos agregar un nuevo tipo de vehículo a nuestro sistema, una bicicleta, que no tiene un motor y, por lo tanto, no tiene una función "acelerar".
+
+Si no aplicamos el principio abierto/cerrado, tendríamos que modificar la clase "Vehiculo" para agregar una excepción o un condicional para manejar el caso de la bicicleta. 
+Sin embargo, esto viola el principio de cerrado para modificación de la clase "Vehiculo".
+
+En cambio, si aplicamos el principio de abierto/cerrado, podemos extender la clase "Vehiculo" creando una nueva subclase llamada "Bicicleta" 
+y luego anular el método "acelerar" en la nueva subclase para que no haga nada. 
+De esta manera, hemos agregado una nueva funcionalidad a nuestro sistema sin modificar el código existente y, por lo tanto, 
+hemos cumplido el principio de abierto para la extensión y cerrado para la modificación.
+
+-> Principio de sustitución de Liskov: 
+Este principio establece que las subclases deben ser sustituibles por sus clases base sin afectar el comportamiento del programa. 
+
+Por ejemplo:
+en una aplicación de contabilidad, una subclase de una clase de cuenta bancaria debe poder reemplazar 
+a su clase base sin afectar los cálculos de la contabilidad.
+
+Otro ejemplo:
+Supongamos que tenemos una clase "Animal" que tiene un método "comer". 
+Luego, creamos una subclase de "Animal" llamada "Perro" que también tiene el método "comer".
+
+Según el principio de sustitución de Liskov, una instancia de la subclase "Perro" debe ser reemplazable por una instancia de su clase base "Animal" 
+sin afectar el comportamiento del programa. 
+En otras palabras, cualquier código que funcione con una instancia de "Animal" debe funcionar igual de bien con una instancia de "Perro".
+
+Si no se cumple el principio de sustitución de Liskov, podemos tener situaciones donde el comportamiento del programa cambia inesperadamente. 
+Por ejemplo, si la subclase "Perro" tiene un comportamiento diferente en el método "comer" que la clase base "Animal", 
+entonces el código que funciona bien con una instancia de "Animal" puede no funcionar correctamente con una instancia de "Perro".
+
+En resumen, el principio de sustitución de Liskov nos garantiza que las subclases sean compatibles con su clase base 
+y no cambien el comportamiento del programa sin que lo sepamos. 
+Esto es esencial para mantener la integridad del código y asegurar su calidad.
+
+-> Principio de segregación de la interfaz: 
+Este principio establece que las interfaces de una clase deben ser cohesivas y no obligar a las clases que las implementan a implementar métodos innecesarios. 
+
+Por ejemplo:
+en una aplicación de registro de usuarios, una interfaz de usuario para la gestión de permisos no debe incluir métodos para la gestión de contraseñas.
+
+Otro ejemplo:
+Supongamos que tenemos una interfaz llamada "Almacenamiento" que tiene varios métodos, incluyendo "almacenar", "leer", "eliminar" y "actualizar". 
+Luego, creamos una clase llamada "BaseDeDatos" que implementa todos los métodos de la interfaz "Almacenamiento".
+
+Según el principio de segregación de la interfaz, una clase no debe depender de métodos que no usa. 
+En este caso, si una clase solo necesita usar los métodos "almacenar" y "leer" de la interfaz "Almacenamiento", 
+no debería tener que implementar los métodos "eliminar" y "actualizar".
+
+Para cumplir el principio de segregación de la interfaz, podemos dividir la interfaz "Almacenamiento" en interfaces más pequeñas y específicas, 
+como "AlmacenamientoLectura" y "AlmacenamientoEscritura", y luego hacer que la clase "BaseDeDatos" implemente solo las interfaces necesarias.
+
+De esta manera, las clases que solo necesitan leer y almacenar datos pueden depender solo de la interfaz "AlmacenamientoLectura", 
+mientras que las clases que necesitan escribir y actualizar datos pueden depender solo de la interfaz "AlmacenamientoEscritura". 
+De esta manera, estamos evitando la dependencia innecesaria de los métodos y cumpliendo el principio de segregación de la interfaz.
+
+-> Principio de inversión de dependencia: 
+Este principio establece que las clases de nivel superior no deben depender de las clases de nivel inferior, sino de sus abstracciones. 
+
+Por ejemplo:
+en una aplicación de envío de correos electrónicos, la clase de nivel superior que gestiona el envío de correos electrónicos 
+no debe depender directamente de la implementación concreta de una clase de conexión a internet, 
+sino de una abstracción que puede ser implementada por diferentes clases de conexión a internet.
+
+Otro ejemplo:
+Supongamos que tenemos una clase llamada "ProcesadorDePagos" que tiene una dependencia directa de la clase "PaypalAPI", 
+que se encarga de procesar pagos a través de la plataforma de PayPal. 
+La clase "ProcesadorDePagos" utiliza los métodos de "PaypalAPI" para realizar operaciones de pago.
+
+Sin embargo, si en el futuro queremos agregar soporte para procesar pagos a través de otra plataforma, como Stripe o MercadoPago, 
+tendríamos que modificar la clase "ProcesadorDePagos" para incluir la nueva dependencia directa a la API de la plataforma correspondiente. 
+Esto violaría el principio de inversión de dependencia, ya que estaríamos dependiendo de una implementación concreta en lugar de una abstracción.
+
+Para cumplir con el principio de inversión de dependencia, podemos definir una interfaz abstracta que describa los métodos necesarios para procesar pagos, 
+y luego hacer que tanto la clase "PaypalAPI" como la nueva API de procesamiento de pagos implementen esa interfaz.
+
+De esta manera, la clase "ProcesadorDePagos" no depende directamente de ninguna API de procesamiento de pagos, 
+sino que depende de la interfaz abstracta que define los métodos necesarios. 
+De esta forma, podemos agregar soporte para nuevas plataformas de pago sin tener que modificar la clase "ProcesadorDePagos" ni violar el principio de inversión de dependencia.
+
+En resumen, el principio de inversión de dependencia nos indica que debemos depender de abstracciones en lugar de implementaciones concretas. 
+Esto nos permite crear código más modular, flexible y fácil de mantener.
+
+---------------------------------------------------------------------------------
+Arquitectura de software
+---------------------------------------------------------------------------------
+Se refiere a la organización de los componentes de software de un sistema y cómo se comunican entre sí. 
+La arquitectura de software se preocupa por la estructura del sistema, sus componentes, sus relaciones y 
+cómo se comporta en relación con los requisitos del usuario y del negocio.
+
+-> Arquitectura cliente-servidor: 
+Esta arquitectura se utiliza en aplicaciones en las que se necesita una comunicación constante entre un cliente y un servidor. 
+El cliente envía solicitudes al servidor, y este responde con los resultados correspondientes. 
+Ejemplos de aplicaciones que utilizan esta arquitectura son los navegadores web y las aplicaciones móviles.
+
+-> Arquitectura basada en microservicios: 
+Esta arquitectura se utiliza para construir aplicaciones grandes y complejas divididas en pequeños servicios independientes. 
+Cada microservicio se encarga de una tarea específica, y se comunica con otros microservicios a través de una interfaz bien definida. 
+Ejemplos de aplicaciones que utilizan esta arquitectura son Netflix y Amazon.
+
+-> Arquitectura basada en eventos: 
+Esta arquitectura se utiliza para construir aplicaciones que se basan en eventos que ocurren en tiempo real. 
+En esta arquitectura, los componentes de la aplicación se suscriben a eventos y reaccionan en consecuencia. 
+Ejemplos de aplicaciones que utilizan esta arquitectura son los sistemas de trading en tiempo real y los sistemas de monitoreo de redes.
+
+-> Arquitectura basada en capas: 
+Esta arquitectura se utiliza para construir aplicaciones que se dividen en capas, cada una con una responsabilidad específica. 
+Las capas se comunican entre sí a través de interfaces bien definidas. 
+Ejemplos de aplicaciones que utilizan esta arquitectura son los sistemas bancarios y los sistemas de gestión de inventarios.
+
+- La capa de presentación o capa de interfaz de usuario 
+Es la que se encarga de mostrar la información al usuario, por ejemplo, la página web del banco que muestra la lista de cuentas y transacciones.
+
+- La capa de lógica de negocio 
+Es la que se encarga de manejar la lógica de la aplicación, como la validación de datos, el cálculo de intereses y la aprobación de transacciones.
+
+- La capa de acceso a datos 
+Se encarga de la lectura y escritura de los datos en la base de datos, como la información de la cuenta, las transacciones y los detalles de la tarjeta de crédito.
+
+En este caso, la capa de presentación interactúa con la capa de lógica de negocio, que a su vez interactúa con la capa de acceso a datos. 
+Las capas están separadas y pueden ser modificadas independientemente sin afectar el funcionamiento de las otras capas.
+
+Este tipo de arquitectura permite una mayor flexibilidad y escalabilidad del sistema, ya que cada capa puede ser optimizada o actualizada sin afectar a las demás. 
+Además, la separación de responsabilidades en capas hace que sea más fácil de mantener y probar el sistema.
+
+-> Arquitectura orientada a servicios: 
+Esta arquitectura se utiliza para construir aplicaciones que se basan en la exposición de servicios web 
+que pueden ser accedidos por otras aplicaciones a través de una interfaz bien definida. 
+Ejemplos de aplicaciones que utilizan esta arquitectura son los sistemas de gestión de contenido y los sistemas de gestión de relaciones con los clientes.
+
+Cuando un usuario busca un vuelo, la solicitud se envía al servicio de búsqueda de vuelos, que devuelve una lista de resultados. 
+Luego, el usuario puede seleccionar un vuelo y reservar un asiento a través del servicio de reserva de asientos. 
+Una vez que se completa la reserva, se realiza el pago a través del servicio de pago.
+
+La arquitectura orientada a servicios permite una mayor modularidad del sistema, ya que cada servicio puede ser desarrollado y mantenido de manera independiente. 
+Además, los servicios pueden ser reutilizados en diferentes aplicaciones, lo que aumenta la eficiencia y la flexibilidad del sistema.
+
+Otro beneficio es que los servicios pueden ser escalados de manera independiente según la demanda, 
+lo que aumenta la capacidad del sistema y reduce la posibilidad de errores o fallas.
+
+Un ejemplo de arquitectura orientada a servicios (SOA, por sus siglas en inglés) es un sistema de comercio electrónico.
+
+En este caso, se pueden tener diferentes servicios que se encargan de diferentes funcionalidades, como el servicio de búsqueda de productos, 
+el servicio de procesamiento de pagos y el servicio de envío de pedidos. 
+Cada servicio puede ser desarrollado y mantenido de manera independiente y puede ser utilizado por otras aplicaciones o servicios a través de una interfaz bien definida.
+
+Los servicios se comunican entre sí a través de protocolos estándar como SOAP (Simple Object Access Protocol) 
+o REST (Representational State Transfer), lo que permite una comunicación interoperable y flexible.
+
+Por ejemplo, cuando un usuario busca un producto en el sitio web de comercio electrónico, el servicio de búsqueda de productos se encarga de devolver los resultados de la búsqueda. 
+Cuando el usuario realiza un pedido, el servicio de procesamiento de pagos se encarga de procesar la transacción y el servicio de envío de pedidos se encarga de la entrega.
+
+Este tipo de arquitectura permite una mayor flexibilidad y escalabilidad del sistema, ya que cada servicio puede ser desarrollado y 
+mantenido de manera independiente y puede ser utilizado por diferentes aplicaciones y servicios. 
+Además, la separación de responsabilidades en servicios hace que sea más fácil de mantener y probar el sistema.
+
+---------------------------------------------------------------------------------
+Que es FrontEnd
+---------------------------------------------------------------------------------
+Se refiere a la parte del software que se ejecuta en el navegador o en el lado del cliente. 
+Se centra en la interfaz de usuario, la experiencia del usuario y la interacción con el usuario.
+
+---------------------------------------------------------------------------------
+Que es Backend
+---------------------------------------------------------------------------------
+Se refiere a la parte del software que se ejecuta en el servidor o en el lado del servidor. 
+Se centra en la lógica del negocio, el almacenamiento de datos y la interacción con otros sistemas.
+
+---------------------------------------------------------------------------------
+MVC, modelo vista controlador (tener súper claro las diferentes capas datos, lógica de negocio , vista etc..)
+---------------------------------------------------------------------------------
+(Modelo Vista Controlador): es un patrón de diseño de software que divide una aplicación en tres partes: el modelo (datos y lógica de negocio), la vista (presentación y diseño de la interfaz de usuario) y el controlador (mediador entre la vista y el modelo).
+
+MVC es un patrón arquitectonico, porque tiene un impacto global sobre la aplicación, si quitas MVC la Vista no se podra comunicar con los Controles y este con los Modelos.
+
+---------------------------------------------------------------------------------
+Saber que es código limpio
+---------------------------------------------------------------------------------
+Se refiere a un estilo de programación que se enfoca en la legibilidad, mantenibilidad y eficiencia del código. 
+El código limpio sigue principios como la simplicidad, la claridad, la modularidad y la eliminación de duplicación de código.
+
+- La utilización de nombres de variables, métodos y clases descriptivas y coherentes, que sean fácilmente comprensibles y eviten abreviaciones innecesarias. 
+Por ejemplo, en lugar de usar nombres como x o y para variables, utilizar nombres como num1 y num2 para indicar claramente lo que representan.
+
+- El uso de comentarios y documentación clara y concisa para explicar el propósito y el funcionamiento de diferentes partes del código.
+
+- La utilización de convenciones de codificación estandarizadas, como el uso consistente de mayúsculas y minúsculas, espacios en blanco y puntuación, 
+para hacer que el código sea más fácil de leer y entender.
+
+- La eliminación de código redundante o inútil que no se utiliza o que no contribuye a la funcionalidad del programa.
+
+- La división del código en funciones y métodos que realizan tareas específicas y que no son demasiado largos o complejos.
+
+- El uso de técnicas de prueba de código, como pruebas unitarias y de integración, 
+para garantizar que el código esté funcionando correctamente y que no tenga errores o problemas de rendimiento.
+
+---------------------------------------------------------------------------------
+Microservicios
+---------------------------------------------------------------------------------
+Es una arquitectura de software en la que una aplicación se divide en servicios pequeños, autónomos e independientes 
+que se comunican entre sí para realizar una tarea. Cada servicio se ejecuta en su propio proceso y puede ser desarrollado, 
+implementado y escalado de forma independiente.
+
+---------------------------------------------------------------------------------
+Que es computación paralela
+---------------------------------------------------------------------------------
+Es una forma de procesamiento de datos en la que múltiples tareas se ejecutan simultáneamente, utilizando múltiples recursos de cómputo 
+para acelerar la velocidad de procesamiento. 
+La computación paralela se utiliza para resolver problemas que requieren grandes cantidades de procesamiento, como la simulación, 
+el análisis de datos y la inteligencia artificial.
+
+---------------------------------------------------------------------------------
+Tener SÚPER claro metodologías ágiles (Scrum, Kanban)...
+---------------------------------------------------------------------------------
+Son enfoques iterativos e incrementales para la gestión de proyectos de software que se enfocan en la colaboración, la adaptabilidad
+y la entrega continua de valor al cliente. 
+* Scrum es un enfoque de equipo en el que se dividen las tareas en sprints (iteraciones) y se realizan reuniones diarias para revisar el progreso.
+* Kanban es un enfoque basado en la visualización del flujo de trabajo y la limitación del trabajo en progreso (WIP, por sus siglas en inglés). En Kanban, el trabajo se divide en tareas individuales y se coloca en un tablero Kanban, que puede ser físico o digital. Cada tarea se mueve a través del tablero en varias etapas, desde el inicio hasta la finalización.
+
+---------------------------------------------------------------------------------
+Que son bases de datos relacionales y no relacionales
+---------------------------------------------------------------------------------
+Las bases de datos relacionales y no relacionales son dos tipos de sistemas de gestión de bases de datos (DBMS) 
+que se utilizan para almacenar y recuperar datos.
+
+Bases de datos relacionales: 
+Son sistemas de gestión de bases de datos que utilizan tablas para almacenar y organizar datos. 
+Cada tabla representa una entidad o objeto en el mundo real, y las relaciones entre las tablas se establecen mediante claves primarias 
+y claves foráneas. 
+Las bases de datos relacionales suelen ser escalables, confiables y adecuadas para aplicaciones que requieren 
+transacciones complejas y relaciones entre datos.
+
+Bases de datos no relacionales: 
+Son sistemas de gestión de bases de datos que utilizan diferentes modelos de datos para almacenar y organizar datos. 
+Estos modelos incluyen documentos, columnas, grafos y claves-valor. 
+Las bases de datos no relacionales se utilizan para aplicaciones que requieren una escalabilidad horizontal y un alto rendimiento, 
+y son comunes en aplicaciones web y móviles, la nube y la Internet de las cosas (IoT).
+
+---------------------------------------------------------------------------------
+Algoritmos (métodos de ordenamiento, búsquedas, etc..).
+---------------------------------------------------------------------------------
+° Algoritmos de ordenamiento: 
+son algoritmos que permiten ordenar una lista de elementos de acuerdo a algún criterio, como por ejemplo, 
+el orden alfabético o numérico. Algunos ejemplos de algoritmos de ordenamiento son:
+    * Bubble sort: 
+    es un algoritmo simple que recorre una lista varias veces, comparando elementos adyacentes y moviéndolos hacia la posición correcta. 
+    Su complejidad es de O(n^2), lo que lo hace poco eficiente para grandes cantidades de datos.
+
+    * Quick sort: 
+    es un algoritmo de ordenamiento recursivo que divide una lista en dos sub-listas y las ordena de manera separada. 
+    Es uno de los algoritmos de ordenamiento más rápidos y su complejidad promedio es de O(n log n).
+
+    * Merge sort: 
+    es un algoritmo de ordenamiento recursivo que divide una lista en dos sub-listas, las ordena por separado y las combina en una lista ordenada. 
+    Su complejidad es de O(n log n) en todos los casos.
+
+° Algoritmos de búsqueda: 
+son algoritmos que permiten encontrar un elemento específico dentro de una lista de elementos. 
+Algunos ejemplos de algoritmos de búsqueda son:
+
+    * Búsqueda lineal: 
+    es un algoritmo simple que recorre una lista de elementos en orden, comparando cada uno de ellos con el elemento buscado. 
+    Su complejidad es de O(n), lo que lo hace poco eficiente para grandes cantidades de datos.
+
+    * Búsqueda binaria: 
+    es un algoritmo que divide una lista en dos partes y compara el elemento buscado con el elemento en el centro de la lista. 
+    Si el elemento es menor, se busca en la mitad inferior de la lista, y si es mayor, se busca en la mitad superior. 
+    Su complejidad es de O(log n), lo que lo hace mucho más eficiente que la búsqueda lineal.
+
+    * Búsqueda por hashing: 
+    es un algoritmo que utiliza una función hash para asignar una clave única a cada elemento de la lista. 
+    Luego, utiliza esta clave para buscar el elemento deseado en una tabla hash. 
+    Su complejidad depende de la calidad de la función hash y puede ser muy eficiente en algunos casos.
+

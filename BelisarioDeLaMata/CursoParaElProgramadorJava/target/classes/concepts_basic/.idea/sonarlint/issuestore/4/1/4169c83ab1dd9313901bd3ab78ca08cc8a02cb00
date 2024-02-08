@@ -1,0 +1,17 @@
+
+o
+java:S1488"YImmediately return this expression instead of assigning it to the temporary variable "y".(Ğ´—Ç
+r
+java:S1488$"\Immediately return this expression instead of assigning it to the temporary variable "area".(Òüßª
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÓÓŞ¨
+H
+java:S1135"2Complete the task associated to this TODO comment.(½®İø
+b	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€¾¨9
+h	java:S100#"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ó·³ûÿÿÿÿ
+M	java:S106*"9Replace this use of System.out or System.err by a logger.(Ã ½
+S	java:S106,"9Replace this use of System.out or System.err by a logger.(—ıîŞùÿÿÿÿ
+S	java:S106/"9Replace this use of System.out or System.err by a logger.(Ç¦ËÎúÿÿÿÿ
+N	java:S1062"9Replace this use of System.out or System.err by a logger.(çİ­Ä
+N	java:S1066"9Replace this use of System.out or System.err by a logger.(„¢ÿ
+S	java:S1068"9Replace this use of System.out or System.err by a logger.(Ü­›ıÿÿÿÿÿ
+S	java:S106:"9Replace this use of System.out or System.err by a logger.(ñäœ€üÿÿÿÿ

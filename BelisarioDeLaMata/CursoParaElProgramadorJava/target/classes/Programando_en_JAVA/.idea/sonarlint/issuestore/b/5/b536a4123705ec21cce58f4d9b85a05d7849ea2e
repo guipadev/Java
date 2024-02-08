@@ -1,0 +1,28 @@
+
+a
+java:S1192"FDefine a constant instead of duplicating this literal "Pedro" 6 times.(Èå­Øùÿÿÿÿ
+a
+java:S1192"FDefine a constant instead of duplicating this literal "Maria" 6 times.(Èå­Øùÿÿÿÿ
+c
+java:S1192"HDefine a constant instead of duplicating this literal "Antonio" 6 times.(Èå­Øùÿÿÿÿ
+W
+java:S1854"ARemove this useless assignment to local variable "streamDeLista".(•°ğ
+H
+java:S1481"2Remove this unused "streamDeLista" local variable.(•°ğ
+g
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(÷ûİM
+N	java:S106"9Replace this use of System.out or System.err by a logger.(”²§¦
+h
+java:S6204$"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(”ÈÕ
+N	java:S106&"9Replace this use of System.out or System.err by a logger.(ÚŞ«Ö
+[
+java:S1612,"@Replace this lambda with method reference 'String::toUpperCase'.(ÀîŒĞùÿÿÿÿ
+m
+java:S6204."RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(µ¦Œ®üÿÿÿÿ
+N	java:S1060"9Replace this use of System.out or System.err by a logger.(«Ô§¨
+S	java:S1069"9Replace this use of System.out or System.err by a logger.(ıšÏüÿÿÿÿ
+S	java:S106B"9Replace this use of System.out or System.err by a logger.(ÄÊÍıÿÿÿÿÿ
+S	java:S106N"9Replace this use of System.out or System.err by a logger.(ä®èûÿÿÿÿ
+m
+java:S6204W"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(¬Ì¥€şÿÿÿÿ
+M	java:S106Y"9Replace this use of System.out or System.err by a logger.(ïèÖ.
