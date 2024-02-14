@@ -404,3 +404,10 @@ enum TipoDeVehiculo {
     AUTOMOVIL, MOTOCICLETA, CAMIONETA, BICICLETA
 }
 ```
+
+## Métodos de **Enum**
+Cuando manipulamos enums, existen ciertos métodos que suelen utilizarse en conjunto con los mismos:
+- **name()**: Devuelve un String con el nombre de la constante.
+- **ordinal()**: Devuelve un entero con la posición del enum según está declarada.
+- **values()**: Devuelve un array que contiene todos los elementos del enum.
+- **valueOf()**(String name): Se utiliza para obtener la constante del enum cuyo nombre coincide con la cadena proporcionada.
