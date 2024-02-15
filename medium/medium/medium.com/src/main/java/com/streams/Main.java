@@ -1,8 +1,13 @@
 package com.streams;
 
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /*
  * Java Stream API proporciona una forma poderosa de procesar secuencias de elementos,
@@ -124,68 +129,93 @@ public class Main {
 
         System.out.println(skippedNumbers); // [6, 7, 8, 9, 10]
 
-        /*
-         * Matching Elements: Check if elements match a condition.
-         * List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
-         * boolean containsA = names.stream()
-         * .anyMatch(name -> name.contains("A"));
-         * boolean allEven = numbers.stream()
-         * .allMatch(n -> n % 2 == 0);
-         * boolean noneContainZ = names.stream()
-         * .noneMatch(name -> name.contains("Z"));
-         * Transform and Flatten
-         * Transform each element of a stream of values into another stream and then
-         * flatten the resulting streams into a single stream
-         * 
-         * List<List<Integer>> nestedList = Arrays.asList(
-         * Arrays.asList(1, 2, 3),
-         * Arrays.asList(4, 5, 6),
-         * Arrays.asList(7, 8, 9)
-         * );
-         * 
-         * // Nested list into a single list
-         * Stream<Integer> flattenedStream = nestedList.stream()
-         * .flatMap(List::stream);
-         * 
-         * flattenedStream.forEach(System.out::println);
-         * List<String> words = Arrays.asList("Hello", "World", "Java", "Streams");
-         * 
-         * Stream<String> characters = words.stream()
-         * .flatMap(word -> Arrays.stream(word.split("")))
-         * .distinct();
-         * 
-         * characters.forEach(System.out::println);
-         * 
-         * Debugging or monitoring
-         * Used for debugging or monitoring the elements in a stream without changing
-         * them.
-         * 
-         * Stream<Integer> numbers = Stream.of(1, 2, 3, 4, 5);
-         * 
-         * // Use peek to print each number before performing an operation
-         * numbers
-         * .peek(n -> System.out.println("Processing: " + n))
-         * .map(n -> n * 2)
-         * .forEach(System.out::println);
-         * Grouping and Summarizing Data
-         * Let’s take a look at more advanced operations:
-         * 
-         * Group Employees by Department and Count
-         * Map<Department, Long> employeeCountByDept = employees.stream()
-         * .collect(Collectors.groupingBy(Employee::getDepartment,
-         * Collectors.counting()));
-         * Find the Highest Paid Employee in Each Department
-         * Map<Department, Optional<Employee>> highestPaidByDept = employees.stream()
-         * .collect(Collectors.groupingBy(Employee::getDepartment,
-         * Collectors.maxBy(Comparator.comparing(Employee::getSalary))));
-         * Calculate Average Salary by Department
-         * Map<Department, Double> averageSalaryByDept = employees.stream()
-         * .collect(Collectors.groupingBy(Employee::getDepartment,
-         * Collectors.averagingInt(Employee::getSalary)));
-         * Partition Students into Passing and Failing
-         * Map<Boolean, List<Student>> passingFailing = students.stream()
-         * .collect(Collectors.partitioningBy(s -> s.getGrade() >= PASS_THRESHOLD));
+        // Elementos coincidentes: compruebe si los elementos coinciden con una
+        // condición.
+        List<String> namesX = Arrays.asList("Alice", "Bob", "Charlie");
+
+        boolean containsA = namesX.stream()
+                .anyMatch(name -> name.contains("A"));
+
+        boolean allEven = numbers.stream()
+                .allMatch(n -> n % 2 == 0);
+
+        boolean noneContainZ = namesX.stream()
+                .noneMatch(name -> name.contains("Z"));
+
+        System.out.println(containsA + " " + " " + allEven + " " + noneContainZ); // true false true
+
+        /**
+         * Transformar y aplanar
+         * Transformar cada elemento de una secuencia de valores en otra secuencia y
+         * luego aplanar las secuencias resultantes en una sola secuencia.
          */
+        List<List<Integer>> nestedList = Arrays.asList(
+                Arrays.asList(1, 2, 3),
+                Arrays.asList(4, 5, 6),
+                Arrays.asList(7, 8, 9));
+
+        // Lista anidada en una sola lista
+        Stream<Integer> flattenedStream = nestedList.stream()
+                .flatMap(List::stream);
+
+        flattenedStream.forEach(System.out::println); // 1 2 3 4 5 6 7 8 9
+
+        List<String> words = Arrays.asList("Hello", "World", "Java", "Streams");
+
+        Stream<String> characters = words.stream()
+                .flatMap(word -> Arrays.stream(word.split("")))
+                .distinct();
+
+        characters.forEach(System.out::println); // H e l l o W o r l d J a v a S t r e a m s
+
+        /**
+         * Depuración o monitoreo
+         * Se utiliza para depurar o monitorear los elementos de una secuencia sin
+         * cambiarlos.
+         */
+        Stream<Integer> numbersR = Stream.of(1, 2, 3, 4, 5);
+
+        // Utilice peek para imprimir cada número antes de realizar una operación.
+        numbersR
+                .peek(n -> System.out.println("Processing: " + n))
+                .map(n -> n * 2)
+                .forEach(System.out::println);
+
+        // Processing: 1
+        // 2
+        // Processing: 2
+        // 4
+        // Processing: 3
+        // 6
+        // Processing: 4
+        // 8
+        // Processing: 5
+        // 10
+
+        /****************************************************
+         * Agrupar y resumir datos
+         * Echemos un vistazo a operaciones más avanzadas:
+         ****************************************************/
+
+        // Agrupar empleados por departamento y recuento
+        // Map<Department, Long> employeeCountByDept = employees.stream()
+        // .collect(Collectors.groupingBy(Employee::getDepartment,
+        // Collectors.counting()));
+
+        // Encuentre el empleado mejor pagado en cada departamento
+        // Map<Department, Optional<Employee>> highestPaidByDept = employees.stream()
+        // .collect(Collectors.groupingBy(Employee::getDepartment,
+        // Collectors.maxBy(Comparator.comparing(Employee::getSalary))));
+
+        // Calcular el salario promedio por departamento
+        // Map<Department, Double> averageSalaryByDept = employees.stream()
+        // .collect(Collectors.groupingBy(Employee::getDepartment,
+        // Collectors.averagingInt(Employee::getSalary)));
+
+        // Dividir a los estudiantes entre aprobados y reprobados
+        // Map<Boolean, List<Student>> passingFailing =
+        // students.stream().collect(Collectors.partitioningBy(s -> s.getGrade() >=
+        // PASS_THRESHOLD));
 
     }
 }
